@@ -4,4 +4,4 @@ This is the corporate web site for Fourpoint Energy. The site is built on wordpr
 
 ###Wordpress Credentials:###
 *Username:* admin@fourpointenergy.com
-*Password:* fourpoint#100100
+*Password:* FourPoint#100100
