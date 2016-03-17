@@ -1,0 +1,126 @@
+.news {
+	background:url('../images/bg_diag_lines.png') repeat-x 0 114px;
+	.container {
+		padding-top: 60px;
+	}
+	.posts {
+		// margin-top: 235px;
+		width:96%;
+		margin-left:auto;
+		margin-right: auto;
+		padding-bottom: 125px;
+		@include clearfix;
+		max-width:1504px;
+		@include breakpoint(tablet) {
+			margin-top: 110px;
+		}
+		.post {
+			float:left;
+			width:31%;
+			margin-right: 3.5%;
+			&:first-child {
+				clear:left;
+			}
+			&:nth-child(3) {
+				clear:right;
+				margin-right: 0;
+			}
+			h1 {
+				color:$brown;
+				border-bottom:1px solid $brown;
+				padding-bottom: 22px;
+				margin-bottom: 22px;
+			}
+			.button {
+				height:45px;
+				line-height:45px;
+			}
+			@include breakpoint(tablet) {
+				float:none;
+				width:90%;
+				margin-left: 5%;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+.single-post, .page-template-default {
+	.sticky-wrapper {
+		height:0;
+	}
+	.page {
+		margin-top: 114px;
+		padding-top:45px;
+		h1 {
+			background:none;
+			padding-left: 0;
+		}
+	}
+	.back-link {
+		display:block;
+		text-transform:uppercase;
+		text-decoration:none;
+		font-size:0.875em;
+		letter-spacing:1px;
+		color:$blue;
+		font-weight:bold;
+	}
+	.button {
+		height:45px;
+		line-height:45px;
+	}
+	h1 {
+		// padding-bottom:20px;
+		// border-bottom:1px solid $brown;
+	}
+	hr {
+		background-color:$brown;
+		border-color:$brown;
+		border-top-width:1px;
+		border-bottom-width:0;
+		border-style:solid;
+		margin-bottom: 20px;
+	}
+	.post {
+		// width:90%;
+		// margin-left: 5%;
+		// max-width:1024px;
+		margin-top: 55px;
+		color:$middle_gray;
+		padding-bottom: 125px;
+		h1 {
+			color:$brown;
+			margin-bottom: 20px;
+			// border-bottom:1px solid $brown;
+			// padding-bottom: 22px;
+			// margin-bottom: 22px;
+		}
+		.entry-content {
+			font-size:0.875em;
+		}
+	}
+	.post-thumbnail {
+		float:right;
+		margin-left:50px;
+		margin-bottom: 50px;
+		width:40%;
+		@include breakpoint(mobile) {
+			float:none;
+			width:100%;
+			margin:0;
+		}
+	}
+}
+.publish-date {
+	font-size:1em;
+	padding-bottom: 8px;
+	letter-spacing:2px;
+	color:$blue;
+}
+.post-thumbnail {
+	margin-bottom: 30px;
+	img {
+		width:100% !important;
+		height:auto;
+	}
+}

@@ -1,0 +1,77 @@
+$menu_easing:cubic-bezier(0.895, 0.030, 0.685, 0.220);
+$scroll_down_easing:cubic-bezier(0.175, 0.885, 0.320, 1.275);
+$mobile_menu_font-width:200px;
+$mobile_menu_font-height:52px;
+@mixin breakpoint($point) {
+  @if $point == mobile {
+    @media (max-width: 480px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 980px)  { @content; }
+  }
+  @else if $point == small-desktop {
+    @media (min-width: 981px)  { @content; }
+  }
+  @else if $point == desktop {
+    @media (min-width: 1060px)  { @content; }
+  }
+  @else if $point == large-desktop {
+    @media (min-width: 1210px)  { @content; }
+  }
+  @else if $point == very-short {
+    @media (max-height: 590px) and (min-width: 768px)  { @content; }
+  }
+  @else if $point == short {
+    @media (max-height: 760px) and (min-width: 768px)  { @content; }
+  }
+}
+@mixin retina-display() {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/**
+ * Icon Defenitions
+ */
+/* FACEBOOK */
+.facebook-icon {
+  background-image: url('../images/facebook-icon.svg');
+  background-size: 65px 65px;
+  &.no-svg {
+    background-image: url('../images/facebook-icon.png');
+  }
+  &:hover {
+    background-image: url('../images/facebook-icon-over.svg');
+    background-size: 65px 65px;
+    &.no-svg {
+      background-image: url('../images/facebook-icon-over.png');
+    }
+  }
+}
+/* TWITTER */
+.twitter-icon {
+  background-image: url('../images/twitter-icon.svg');
+  background-size: 65px 65px;
+  .no-svg & {
+    background-image: url('../images/twitter-icon.png');
+  }
+  &:hover {
+    background-image: url('../images/twitter-icon-over.svg');
+    background-size: 65px 65px;
+    .no-svg & {
+      background-image: url('../images/twitter-icon-over.png');
+    }
+  }
+}

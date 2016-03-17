@@ -1,0 +1,161 @@
+#footer-map {
+	width:100%;
+	height:570px;
+	@include breakpoint(mobile) {
+		height:285px;
+	}
+}
+footer {
+	height:430px;
+	padding-top: 66px;
+	padding-bottom: 66px;
+	background:$lighter_blue;
+	width:100%;
+	text-align:center;
+	@include clearfix;
+	@include breakpoint(tablet) {
+		height:auto;
+	}
+	.footer-logo {
+		width:305px;
+		margin:40px auto;
+		margin-top: 0;
+		text-align:center;
+	}
+	.footer-social {
+		width:75px;
+		// width:75px;
+		margin:auto;
+		a {
+			display:block;
+			float:left;
+			border:0;
+			&.facebook {
+				width:25px;
+				height:25px;
+				background:url('../images/icon_facebook.png') no-repeat center;
+				@include retina-display() {
+					background-image:url('../images/icon_facebook@2x.png');
+				}
+				background-size:11px 25px;
+				padding:0;
+			}
+			&.linkedin {
+				width:26px;
+				height:25px;
+				background:url('../images/icon_linkedin.png') no-repeat center;
+				@include retina-display() {
+					background-image:url('../images/icon_linkedin@2x.png');
+				}
+				background-size:26px 25px;
+				padding:0;
+				margin-left: 23px;
+			}
+			&.instagram {
+				width:25px;
+				height:25px;
+				background:url('../images/icon_instagram_footer.png') no-repeat center;
+				@include retina-display() {
+					background-image:url('../images/icon_instagram_footer@2x.png');
+				}
+				background-size:25px 25px;
+				margin-left: 24px;
+				padding:0;
+			}
+		}
+	}
+	.footer-content {
+		@include clearfix;
+		width:96%;
+		margin:auto;
+		margin-top: 100px;
+		color:$footer_gray;
+		text-align:center;
+		@include breakpoint(tablet) {
+			margin-top: 90px;
+		}
+		.address {
+			padding-top: 12px;
+			font-size:1.375em;
+		}
+		a,a:hover,a:visited {
+			text-underline:none;
+		}
+	}
+	.button-group {
+		position:relative;
+		height:47px;
+		margin-top: 40px;
+		text-align: center;
+		@include breakpoint(tablet) {
+			height:auto;
+		}
+		a.button {
+			line-height:47px;
+			height:47px;
+			margin-bottom: 40px;
+			display:block;
+			&:hover {
+				color:$footer_gray;
+			}
+			&.home-owner-info {
+				display:inline-block;
+				text-align:center;
+				background:transparent;
+				border:1px solid $brown;
+				padding-top: 0;
+				padding-bottom: 0;
+				width:248px;
+				text-align:center;
+				@include breakpoint(tablet) {
+					margin-left: 5%;
+					left:auto;
+					width:90%;
+					padding:0;
+					margin-bottom: 10px;
+				}
+			}
+			&.visit-clear-creek {
+				width:358px;
+				// margin:40px auto 35px auto;
+				padding:0;
+				text-align:center;
+				right:50%;
+				margin-right: 10px;
+				@include breakpoint(tablet) {
+					margin-right: 0;
+					right:auto;
+					width:90%;
+				}
+			}
+			@include breakpoint(tablet) {
+				position:relative;
+				display:inline-block;
+				right:auto;
+				left:auto;
+				width:90%;
+				margin-left: 5%;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.disclaimer {
+		text-align:center;
+		color:$footer_gray;
+		margin-top: 24px;
+		margin-bottom: 60px;
+		font-size:0.75em;
+		line-height:50px;
+		margin-top: 40px;
+		padding-left: 65px;
+		background:url('../images/logo_eehl.png') no-repeat center left;
+		background-size:50px 50px;
+		display:inline-block;
+		@include retina-display() {
+			background-image:url('../images/logo_eehl@2x.png');
+		}
+		@include breakpoint(tablet) {
+			margin-bottom: 0;
+		}
+	}
+}

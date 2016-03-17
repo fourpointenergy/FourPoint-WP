@@ -1,0 +1,79 @@
+.testimonials {
+	@include breakpoint(tablet) {
+		margin-bottom: 60px;
+	}
+	.slider {
+		background:$lighter_blue;
+		width:100%;
+		padding-top: 0;
+		padding-bottom: 0;
+		@include single-box-shadow(0,0,2px,0,rgba(0,0,0,.2));
+		.flexslider {
+			li {
+				.quote {
+					font-size:1.875em;
+					line-height:1.6em;
+					padding: 50px 3% 100px 14%;
+					margin:50px 0;
+					border-right: 1px solid $brown;
+					width:53%;
+					text-align:right;
+					float:left;
+					font-weight:300;
+			
+					@include breakpoint(mobile) {
+						float:none;
+						border-right:none;
+						border-bottom:1px solid $brown;
+						width:80%;
+						text-align:center;
+						padding-left:0;
+						padding-right:0;
+						margin:0 10%;
+						padding-bottom: 35px;
+						font-size:1.625em;
+					}
+					.quote-text {
+						background-repeat:no-repeat;
+						background-image:url('../images/open_blockquote.png'), url('../images/close_blockquote.png');
+						background-position:left top, right bottom;
+						display:inline-block;
+						padding-right: 15px;
+						padding-left: 15px;
+					}
+				}
+				.author {
+					float:right;
+					width:27%;
+					// margin-left: 2%;
+					// margin-top: 25%;
+					font-family:$alt_font;
+					font-size:1.875em;
+					position:absolute;
+					top:50%;
+					right:0;
+					width:27%;
+					text-align:center;
+					margin-top: -15px;
+					@include breakpoint(mobile) {
+						float:none;
+						border:none;
+						width:100%;
+						position:relative;
+						top:0;
+						margin-top: 0;
+						width:100%;
+						text-align:center;
+						padding-top: 35px;
+						padding-bottom: 35px;
+					}
+				}
+			}
+			.flex-prev,.flex-next {
+				width:35px;
+				height:70px;
+				background-size:35px 70px;
+			}
+		}
+	}
+}

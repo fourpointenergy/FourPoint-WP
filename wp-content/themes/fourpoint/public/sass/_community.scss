@@ -1,0 +1,125 @@
+.communities {
+	background:url('../images/bg_diag_lines_tile.png');
+	padding-bottom: 40px;
+	@include breakpoint(mobile) {
+		padding-top: 0;
+		margin-top: 40px;
+		padding-bottom: 0;
+	}
+	.container {
+		@include breakpoint(tablet) {
+			padding-top: 20px;
+		}
+	}
+	h1 {
+		margin-top: 60px;
+		@include breakpoint(tablet) {
+			margin-top: 10px;
+		}
+	}
+	.tiles {
+		@include clearfix;
+		.tile {
+			float:left;
+			margin-bottom: 3%;
+			margin-right: 3%;
+			width:31%;
+			img {
+				width:100%;
+				height:auto;
+			}
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+			&:nth-child(6) {
+				margin-right: 0;
+			}
+			@include breakpoint(tablet) {
+				width:47%;
+				&:nth-child(even) {
+					margin-right: 0;
+				}
+				&:nth-child(3) {
+					margin-right: 3%;
+				}
+			}
+			@include breakpoint(mobile) {
+				width:100%;
+				margin-right:0;
+			}
+		}
+	}
+}
+.map-area {
+	// margin-top:-196px;
+	position:relative;
+	// margin-top: 40px;
+	.map {
+		@include single-transition(height,.5s);
+		width:100%;
+		height:292px;
+		&.open {
+			// height:792px;
+			height:492px;
+		}
+	}
+	.top-map-cover {
+		position:absolute;
+		background:url('../images/map_top_cover.png') repeat-x;
+		width:100%;
+		height:4px;
+		top:0;
+	}
+	.triangle {
+		position:absolute;
+		background:url('../images/map_triangle.png') no-repeat top center;
+		width:100%;
+		height:40px;
+		margin-top:-39px;
+	}
+	.close-open {
+		display:block;
+		text-align:center;
+		font-weight:bold;
+		color:$middle_gray;
+		letter-spacing:2px;
+		text-transform:uppercase;
+		text-decoration:none;
+	}
+	@include breakpoint(mobile) {
+		display:none;
+	}
+}
+.map-pattern-cover {
+	position:absolute;
+	top:0;
+	width:100%;
+	background:url('../images/bg_diag_lines.png') repeat-x bottom center;
+	height:100%;
+}
+.view-on-map {
+	text-align:center;
+	display:none;
+	margin-top: 40px;
+	@include breakpoint(mobile) {
+		display:block;
+		text-align:center;
+	}
+	.view-on-map-title {
+		display:inline-block;
+		height:30px;
+		padding: 0 30px;
+		line-height:24px;
+		font-size:1em;
+		color:$middle_gray;
+		font-weight:bold;
+		letter-spacing:1px;
+		text-transform:uppercase;
+		text-align:center;
+		background:url('../images/pin_small.png') no-repeat right top;
+		background-size:16px 23px;
+		@include retina-display() {
+			background-image:url('../images/pin_small@2x.png');
+		}
+	}
+}
