@@ -1,0 +1,100 @@
+.form_wrap {
+	@include outer-container;
+	div {
+		@include clearfix;
+		margin: 15px auto;
+		label, input {
+			display: block;
+			width: 90%;
+			margin: 0 auto;
+		}
+		input, textarea {
+		  padding: 0.7em;
+		  border: none;
+		  border-radius: 2px;
+		  display: block;
+		}
+		input[type="text"], input[type="email"], textarea, select {
+		  margin: 0 auto 1em;
+		  border: 1px solid darken($form_fill, 10%);
+		  outline: none;
+		  background: $form_fill;
+		  height: 50px;
+		}
+		
+		label {
+			min-width: 100px;
+			padding: 0.7em 0;
+			max-width: 400px;
+			text-align: left;
+		}
+		input, textarea {
+			width: 90%;
+			max-width: 400px;
+		}
+		textarea {
+			min-height: 80px;
+		}
+		@include media(tablet) {
+			input, label, .form_select, input[type="text"], input[type="email"], textarea {
+				float: none;
+				width: 90%;
+				margin: 0 auto;
+				max-width: 450px;
+				text-align: left;
+				display: block;
+			}
+			label {
+				padding: 0.7em 0;
+			}
+		}
+	}
+
+	.form_select {
+		background: $form_fill;
+		border: 1px solid darken($form_fill, 10%);
+		color: darken($form_fill, 30%);;
+		border-radius: 2px;
+		padding: 0.7em;
+		max-width: 400px;
+		width: 90%;
+		position: relative;
+		font: normal 11px/normal 'Lucida Grande';
+		cursor: pointer;
+		margin: 0 auto;
+		&:hover {
+			background: darken($form_fill, 5%);
+		}
+		select { 
+			-webkit-appearance: none;
+			width: 100%;
+		}
+		&:after { 
+			content: "▼";
+			color: darken($form_fill, 20%);
+			font-size: 12px;
+			margin-top: -7px;
+			position: absolute;
+			top: 50%; 
+			right: 10px;
+			vertical-align: middle;
+			z-index: 1;
+		}
+
+		label {
+			margin-left: 0;
+		}
+
+	  .select {
+	    background-color: transparent;
+	    border: 0;
+	    color: #fff;
+	    padding: 25px 20px;
+	    position: absolute;
+	    left: 0; top: 0; right: 0; bottom: 0;
+	    z-index: 2; 
+	    
+	    option { background: $light_gray; }
+	  	}
+	}
+}

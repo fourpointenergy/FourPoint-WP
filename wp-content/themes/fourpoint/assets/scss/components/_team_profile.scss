@@ -1,0 +1,83 @@
+.team_profile {
+    header {
+        width: 100%;
+        padding: 0;
+        max-width: 100%;
+        display: table;
+        height: auto;
+        position: relative;
+        margin: 0 auto 50px;
+        overflow: hidden;
+        @include clearfix;
+        img {
+            width: 55%;
+            margin: 0 auto;
+            padding: 0;
+            float: right;
+            display: table-cell;
+        }
+        .team_title {
+            height: 100%;
+            width: 45%;
+            display: block;
+            position: absolute;
+            display: table-cell;
+            span {
+                right: 10%;
+                display: block;
+                text-align: left;
+                @include vertical-align;
+                h3 {
+                    color: darken($light_gray, 20%);
+                }
+            }
+        }
+        @include media(tablet) {
+            img {
+                width: 115%;
+                margin: 0 auto;
+                padding: 0;
+                float: none;
+                display: block;
+                margin-left: -15%;
+            }
+            .team_title {
+                height: auto;
+                width: 100%;
+                display: block;
+                position: relative;
+                display: block;
+                span {
+                    right: auto;
+                    display: block;
+                    text-align: center;
+                    padding: 60px 0;
+                    position: relative;
+                    top: 0;
+                    @include transform(translateY(0));
+                    h3 {
+                        color: darken($light_gray, 20%);
+                    }
+                }
+            }
+        }
+    }
+    article {
+        width: 90%;
+        max-width: 740px;
+        margin: 20px auto 50px;
+        h3, p {
+            padding: 0 40px;
+            position: relative;
+        }
+        h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: $fourpoint_blue;
+        }
+    }
+}

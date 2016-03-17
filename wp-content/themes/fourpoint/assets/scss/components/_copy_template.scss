@@ -1,0 +1,43 @@
+.copy_split {
+	margin: 50px auto;
+	.side-content {
+		@include outer-container;
+		@include clearfix;
+		padding: 25px 0;
+		aside {
+			width: 40%;
+			padding: 0 40px;
+			float: left;
+			p {
+				font-weight: bold;
+				padding-left: 30px;
+				position: relative;
+				text-transform: uppercase;
+				font-family: 'Montserrat', sans-serif;
+				&:before {
+					content: '';
+					width: 4px;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: $fourpoint_blue
+				}
+			}
+		}
+		article {
+			width: 60%;
+			padding: 0 40px;
+			float: left;
+			a {
+				@include third_btn;
+			}
+		}
+		@include media(tablet) {
+			article, aside {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+}

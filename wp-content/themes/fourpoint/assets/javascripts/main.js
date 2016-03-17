@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	var $gallery = $('#fp-gallery');
 
 	// REPLACE SVG WITH PNG IF NO SUPPORT
 	
@@ -115,7 +116,55 @@ $(document).ready(function() {
 	closeBtn.addEventListener('click', function() {
 		loginModal.style.display = 'none';
 	});
-	
+
+	// fancybox init
+	if($gallery.length) {
+		$(".fancybox").fancybox({
+			padding: 0,
+			prevEffect: 'none',
+			nextEffect: 'none',
+			helpers: {
+				title: {
+					type: 'outside'
+				},
+				media: {},
+				thumbs: {
+					width: 80,
+					height: 50
+				}
+			}
+		});
+	}
+
+	// gallery filter
+	var $filterBtn = $('.filter-btn');
+	var $sortableItem = $('.sortable');
+	// var itemType = $sortableItem.data('type');
+
+	$filterBtn.on('click', function(e) {
+		e.preventDefault();
+		// console.log(itemType)
+		var filterVal = $(this).data('category');
+		var $target = $(e.target);
+		;
+
+		// add/remove classes to show active state
+		$filterBtn.removeClass('btn-white').addClass('btn-blue');
+		$target.toggleClass('btn-white');
+
+		// loop through items, fade in/out based on type
+		$sortableItem.each(function() {
+			var itemType = $(this).data('type')
+			if(filterVal === 'all') {
+				$(this).fadeIn('fast');
+			} else if(filterVal != itemType) {
+				$(this).fadeOut('fast');
+			} else {
+				$(this).fadeIn('fast');
+			}
+		});
+
+	});
 });
 
 

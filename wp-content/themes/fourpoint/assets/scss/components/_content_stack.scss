@@ -1,0 +1,173 @@
+.content_stack {
+	width: 100%;
+	height: auto;
+	padding: 0 20px; 
+	margin: 0 auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	list-style: none;
+	li {
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin: 20px auto;
+		// padding: 0 0 60px;
+		padding: 0;
+		opacity: 0;
+		transition: all 0.5s ease;
+		-moz-transform-origin: 50% 50% -50px;
+		-ms-transform-origin: 50% 50% -50px;
+		-webkit-transform-origin: 50% 50% -50px;
+		transform-origin: 50% 50% -50px;
+		-moz-transform: perspective(500px) rotateX(-90deg);
+		-ms-transform: perspective(500px) rotateX(-90deg);
+		-webkit-transform: perspective(500px) rotateX(-90deg);
+		transform: perspective(500px) rotateX(-90deg);
+		transform: rotateX(-90);
+		@include clearfix;
+		aside {
+			position: absolute;
+			height: 100%;
+			width: 43%;
+			top: 0;
+			left: 0;
+			&:after {
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: rgba(0,0,0,.3);
+				z-index: 3;
+			}
+			h3 {
+				@include vertical-align;
+				font-size: 124px;
+				font-weight: bold;
+				text-align: center;
+				color: $white;
+				margin: 0 auto;
+				width: 100%;
+				background: -webkit-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,.1)) no-repeat 100%;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				z-index: 4;
+				opacity: 0;
+				@include transition(all .5s ease .4s);
+			}
+		}
+		aside[data-bg="bg_1"]{
+		  background: url('/assets/img/history/history_banner6.jpg')no-repeat center center;
+		  background-size: cover;
+		}
+		aside[data-bg="bg_2"]{
+		  background: url('/assets/img/history/history_banner5.jpg')no-repeat center center;
+		  background-size: cover;
+		}
+		aside[data-bg="bg_3"]{
+		  background: url('/assets/img/history/history_banner3.jpg') no-repeat center center;
+		  background-size: cover;
+		}
+		aside[data-bg="bg_4"]{
+		  background: url('/assets/img/history/history_banner4.jpg')no-repeat center center;
+		  background-size: cover;
+		}
+		aside[data-bg="bg_5"]{
+		  background: url('/assets/img/history/history_banner7.jpg')no-repeat center center;
+		  background-size: cover;
+		}
+		aside[data-bg="bg_6"]{
+		  background: url('/assets/img/history/history_banner1.jpg') no-repeat center center;
+		  background-size: cover;
+		}
+		aside[data-bg="bg_7"]{
+		  background: url('/assets/img/history/history_banner2.jpg') no-repeat center center;
+		  background-size: cover;
+		}
+		article {
+			width: 57%;
+			height: auto;
+			// margin-top: -50px;
+			margin: 0 auto;
+			background: $fourpoint_blue;
+			text-align: left;
+			padding: 120px 60px;
+			position: relative;
+			float: right;
+			// border-bottom: 80px solid $fourpoint_blue;
+	  //  		border-left: 40px solid transparent;
+			p {
+				color: white;
+				margin: 0 auto;
+				@include transform(translateY(50px));
+				opacity: 0;
+				@include transition(all .5s ease .4s);
+			}
+		}
+		@include media(tablet_large) {
+			aside {
+				h3 {
+					font-size: 90px;
+				}
+			}	
+		}
+		@include media(tablet) {
+			aside, article {
+				width: 100%;
+				position: relative;
+				h3 {
+					position: relative;
+					@include transform(none);
+					padding: 60px 0;
+				}
+			}	
+		}
+	}
+	.left_year {
+		aside {
+			left: auto;
+			right: 0;
+		}
+		article {
+			float: left;
+			background: #ECEAE7;
+			h3 {
+				color: darken(#ECEAE7, 30%);
+			}
+			p {
+				color: darken(#ECEAE7, 60%);
+			}
+		}
+	}
+}
+
+.content_stack .come-in {
+ //  @include transform (rotateX(0deg));
+	// opacity: 1;
+	@include animation (come-in .5s ease forwards);
+	@include animation-delay (.1s);
+	article p {
+		@include transform(translateY(0px));
+		opacity: 1;
+	}
+	aside h3 {
+		opacity: 1;
+	}
+}
+// .come-in:nth-child(even) {
+//   @include transform (translateX(-150px));
+//   @include animation-duration (0.6s);
+// }
+.content_stack .already-visible {
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	transform: rotateX(0);
+	opacity: 1;
+	@include animation (none);
+	opacity: 1;
+	article h3, article p {
+		@include transform(translateY(0px));
+		opacity: 1;
+	}
+}
