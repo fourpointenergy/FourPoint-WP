@@ -1117,6 +1117,7 @@ header, .text-block {
         font-size: 6em; } }
 
 .button {
+  display: inline-block;
   background: #00a8e2;
   padding: 15px 30px;
   border-radius: 2px;
@@ -1426,7 +1427,7 @@ header, .text-block {
   width: 50%;
   float: left; }
 
-.video {
+.arve-wrapper {
   margin: 40px 0; }
 
 .careers-intro {

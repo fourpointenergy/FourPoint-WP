@@ -87,7 +87,7 @@ $(document).ready(function() {
   };
 
   // nav positioning on pages other than home.
-  if(!$('.hero-slider').length) {
+  if(!$('body').hasClass('home')) {
     if($(window).width() >= 1024 ) {
       slateNav();
     } else {
@@ -96,7 +96,7 @@ $(document).ready(function() {
   }
 
   $(window).on('resize', function() {
-    if(!$('.hero-slider').length) {
+    if(!$('body').hasClass('home')) {
       if($(window).width() >= 1024 ) {
         slateNav();
       } else {
