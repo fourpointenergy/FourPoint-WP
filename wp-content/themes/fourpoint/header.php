@@ -46,7 +46,15 @@ global $theme;
 					<a class="btn" href="/login">Login</a>
 				</div>
 				<div id="mobile_menu" class="mobile_nav_icon">MENU&nbsp;&nbsp;<i class="fa fa-bars fa-2"></i></div>
-				<div class="main_nav_wrap">
+				<?php
+					$args = array(
+						'theme_location' => 'main-menu',
+						'menu_id' => 'main_nav',
+						'container_class' => 'main_nav_wrap',
+					);
+					wp_nav_menu($args);
+					?>
+				<!-- <div class="main_nav_wrap">
 					<ul id="main_nav">
 				    	<li class="more"><a href="#">about</a>
 				    		<ul class="submenu">
@@ -99,7 +107,7 @@ global $theme;
 							</div>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 		</section>
 	</nav>
