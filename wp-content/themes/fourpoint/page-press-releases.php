@@ -12,7 +12,8 @@
  <?php endwhile;
  $args = array(
    'post_type' => 'press-release',
-   'order' => 'menu_order'
+   'order' => 'menu_order',
+   'post_status' => 'publish'
  );
  $press_release_qry = new WP_Query( $args );
  ?>

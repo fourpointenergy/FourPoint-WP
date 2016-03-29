@@ -1,6 +1,7 @@
 /*
 !wp-content
 wp-content/*
+!db
 !wp-content/plugins
 !wp-content/themes
 .DS_Store

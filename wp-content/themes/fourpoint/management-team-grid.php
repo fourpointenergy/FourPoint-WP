@@ -4,7 +4,8 @@
 **/
 $args = array(
   'post_type' => 'management-team',
-  'order' => 'menu_order'
+  'order' => 'menu_order',
+  'post_status' => 'publish'
 );
 $management_team_qry = new WP_Query( $args );
 ?>
