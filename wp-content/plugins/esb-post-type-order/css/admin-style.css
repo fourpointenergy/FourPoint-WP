@@ -1,0 +1,26 @@
+.esb-pto-form-table td, .esb-pto-form-table th {
+    vertical-align: top;
+}
+.esb-pto-form-table td:first-child {
+    width: 20%;
+    vertical-align: top;
+}
+.form-table.esb-pto-form-table select {
+    width: 30%;
+    height: 150px;
+}
+.esb-pto-display-none {
+    display: none;
+}
+.esb-pto-tab-content {
+    display: none;
+}
+.drag-handle {
+    cursor: move;
+}
+.column-order {
+    width: 3em;
+}
+.column-drag {
+    width: 2.4em;
+}

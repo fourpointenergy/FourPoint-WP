@@ -182,7 +182,6 @@ $(document).ready(function() {
     }
   });
 
-
  // underline under the active nav item
   $(".nav .nav-link").click(function() {
     $(".nav .nav-link").each(function() {

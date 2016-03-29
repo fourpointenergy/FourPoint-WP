@@ -97,9 +97,8 @@ class Fourpoint {
 	}
 
 	function register_assets() {
-		if (!is_admin()) {
-			wp_deregister_script('jquery');
-			// wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js", false, null, true);
+		if (!is_admin() & !is_login_page()) {
+
 			// wp_register_script('modernizr', get_bloginfo("stylesheet_directory") . "/assets/javascripts/modernizr.js", false);
 			// wp_register_script('fontawesome', "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", false);
 			// wp_register_script('libs', get_bloginfo('stylesheet_directory') . '/assets/javascripts/libs.js', array('jquery'), $this->scripts_version, true);
@@ -158,9 +157,11 @@ class Fourpoint {
 			wp_enqueue_style('lib-styles', get_bloginfo('stylesheet_directory') . '/assets/stylesheets/libs.css', false, $this->scripts_version, 'all');
 			wp_enqueue_style('fonts', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', false, '1.0', 'all');
 			// SCRIPTS
+			wp_deregister_script('jquery');
+			wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js", false, null, true);
 			wp_enqueue_script('modernizr', get_bloginfo("stylesheet_directory") . "/assets/javascripts/modernizr.js", false);
 			wp_enqueue_script('fontawesome', "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", false);
-			wp_enqueue_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js", false, null, false);
+			wp_enqueue_script('jquery');
 			wp_enqueue_script('libs', get_bloginfo('stylesheet_directory') . '/assets/javascripts/libs.js', array('jquery'), $this->scripts_version, true);
 			wp_enqueue_script($this->theme_name . '-site', get_bloginfo('stylesheet_directory') . '/assets/javascripts/main.js', array('jquery', 'libs'), $this->scripts_version, true);
 		}
@@ -223,14 +224,14 @@ class Fourpoint {
 			'show_ui' => true,
 			'show_in_menu' => true,
 			'query_var' => true,
-			'rewrite' => array( 'slug' => 'profile'),
+			'rewrite' => array( 'slug' => 'management-team'),
 			'capability_type' => 'post',
-			'has_archive' => true,
+			'has_archive' => false,
 			'hierarchical' => false,
 			'menu_position' => 3,
 			'supports' => array('title','editor','author')
 		);
-		register_post_type('profile', $args);
+		register_post_type('management-team', $args);
 
 		//Events
 		// $labels = array(
@@ -290,7 +291,6 @@ class Fourpoint {
 			'has_archive' => false,
 			'hierarchical' => false,
 			'menu_position' => 3,
-			'supports' => array('title')
 		);
 		register_post_type('press-release', $args);
 	}
