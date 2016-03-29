@@ -163,7 +163,8 @@ class Fourpoint {
 			wp_enqueue_script('fontawesome', "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", false);
 			wp_enqueue_script('jquery');
 			wp_enqueue_script('libs', get_bloginfo('stylesheet_directory') . '/assets/javascripts/libs.js', array('jquery'), $this->scripts_version, true);
-			wp_enqueue_script($this->theme_name . '-site', get_bloginfo('stylesheet_directory') . '/assets/javascripts/main.js', array('jquery', 'libs'), $this->scripts_version, true);
+			wp_enqueue_script('nav', get_bloginfo('stylesheet_directory') . '/assets/javascripts/nav.js', array('jquery'), $this->scripts_version, true);
+			wp_enqueue_script($this->theme_name . '-site', get_bloginfo('stylesheet_directory') . '/assets/javascripts/main.js', array('jquery', 'libs', 'nav'), $this->scripts_version, true);
 		}
 	}
 
