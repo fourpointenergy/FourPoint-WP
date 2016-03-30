@@ -681,16 +681,18 @@ header, .text-block {
           transform: none;
           padding: 60px 0; } }
 
-.content_stack li:nth-child(even) aside {
-  left: auto;
-  right: 0; }
-.content_stack li:nth-child(even) article {
-  float: left;
-  background: #ECEAE7; }
-  .content_stack li:nth-child(even) article h3 {
-    color: #a89f92; }
-  .content_stack li:nth-child(even) article p {
-    color: #5a5247; }
+.content_stack li:nth-child(even) {
+  border: 4px solid green; }
+  .content_stack li:nth-child(even) aside {
+    left: auto;
+    right: 0; }
+  .content_stack li:nth-child(even) article {
+    float: left;
+    background: #ECEAE7; }
+    .content_stack li:nth-child(even) article h3 {
+      color: #a89f92; }
+    .content_stack li:nth-child(even) article p {
+      color: #5a5247; }
 
 .content_stack .come-in {
   -webkit-animation: come-in 0.5s ease forwards;

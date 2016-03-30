@@ -1,0 +1,148 @@
+.gallery-img-hidden {
+	display: none;
+}
+
+.gallery-page {
+	img {
+		width: 100%;
+	}
+}
+
+.single-img, .gallery, .single-video {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	position: relative;
+	@include tablet-portrait-and-up {
+		width: 33.3333%;
+		padding: 1.4em;
+	}
+	@include tablet-landscape-and-up {
+		padding: 2.5em;
+	}
+	a {
+		position: relative;
+		display: table;
+
+		&:after {
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.6);
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			z-index: 2;
+			@include transition(0.25s ease);
+		}
+
+		&:hover:after {
+			opacity: 1;
+			@include transition(0.25s ease);
+		}
+
+		span {
+			position: absolute;
+			bottom: 0;
+			left: 20px;
+			padding-left: 21px;
+			z-index: 3;
+			color: $white;
+			font-size: 16px;
+			opacity: 0;
+			max-width: 90%;
+			@include transition(0.25s ease);
+			@include tablet-portrait-and-up {
+				left: 30px;
+				max-width: 75%;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				left: -10px;
+				width: 20px;
+				height: 20px;
+				top: 0px;
+				border-radius: 50%;
+				opacity: 0;
+				background: #ffc20e url("/assets/img/icons/btn_arrows.svg") no-repeat center center;
+				@include transition(0.25s ease);
+			}
+		}
+
+		&:hover > span {
+			bottom: 20px;
+			opacity: 1;
+			color: $yellow;
+			@include transition(0.25s ease);
+
+			&:before {
+				opacity: 1;
+				@include transition(0.25s ease);
+			}
+		}
+	}
+}
+
+.single-video {
+	a {
+		position: relative;
+		&:before {
+			position: absolute;
+			content: url(/assets/img/icons/icon-play.png);
+			top: 50%;
+			left: 50%;
+			z-index: 1;
+			@include transform(translate(-50%, -50%));
+		}
+	}
+}
+
+.gallery {
+	
+	&:before, &:after {
+		position: absolute;
+		top: 50%;
+		width: 50px;
+		height: auto;
+		z-index: 1;
+		// opacity: 0.70;
+		@include transform(translate(-50%, -50%));
+	}
+
+	&:before {
+		display: none;
+		@include tablet-portrait-and-up {
+			display: block;
+			content: url(/assets/img/icons/arrow-left.png);
+			left: calc(32px + 2.5em);
+		}
+	}
+
+	&:after {
+		display: none;
+		@include tablet-portrait-and-up {
+			display: block;
+			content: url(/assets/img/icons/arrow-right.png);
+			right: calc(20px - 2.5em);
+		}
+	}
+}
+
+.gallery-filter {
+	margin-bottom: 50px;
+	ul {
+		text-align: center;
+	}
+	li, button {
+		display: inline;
+	}
+	button {
+		margin: 0 2%;
+	}
+	p {
+		text-align: center;
+		font-weight: 700;
+	}
+}

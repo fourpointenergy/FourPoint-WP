@@ -1,0 +1,33 @@
+.btn {
+  padding: 5px 10px;
+  background: transparent;
+  text-transform: uppercase;
+  border: 1px solid $light_gray;
+  @include borderRadius(5px);
+  @include transition(all $tl ease-in-out);
+  &:hover {
+    border: 1px solid $trans_white;
+    color: $trans_white;
+  }
+}
+.btn-white {
+  background-color: $white;
+  color: $fourpoint_blue;
+  border: 1px solid $fourpoint_blue;
+  @include transition(background 0.3s ease);
+  &:hover {
+    background: $fourpoint_blue;
+    border-color: $white;
+    color: $white;
+    @include transition(background 0.3s ease);
+  }
+}
+
+.btn-blue {
+  border: 1px solid $fourpoint_blue;
+  &:hover {
+    background: $white;
+    color: $fourpoint_blue;
+    @include transition(background 0.3s ease);
+  }
+}

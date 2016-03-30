@@ -1,0 +1,39 @@
+header, .text-block {
+	padding: 100px 0;
+	text-align: center;
+	background: #eceae7;
+	width: 100%;
+	p {
+		width: 90%;
+		max-width: 500px;
+	}
+}
+
+.alt_leader {
+	background: #eceae7;
+	text-align: center;
+	@include tablet-landscape-and-up {
+		background: #eceae7 url('/assets/img/map_perspective.jpg') no-repeat right center;
+		background-size: 650px 443px;
+	}
+	h1 {
+		text-align: center;
+		@include tablet-landscape-and-up {
+			text-align: left;
+		}
+	}
+	section {
+		@include outer-container;
+		text-align: left;
+		width: 96%;
+		p {
+			@include tablet-landscape-and-up {
+				margin: 20px 0;
+				max-width: 400px;
+			}
+			@media screen and (min-width: 1200px) {
+				max-width: 500px;
+			}
+		}
+	}
+}

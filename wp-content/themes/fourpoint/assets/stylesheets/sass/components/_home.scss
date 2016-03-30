@@ -1,0 +1,120 @@
+/* Home page slider sytles */
+.hero-slider {
+	height: 400px;
+	width: 100%;
+	overflow: hidden;
+	background-color: gray;
+	@include tablet-portrait-and-up {
+		height: 500px;
+	}
+	@include tablet-landscape-and-up {
+		height: 610px;
+	}
+	// img {
+	// 	// height: auto;
+	// 	display: block;
+	// 	position:relative;
+	// 	width: 100%;
+	// 	// height: 400px;
+	// 	top: 0;
+	// 	z-index: 999;
+	// 	left: 0;
+	// 	@include tablet-portrait-and-up {
+	// 		height: 100%;
+	// 	}
+	// }
+}
+
+.hero-slider-item {
+	position: relative;
+}
+
+.the-slide {	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 400px;
+	@include tablet-portrait-and-up {
+		height: 500px;
+	}
+	@include tablet-landscape-and-up {
+		height: 610px;
+	}
+}
+
+.hero-slider-copy {
+	color: $white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 96%;
+	text-align: center;
+	z-index: 1001;
+	@include transformT(translate(-50%, -50%));
+	@include tablet-portrait-and-up {
+		width: 80%;
+		top: 250px;
+	}
+	@include tablet-landscape-and-up {
+		width: 68%;
+		top: 330px;
+	}
+	p {
+		@include media(tablet) {
+			width: 75%;
+		}
+		font-size: 18px;
+		font-weight: bold;
+	}
+	h1 {
+		color: $white;
+		font-size: 4em;
+		line-height: 0.85;
+		@include tablet-landscape-and-up {
+			font-size: 6em;
+		}
+	}
+}
+
+.button {
+	display: inline-block;
+	@include first_btn;
+}
+
+.panel {
+	h1 {
+		color: $dark_gray;
+	}
+}
+
+.panel-gray {
+	background-color: $dark_gray;
+
+	h1, p {
+		color: $white;
+	}
+}
+
+.panel-white {
+	background-color: $white;
+}
+
+.panel-blue {
+	background-color: $fourpoint_blue;
+	color: $white;
+
+	h1 {
+		color: $white;
+	}
+}
+
+.home-img-full {
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.experience-img {
+	background-image: url(../img/map_perspective.jpg);
+}

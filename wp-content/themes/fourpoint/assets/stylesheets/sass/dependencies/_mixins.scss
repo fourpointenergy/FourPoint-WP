@@ -1,0 +1,111 @@
+
+@mixin bgCover {
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+@mixin transformT($var...) {
+    -webkit-transform: $var;
+    -moz-transform: $var;
+    -ms-transform: $var;
+    -o-transform: $var;
+    transform: $var;
+}
+
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin vertical-align {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin outer-container {
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin media($point) {
+  @if $point == tablet_large {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 480px)  { @content; }
+  }
+}
+
+// Everything above and including the tablet portrait
+@mixin tablet-portrait-and-up {
+  @media (min-width : $mq-tablet-portrait-and-up) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape-and-up {
+  @media (min-width : 1024px) {
+    @content;
+  }
+}
+
+@mixin third_btn {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	color: $fourpoint_blue;
+	padding: 0;
+	padding-left: 30px;
+	line-height: 12px;
+	position: relative;
+	font-weight: 700;
+	line-height: 22px;
+	display: block;
+	@include transition(color .3 ease);
+	&:before {
+		content: '';
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 0;
+		top: 0px;
+		@include transition(all .3 ease);
+		background: $fourpoint_blue url('/assets/img/icons/btn_arrows.svg') no-repeat center center;
+		border-radius: 50%;
+	}
+	&:hover {
+		color: $yellow;
+		&:before { 
+			background: $yellow url('/assets/img/icons/btn_arrows.svg') no-repeat center center;
+		}
+	}
+}
+
+@mixin first_btn {
+	background: $fourpoint_blue;
+	padding: 15px 30px;
+	border-radius: 2px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: $white;
+	margin: 0 auto;
+	display: block;
+	border: none;
+	cursor: pointer;
+	@include transition(background .3s ease);
+	&:hover {
+		background: darken($fourpoint_blue, 10%);
+	}
+}

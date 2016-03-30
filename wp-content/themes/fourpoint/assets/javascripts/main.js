@@ -141,7 +141,6 @@ $(document).ready(function() {
 
   $(window).on('resize', function() {
     if($(this).width() >= 1024) {
-      console.log('stuff')
       // if(menu.is(':hidden')) {
         menu.removeAttr('style');
       // } else {
