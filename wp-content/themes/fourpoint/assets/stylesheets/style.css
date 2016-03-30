@@ -46,8 +46,8 @@ strong {
     opacity: 1; } }
 @font-face {
   font-family: 'social_icons';
-  src: url("/assets/icon_font/icomoon.eot");
-  src: url("/assets/icon_font/icomoon.eot?#iefix") format("embedded-opentype"), url("/assets/icon_font/icomoon.woff") format("woff"), url("/assets/icon_font/icomoon.ttf") format("truetype"), url("/assets/icon_font/icomoon.svg#icomoon") format("svg");
+  src: url("/wp-content/themes/fourpoint/assets/icon_font/icomoon.eot");
+  src: url("/wp-content/themes/fourpoint/assets/icon_font/icomoon.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/fourpoint/assets/icon_font/icomoon.woff") format("woff"), url("/wp-content/themes/fourpoint/assets/icon_font/icomoon.ttf") format("truetype"), url("/wp-content/themes/fourpoint/assets/icon_font/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 *, *:before, *:after {
@@ -136,7 +136,7 @@ img {
     transition: background 0.3s ease; }
 
 nav {
-  background: #2e2e2d url("/assets/img/nav_bg_mobile_sm.jpg");
+  background: #2e2e2d url("/wp-content/themes/fourpoint/assets/images/nav_bg_mobile_sm.jpg");
   width: 100%;
   padding: 20px 0 10px;
   background-size: inherit;
@@ -149,7 +149,8 @@ nav {
   transition: padding 0.25s ease; }
   @media screen and (min-width: 800px) {
     nav {
-      background-size: 100%; } }
+      background-size: 100%;
+      background: #2e2e2d url("/wp-content/themes/fourpoint/assets/images/nav_bg_160.jpg"); } }
   nav section {
     max-width: 1100px;
     margin-left: auto;
@@ -513,7 +514,7 @@ header, .text-block {
   text-align: center; }
   @media (min-width: 1024px) {
     .alt_leader {
-      background: #eceae7 url("/assets/img/map_perspective.jpg") no-repeat right center;
+      background: #eceae7 url("/wp-content/themes/fourpoint/assets/img/map_perspective.jpg") no-repeat right center;
       background-size: 650px 443px; } }
   .alt_leader h1 {
     text-align: center; }

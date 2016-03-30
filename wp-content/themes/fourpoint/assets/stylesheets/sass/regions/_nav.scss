@@ -1,7 +1,5 @@
 nav {
-	// background: #000 url('/assets/img/nav_bg_160.jpg') no-repeat top center;
-	// background-size: 100% auto;
-	background: $dark_gray url('/assets/img/nav_bg_mobile_sm.jpg');
+	background: $dark_gray url('/wp-content/themes/fourpoint/assets/images/nav_bg_mobile_sm.jpg');
 	width: 100%;
 	padding: 20px 0 10px;
 	background-size: inherit;
@@ -9,9 +7,9 @@ nav {
 	background-position: top center;
 	background-attachment: fixed;
 	position: static;
-	// background-size: 100% auto;
 	@media screen and (min-width: 800px) {
 		background-size: 100%;
+		background: $dark_gray url('/wp-content/themes/fourpoint/assets/images/nav_bg_160.jpg');
 	}
 	@include transition(padding 0.25s ease);
 
