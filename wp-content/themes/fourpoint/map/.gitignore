@@ -1,5 +1,6 @@
 deploy/
 node_modules/
+resources
 
 #################
 ## Eclipse
