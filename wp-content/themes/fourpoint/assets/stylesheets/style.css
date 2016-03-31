@@ -858,28 +858,49 @@ header, .text-block {
     height: 100%;
     width: 45%;
     display: block;
-    position: absolute;
-    display: table-cell; }
+    position: absolute; }
+    @media (min-width: 768px) {
+      .team_profile header .team_title {
+        padding-left: 3%; } }
+    .team_profile header .team_title:after {
+      content: '';
+      width: 17%;
+      height: 100%;
+      position: absolute;
+      right: -8%;
+      top: 0;
+      -webkit-transform: skew(-10deg);
+      -moz-transform: skew(-10deg);
+      -ms-transform: skew(-10deg);
+      -o-transform: skew(-10deg);
+      transform: skew(-10deg);
+      display: none; }
+      @media (min-width: 768px) {
+        .team_profile header .team_title:after {
+          display: block; } }
     .team_profile header .team_title span {
-      right: 10%;
       display: block;
       text-align: left;
+      border: 1px solid red;
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
       -moz-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
       transform: translateY(-50%); }
       .team_profile header .team_title span h3 {
         color: #838383; }
+      @media screen and (max-width: 1030px) and (min-width: 768px) {
+        .team_profile header .team_title span h1 {
+          font-size: 2.1em; } }
   @media (max-width: 768px) {
     .team_profile header img {
       width: 115%;
       margin: 0 auto;
       padding: 0;
       float: none;
-      display: block;
-      margin-left: -15%; }
+      display: block; }
     .team_profile header .team_title {
       height: auto;
       width: 100%;
@@ -1620,7 +1641,7 @@ h1, h2, h3, h6 {
   line-height: 1.3em; }
 
 h1 {
-  font-size: 31px;
+  font-size: 30px;
   text-transform: uppercase; }
   @media (min-width: 768px) {
     h1 {

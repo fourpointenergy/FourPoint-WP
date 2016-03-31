@@ -21,14 +21,37 @@
             width: 45%;
             display: block;
             position: absolute;
-            display: table-cell;
+            @include tablet-portrait-and-up {
+                padding-left: 3%;
+            }
+            &:after {
+                content: '';
+                width: 17%;
+                height: 100%;
+                position: absolute;
+                right: -8%;
+                top: 0;
+                @include transform(skew(-10deg));
+                display: none;
+                @include tablet-portrait-and-up {
+                    display: block;
+                }
+            }
             span {
-                right: 10%;
                 display: block;
                 text-align: left;
-                @include vertical-align;
+                border: 1px solid red;
+                position: absolute;
+                top: 50%;
+                @include transform(translateY(-50%));
+
                 h3 {
                     color: darken($light_gray, 20%);
+                }
+                h1 {
+                    @media screen and (max-width: 1030px) and (min-width: 768px) {
+                        font-size: 2.1em;
+                    }
                 }
             }
         }
@@ -39,7 +62,7 @@
                 padding: 0;
                 float: none;
                 display: block;
-                margin-left: -15%;
+                // margin-left: -15%;
             }
             .team_title {
                 height: auto;
