@@ -1,0 +1,27 @@
+.affiliation_logos {
+	position: relative;
+	z-index: 103;
+	border-bottom: 1px solid #f0f0f0;
+	background: $fourpoint_blue;
+	@include clearfix;
+	.logo {
+		border: solid #a0bdc7;
+		border-width: 1px 0 0 1px;
+		float: left;
+		width: 33.33333333333333334%;
+		padding: 0;
+		img {
+			width: 100%;
+			max-width: 100%;
+			margin: 40px auto;
+			max-width: 160px;
+			height: auto;
+		}
+		@include media($tablet) {
+			width: 100%;
+		}
+	}
+	.last_logo {
+		width: 100%;
+	}
+}

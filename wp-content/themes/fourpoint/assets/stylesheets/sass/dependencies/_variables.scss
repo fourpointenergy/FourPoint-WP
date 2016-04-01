@@ -1,0 +1,15 @@
+$dark_gray: #2e2e2d;
+$medium_gray: #868586;
+$light_gray: #B6B6B6;
+$black: #000000;
+$white: #ffffff;
+$trans_white: rgba(255, 255, 255, 0.2);
+$trans_black: rgba(0, 0, 0, 0.5);
+$yellow: #ffc20e;
+$fourpoint_blue: #00a8e2;
+$form_fill: #ecece8;
+$tablet_large: new-breakpoint(max-width 1024px);
+$tablet: new-breakpoint(max-width 768px);
+$mobile: new-breakpoint(max-width 480px);
+$mq-tablet-portrait-and-up   : 768px !default;
+$tl: 0.6s; // SEARCH transition length

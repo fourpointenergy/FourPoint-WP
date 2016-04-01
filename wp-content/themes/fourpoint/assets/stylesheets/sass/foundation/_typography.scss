@@ -1,0 +1,91 @@
+h1, h2 {
+	color: $fourpoint_blue;
+}
+
+h1, h2, h3, h6 {
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  @include tablet-portrait-and-up {
+   font-size: 36px; 
+  }
+}
+
+h2 {
+  font-size: 20px;
+  @include tablet-portrait-and-up {
+    font-size: 24px;  
+  }
+}
+
+h3 {
+  font-size: 18px;
+  color: $medium_gray;
+  font-weight: 300;
+  @include tablet-portrait-and-up {
+    font-size: 22px;
+  }
+}
+
+ul, ol {
+  margin-left: 1.5em;
+  text-align: left;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  @include transition(color 0.2s ease);
+  &:hover, &:active {
+    color: $yellow;
+    text-decoration: none;
+  }
+  img {
+    border: none;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 20px auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  padding-left: 1em;
+  margin-left: 1em;
+  border-left: 1px solid #333333;
+  font-style: italic;
+}
+
+.social {
+  a {
+    font-family: 'social_icons';
+    font-size: 18px;
+    text-transform: none;
+  }
+}
+[data-icon]:before {
+  font-family: "social_icons";
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}

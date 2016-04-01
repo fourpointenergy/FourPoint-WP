@@ -1,0 +1,83 @@
+.grid {       
+    width: 100%;
+    ul {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        @include clearfix;
+        li {
+            width: 25%;
+            float: left;
+            display: block;
+            padding: 0;
+            margin: 0 auto;
+            @include media(tablet_large) {
+                width: 33.33333333337%
+            }
+            @include media(tablet) {
+                width: 50%
+            }
+            @include media(mobile) {
+                width: 100%
+            }
+            a {
+                display: block;
+                position: relative;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 100%;
+                }
+                div {
+                    position: absolute;
+                    bottom: 4%;
+                    margin-bottom: -40px;
+                    width: 100%;
+                    padding: 0 15px 10px;
+                    @include transition (all .4s ease);
+                    h4, p {
+                        padding: 0;
+                        margin: 0;
+                        font-family: 'Montserrat', sans-serif;
+                        color: $white !important;
+                        letter-spacing: 0;
+                    }
+                    h4 {
+                        font-size: 1.7em;
+                    }
+                    span {
+                        @include third_btn;
+                        background: none;
+                        opacity: 0;
+                        display: block;
+                        margin-top: 5px;
+                        @include transition(opacity .3s ease .3s);
+                    }
+                }
+                span {
+                    position: absolute;
+                    width: 100%;
+                    padding: 10px 15px;
+                    top: 70%;
+                    height: 130%;
+                    @include transition (all .3s ease);
+                    @include background-image(linear-gradient(transparent 0, rgba(0,0,0,.8) 20%, rgba(0,0,0,.8) 100%));
+                }
+                &:hover {
+                    span {
+                        top: -30%
+                    }
+                    div {
+                        bottom: 35%;
+                        span {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}

@@ -1,0 +1,43 @@
+.container {
+	width: 96%;
+	max-width: 1100px;
+	margin: 50px auto;
+	padding: 0px 10px;
+	display: table;
+}
+
+.wrapper {
+	@include tablet-landscape-and-up {
+		max-width: 850px;
+		margin: 0 auto;
+	}
+}
+
+.half-left {
+	width: 50%;
+	float: left;
+}
+
+.arve-wrapper {
+	margin: 40px 0;
+}
+
+.careers-intro {
+	max-width: 800px;
+	h2, p {
+		text-align: center;
+	}
+}
+
+.general-content {
+	ul {
+		margin-bottom: 20px;
+		li {
+			list-style-type: disc;
+			list-style-position: inside;
+		}
+	}
+	img {
+		margin: 20px auto;
+	}
+}

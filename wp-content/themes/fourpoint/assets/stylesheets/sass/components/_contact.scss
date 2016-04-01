@@ -1,0 +1,192 @@
+#form-error-msg {
+	color: red;
+	display: none;
+	margin-bottom: 10px;
+}
+
+.select-dept-label {
+	margin-bottom: 10px;
+	width: 100%;
+	display: inline-block;
+}
+
+.general-form {
+	width: 100%;
+	@include tablet-portrait-and-up {
+		float: left;
+		width: 50%;
+	}
+
+	button {
+		margin: 0 auto 20px;
+	}
+
+	.contact-form-header {
+		text-align: center;
+		margin: 20px 0;
+		text-transform: uppercase;
+	}
+}
+
+.emergency-contact-num {
+	width: 100%;
+	background-color: $fourpoint_blue;
+	padding: 10px 0;
+	.container {
+		margin: 0 auto;
+	}
+	h2 {
+		color: $white;
+		text-align: center;
+		text-transform: uppercase;
+		@include tablet-portrait-and-up {
+			float: left;
+		}
+	}
+	a {
+		font-size: 20px;
+		line-height: 1.3;
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+		@include tablet-portrait-and-up {
+			float: right;
+			font-size: 24px;
+			margin: 0;
+		}
+	}
+}
+
+.sidebar {
+	width: 100%;
+	margin-top: 60px;
+	@include tablet-portrait-and-up {
+		float: left;
+		width: 50%;	
+		margin: 0;
+	}
+	h2 {
+		text-align: center;
+		margin: 20px 0 10px;
+		text-transform: uppercase;
+	}
+	article a {
+		// text-align: center;
+	}
+
+	.copy_split {
+		margin: 0;
+		.side-content {
+			width: 100%;
+			padding: 12px 0;
+			aside {
+				width: 100%;
+				p {
+					margin: 5px 0;
+					padding-left: 0;
+					text-align: center;
+					&:before {
+						content: none;
+					}
+				}
+			}
+			article {
+				width: 100%;
+				padding: 0 70px;
+				text-align: center;
+				a {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+.card {
+	width: 90%;
+	max-width: 450px;
+	margin: 20px auto;
+	padding-bottom: 20px;
+	text-align: center;
+	@include tablet-portrait-and-up {
+		width: 63%;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.card-bottom {
+	margin-top: -40px;
+	background-color: $form_fill;
+	z-index: 3;
+	position: relative;
+	padding-bottom: 22px;
+
+	p {
+		padding: 0 15px;
+		margin: 10px 0 25px;
+		line-height: 1.25;
+	}
+
+	h3 {
+		text-transform: uppercase;
+		color: $fourpoint_blue;
+	}
+
+	.inner {
+		width: 96%;
+		margin: 15px auto 0;
+		display: inline-block;
+	}
+}
+
+
+
+/* MAP Area styles */
+.map-block {
+	background-color: $dark_gray;
+	.map-address, .google-map {
+		width: 100%;
+		overflow: hidden;
+		height: 350px;
+		@include tablet-portrait-and-up {
+			width: 50%;
+			float: left;
+		}
+	}
+	.google-map {
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.blue-block {
+	background-color: $fourpoint_blue;
+	@include tablet-portrait-and-up {
+		float: right !important;
+	}
+}
+
+.map-address {
+	color: $white;
+	position: relative;
+	.inner {
+		width: 80%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		@include transform(translate(-50%, -50%));
+
+		p {
+			margin: 5px 0;
+		}
+	}
+
+	h3 {
+		color: $white;
+	}
+	
+}
