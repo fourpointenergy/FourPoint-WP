@@ -91,717 +91,717 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/images\/affiliation_logos\/AAPG_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/AAPG_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 96519,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/AAPG_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/AAPG_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/AAPG_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/AAPG_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/AAPL_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/AAPL_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 15729,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/AAPL_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/AAPL_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/AAPL_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/AAPL_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/AICPA_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/AICPA_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 10922,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/AICPA_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/AICPA_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/AICPA_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/AICPA_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/COPAS_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/COPAS_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 35414,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/COPAS_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/COPAS_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/COPAS_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/COPAS_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/DAPL_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/DAPL_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 129368,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/DAPL_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/DAPL_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/DAPL_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/DAPL_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/IADC_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/IADC_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 11728,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/IADC_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/IADC_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/IADC_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/IADC_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/IPAA_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/IPAA_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 25472,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/IPAA_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/IPAA_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/IPAA_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/IPAA_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/PPROA_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/PPROA_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 20984,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/PPROA_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/PPROA_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/PPROA_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/PPROA_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/RMAG_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/RMAG_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 122700,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/RMAG_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/RMAG_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/RMAG_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/RMAG_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/spe_logo.png": {
+	"\/assets\/img\/affiliation_logos\/spe_logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 34052,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/spe_logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/spe_logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/spe_logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/spe_logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/TIPRO_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/TIPRO_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 18921,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/TIPRO_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/TIPRO_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/TIPRO_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/TIPRO_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/WEA_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/WEA_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 16325,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/WEA_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/WEA_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/WEA_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/WEA_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/affiliation_logos\/YPE_Logo.png": {
+	"\/assets\/img\/affiliation_logos\/YPE_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 29083,
-		"inputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/YPE_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/affiliation_logos\/YPE_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/YPE_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/affiliation_logos\/YPE_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/bg_texture.jpg": {
+	"\/assets\/img\/bg_texture.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 7067,
-		"inputAbbreviatedPath": "\/assets\/images\/bg_texture.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/bg_texture.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/bg_texture.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/bg_texture.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/fourpoint-home.jpg": {
+	"\/assets\/img\/fourpoint-home.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 557394,
-		"inputAbbreviatedPath": "\/assets\/images\/fourpoint-home.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/fourpoint-home.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/fourpoint-home.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/fourpoint-home.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/FourPoint_Logo.png": {
+	"\/assets\/img\/FourPoint_Logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3794,
-		"inputAbbreviatedPath": "\/assets\/images\/FourPoint_Logo.png",
-		"outputAbbreviatedPath": "\/assets\/images\/FourPoint_Logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/FourPoint_Logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/FourPoint_Logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/history\/history_banner1.jpg": {
+	"\/assets\/img\/history\/history_banner1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 105821,
-		"inputAbbreviatedPath": "\/assets\/images\/history\/history_banner1.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/history\/history_banner1.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/history\/history_banner1.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/history\/history_banner1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/history\/history_banner2.jpg": {
+	"\/assets\/img\/history\/history_banner2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 80477,
-		"inputAbbreviatedPath": "\/assets\/images\/history\/history_banner2.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/history\/history_banner2.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/history\/history_banner2.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/history\/history_banner2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/history\/history_banner3.jpg": {
+	"\/assets\/img\/history\/history_banner3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 95106,
-		"inputAbbreviatedPath": "\/assets\/images\/history\/history_banner3.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/history\/history_banner3.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/history\/history_banner3.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/history\/history_banner3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/history\/history_banner4.jpg": {
+	"\/assets\/img\/history\/history_banner4.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 101083,
-		"inputAbbreviatedPath": "\/assets\/images\/history\/history_banner4.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/history\/history_banner4.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/history\/history_banner4.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/history\/history_banner4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/history\/history_banner5.jpg": {
+	"\/assets\/img\/history\/history_banner5.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 91701,
-		"inputAbbreviatedPath": "\/assets\/images\/history\/history_banner5.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/history\/history_banner5.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/history\/history_banner5.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/history\/history_banner5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/history\/history_banner6.jpg": {
+	"\/assets\/img\/history\/history_banner6.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 108616,
-		"inputAbbreviatedPath": "\/assets\/images\/history\/history_banner6.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/history\/history_banner6.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/history\/history_banner6.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/history\/history_banner6.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/history\/history_banner7.jpg": {
+	"\/assets\/img\/history\/history_banner7.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 83583,
-		"inputAbbreviatedPath": "\/assets\/images\/history\/history_banner7.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/history\/history_banner7.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/history\/history_banner7.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/history\/history_banner7.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/history\/history_banner_wide.jpg": {
+	"\/assets\/img\/history\/history_banner_wide.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 72848,
-		"inputAbbreviatedPath": "\/assets\/images\/history\/history_banner_wide.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/history\/history_banner_wide.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/history\/history_banner_wide.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/history\/history_banner_wide.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/home1-mobile.jpg": {
+	"\/assets\/img\/home1-mobile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 70326,
-		"inputAbbreviatedPath": "\/assets\/images\/home1-mobile.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/home1-mobile.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/home1-mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/home1-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/home1.jpg": {
+	"\/assets\/img\/home1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 180248,
-		"inputAbbreviatedPath": "\/assets\/images\/home1.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/home1.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/home1.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/home1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/home2-mobile.jpg": {
+	"\/assets\/img\/home2-mobile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 46294,
-		"inputAbbreviatedPath": "\/assets\/images\/home2-mobile.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/home2-mobile.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/home2-mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/home2-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/home2.jpg": {
+	"\/assets\/img\/home2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 193179,
-		"inputAbbreviatedPath": "\/assets\/images\/home2.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/home2.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/home2.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/home2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/home3-mobile.jpg": {
+	"\/assets\/img\/home3-mobile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 45636,
-		"inputAbbreviatedPath": "\/assets\/images\/home3-mobile.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/home3-mobile.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/home3-mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/home3-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/home3.jpg": {
+	"\/assets\/img\/home3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 178262,
-		"inputAbbreviatedPath": "\/assets\/images\/home3.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/home3.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/home3.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/home3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/home4-mobile.jpg": {
+	"\/assets\/img\/home4-mobile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 95533,
-		"inputAbbreviatedPath": "\/assets\/images\/home4-mobile.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/home4-mobile.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/home4-mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/home4-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/home4.jpg": {
+	"\/assets\/img\/home4.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 226944,
-		"inputAbbreviatedPath": "\/assets\/images\/home4.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/home4.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/home4.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/home4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/icons\/btn_arrows.png": {
+	"\/assets\/img\/icons\/btn_arrows.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 206,
-		"inputAbbreviatedPath": "\/assets\/images\/icons\/btn_arrows.png",
-		"outputAbbreviatedPath": "\/assets\/images\/icons\/btn_arrows.png",
+		"inputAbbreviatedPath": "\/assets\/img\/icons\/btn_arrows.png",
+		"outputAbbreviatedPath": "\/assets\/img\/icons\/btn_arrows.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/logo_icon.png": {
+	"\/assets\/img\/logo_icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2401,
-		"inputAbbreviatedPath": "\/assets\/images\/logo_icon.png",
-		"outputAbbreviatedPath": "\/assets\/images\/logo_icon.png",
+		"inputAbbreviatedPath": "\/assets\/img\/logo_icon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo_icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/map_perspective.jpg": {
+	"\/assets\/img\/map_perspective.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 184687,
-		"inputAbbreviatedPath": "\/assets\/images\/map_perspective.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/map_perspective.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/map_perspective.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/map_perspective.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/nav_bg.jpg": {
+	"\/assets\/img\/nav_bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 39170,
-		"inputAbbreviatedPath": "\/assets\/images\/nav_bg.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/nav_bg.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/nav_bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/nav_bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/nav_bg_160.jpg": {
+	"\/assets\/img\/nav_bg_160.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 30688,
-		"inputAbbreviatedPath": "\/assets\/images\/nav_bg_160.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/nav_bg_160.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/nav_bg_160.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/nav_bg_160.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/nav_bg_mobile.jpg": {
+	"\/assets\/img\/nav_bg_mobile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 62263,
-		"inputAbbreviatedPath": "\/assets\/images\/nav_bg_mobile.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/nav_bg_mobile.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/nav_bg_mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/nav_bg_mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/nav_bg_mobile_lg.jpg": {
+	"\/assets\/img\/nav_bg_mobile_lg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 70604,
-		"inputAbbreviatedPath": "\/assets\/images\/nav_bg_mobile_lg.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/nav_bg_mobile_lg.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/nav_bg_mobile_lg.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/nav_bg_mobile_lg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/nav_bg_mobile_sm.jpg": {
+	"\/assets\/img\/nav_bg_mobile_sm.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 93600,
-		"inputAbbreviatedPath": "\/assets\/images\/nav_bg_mobile_sm.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/nav_bg_mobile_sm.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/nav_bg_mobile_sm.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/nav_bg_mobile_sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/brad-marvin-full.jpg": {
+	"\/assets\/img\/team\/brad-marvin-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 103356,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/brad-marvin-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/brad-marvin-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/brad-marvin-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/brad-marvin-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/brad-marvin-thumb.jpg": {
+	"\/assets\/img\/team\/brad-marvin-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 45063,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/brad-marvin-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/brad-marvin-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/brad-marvin-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/brad-marvin-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/brendan-curran-full.jpg": {
+	"\/assets\/img\/team\/brendan-curran-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 100814,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/brendan-curran-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/brendan-curran-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/brendan-curran-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/brendan-curran-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/brendan-curran-thumb.jpg": {
+	"\/assets\/img\/team\/brendan-curran-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 40287,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/brendan-curran-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/brendan-curran-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/brendan-curran-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/brendan-curran-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/frank-nessinger-full.jpg": {
+	"\/assets\/img\/team\/frank-nessinger-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 109709,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/frank-nessinger-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/frank-nessinger-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/frank-nessinger-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/frank-nessinger-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/frank-nessinger-thumb.jpg": {
+	"\/assets\/img\/team\/frank-nessinger-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 43944,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/frank-nessinger-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/frank-nessinger-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/frank-nessinger-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/frank-nessinger-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/george-solich-full.jpg": {
+	"\/assets\/img\/team\/george-solich-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 106398,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/george-solich-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/george-solich-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/george-solich-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/george-solich-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/george-solich-thumb.jpg": {
+	"\/assets\/img\/team\/george-solich-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 55625,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/george-solich-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/george-solich-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/george-solich-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/george-solich-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/jacob-shumway-full.jpg": {
+	"\/assets\/img\/team\/jacob-shumway-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 96290,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/jacob-shumway-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/jacob-shumway-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/jacob-shumway-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/jacob-shumway-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/jacob-shumway-thumb.jpg": {
+	"\/assets\/img\/team\/jacob-shumway-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 47043,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/jacob-shumway-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/jacob-shumway-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/jacob-shumway-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/jacob-shumway-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/kamil-tazi-full.jpg": {
+	"\/assets\/img\/team\/kamil-tazi-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 116326,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/kamil-tazi-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/kamil-tazi-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/kamil-tazi-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/kamil-tazi-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/kamil-tazi-thumb.jpg": {
+	"\/assets\/img\/team\/kamil-tazi-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 54939,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/kamil-tazi-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/kamil-tazi-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/kamil-tazi-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/kamil-tazi-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/kevin-hehn-full.jpg": {
+	"\/assets\/img\/team\/kevin-hehn-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 106113,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/kevin-hehn-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/kevin-hehn-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/kevin-hehn-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/kevin-hehn-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/kevin-hehn-thumb.jpg": {
+	"\/assets\/img\/team\/kevin-hehn-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 44548,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/kevin-hehn-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/kevin-hehn-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/kevin-hehn-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/kevin-hehn-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/old\/george-solich-full.jpg": {
+	"\/assets\/img\/team\/old\/george-solich-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 85262,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/old\/george-solich-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/old\/george-solich-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/old\/george-solich-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/old\/george-solich-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/old\/george-solich-thumb.jpg": {
+	"\/assets\/img\/team\/old\/george-solich-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 19730,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/old\/george-solich-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/old\/george-solich-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/old\/george-solich-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/old\/george-solich-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/scott-goodwin-full.jpg": {
+	"\/assets\/img\/team\/scott-goodwin-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 91795,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/scott-goodwin-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/scott-goodwin-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/scott-goodwin-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/scott-goodwin-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/scott-goodwin-thumb.jpg": {
+	"\/assets\/img\/team\/scott-goodwin-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 46315,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/scott-goodwin-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/scott-goodwin-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/scott-goodwin-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/scott-goodwin-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/scott-haselwood-full.jpg": {
+	"\/assets\/img\/team\/scott-haselwood-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 107124,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/scott-haselwood-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/scott-haselwood-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/scott-haselwood-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/scott-haselwood-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/scott-haselwood-thumb.jpg": {
+	"\/assets\/img\/team\/scott-haselwood-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 51535,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/scott-haselwood-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/scott-haselwood-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/scott-haselwood-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/scott-haselwood-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/tad-herz-full.jpg": {
+	"\/assets\/img\/team\/tad-herz-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 104052,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/tad-herz-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/tad-herz-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/tad-herz-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/tad-herz-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/tad-herz-thumb.jpg": {
+	"\/assets\/img\/team\/tad-herz-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 50277,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/tad-herz-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/tad-herz-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/tad-herz-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/tad-herz-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/tony-cristelli-full.jpg": {
+	"\/assets\/img\/team\/tony-cristelli-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 111331,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/tony-cristelli-full.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/tony-cristelli-full.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/tony-cristelli-full.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/tony-cristelli-full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/team\/tony-cristelli-thumb.jpg": {
+	"\/assets\/img\/team\/tony-cristelli-thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 42486,
-		"inputAbbreviatedPath": "\/assets\/images\/team\/tony-cristelli-thumb.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/team\/tony-cristelli-thumb.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/team\/tony-cristelli-thumb.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/team\/tony-cristelli-thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/tree-test2.jpg": {
+	"\/assets\/img\/tree-test2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 41576,
-		"inputAbbreviatedPath": "\/assets\/images\/tree-test2.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/tree-test2.jpg",
+		"inputAbbreviatedPath": "\/assets\/img\/tree-test2.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/tree-test2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
