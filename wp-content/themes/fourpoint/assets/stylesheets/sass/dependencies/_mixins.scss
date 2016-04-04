@@ -82,13 +82,13 @@
 		left: 0;
 		top: 0px;
 		@include transition(all .3 ease);
-		background: $fourpoint_blue url('/assets/img/icons/btn_arrows.svg') no-repeat center center;
+		background: $fourpoint_blue url('/assets/images/icons/btn_arrows.svg') no-repeat center center;
 		border-radius: 50%;
 	}
 	&:hover {
 		color: $yellow;
 		&:before { 
-			background: $yellow url('/assets/img/icons/btn_arrows.svg') no-repeat center center;
+			background: $yellow url('/assets/images/icons/btn_arrows.svg') no-repeat center center;
 		}
 	}
 }

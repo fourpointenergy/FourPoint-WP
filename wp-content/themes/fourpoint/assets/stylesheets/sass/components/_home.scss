@@ -10,19 +10,6 @@
 	@include tablet-landscape-and-up {
 		height: 610px;
 	}
-	// img {
-	// 	// height: auto;
-	// 	display: block;
-	// 	position:relative;
-	// 	width: 100%;
-	// 	// height: 400px;
-	// 	top: 0;
-	// 	z-index: 999;
-	// 	left: 0;
-	// 	@include tablet-portrait-and-up {
-	// 		height: 100%;
-	// 	}
-	// }
 }
 
 .hero-slider-item {
@@ -50,7 +37,7 @@
 	width: 96%;
 	text-align: center;
 	z-index: 1001;
-	@include transformT(translate(-50%, -50%));
+	@include transform(translate(-50%, -50%));
 	@include tablet-portrait-and-up {
 		width: 80%;
 		top: 250px;
@@ -62,13 +49,15 @@
 	p {
 		@include media(tablet) {
 			width: 75%;
+			font-size: 15px;
+			line-height: 1.3em;
 		}
 		font-size: 18px;
 		font-weight: bold;
 	}
 	h1 {
 		color: $white;
-		font-size: 4em;
+		font-size: 3em;
 		line-height: 0.85;
 		@include tablet-landscape-and-up {
 			font-size: 6em;
