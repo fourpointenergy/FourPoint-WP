@@ -1,14 +1,14 @@
 .container {
 	width: 96%;
 	max-width: 1100px;
-	margin: 50px auto;
+	margin: 60px auto;
 	padding: 0px 10px;
 	display: table;
 }
 
 .wrapper {
 	@include tablet-landscape-and-up {
-		max-width: 850px;
+		max-width: 800px;
 		margin: 0 auto;
 	}
 	h3 {
@@ -16,7 +16,11 @@
 		margin-top: 2.5em;
 		font-weight: bold;
 		text-transform: uppercase;
+		&:first-child {
+			margin-top: 0;
+		}
 	}
+
 	h4 {
 		font-size: 19px;
 		font-weight: 300;
@@ -62,7 +66,20 @@
 			list-style-position: inside;
 		}
 	}
+	ol {
+		padding-left: 30px;
+		margin: 20px 0;
+	}
 	img {
 		margin: 20px auto;
+	}
+}
+
+.opp-contact {
+	float: left;
+	width: 49%;
+	margin: 40px 0;
+	&:nth-child(even) {
+		float: right;
 	}
 }
