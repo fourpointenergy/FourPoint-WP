@@ -1,15 +1,15 @@
 nav {
-	background: $dark_gray url('/wp-content/themes/fourpoint/assets/images/nav_bg_mobile_sm.jpg');
+	background-image: url('/wp-content/themes/fourpoint/assets/images/nav_bg_mobile_sm.jpg');
 	width: 100%;
 	padding: 20px 0 10px;
-	background-size: inherit;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-attachment: fixed;
+	background-color: $dark_gray;
 	position: static;
-	@media screen and (min-width: 800px) {
-		background-size: 100%;
-		background: $dark_gray url('/wp-content/themes/fourpoint/assets/images/nav_bg_160.jpg');
+	@media screen and (min-width: 1025px) {
+		background-size: cover;
+		background-image: url('/wp-content/themes/fourpoint/assets/images/nav_bg_160.jpg');
 	}
 	@include transition(padding 0.25s ease);
 
@@ -32,7 +32,7 @@ nav {
 	}
 
 	.no-svg .logo img {
-		background: url('/assets/img/FourPoint_Logo.png') no-repeat center center;
+		background: url('/assets/images/FourPoint_Logo.png') no-repeat center center;
 	}
 	.nav_wrap {
 		width: 100%;

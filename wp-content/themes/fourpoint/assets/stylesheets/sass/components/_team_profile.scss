@@ -35,12 +35,12 @@
                 display: none;
                 @include tablet-portrait-and-up {
                     display: block;
+                    background-color: #eceae7;
                 }
             }
             span {
                 display: block;
                 text-align: left;
-                border: 1px solid red;
                 position: absolute;
                 top: 50%;
                 @include transform(translateY(-50%));
@@ -92,6 +92,15 @@
         h3, p {
             padding: 0 40px;
             position: relative;
+        }
+        h3 {
+            p {
+                padding: 0;
+                letter-spacing: inherit;
+                line-height: 1.3em;
+                font-size: 22px;
+                font-family: 'Montserrat', sans-serif;
+            }
         }
         h3::after {
             content: '';

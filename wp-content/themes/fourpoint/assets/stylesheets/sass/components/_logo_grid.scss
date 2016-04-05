@@ -1,7 +1,6 @@
 .affiliation_logos {
 	position: relative;
 	z-index: 103;
-	border-bottom: 1px solid #f0f0f0;
 	background: $fourpoint_blue;
 	@include clearfix;
 	.logo {
@@ -20,8 +19,8 @@
 		@include media($tablet) {
 			width: 100%;
 		}
-	}
-	.last_logo {
-		width: 100%;
+		&:last-child {
+			width: 100%;
+		}
 	}
 }

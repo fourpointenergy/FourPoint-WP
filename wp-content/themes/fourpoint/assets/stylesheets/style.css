@@ -6,8 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  vertical-align: baseline;
-  list-style: none; }
+  vertical-align: baseline; }
 
 html {
   box-sizing: border-box; }
@@ -27,6 +26,9 @@ html {
 
 strong {
   font-weight: bold; }
+
+ul li {
+  list-style: none; }
 
 @-webkit-keyframes come-in {
   to {
@@ -136,21 +138,21 @@ img {
     transition: background 0.3s ease; }
 
 nav {
-  background: #2e2e2d url("/wp-content/themes/fourpoint/assets/images/nav_bg_mobile_sm.jpg");
+  background-image: url("/wp-content/themes/fourpoint/assets/images/nav_bg_mobile_sm.jpg");
   width: 100%;
   padding: 20px 0 10px;
-  background-size: inherit;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
-  background-attachment: fixed;
+  background-color: #2e2e2d;
   position: static;
   -webkit-transition: padding 0.25s ease;
   -moz-transition: padding 0.25s ease;
   transition: padding 0.25s ease; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1025px) {
     nav {
-      background-size: 100%;
-      background: #2e2e2d url("/wp-content/themes/fourpoint/assets/images/nav_bg_160.jpg"); } }
+      background-size: cover;
+      background-image: url("/wp-content/themes/fourpoint/assets/images/nav_bg_160.jpg"); } }
   nav section {
     max-width: 1100px;
     margin-left: auto;
@@ -168,7 +170,7 @@ nav {
       z-index: 12;
       position: relative; }
   nav .no-svg .logo img {
-    background: url("/assets/img/FourPoint_Logo.png") no-repeat center center; }
+    background: url("/assets/images/FourPoint_Logo.png") no-repeat center center; }
   nav .nav_wrap {
     width: 100%;
     position: relative;
@@ -501,10 +503,13 @@ footer {
         float: right; } }
 
 header, .text-block {
-  padding: 100px 0;
+  padding: 40px 0;
   text-align: center;
   background: #eceae7;
   width: 100%; }
+  @media (min-width: 768px) {
+    header, .text-block {
+      padding: 90px 0; } }
   header p, .text-block p {
     width: 90%;
     max-width: 500px; }
@@ -514,7 +519,7 @@ header, .text-block {
   text-align: center; }
   @media (min-width: 1024px) {
     .alt_leader {
-      background: #eceae7 url("/wp-content/themes/fourpoint/assets/img/map_perspective.jpg") no-repeat right center;
+      background: #eceae7 url("/wp-content/themes/fourpoint/assets/images/map_perspective.jpg") no-repeat right center;
       background-size: 650px 443px; } }
   .alt_leader h1 {
     text-align: center; }
@@ -538,7 +543,6 @@ header, .text-block {
 .affiliation_logos {
   position: relative;
   z-index: 103;
-  border-bottom: 1px solid #f0f0f0;
   background: #00a8e2; }
   .affiliation_logos:after {
     content: "";
@@ -556,8 +560,8 @@ header, .text-block {
       margin: 40px auto;
       max-width: 160px;
       height: auto; }
-  .affiliation_logos .last_logo {
-    width: 100%; }
+    .affiliation_logos .logo:last-child {
+      width: 100%; }
 
 .content_stack {
   width: 100%;
@@ -625,25 +629,25 @@ header, .text-block {
         -moz-transition: all 0.5s ease 0.4s;
         transition: all 0.5s ease 0.4s; }
     .content_stack li aside[data-bg="bg_1"] {
-      background: url("/assets/img/history/history_banner6.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner6.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_2"] {
-      background: url("/assets/img/history/history_banner5.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner5.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_3"] {
-      background: url("/assets/img/history/history_banner3.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner3.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_4"] {
-      background: url("/assets/img/history/history_banner4.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner4.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_5"] {
-      background: url("/assets/img/history/history_banner7.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner7.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_6"] {
-      background: url("/assets/img/history/history_banner1.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner1.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_7"] {
-      background: url("/assets/img/history/history_banner2.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner2.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li article {
       width: 57%;
@@ -680,7 +684,9 @@ header, .text-block {
           -ms-transform: none;
           -o-transform: none;
           transform: none;
-          padding: 60px 0; } }
+          padding: 60px 0; }
+      .content_stack li article {
+        padding: 40px 30px; } }
 
 .content_stack li:nth-child(even) aside {
   left: auto;
@@ -811,12 +817,12 @@ header, .text-block {
               -webkit-transition: all 0.3 ease;
               -moz-transition: all 0.3 ease;
               transition: all 0.3 ease;
-              background: #00a8e2 url("/assets/img/icons/btn_arrows.svg") no-repeat center center;
+              background: #00a8e2 url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
               border-radius: 50%; }
             .grid ul li a div span:hover {
               color: #ffc20e; }
               .grid ul li a div span:hover:before {
-                background: #ffc20e url("/assets/img/icons/btn_arrows.svg") no-repeat center center; }
+                background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center; }
         .grid ul li a span {
           position: absolute;
           width: 100%;
@@ -877,11 +883,11 @@ header, .text-block {
       display: none; }
       @media (min-width: 768px) {
         .team_profile header .team_title:after {
-          display: block; } }
+          display: block;
+          background-color: #eceae7; } }
     .team_profile header .team_title span {
       display: block;
       text-align: left;
-      border: 1px solid red;
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -928,6 +934,12 @@ header, .text-block {
   .team_profile article h3, .team_profile article p {
     padding: 0 40px;
     position: relative; }
+  .team_profile article h3 p {
+    padding: 0;
+    letter-spacing: inherit;
+    line-height: 1.3em;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif; }
   .team_profile article h3::after {
     content: '';
     position: absolute;
@@ -1083,12 +1095,12 @@ header, .text-block {
           -webkit-transition: all 0.3 ease;
           -moz-transition: all 0.3 ease;
           transition: all 0.3 ease;
-          background: #00a8e2 url("/assets/img/icons/btn_arrows.svg") no-repeat center center;
+          background: #00a8e2 url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
           border-radius: 50%; }
         .copy_split .side-content article a:hover {
           color: #ffc20e; }
           .copy_split .side-content article a:hover:before {
-            background: #ffc20e url("/assets/img/icons/btn_arrows.svg") no-repeat center center; }
+            background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center; }
     @media (max-width: 768px) {
       .copy_split .side-content article, .copy_split .side-content aside {
         width: 100%;
@@ -1148,10 +1160,12 @@ header, .text-block {
     font-weight: bold; }
     @media (max-width: 768px) {
       .hero-slider-copy p {
-        width: 75%; } }
+        width: 75%;
+        font-size: 15px;
+        line-height: 1.3em; } }
   .hero-slider-copy h1 {
     color: #ffffff;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 0.85; }
     @media (min-width: 1024px) {
       .hero-slider-copy h1 {
@@ -1316,11 +1330,11 @@ header, .text-block {
   display: none; }
 
 .slick-loading .slick-list {
-  background: #fff slick-image-url("../img/ajax-loader.gif") center center no-repeat; }
+  background: #fff slick-image-url("/wp-content/uploads/2016/04/ajax-loader.gif") center center no-repeat; }
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./../img/ajax-loader.gif") center center no-repeat; }
+  background: #fff url("./../images/ajax-loader.gif") center center no-repeat; }
 
 /* Arrows */
 .slick-prev,
@@ -1383,10 +1397,10 @@ header, .text-block {
     left: auto;
     right: 25px; }
   .slick-prev:before {
-    content: url("../img/icons/icon-arrow-left-small.svg"); }
+    content: url("/wp-content/uploads/2016/04/icon-arrow-left-small.png"); }
     @media (min-width: 1024px) {
       .slick-prev:before {
-        content: url("../img/icons/icon-arrow-left.svg"); } }
+        content: url("/wp-content/uploads/2016/04/icon-arrow-left.png"); } }
 
 .slick-next {
   right: -20px; }
@@ -1394,10 +1408,10 @@ header, .text-block {
     .slick-next {
       right: 25px; } }
   .slick-next:before {
-    content: url("../img/icons/icon-arrow-right-small.svg"); }
+    content: url("/wp-content/uploads/2016/04/icon-arrow-right-small.png"); }
     @media (min-width: 1024px) {
       .slick-next:before {
-        content: url("../img/icons/icon-arrow-right.svg"); } }
+        content: url("/wp-content/uploads/2016/04/icon-arrow-right.png"); } }
 
 /* Dots */
 .slick-dots {
@@ -1463,6 +1477,25 @@ header, .text-block {
   .wrapper {
     max-width: 850px;
     margin: 0 auto; } }
+.wrapper h3 {
+  color: #00a8e2;
+  margin-top: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase; }
+.wrapper h4 {
+  font-size: 19px;
+  font-weight: 300;
+  margin-top: 50px; }
+.wrapper a {
+  color: #00a8e2; }
+  .wrapper a:hover {
+    color: #ffc20e; }
+.wrapper li {
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 300;
+  text-indent: -20px;
+  padding-left: 20px; }
 
 .half-left {
   width: 50%;
@@ -1477,7 +1510,8 @@ header, .text-block {
     text-align: center; }
 
 .general-content ul {
-  margin-bottom: 20px; }
+  margin: 20px 0;
+  padding-left: 15px; }
   .general-content ul li {
     list-style-type: disc;
     list-style-position: inside; }
@@ -1835,7 +1869,7 @@ aside.login-card {
         top: 0px;
         border-radius: 50%;
         opacity: 0;
-        background: #ffc20e url("/assets/img/icons/btn_arrows.svg") no-repeat center center;
+        background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
         -webkit-transition: 0.25s ease;
         -moz-transition: 0.25s ease;
         transition: 0.25s ease; }
@@ -1856,7 +1890,7 @@ aside.login-card {
   position: relative; }
   .single-video a:before {
     position: absolute;
-    content: url(/assets/img/icons/icon-play.png);
+    content: url(/assets/images/icons/icon-play.png);
     top: 50%;
     left: 50%;
     z-index: 1;
@@ -1882,14 +1916,14 @@ aside.login-card {
   @media (min-width: 768px) {
     .gallery:before {
       display: block;
-      content: url(/assets/img/icons/arrow-left.png);
+      content: url(/assets/images/icons/arrow-left.png);
       left: calc(32px + 2.5em); } }
 .gallery:after {
   display: none; }
   @media (min-width: 768px) {
     .gallery:after {
       display: block;
-      content: url(/assets/img/icons/arrow-right.png);
+      content: url(/assets/images/icons/arrow-right.png);
       right: calc(20px - 2.5em); } }
 
 .gallery-filter {
