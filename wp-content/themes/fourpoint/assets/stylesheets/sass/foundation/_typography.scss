@@ -72,13 +72,13 @@ blockquote {
   font-style: italic;
 }
 
-.social {
-  a {
-    font-family: 'social_icons';
-    font-size: 18px;
-    text-transform: none;
-  }
-}
+// .social {
+//   a {
+//     font-family: 'social_icons';
+//     font-size: 18px;
+//     text-transform: none;
+//   }
+// }
 [data-icon]:before {
   font-family: "social_icons";
   content: attr(data-icon);

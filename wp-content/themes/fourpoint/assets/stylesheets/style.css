@@ -1505,7 +1505,7 @@ header, .text-block {
     margin: 0 auto; } }
 .wrapper h3 {
   color: #00a8e2;
-  margin-top: 2.5em;
+  margin-top: 3.5em;
   font-weight: bold;
   text-transform: uppercase; }
   .wrapper h3:first-child {
@@ -1538,7 +1538,7 @@ header, .text-block {
     text-align: center; }
 
 .general-content ul {
-  margin: 20px 0;
+  margin: 30px 0 20px;
   padding-left: 15px; }
   .general-content ul li {
     list-style-type: disc;
@@ -1547,7 +1547,21 @@ header, .text-block {
   padding-left: 30px;
   margin: 20px 0; }
 .general-content img {
-  margin: 20px auto; }
+  margin: 20px auto;
+  height: auto !important; }
+.general-content .aligncenter {
+  margin: 50px auto; }
+@media (min-width: 768px) {
+  .general-content .alignright {
+    float: right;
+    padding: 0 20px 20px;
+    margin: 0 0 0 30px; } }
+@media (min-width: 768px) {
+  .general-content .alignleft {
+    float: left;
+    padding: 0 36px 36px 0;
+    margin: 20px 60px 30px 0;
+    width: auto !important; } }
 
 .opp-contact {
   float: left;
@@ -1766,11 +1780,6 @@ blockquote {
   margin-left: 1em;
   border-left: 1px solid #333333;
   font-style: italic; }
-
-.social a {
-  font-family: 'social_icons';
-  font-size: 18px;
-  text-transform: none; }
 
 [data-icon]:before {
   font-family: "social_icons";
