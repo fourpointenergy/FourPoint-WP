@@ -267,6 +267,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/fpo300x300.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1839,
+		"inputAbbreviatedPath": "\/assets\/images\/fpo300x300.png",
+		"outputAbbreviatedPath": "\/assets\/images\/fpo300x300.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/fpo450x450.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3621,
+		"inputAbbreviatedPath": "\/assets\/images\/fpo450x450.png",
+		"outputAbbreviatedPath": "\/assets\/images\/fpo450x450.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/fpo800x450.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4102,
+		"inputAbbreviatedPath": "\/assets\/images\/fpo800x450.png",
+		"outputAbbreviatedPath": "\/assets\/images\/fpo800x450.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/history\/history_banner1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -454,6 +487,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/icons\/icon-arrow-left-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 631,
+		"inputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-left-small.png",
+		"outputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-left-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/icons\/icon-arrow-left.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1324,
+		"inputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-left.png",
+		"outputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-left.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/icons\/icon-arrow-right-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 628,
+		"inputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-right-small.png",
+		"outputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-right-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/icons\/icon-arrow-right.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1265,
+		"inputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-right.png",
+		"outputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-right.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/logo_icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -527,6 +604,17 @@
 		"initialSize": 93600,
 		"inputAbbreviatedPath": "\/assets\/images\/nav_bg_mobile_sm.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/nav_bg_mobile_sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/nav_bg_mobile_sm2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85187,
+		"inputAbbreviatedPath": "\/assets\/images\/nav_bg_mobile_sm2.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/nav_bg_mobile_sm2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
