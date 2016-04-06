@@ -161,14 +161,16 @@
 			height: 100%;
 		}
 	}
-}
-
-.blue-block {
-	background-color: $fourpoint_blue;
-	@include tablet-portrait-and-up {
-		float: right !important;
+	&:nth-child(even) {
+		.map-address {
+			background-color: $fourpoint_blue;
+			@include tablet-portrait-and-up {
+				float: right !important;
+			}
+		}
 	}
 }
+
 
 .map-address {
 	color: $white;
@@ -188,5 +190,4 @@
 	h3 {
 		color: $white;
 	}
-	
 }
