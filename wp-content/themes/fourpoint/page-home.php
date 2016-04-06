@@ -19,66 +19,34 @@ get_header(); ?>
 			</div>
 		</div>
   <?php endwhile; ?>
-<!--
-		<div class="hero-slider-item hero-slider-item-2	">
-			<div class="the-slide" data-img-sm="<?php $theme->images_path() ?>/home2-mobile.jpg" data-img-lg="<?php $theme->images_path() ?>/home2.jpg">
-				<div class="hero-slider-copy">
-					<h1>Experience Intro</h1>
-					<p>Green juice eiusmod celiac cray mumblecore. Enim drinking vinegar plaid id, officia nostrud wayfarers flexitarian knausgaard. Mustache drinking vinegar bitters beard.</p>
-					<button type="button" class="button btn-blue">Read Our History</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="hero-slider-item hero-slider-item-3">
-			<div class="the-slide" data-img-sm="<?php $theme->images_path() ?>/home3-mobile.jpg" data-img-lg="<?php $theme->images_path() ?>/home3.jpg">
-				<div class="hero-slider-copy">
-					<h1>Experience Intro</h1>
-					<p>Green juice eiusmod celiac cray mumblecore. Enim drinking vinegar plaid id, officia nostrud wayfarers flexitarian knausgaard. Mustache drinking vinegar bitters beard.</p>
-					<button type="button" class="button btn-blue">Read Our History</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="hero-slider-item hero-slider-item-4">
-			<div class="the-slide" data-img-sm="<?php $theme->images_path() ?>/home4-mobile.jpg" data-img-lg="<?php $theme->images_path() ?>/home4.jpg">
-				<div class="hero-slider-copy">
-					<h1>Experience Intro</h1>
-					<p>Green juice eiusmod celiac cray mumblecore. Enim drinking vinegar plaid id, officia nostrud wayfarers flexitarian knausgaard. Mustache drinking vinegar bitters beard.</p>
-					<button type="button" class="button btn-blue">Read Our History</button>
-				</div>
-			</div>
-		</div> -->
-
 	</div>
 <?php endif; ?>
-	<section class="text-block panel panel-white">
-		<h1><?php the_field('section_1_title'); ?></h1>
-		<?php the_field('section_1_content'); ?>
+<div class="panels">
+<?php
+$counter = 1;
+    if( have_rows('home_sections') ) while( have_rows('home_sections') ): the_row(); ?>
+	<section class="panel">
+    <?php if( (get_sub_field('section_image')) && ($counter > 1) ) {?>
+      <div class="panel-bg" style="background-image:url('<?php the_sub_field('section_image') ?>')"></div>
+    <?php } ?>
+    <div class="text-block">
+      <?php
+      //determine button class based on being #2 or #3 in a series of 3
+      $btn_class = "";
+      if( ($counter % 3 == 0) || ($counter % 3 == 2) ) {
+        $btn_class = " btn-white";
+      }
+      echo($counter % 3);
+      ?>
+		    <h1><?php the_sub_field('section_title') ?></h1>
+		<?php the_sub_field('section_content'); ?>
+    <?php if( get_sub_field('section_button_link') ) { ?>
+      <a href="<?php the_sub_field('section_button_link'); ?>" class="button<?php echo $btn_class ?>"<?php if( get_sub_field('section_button_new_window') ) { ?> target="_blank"<?php } ?>><?php the_sub_field('section_button_text'); ?></a>
+    <?php } ?>
+    </div>
 	</section>
-
-	<div class="home-img-full experience-img"></div>
-
-	<section class="text-block panel panel-blue">
-		<h1><?php the_field('section_2_title'); ?></h1>
-		<?php the_field('section_2_content'); ?>
-		<button type="button" class="button btn-white"><?php the_field('section_2_button_text'); ?></button>
-	</section>
-
-	<div class="home-img-full experience-img"></div>
-
-	<section class="text-block panel panel-gray">
-		<h1><?php the_field('section_3_title'); ?></h1>
-		<?php the_field('section_3_content'); ?>
-		<button type="button" class="button btn-white"><?php the_field('section_3_button_text'); ?></button>
-	</section>
-
-	<div class="home-img-full experience-img"></div>
-
-	<section class="text-block panel panel-white">
-		<h1><?php the_field('section_4_title'); ?></h1>
-		<?php the_field('section_4_content'); ?>
-		<button type="button" class="button btn-blue"><?php the_field('section_4_button_text'); ?></button>
-	</section>
+<?php $counter++;
+  endwhile; ?>
+</div>
 <?php endwhile;// end of the loop. ?>
 <?php get_footer(); ?>

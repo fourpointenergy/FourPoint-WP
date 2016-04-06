@@ -170,7 +170,7 @@ nav {
       z-index: 12;
       position: relative; }
   nav .no-svg .logo img {
-    background: url("/assets/images/FourPoint_Logo.png") no-repeat center center; }
+    background: url("../images/FourPoint_Logo.png") no-repeat center center; }
   nav .nav_wrap {
     width: 100%;
     position: relative;
@@ -629,25 +629,25 @@ header, .text-block {
         -moz-transition: all 0.5s ease 0.4s;
         transition: all 0.5s ease 0.4s; }
     .content_stack li aside[data-bg="bg_1"] {
-      background: url("/assets/images/history/history_banner6.jpg") no-repeat center center;
+      background: url("../images/history/history_banner6.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_2"] {
-      background: url("/assets/images/history/history_banner5.jpg") no-repeat center center;
+      background: url("../images/history/history_banner5.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_3"] {
-      background: url("/assets/images/history/history_banner3.jpg") no-repeat center center;
+      background: url("../images/history/history_banner3.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_4"] {
-      background: url("/assets/images/history/history_banner4.jpg") no-repeat center center;
+      background: url("../images/history/history_banner4.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_5"] {
-      background: url("/assets/images/history/history_banner7.jpg") no-repeat center center;
+      background: url("../images/history/history_banner7.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_6"] {
-      background: url("/assets/images/history/history_banner1.jpg") no-repeat center center;
+      background: url("../images/history/history_banner1.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_7"] {
-      background: url("/assets/images/history/history_banner2.jpg") no-repeat center center;
+      background: url("../images/history/history_banner2.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li article {
       width: 57%;
@@ -817,12 +817,12 @@ header, .text-block {
               -webkit-transition: all 0.3 ease;
               -moz-transition: all 0.3 ease;
               transition: all 0.3 ease;
-              background: #00a8e2 url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
+              background: #00a8e2 url("../images/icons/btn_arrows.svg") no-repeat center center;
               border-radius: 50%; }
             .grid ul li a div span:hover {
               color: #ffc20e; }
               .grid ul li a div span:hover:before {
-                background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center; }
+                background: #ffc20e url("../images/icons/btn_arrows.svg") no-repeat center center; }
         .grid ul li a span {
           position: absolute;
           width: 100%;
@@ -1095,12 +1095,12 @@ header, .text-block {
           -webkit-transition: all 0.3 ease;
           -moz-transition: all 0.3 ease;
           transition: all 0.3 ease;
-          background: #00a8e2 url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
+          background: #00a8e2 url("../images/icons/btn_arrows.svg") no-repeat center center;
           border-radius: 50%; }
         .copy_split .side-content article a:hover {
           color: #ffc20e; }
           .copy_split .side-content article a:hover:before {
-            background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center; }
+            background: #ffc20e url("../images/icons/btn_arrows.svg") no-repeat center center; }
     @media (max-width: 768px) {
       .copy_split .side-content article, .copy_split .side-content aside {
         width: 100%;
@@ -1869,7 +1869,7 @@ aside.login-card {
         top: 0px;
         border-radius: 50%;
         opacity: 0;
-        background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
+        background: #ffc20e url("../images/icons/btn_arrows.svg") no-repeat center center;
         -webkit-transition: 0.25s ease;
         -moz-transition: 0.25s ease;
         transition: 0.25s ease; }
@@ -1937,5 +1937,37 @@ aside.login-card {
   .gallery-filter p {
     text-align: center;
     font-weight: 700; }
+
+/* Styles to Fix Homepage */
+.panels section a.button {
+  display:inline-block;
+}
+.panels section .text-block {
+  background:transparent;
+}
+.panels section .panel-bg {
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.panels section:nth-child(3n+1) {
+  background-color: #fff;
+}
+.panels section:nth-child(3n+2) {
+  background-color: #00a8e2;
+  color: #fff;
+}
+.panels section:nth-child(3n+2) h1 {
+  color:#fff;
+}
+
+.panels section:nth-child(3n+0) {
+  background-color:#2e2e2d;
+  color:#fff;
+}
+.panels section:nth-child(3n+0) h1 {
+  color:#fff;
+}
 
 /*# sourceMappingURL=style.css.map */

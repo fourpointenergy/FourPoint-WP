@@ -21,8 +21,16 @@
    <div class="copy_split">
      <?php while ( $press_release_qry->have_posts() ) : $press_release_qry->the_post(); ?>
        	<div class="side-content">
-       		<aside><p><?php the_field('press_release_date') ?></p></aside>
-       		<article><p><?php the_title(); ?></p><a href="<?php the_permalink(); ?>">Read More</a></article>
+       		<aside><p><?php the_field('post_display_date') ?></p></aside>
+       		<article><p><?php the_title(); ?></p>
+            <?php if( !(get_field('dont_show_read_more_link')) ) : ?>
+              <?php if( get_field('external_link') ) { ?>
+            <a href="<?php the_field('external_link'); ?>" target="_blank">Read More</a>
+              <?php } else { ?>
+            <a href="<?php the_permalink(); ?>">Read More</a>
+              <?php } ?>
+            <?php endif; ?>
+          </article>
        	</div>
      <?php endwhile; ?>
    </div>
