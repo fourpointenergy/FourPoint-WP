@@ -1,6 +1,5 @@
 
 $(document).ready(function() {
-
 	// REPLACE SVG WITH PNG IF NO SUPPORT
 
 	if(!Modernizr.svg) {
@@ -122,7 +121,7 @@ $(document).ready(function() {
 
     // if one is open, then you click another one, close current and open new one.
     else if (navWrap.hasClass('expand_down') && $('.sub-menu').hasClass('show_submenu'))  {
-      console.log('close all')
+
       // close everything
       $('.sub-menu').removeClass('show_submenu').prev().removeClass('active');
       currentOpen.removeClass('show_submenu');

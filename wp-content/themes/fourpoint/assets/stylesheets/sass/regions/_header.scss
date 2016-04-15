@@ -1,8 +1,11 @@
 header, .text-block {
-	padding: 100px 0;
+	padding: 40px 0;
 	text-align: center;
 	background: #eceae7;
 	width: 100%;
+	@include tablet-portrait-and-up {
+		padding: 90px 0;
+	}
 	p {
 		width: 90%;
 		max-width: 500px;
@@ -13,7 +16,7 @@ header, .text-block {
 	background: #eceae7;
 	text-align: center;
 	@include tablet-landscape-and-up {
-		background: #eceae7 url('/wp-content/themes/fourpoint/assets/img/map_perspective.jpg') no-repeat right center;
+		background: #eceae7 url('/wp-content/themes/fourpoint/assets/images/map_perspective.jpg') no-repeat right center;
 		background-size: 650px 443px;
 	}
 	h1 {

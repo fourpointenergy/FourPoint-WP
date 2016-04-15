@@ -66,7 +66,7 @@
 				top: 0px;
 				border-radius: 50%;
 				opacity: 0;
-				background: #ffc20e url("/assets/img/icons/btn_arrows.svg") no-repeat center center;
+				background: #ffc20e url("../images/icons/btn_arrows.svg") no-repeat center center;
 				@include transition(0.25s ease);
 			}
 		}
@@ -90,7 +90,7 @@
 		position: relative;
 		&:before {
 			position: absolute;
-			content: url(/assets/img/icons/icon-play.png);
+			content: url(../images/icons/icon-play.png);
 			top: 50%;
 			left: 50%;
 			z-index: 1;
@@ -115,7 +115,7 @@
 		display: none;
 		@include tablet-portrait-and-up {
 			display: block;
-			content: url(/assets/img/icons/arrow-left.png);
+			content: url(../images/icons/arrow-left.png);
 			left: calc(32px + 2.5em);
 		}
 	}
@@ -124,7 +124,7 @@
 		display: none;
 		@include tablet-portrait-and-up {
 			display: block;
-			content: url(/assets/img/icons/arrow-right.png);
+			content: url(../images/icons/arrow-right.png);
 			right: calc(20px - 2.5em);
 		}
 	}

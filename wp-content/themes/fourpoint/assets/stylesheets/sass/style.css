@@ -136,7 +136,7 @@ img {
     transition: background 0.3s ease; }
 
 nav {
-  background: #2e2e2d url("/assets/img/nav_bg_mobile_sm.jpg");
+  background: #2e2e2d url("/assets/images/nav_bg_mobile_sm.jpg");
   width: 100%;
   padding: 20px 0 10px;
   background-size: inherit;
@@ -167,7 +167,7 @@ nav {
       z-index: 12;
       position: relative; }
   nav .no-svg .logo img {
-    background: url("/assets/img/FourPoint_Logo.png") no-repeat center center; }
+    background: url("/assets/images/FourPoint_Logo.png") no-repeat center center; }
   nav .nav_wrap {
     width: 100%;
     position: relative;
@@ -513,7 +513,7 @@ header, .text-block {
   text-align: center; }
   @media (min-width: 1024px) {
     .alt_leader {
-      background: #eceae7 url("/assets/img/map_perspective.jpg") no-repeat right center;
+      background: #eceae7 url("/assets/images/map_perspective.jpg") no-repeat right center;
       background-size: 650px 443px; } }
   .alt_leader h1 {
     text-align: center; }
@@ -624,25 +624,25 @@ header, .text-block {
         -moz-transition: all 0.5s ease 0.4s;
         transition: all 0.5s ease 0.4s; }
     .content_stack li aside[data-bg="bg_1"] {
-      background: url("/assets/img/history/history_banner6.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner6.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_2"] {
-      background: url("/assets/img/history/history_banner5.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner5.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_3"] {
-      background: url("/assets/img/history/history_banner3.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner3.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_4"] {
-      background: url("/assets/img/history/history_banner4.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner4.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_5"] {
-      background: url("/assets/img/history/history_banner7.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner7.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_6"] {
-      background: url("/assets/img/history/history_banner1.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner1.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_7"] {
-      background: url("/assets/img/history/history_banner2.jpg") no-repeat center center;
+      background: url("/assets/images/history/history_banner2.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li article {
       width: 57%;
@@ -812,12 +812,12 @@ header, .text-block {
               -webkit-transition: all 0.3 ease;
               -moz-transition: all 0.3 ease;
               transition: all 0.3 ease;
-              background: #00a8e2 url("/assets/img/icons/btn_arrows.svg") no-repeat center center;
+              background: #00a8e2 url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
               border-radius: 50%; }
             .grid ul li a div span:hover {
               color: #ffc20e; }
               .grid ul li a div span:hover:before {
-                background: #ffc20e url("/assets/img/icons/btn_arrows.svg") no-repeat center center; }
+                background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center; }
         .grid ul li a span {
           position: absolute;
           width: 100%;
@@ -1063,12 +1063,12 @@ header, .text-block {
           -webkit-transition: all 0.3 ease;
           -moz-transition: all 0.3 ease;
           transition: all 0.3 ease;
-          background: #00a8e2 url("/assets/img/icons/btn_arrows.svg") no-repeat center center;
+          background: #00a8e2 url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
           border-radius: 50%; }
         .copy_split .side-content article a:hover {
           color: #ffc20e; }
           .copy_split .side-content article a:hover:before {
-            background: #ffc20e url("/assets/img/icons/btn_arrows.svg") no-repeat center center; }
+            background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center; }
     @media (max-width: 768px) {
       .copy_split .side-content article, .copy_split .side-content aside {
         width: 100%;
@@ -1815,7 +1815,7 @@ aside.login-card {
         top: 0px;
         border-radius: 50%;
         opacity: 0;
-        background: #ffc20e url("/assets/img/icons/btn_arrows.svg") no-repeat center center;
+        background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
         -webkit-transition: 0.25s ease;
         -moz-transition: 0.25s ease;
         transition: 0.25s ease; }
@@ -1836,7 +1836,7 @@ aside.login-card {
   position: relative; }
   .single-video a:before {
     position: absolute;
-    content: url(/assets/img/icons/icon-play.png);
+    content: url(/assets/images/icons/icon-play.png);
     top: 50%;
     left: 50%;
     z-index: 1;
@@ -1862,14 +1862,14 @@ aside.login-card {
   @media (min-width: 768px) {
     .gallery:before {
       display: block;
-      content: url(/assets/img/icons/arrow-left.png);
+      content: url(/assets/images/icons/arrow-left.png);
       left: calc(32px + 2.5em); } }
 .gallery:after {
   display: none; }
   @media (min-width: 768px) {
     .gallery:after {
       display: block;
-      content: url(/assets/img/icons/arrow-right.png);
+      content: url(/assets/images/icons/arrow-right.png);
       right: calc(20px - 2.5em); } }
 
 .gallery-filter {

@@ -58,31 +58,31 @@
 			}
 		}
 		aside[data-bg="bg_1"]{
-		  background: url('/assets/img/history/history_banner6.jpg')no-repeat center center;
+		  background: url('../images/history/history_banner6.jpg')no-repeat center center;
 		  background-size: cover;
 		}
 		aside[data-bg="bg_2"]{
-		  background: url('/assets/img/history/history_banner5.jpg')no-repeat center center;
+		  background: url('../images/history/history_banner5.jpg')no-repeat center center;
 		  background-size: cover;
 		}
 		aside[data-bg="bg_3"]{
-		  background: url('/assets/img/history/history_banner3.jpg') no-repeat center center;
+		  background: url('../images/history/history_banner3.jpg') no-repeat center center;
 		  background-size: cover;
 		}
 		aside[data-bg="bg_4"]{
-		  background: url('/assets/img/history/history_banner4.jpg')no-repeat center center;
+		  background: url('../images/history/history_banner4.jpg')no-repeat center center;
 		  background-size: cover;
 		}
 		aside[data-bg="bg_5"]{
-		  background: url('/assets/img/history/history_banner7.jpg')no-repeat center center;
+		  background: url('../images/history/history_banner7.jpg')no-repeat center center;
 		  background-size: cover;
 		}
 		aside[data-bg="bg_6"]{
-		  background: url('/assets/img/history/history_banner1.jpg') no-repeat center center;
+		  background: url('../images/history/history_banner1.jpg') no-repeat center center;
 		  background-size: cover;
 		}
 		aside[data-bg="bg_7"]{
-		  background: url('/assets/img/history/history_banner2.jpg') no-repeat center center;
+		  background: url('../images/history/history_banner2.jpg') no-repeat center center;
 		  background-size: cover;
 		}
 		article {
@@ -121,6 +121,9 @@
 					@include transform(none);
 					padding: 60px 0;
 				}
+			}
+			article {
+				padding: 40px 30px;
 			}	
 		}
 	}

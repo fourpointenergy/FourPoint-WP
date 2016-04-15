@@ -1,6 +1,6 @@
 <?php
 /**
- * The loop that displays breweries
+ * The loop that displays press releases
  *
  */
 global $theme;
