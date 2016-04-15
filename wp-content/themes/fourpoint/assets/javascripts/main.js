@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 	// REPLACE SVG WITH PNG IF NO SUPPORT
 
@@ -16,6 +15,53 @@ $(document).ready(function() {
 			loader.css('opacity', 0);
 	});
 
+	// Home page slider init
+	$('.hero-slider').slick({
+		dots: true,
+		speed: 200
+	});
+
+	//init fancybox
+	$(".fancybox").fancybox({
+			padding: 0,
+			prevEffect: 'none',
+			nextEffect: 'none',
+			helpers: {
+				title: {
+					type: 'outside'
+				},
+				media: {},
+				thumbs: {
+					width: 80,
+					height: 50
+				}
+			}
+		});
+
+	// change slider images depending on screen sizes
+	var windowWidth = $(window).width();
+	var changeSliderImages = function(windowWidth) {
+		var $slides = $('.the-slide');
+
+		$slides.each(function(index, el) {
+			if(windowWidth >= 850) {
+				$(el).css({
+					'background-image': 'url(' + $(el).data('img-lg') + ')'
+				});
+			} else {
+				$(el).css({
+					'background-image': 'url(' + $(el).data('img-sm') + ')'
+				});
+			}
+		});
+	};
+
+	changeSliderImages(windowWidth);
+
+	$(window).on('resize', function(windowWidth) {
+		windowWidth = $(window).width();
+		changeSliderImages(windowWidth);
+	});
 
 	// TEST FOR TOUCH AND CSS ANIMATION, LOAD GSAP ANIMATION IF NOT
 

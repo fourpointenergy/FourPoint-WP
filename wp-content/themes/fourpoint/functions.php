@@ -155,6 +155,7 @@ class Fourpoint {
 			// STYLES
 			wp_enqueue_style($this->theme_name . '-styles', get_bloginfo('stylesheet_directory') . '/assets/stylesheets/style.css', false, $this->scripts_version, 'all');
 			wp_enqueue_style('lib-styles', get_bloginfo('stylesheet_directory') . '/assets/stylesheets/libs.css', false, $this->scripts_version, 'all');
+			wp_enqueue_style('fancybox', get_bloginfo('stylesheet_directory') . '/assets/fancybox/source/jquery.fancybox.css', false, $this->scripts_version, 'all');
 			wp_enqueue_style('fonts', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', false, '1.0', 'all');
 			// SCRIPTS
 			wp_deregister_script('jquery');
@@ -163,8 +164,13 @@ class Fourpoint {
 			/* wp_enqueue_script('fontawesome', "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", false); */
 			wp_enqueue_script('jquery');
 			wp_enqueue_script('libs', get_bloginfo('stylesheet_directory') . '/assets/javascripts/libs.js', array('jquery'), $this->scripts_version, true);
+<<<<<<< HEAD
 			wp_enqueue_script('nav', get_bloginfo('stylesheet_directory') . '/assets/javascripts/nav.js', array('jquery'), $this->scripts_version, true);
 			wp_enqueue_script($this->theme_name . '-site', get_bloginfo('stylesheet_directory') . '/assets/javascripts/main.js', array('jquery', 'libs', 'nav'), $this->scripts_version, true);
+=======
+			wp_enqueue_script('fancybox', get_bloginfo('stylesheet_directory') . '/assets/fancybox/source/jquery.fancybox.pack.js', array('jquery'), $this->scripts_version, true);
+			wp_enqueue_script($this->theme_name . '-site', get_bloginfo('stylesheet_directory') . '/assets/javascripts/main.js', array('jquery', 'libs'), $this->scripts_version, true);
+>>>>>>> develop
 		}
 	}
 
