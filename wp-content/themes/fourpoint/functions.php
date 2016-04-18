@@ -171,37 +171,6 @@ class Fourpoint {
 	 * Initialize custom post types.
 	 */
 	function init_custom_post_types() {
-		//CustomPostType
-		// $labels = array(
-		// 	'name' => 'CustomPostType',
-		// 	'singular_name' => 'CustomPostType',
-		// 	'add_new' => 'Add New CustomPostType',
-		// 	'add_new_item' => 'Add CustomPostType',
-		// 	'edit_item' => 'Edit CustomPostType',
-		// 	'new_item' => 'New CustomPostType',
-		// 	'all_items' => 'All CustomPostTypes',
-		// 	'view_item' => 'View CustomPostTypes',
-		// 	'search_items' => 'Search CustomPostTypes',
-		// 	'not_found' =>  'No customposttypes found',
-		// 	'not_found_in_trash' => 'No customposttypes found in Trash',
-		// 	'menu_name' => 'CustomPostTypes'
-		// );
-		// $args = array(
-		// 	'labels' => $labels,
-		// 	'public' => true,
-		// 	'publicly_queryable' => true,
-		// 	'show_ui' => true,
-		// 	'show_in_menu' => true,
-		// 	'query_var' => true,
-		// 	'rewrite' => array( 'slug' => 'customposttypes'),
-		// 	'capability_type' => 'post',
-		// 	'has_archive' => false,
-		// 	'hierarchical' => false,
-		// 	'menu_position' => 3,
-		// 	'supports' => array('title','editor','author')
-		// );
-		// register_post_type('customposttype', $args);
-
 		// Management Team
 		$labels = array(
 			'name' => 'Profile',
@@ -233,36 +202,36 @@ class Fourpoint {
 		);
 		register_post_type('management-team', $args);
 
-		//Events
-		// $labels = array(
-		// 	'name' => 'Event',
-		// 	'singular_name' => 'Event',
-		// 	'add_new' => 'Add New Event',
-		// 	'add_new_item' => 'Add Event',
-		// 	'edit_item' => 'Edit Event',
-		// 	'new_item' => 'New Event',
-		// 	'all_items' => 'All Events',
-		// 	'view_item' => 'View Events',
-		// 	'search_items' => 'Search Events',
-		// 	'not_found' =>  'No events found',
-		// 	'not_found_in_trash' => 'No events found in Trash',
-		// 	'menu_name' => 'Events'
-		// );
-		// $args = array(
-		// 	'labels' => $labels,
-		// 	'public' => true,
-		// 	'publicly_queryable' => true,
-		// 	'show_ui' => true,
-		// 	'show_in_menu' => true,
-		// 	'query_var' => true,
-		// 	'rewrite' => array( 'slug' => 'events'),
-		// 	'capability_type' => 'post',
-		// 	'has_archive' => false,
-		// 	'hierarchical' => false,
-		// 	'menu_position' => 3,
-		// 	'supports' => array('title','editor')
-		// );
-		// register_post_type('event', $args);
+		//FAQs
+		$labels = array(
+			'name' => 'FAQ',
+			'singular_name' => 'FAQ',
+			'add_new' => 'Add New FAQ',
+			'add_new_item' => 'Add FAQ',
+			'edit_item' => 'Edit FAQ',
+			'new_item' => 'New FAQ',
+			'all_items' => 'All FAQs',
+			'view_item' => 'View FAQs',
+			'search_items' => 'Search FAQs',
+			'not_found' =>  'No faqs found',
+			'not_found_in_trash' => 'No faqs found in Trash',
+			'menu_name' => 'FAQs'
+		);
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+			'publicly_queryable' => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'faqs'),
+			'capability_type' => 'post',
+			'has_archive' => false,
+			'hierarchical' => false,
+			'menu_position' => 3,
+			'supports' => array('title','editor')
+		);
+		register_post_type('faq', $args);
 
 		//Press Releases
 		$labels = array(
@@ -293,6 +262,98 @@ class Fourpoint {
 			'menu_position' => 3,
 		);
 		register_post_type('press-release', $args);
+
+		//Fourpoint Features
+		$labels = array(
+			'name' => 'Feature',
+			'singular_name' => 'Feature',
+			'add_new' => 'Add New Feature',
+			'add_new_item' => 'Add Feature',
+			'edit_item' => 'Edit Feature',
+			'new_item' => 'New Feature',
+			'all_items' => 'All Feature',
+			'view_item' => 'View Feature',
+			'search_items' => 'Search Features',
+			'not_found' =>  'No features found',
+			'not_found_in_trash' => 'No features found in Trash',
+			'menu_name' => 'Features'
+		);
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+			'publicly_queryable' => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'fourpoint-features'),
+			'capability_type' => 'post',
+			'has_archive' => false,
+			'hierarchical' => false,
+			'menu_position' => 3,
+		);
+		register_post_type('fourpoint-feature', $args);
+
+		//Company Updates
+		$labels = array(
+			'name' => 'Company Update',
+			'singular_name' => 'Company Update',
+			'add_new' => 'Add New Company Update',
+			'add_new_item' => 'Add Company Update',
+			'edit_item' => 'Edit Company Update',
+			'new_item' => 'New Company Update',
+			'all_items' => 'All Company Updates',
+			'view_item' => 'View Company Updates',
+			'search_items' => 'Search Company Updates',
+			'not_found' =>  'No company updates found',
+			'not_found_in_trash' => 'No company updates found in Trash',
+			'menu_name' => 'Company Updates'
+		);
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+			'publicly_queryable' => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'company updates'),
+			'capability_type' => 'post',
+			'has_archive' => false,
+			'hierarchical' => false,
+			'menu_position' => 3,
+			'supports' => array('title','editor')
+		);
+		register_post_type('company-update', $args);
+
+		//Gallery Sets
+		$labels = array(
+			'name' => 'Gallery Set',
+			'singular_name' => 'Gallery Set',
+			'add_new' => 'Add New Gallery Set',
+			'add_new_item' => 'Add Gallery Set',
+			'edit_item' => 'Edit Gallery Set',
+			'new_item' => 'New Gallery Set',
+			'all_items' => 'All Gallery Sets',
+			'view_item' => 'View Gallery Sets',
+			'search_items' => 'Search Gallery Sets',
+			'not_found' =>  'No gallery sets found',
+			'not_found_in_trash' => 'No gallery sets found in Trash',
+			'menu_name' => 'Gallery Sets'
+		);
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+			'publicly_queryable' => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'gallery-sets'),
+			'capability_type' => 'post',
+			'has_archive' => false,
+			'hierarchical' => false,
+			'menu_position' => 3,
+			'supports' => array('title','editor')
+		);
+		register_post_type('gallery-set', $args);
 	}
 
 	/**
