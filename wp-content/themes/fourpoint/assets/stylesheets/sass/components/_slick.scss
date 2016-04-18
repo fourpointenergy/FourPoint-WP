@@ -123,7 +123,7 @@ $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.75 !default;
 @include tablet-landscape-and-up {
     $slick-prev-character: url('../images/icons/icon-arrow-left.png');
-    $slick-next-character: url('../images/icons/icon-arrow-right.png');   
+    $slick-next-character: url('../images/icons/icon-arrow-right.png'); 
 }
 
 @function slick-image-url($url) {
@@ -163,21 +163,23 @@ $slick-opacity-not-active: 0.75 !default;
     cursor: pointer;
     background: transparent;
     width: 80px;
-    height: 105px;
+    // height: 105px;
     color: transparent;
     top: 50%;
     margin-top: -10px\9; /*lte IE 8*/
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%) scale(1);
+    -ms-transform: translate(0, -50%) scale(1);
+    transform: translate(0, -50%) scale(1);
     padding: 0;
     border: none;
     outline: none;
-    @include tablet-portrait-and-up {
-        top: 250px;
-    }
+    // @include tablet-portrait-and-up {
+    //     top: 250px;
+    // }
     @include tablet-landscape-and-up {
-        top: 330px;
+        -webkit-transform: translate(0, -50%) scale(0.75);
+        -ms-transform: translate(0, -50%) scale(0.75);
+        transform: translate(0, -50%) scale(0.75);
     }
     &:hover, &:focus {
         outline: none;
@@ -206,15 +208,17 @@ $slick-opacity-not-active: 0.75 !default;
     left: -20px;
     @include tablet-landscape-and-up {
         left: 25px;
+        // transform: scale(0.75);
+        // -webkit-transform: scale(0.75);
     }
     [dir="rtl"] & {
         left: auto;
         right: 25px;
     }
     &:before {
-        content: url('../images/icons/icon-arrow-left-small.png');;
+        content: url('../images/icons/icon-arrow-left-small.png');
         @include tablet-landscape-and-up {
-            content: url('../images/icons/icon-arrow-left.png');  
+            content: url('../images/icons/icon-arrow-left.png');
         }
     }
 }
@@ -223,6 +227,8 @@ $slick-opacity-not-active: 0.75 !default;
     right: -20px;
     @include tablet-landscape-and-up {
         right: 25px;
+        // transform: scale(0.75);
+        // -webkit-transform: scale(0.75);
     }
     &:before {
         content: url('../images/icons/icon-arrow-right-small.png');;

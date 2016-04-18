@@ -24,19 +24,22 @@ $(document).ready(function() {
 	// change slider images depending on screen sizes
 	var windowWidth = $(window).width();
 	var changeSliderImages = function(windowWidth) {
-		var $slides = $('.the-slide');
+		var $slidesMobile = $('.the-slide-mobile');
+		var $slideDesktop = $('.the-slide');
 
-		$slides.each(function(index, el) {
-			if(windowWidth >= 850) {
-				$(el).css({
-					'background-image': 'url(' + $(el).data('img-lg') + ')'
-				});
-			} else {
+		$slidesMobile.each(function(index, el) {
+			if(windowWidth <= 800) {
 				$(el).css({
 					'background-image': 'url(' + $(el).data('img-sm') + ')'
 				});
 			}
 		});
+
+		$slideDesktop.each(function(index, el) {
+			if(windowWidth >= 801) {
+				$(el).attr('src', $(el).data('img-lg'));
+			}
+		})
 	};
 
 	changeSliderImages(windowWidth);
