@@ -1,5 +1,5 @@
 nav {
-	background-image: url('../img/nav_bg_mobile_sm2.jpg');
+	background-image: url('../images/nav_bg_mobile_sm2.jpg');
 	width: 100%;
 	padding: 20px 0 10px;
 	background-size: 100%;
@@ -9,7 +9,7 @@ nav {
 	position: static;
 	@media screen and (min-width: 1025px) {
 		background-size: cover;
-		background-image: url('../img/nav_bg_160.jpg');
+		background-image: url('../images/nav_bg_160.jpg');
 	}
 	@include transition(padding 0.25s ease);
 
@@ -32,7 +32,7 @@ nav {
 	}
 
 	.no-svg .logo img {
-		background: url('../img/FourPoint_Logo.png') no-repeat center center;
+		background: url('../images/FourPoint_Logo.png') no-repeat center center;
 	}
 	.nav_wrap {
 		width: 100%;

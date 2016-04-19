@@ -39,7 +39,6 @@ $counter = 1;
       if( ($counter % 3 == 0) || ($counter % 3 == 2) ) {
         $btn_class = " btn-white";
       }
-      echo($counter % 3);
       ?>
 		    <h1><?php the_sub_field('section_title') ?></h1>
 		<?php the_sub_field('section_content'); ?>

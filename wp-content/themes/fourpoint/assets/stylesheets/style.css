@@ -138,7 +138,7 @@ img {
     transition: background 0.3s ease; }
 
 nav {
-  background-image: url("../img/nav_bg_mobile_sm2.jpg");
+  background-image: url("../images/nav_bg_mobile_sm2.jpg");
   width: 100%;
   padding: 20px 0 10px;
   background-size: 100%;
@@ -152,7 +152,7 @@ nav {
   @media screen and (min-width: 1025px) {
     nav {
       background-size: cover;
-      background-image: url("../img/nav_bg_160.jpg"); } }
+      background-image: url("../images/nav_bg_160.jpg"); } }
   nav section {
     max-width: 1100px;
     margin-left: auto;
@@ -170,7 +170,7 @@ nav {
       z-index: 12;
       position: relative; }
   nav .no-svg .logo img {
-    background: url("../img/FourPoint_Logo.png") no-repeat center center; }
+    background: url("../images/FourPoint_Logo.png") no-repeat center center; }
   nav .nav_wrap {
     width: 100%;
     position: relative;
@@ -801,12 +801,12 @@ header, .text-block {
               -webkit-transition: all 0.3 ease;
               -moz-transition: all 0.3 ease;
               transition: all 0.3 ease;
-              background: #00a8e2 url("../images/icons/btn_arrows.svg") no-repeat center center;
+              background: #00a8e2 url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
               border-radius: 50%; }
             .grid ul li a div span:hover {
               color: #ffc20e; }
               .grid ul li a div span:hover:before {
-                background: #ffc20e url("../images/icons/btn_arrows.svg") no-repeat center center; }
+                background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center; }
         .grid ul li a span {
           position: absolute;
           width: 100%;
@@ -1081,12 +1081,12 @@ header, .text-block {
           -webkit-transition: all 0.3 ease;
           -moz-transition: all 0.3 ease;
           transition: all 0.3 ease;
-          background: #00a8e2 url("../images/icons/btn_arrows.svg") no-repeat center center;
+          background: #00a8e2 url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
           border-radius: 50%; }
         .copy_split .side-content article a:hover {
           color: #ffc20e; }
           .copy_split .side-content article a:hover:before {
-            background: #ffc20e url("../images/icons/btn_arrows.svg") no-repeat center center; }
+            background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center; }
     @media (max-width: 768px) {
       .copy_split .side-content article, .copy_split .side-content aside {
         width: 100%;
@@ -1484,7 +1484,7 @@ header, .text-block {
     margin: 0 auto; } }
 .wrapper h3 {
   color: #00a8e2;
-  margin-top: 3.5em;
+  margin-top: 2.10em;
   font-weight: bold;
   text-transform: uppercase; }
   .wrapper h3:first-child {
@@ -1500,7 +1500,7 @@ header, .text-block {
 .wrapper li {
   font-size: 16px;
   line-height: 2;
-  font-weight: 300;
+  font-weight: 400;
   text-indent: -20px;
   padding-left: 20px; }
 
@@ -1519,16 +1519,17 @@ header, .text-block {
 .general-content ul {
   margin: 30px 0 20px;
   padding-left: 15px;
-  display: table; }
+  display: table;
+  font-family: 'Source Sans Pro', sans-serif; }
   .general-content ul li {
     list-style-type: disc;
     list-style-position: inside; }
 .general-content ol {
   padding-left: 30px;
-  margin: 20px 0; }
+  margin: 20px 0;
+  font-family: 'Source Sans Pro', sans-serif; }
 .general-content img {
-  margin: 20px auto;
-  height: auto !important; }
+  margin: 20px auto; }
 .general-content .aligncenter {
   margin: 50px auto; }
 @media (min-width: 768px) {
@@ -1539,9 +1540,7 @@ header, .text-block {
 @media (min-width: 768px) {
   .general-content .alignleft {
     float: left;
-    padding: 0 36px 36px 0;
-    margin: 20px 0 30px;
-    width: auto !important; } }
+    padding: 0 36px 36px 0; } }
 
 .opp-contact {
   float: left;
@@ -1747,13 +1746,10 @@ p {
   line-height: 1.5em;
   margin: 20px auto;
   font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: 1px; }
+  letter-spacing: 0.5px; }
 
 em {
   font-style: italic; }
-
-strong {
-  font-weight: bold; }
 
 blockquote {
   padding-left: 1em;
@@ -1963,37 +1959,5 @@ aside.login-card {
   .gallery-filter p {
     text-align: center;
     font-weight: 700; }
-
-/* Styles to Fix Homepage */
-.panels section a.button {
-  display:inline-block;
-}
-.panels section .text-block {
-  background:transparent;
-}
-.panels section .panel-bg {
-  height: 400px;
-  background-size: cover;
-  background-position: center center;
-}
-
-.panels section:nth-child(3n+1) {
-  background-color: #fff;
-}
-.panels section:nth-child(3n+2) {
-  background-color: #00a8e2;
-  color: #fff;
-}
-.panels section:nth-child(3n+2) h1 {
-  color:#fff;
-}
-
-.panels section:nth-child(3n+0) {
-  background-color:#2e2e2d;
-  color:#fff;
-}
-.panels section:nth-child(3n+0) h1 {
-  color:#fff;
-}
 
 /*# sourceMappingURL=style.css.map */
