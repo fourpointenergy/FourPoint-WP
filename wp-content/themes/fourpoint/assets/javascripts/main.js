@@ -1,18 +1,13 @@
-$(document).ready(function() {
-	// REPLACE SVG WITH PNG IF NO SUPPORT
 
-	if(!Modernizr.svg) {
-	    $('img[src*="svg"]').attr('src', function() {
-	        return $(this).attr('src').replace('.svg', '.png');
-	    });
-	}
+$(document).ready(function() {
 
 	// Fade in images on load
-	$('header').imagesLoaded( function() {
-		var headerImg = $('header img, header svg'),
-			loader = $('.loader');
-			headerImg.css('opacity', 1);
-			loader.css('opacity', 0);
+	var slideImg = $('.the-slide');
+	slideImg.imagesLoaded( function() {
+		slideImg.each(function() {
+			$(this).fadeIn(300);
+		});
+		$('body').addClass('showing');
 	});
 
 	// Home page slider init
@@ -49,41 +44,7 @@ $(document).ready(function() {
 		changeSliderImages(windowWidth);
 	});
 
-
-	// TEST FOR TOUCH AND CSS ANIMATION, LOAD GSAP ANIMATION IF NOT
-
-	// Modernizr.load([
-	//   {
-	//     test : Modernizr.touch & Modernizr.cssanimations,
-	//     nope : ['marketing_website_assets/js/animate.js']
-	//   }
-	// ]);
-
 	// HOVER ANIMATION TRICKS
-
-
-	// SHOW VIDEO ON POSTER CLICK
-
-	$('body').on('click','.vid_poster',function(){
-	  	$('.vid_poster').css('opacity', '0');
-	  	setTimeout(function(){
-	  		$('.vid_poster').hide();
-			$('#main_vid').show();
-			$('#main_vid').append('<iframe width="1280" height="720" src="//www.youtube.com/embed/videoseries?list=PLuEMtRDaKygzrBnNOk9Q_IL_LXnLtBnZa&autoplay=1&showinfo=0&modestbranding&rel=0" frameborder="0" allowfullscreen></iframe>');
-			$('#main_vid').fitVids();
-		},400);
-	});
-
-	// SMOOTH SCROLL TO FIRST SECTION ON EXPLORE BUTTON CLICK
-
-	$( "#scrolldown" ).click(function( event ) {
-  		event.preventDefault();
-	    $('html,body').animate({ scrollTop: $('#first').offset().top }, 'slow');
-	});
-
-	// HISTORY SCROLL EFFECTS
-
-	// stroll.bind( '#flipper' );
 
 	var win = $(window);
 	var allMods = $("#flipper li");
@@ -108,7 +69,6 @@ $(document).ready(function() {
 
 	// Trigger Investors login modal
 	var loginModal = document.getElementById('login-modal');
-	// document.getElementById('investors-link').addEventListener('click', function() {
 	document.getElementsByClassName('investors-link')[0].addEventListener('click', function() {
 		loginModal.style.display = 'block';
 	});
@@ -188,50 +148,4 @@ $(document).ready(function() {
     $(".nav .more").removeClass("active-nav-item");
   });
 
-  // var slateNav = function() {
-  //   $('nav').css({
-  //     "background-image": "url('../images/nav_bg_160.jpg')",
-  //     "background-size": "cover",
-  //     "position": "relative"
-  //   });
-  // };
-
-  // var slateNavMobile = function() {
-  //   $('nav').css({
-  //     "background-image": "url('../images/nav_bg_mobile_sm.jpg')",
-  //     "background-size": "100%",
-  //     "position": "relative"
-  //   });
-  // };
-
-  // nav positioning on pages other than home.
-  // if(!$('.hero-slider').length) {
-  //   if($(window).width() >= 1024 ) {
-  //     slateNav();
-  //   } else {
-  //     slateNavMobile();
-  //   }
-  // }
-
-  // $(window).on('resize', function() {
-  //   if(!$('.hero-slider').length) {
-  //     if($(window).width() >= 1024 ) {
-  //       slateNav();
-  //     } else {
-  //       // $('nav').css('background', '#2e2e2d');
-  //       slateNavMobile();
-  //     }
-  //   }
-  // });
 });
-
-
-// MAP IFRAME RESIZE PAGE
-
-// var frame = $('#iframe');
-
-// frame.load(resizeIframe);
-// function resizeIframe() {
-//     frame.height(frame.contents().height());
-//     frame.height(frame.contents().height());
-// }

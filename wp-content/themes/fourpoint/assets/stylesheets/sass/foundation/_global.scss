@@ -53,6 +53,12 @@ body, html {
 
 body {
   overflow-x: hidden;
+  opacity: 0;
+}
+
+.showing {
+  opacity: 1;
+  @include transition(0.35s ease);
 }
 
 html {
@@ -68,4 +74,3 @@ img {
 .map-embed {
   float: left;
 }
-

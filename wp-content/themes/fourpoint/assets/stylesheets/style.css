@@ -84,7 +84,14 @@ body, html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  opacity: 0; }
+
+.showing {
+  opacity: 1;
+  -webkit-transition: 0.35s ease;
+  -moz-transition: 0.35s ease;
+  transition: 0.35s ease; }
 
 html {
   box-sizing: border-box; }
@@ -514,6 +521,9 @@ header, .text-block {
     width: 90%;
     max-width: 500px; }
 
+header p {
+  max-width: 660px; }
+
 .alt_leader {
   background: #eceae7;
   text-align: center; }
@@ -801,12 +811,12 @@ header, .text-block {
               -webkit-transition: all 0.3 ease;
               -moz-transition: all 0.3 ease;
               transition: all 0.3 ease;
-              background: #00a8e2 url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
+              background: #00a8e2 url(../images/icons/btn_arrows.svg) no-repeat center center;
               border-radius: 50%; }
             .grid ul li a div span:hover {
               color: #ffc20e; }
               .grid ul li a div span:hover:before {
-                background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center; }
+                background-color: #ffc20e; }
         .grid ul li a span {
           position: absolute;
           width: 100%;
@@ -1081,12 +1091,12 @@ header, .text-block {
           -webkit-transition: all 0.3 ease;
           -moz-transition: all 0.3 ease;
           transition: all 0.3 ease;
-          background: #00a8e2 url("/assets/images/icons/btn_arrows.svg") no-repeat center center;
+          background: #00a8e2 url(../images/icons/btn_arrows.svg) no-repeat center center;
           border-radius: 50%; }
         .copy_split .side-content article a:hover {
           color: #ffc20e; }
           .copy_split .side-content article a:hover:before {
-            background: #ffc20e url("/assets/images/icons/btn_arrows.svg") no-repeat center center; }
+            background-color: #ffc20e; }
     @media (max-width: 768px) {
       .copy_split .side-content article, .copy_split .side-content aside {
         width: 100%;

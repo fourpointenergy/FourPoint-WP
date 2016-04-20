@@ -12,6 +12,12 @@ header, .text-block {
 	}
 }
 
+header {
+	p {
+		max-width: 660px;
+	}
+}
+
 .alt_leader {
 	background: #eceae7;
 	text-align: center;
