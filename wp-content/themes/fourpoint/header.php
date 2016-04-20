@@ -37,14 +37,20 @@ global $theme;
 						  <input type="submit" id="search-submit" />
 						</form>
 					</div>
-					<a href="/contact">Contact</a>
-					<a href="#">Leasing/Selling</a>
+					<?php
+					$secondary_navitems = wp_get_nav_menu_items('secondary-nav');
+					foreach($secondary_navitems as $navitem) {
+					?>
+					<a href="<?php $navitem->url ?>"<?php if($navitem->target != '') echo(' target="'.$navitem->target.'"') ?>><?php echo $navitem->title ?></a>
+					<?php } ?>
+					<!-- <a href="/contact">Contact</a> -->
+					<!-- <a href="/business-opportunities">Leasing/Selling</a> -->
 					<a href="#" class="lease-sell">
 						<div class="qmark">
 							<img src="<?php $theme->images_path() ?>/icons/icon-qmark.svg" />
 						</div>
 						<p class="tooltip">
-							typewriter vice venmo austin. +1 cornhole four loko truffaut, listicle swag street art gochujang disrupt chambray man bun. Master cleanse asymmetrical kale chips meditation sustainable. Shoreditch yr iPhone irony tote bag, forage post-ironic aesthetic
+							<?php echo get_option('header_tooltip_text') ?>
 						</p>
 					</a>
 					<a class="btn" href="/login">Login</a>

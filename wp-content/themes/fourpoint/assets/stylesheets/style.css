@@ -138,7 +138,7 @@ img {
     transition: background 0.3s ease; }
 
 nav {
-  background-image: url("../images/nav_bg_mobile_sm2.jpg");
+  background-image: url("../img/nav_bg_mobile_sm2.jpg");
   width: 100%;
   padding: 20px 0 10px;
   background-size: 100%;
@@ -152,7 +152,7 @@ nav {
   @media screen and (min-width: 1025px) {
     nav {
       background-size: cover;
-      background-image: url("../images/nav_bg_160.jpg"); } }
+      background-image: url("../img/nav_bg_160.jpg"); } }
   nav section {
     max-width: 1100px;
     margin-left: auto;
@@ -170,7 +170,7 @@ nav {
       z-index: 12;
       position: relative; }
   nav .no-svg .logo img {
-    background: url("../images/FourPoint_Logo.png") no-repeat center center; }
+    background: url("../img/FourPoint_Logo.png") no-repeat center center; }
   nav .nav_wrap {
     width: 100%;
     position: relative;
@@ -632,25 +632,25 @@ header, .text-block {
         -moz-transition: all 0.5s ease 0.4s;
         transition: all 0.5s ease 0.4s; }
     .content_stack li aside[data-bg="bg_1"] {
-      background: url("../images/history/history_banner6.jpg") no-repeat center center;
+      background: url("../img/history/history_banner6.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_2"] {
-      background: url("../images/history/history_banner5.jpg") no-repeat center center;
+      background: url("../img/history/history_banner5.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_3"] {
-      background: url("../images/history/history_banner3.jpg") no-repeat center center;
+      background: url("../img/history/history_banner3.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_4"] {
-      background: url("../images/history/history_banner4.jpg") no-repeat center center;
+      background: url("../img/history/history_banner4.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_5"] {
-      background: url("../images/history/history_banner7.jpg") no-repeat center center;
+      background: url("../img/history/history_banner7.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_6"] {
-      background: url("../images/history/history_banner1.jpg") no-repeat center center;
+      background: url("../img/history/history_banner1.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li aside[data-bg="bg_7"] {
-      background: url("../images/history/history_banner2.jpg") no-repeat center center;
+      background: url("../img/history/history_banner2.jpg") no-repeat center center;
       background-size: cover; }
     .content_stack li article {
       width: 57%;
@@ -820,12 +820,12 @@ header, .text-block {
               -webkit-transition: all 0.3 ease;
               -moz-transition: all 0.3 ease;
               transition: all 0.3 ease;
-              background: #00a8e2 url("../images/icons/btn_arrows.svg") no-repeat center center;
+              background: #00a8e2 url("../img/icons/btn_arrows.svg") no-repeat center center;
               border-radius: 50%; }
             .grid ul li a div span:hover {
               color: #ffc20e; }
               .grid ul li a div span:hover:before {
-                background: #ffc20e url("../images/icons/btn_arrows.svg") no-repeat center center; }
+                background: #ffc20e url("../img/icons/btn_arrows.svg") no-repeat center center; }
         .grid ul li a span {
           position: absolute;
           width: 100%;
@@ -1100,12 +1100,12 @@ header, .text-block {
           -webkit-transition: all 0.3 ease;
           -moz-transition: all 0.3 ease;
           transition: all 0.3 ease;
-          background: #00a8e2 url("../images/icons/btn_arrows.svg") no-repeat center center;
+          background: #00a8e2 url("../img/icons/btn_arrows.svg") no-repeat center center;
           border-radius: 50%; }
         .copy_split .side-content article a:hover {
           color: #ffc20e; }
           .copy_split .side-content article a:hover:before {
-            background: #ffc20e url("../images/icons/btn_arrows.svg") no-repeat center center; }
+            background: #ffc20e url("../img/icons/btn_arrows.svg") no-repeat center center; }
     @media (max-width: 768px) {
       .copy_split .side-content article, .copy_split .side-content aside {
         width: 100%;
@@ -1218,7 +1218,7 @@ header, .text-block {
   background-position: center center; }
 
 .experience-img {
-  background-image: url(../images/map_perspective.jpg); }
+  background-image: url(../img/map_perspective.jpg); }
 
 .panels section a.button {
   display: inline-block; }
@@ -1356,11 +1356,11 @@ header, .text-block {
   display: none; }
 
 .slick-loading .slick-list {
-  background: #fff slick-image-url("../images/icons/ajax-loader.gif") center center no-repeat; }
+  background: #fff slick-image-url("../img/icons/ajax-loader.gif") center center no-repeat; }
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./../images/ajax-loader.gif") center center no-repeat; }
+  background: #fff url("./../img/ajax-loader.gif") center center no-repeat; }
 
 /* Arrows */
 .slick-prev,
@@ -1423,10 +1423,10 @@ header, .text-block {
     left: auto;
     right: 25px; }
   .slick-prev:before {
-    content: url("../images/icons/icon-arrow-left-small.png"); }
+    content: url("../img/icons/icon-arrow-left-small.png"); }
     @media (min-width: 1024px) {
       .slick-prev:before {
-        content: url("../images/icons/icon-arrow-left.png"); } }
+        content: url("../img/icons/icon-arrow-left.png"); } }
 
 .slick-next {
   right: -20px; }
@@ -1434,10 +1434,10 @@ header, .text-block {
     .slick-next {
       right: 25px; } }
   .slick-next:before {
-    content: url("../images/icons/icon-arrow-right-small.png"); }
+    content: url("../img/icons/icon-arrow-right-small.png"); }
     @media (min-width: 1024px) {
       .slick-next:before {
-        content: url("../images/icons/icon-arrow-right.png"); } }
+        content: url("../img/icons/icon-arrow-right.png"); } }
 
 /* Dots */
 .slick-dots {
@@ -1914,7 +1914,7 @@ aside.login-card {
         top: 0px;
         border-radius: 50%;
         opacity: 0;
-        background: #ffc20e url("../images/icons/btn_arrows.svg") no-repeat center center;
+        background: #ffc20e url("../img/icons/btn_arrows.svg") no-repeat center center;
         -webkit-transition: 0.25s ease;
         -moz-transition: 0.25s ease;
         transition: 0.25s ease; }
@@ -1935,7 +1935,7 @@ aside.login-card {
   position: relative; }
   .single-video a:before {
     position: absolute;
-    content: url(../images/icons/icon-play.png);
+    content: url(../img/icons/icon-play.png);
     top: 50%;
     left: 50%;
     z-index: 1;
@@ -1956,20 +1956,20 @@ aside.login-card {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
-.gallery:before {
+/*.gallery:before {
   display: none; }
   @media (min-width: 768px) {
     .gallery:before {
       display: block;
-      content: url(../images/icons/arrow-left.png);
+      content: url(../img/icons/arrow-left.png);
       left: calc(32px + 2.5em); } }
 .gallery:after {
   display: none; }
   @media (min-width: 768px) {
     .gallery:after {
       display: block;
-      content: url(../images/icons/arrow-right.png);
-      right: calc(20px - 2.5em); } }
+      content: url(../img/icons/arrow-right.png);
+      right: calc(20px - 2.5em); } }*/
 
 .gallery-filter {
   margin-bottom: 50px; }

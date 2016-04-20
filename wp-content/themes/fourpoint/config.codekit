@@ -365,13 +365,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/icons\/icon-arrow-left-small.png": {
+	"\/assets\/images\/icons\/arrow-left.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 631,
-		"inputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-left-small.png",
-		"outputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-left-small.png",
+		"inputAbbreviatedPath": "\/assets\/images\/icons\/arrow-left.png",
+		"outputAbbreviatedPath": "\/assets\/images\/icons\/arrow-left.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/icons\/arrow-right.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 628,
+		"inputAbbreviatedPath": "\/assets\/images\/icons\/arrow-right.png",
+		"outputAbbreviatedPath": "\/assets\/images\/icons\/arrow-right.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -383,17 +394,6 @@
 		"initialSize": 1324,
 		"inputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-left.png",
 		"outputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-left.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/icons\/icon-arrow-right-small.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 628,
-		"inputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-right-small.png",
-		"outputAbbreviatedPath": "\/assets\/images\/icons\/icon-arrow-right-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

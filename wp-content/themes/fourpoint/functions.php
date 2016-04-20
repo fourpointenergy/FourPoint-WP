@@ -49,6 +49,8 @@ class Fourpoint {
 			register_nav_menus(
 				array(
 					'main-menu' => 'Main Menu',
+					'secondary-menu' => 'Secondary Menu',
+					'footer-menu' => 'Footer Menu'
 				)
 			);
 		}
@@ -164,13 +166,11 @@ class Fourpoint {
 			/* wp_enqueue_script('fontawesome', "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", false); */
 			wp_enqueue_script('jquery');
 			wp_enqueue_script('libs', get_bloginfo('stylesheet_directory') . '/assets/javascripts/libs.js', array('jquery'), $this->scripts_version, true);
-<<<<<<< HEAD
+
 			wp_enqueue_script('nav', get_bloginfo('stylesheet_directory') . '/assets/javascripts/nav.js', array('jquery'), $this->scripts_version, true);
 			wp_enqueue_script($this->theme_name . '-site', get_bloginfo('stylesheet_directory') . '/assets/javascripts/main.js', array('jquery', 'libs', 'nav'), $this->scripts_version, true);
-=======
 			wp_enqueue_script('fancybox', get_bloginfo('stylesheet_directory') . '/assets/fancybox/source/jquery.fancybox.pack.js', array('jquery'), $this->scripts_version, true);
-			wp_enqueue_script($this->theme_name . '-site', get_bloginfo('stylesheet_directory') . '/assets/javascripts/main.js', array('jquery', 'libs'), $this->scripts_version, true);
->>>>>>> develop
+			//wp_enqueue_script($this->theme_name . '-site', get_bloginfo('stylesheet_directory') . '/assets/javascripts/main.js', array('jquery', 'libs'), $this->scripts_version, true);
 		}
 	}
 
@@ -602,21 +602,33 @@ class Fourpoint {
 
 	function register_fields() {
 		// register_setting( 'general', 'contact_address', 'esc_attr' );
-		register_setting('general', 'contact_address');
-		register_setting('general', 'emergency_contact_phone');
+		// register_setting('general', 'contact_address');
+		// register_setting('general', 'emergency_contact_phone');
 		register_setting('general', 'linkedin_link');
-		add_settings_field('contact_address', '<label for="contact_address">' . __('Contact Address', 'contact_address') . '</label>', array(&$this, 'contact_address_html'), 'general');
+		register_setting('general', 'header_tooltip_text');
+		register_setting('general', 'footer_copyright');
+		// add_settings_field('contact_address', '<label for="contact_address">' . __('Contact Address', 'contact_address') . '</label>', array(&$this, 'contact_address_html'), 'general');
 		add_settings_field('linkedin_link', '<label for="linkedin_link">' . __('LinkedIn Link', 'linkedin_link') . '</label>', array(&$this, 'linkedin_link_html'), 'general');
-		add_settings_field('emergency_contact_phone', '<label for="emergency_contact_phone">' . __('Emergency Contact Phone', 'emergency_contact_phone') . '</label>', array(&$this, 'emergency_contact_phone_html'), 'general');
+		add_settings_field('footer_copyright', '<label for="footer_copyright">' . __('Footer Copyright Info', 'footer_copyright') . '</label>', array(&$this, 'footer_copyright_html'), 'general');
+		// add_settings_field('emergency_contact_phone', '<label for="emergency_contact_phone">' . __('Emergency Contact Phone', 'emergency_contact_phone') . '</label>', array(&$this, 'emergency_contact_phone_html'), 'general');
+		add_settings_field('header_tooltip_text', '<label for="header_tooltip_text">' . __('Leasing Selling Tooltip Text', 'header_tooltip_text') . '</label>', array(&$this, 'header_tooltip_text_html'), 'general');
 	}
-	function contact_address_html() {
-		$value = get_option('contact_address', '');
-		echo '<textarea type="text" id="facebook_link" name="contact_address" rows="5" cols="40">'. $value .'</textarea>';
+	function footer_copyright_html() {
+		$value = get_option('footer_copyright', '');
+		echo '<input type="text" id="footer_copyright" name="footer_copyright" value="'. $value .'" width="300">';
 	}
-	function emergency_contact_phone_html() {
-		$value = get_option('emergency_contact_phone', '');
-		echo '<input type="text" id="emergency_contact_phone" name="emergency_contact_phone" value="' . $value . '">';
+	function header_tooltip_text_html() {
+		$value = get_option('header_tooltip_text', '');
+		echo '<textarea type="text" id="header_tooltip_text" name="header_tooltip_text" rows="5" cols="40">'. $value .'</textarea>';
 	}
+	// function contact_address_html() {
+	// 	$value = get_option('contact_address', '');
+	// 	echo '<textarea type="text" id="contact_address" name="contact_address" rows="5" cols="40">'. $value .'</textarea>';
+	// }
+	// function emergency_contact_phone_html() {
+	// 	$value = get_option('emergency_contact_phone', '');
+	// 	echo '<input type="text" id="emergency_contact_phone" name="emergency_contact_phone" value="' . $value . '">';
+	// }
 	function linkedin_link_html() {
 		$value = get_option('linkedin_link', '');
 		echo '<input type="text" id="linkedin_link" name="linkedin_link" value="' . $value . '">';
