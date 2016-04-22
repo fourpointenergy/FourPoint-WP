@@ -9,6 +9,10 @@ global $theme;
 	<title>Fourpoint Energy<?php wp_title( '|', true, 'left' ); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<?php
+	if(!isset($pageDescription)) {
+		$pageDescription = 'FourPoint Energy is a private exploration and production company founded by the leadership team of Cordillera Energy Partners following the sale to Apache Corporation in 2012.'; }
+	?>
 	<meta name="description" content="<?php echo $pageDescription; ?>">
 	<meta name="author" content="Karsh Hagan">
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -33,14 +37,21 @@ global $theme;
 						  <input type="submit" id="search-submit" />
 						</form>
 					</div>
-					<a href="/contact">Contact</a>
-					<a href="#">Leasing/Selling</a>
+					<?php
+					$secondary_navitems = wp_get_nav_menu_items('secondary-nav');
+					foreach($secondary_navitems as $navitem) {
+					?>
+				
+					<a href="<?php echo $navitem->url ?>"<?php if($navitem->target != '') echo(' target="'.$navitem->target.'"') ?>><?php echo $navitem->title ?></a>
+					<?php } ?>
+					<!-- <a href="/contact">Contact</a> -->
+					<!-- <a href="/business-opportunities">Leasing/Selling</a> -->
 					<a href="#" class="lease-sell">
 						<div class="qmark">
 							<img src="<?php $theme->images_path() ?>/icons/icon-qmark.svg" />
 						</div>
 						<p class="tooltip">
-							typewriter vice venmo austin. +1 cornhole four loko truffaut, listicle swag street art gochujang disrupt chambray man bun. Master cleanse asymmetrical kale chips meditation sustainable. Shoreditch yr iPhone irony tote bag, forage post-ironic aesthetic
+							<?php echo get_option('header_tooltip_text') ?>
 						</p>
 					</a>
 					<a class="btn" href="/login">Login</a>

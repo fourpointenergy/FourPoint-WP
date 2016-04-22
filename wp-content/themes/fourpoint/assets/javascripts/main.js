@@ -16,6 +16,23 @@ $(document).ready(function() {
 		speed: 200
 	});
 
+	//init fancybox
+	$(".fancybox").fancybox({
+			padding: 0,
+			prevEffect: 'none',
+			nextEffect: 'none',
+			helpers: {
+				title: {
+					type: 'outside'
+				},
+				media: {},
+				thumbs: {
+					width: 80,
+					height: 50
+				}
+			}
+		});
+
 	// change slider images depending on screen sizes
 	var windowWidth = $(window).width();
 	var changeSliderImages = function(windowWidth) {
@@ -47,6 +64,7 @@ $(document).ready(function() {
 	// HOVER ANIMATION TRICKS
 
 	var win = $(window);
+
 	var allMods = $("#flipper li");
 
 	allMods.each(function(i, el) {

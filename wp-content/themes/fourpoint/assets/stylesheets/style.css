@@ -955,7 +955,7 @@ header p {
       content: "";
       display: table;
       clear: both; }
-    .form_wrap div label, .form_wrap div input {
+    .form_wrap .gfield_label, .form_wrap div input {
       display: block;
       width: 90%;
       margin: 0 auto; }
@@ -970,7 +970,7 @@ header p {
       outline: none;
       background: #ecece8;
       height: 50px; }
-    .form_wrap div label {
+    .form_wrap .gfield_label {
       min-width: 100px;
       padding: 0.7em 0;
       max-width: 400px;
@@ -981,16 +981,16 @@ header p {
     .form_wrap div textarea {
       min-height: 80px; }
     @media (max-width: 768px) {
-      .form_wrap div input, .form_wrap div label, .form_wrap div .form_select, .form_wrap div input[type="text"], .form_wrap div input[type="email"], .form_wrap div textarea {
+      .form_wrap .ginput_container input, .form_wrap .gfield_label, .form_wrap div .ginput_container_select, .form_wrap .ginput_container input[type="text"], .form_wrap .ginput_container input[type="email"], .form_wrap .ginput_container textarea {
         float: none;
         width: 90%;
         margin: 0 auto;
         max-width: 450px;
         text-align: left;
         display: block; }
-      .form_wrap div label {
+      .form_wrap .gfield_label {
         padding: 0.7em 0; } }
-  .form_wrap .form_select {
+  .form_wrap .ginput_container_select {
     background: #ecece8;
     border: 1px solid #d5d5cc;
     color: #a7a794;
@@ -1001,13 +1001,14 @@ header p {
     position: relative;
     font: normal 11px/normal 'Lucida Grande';
     cursor: pointer;
+    min-height:50px;
     margin: 0 auto; }
-    .form_wrap .form_select:hover {
+    .form_wrap .ginput_container_select:hover {
       background: #e0e0da; }
-    .form_wrap .form_select select {
+    .form_wrap .ginput_container_select select {
       -webkit-appearance: none;
       width: 100%; }
-    .form_wrap .form_select:after {
+    .form_wrap .ginput_container_select:after {
       content: "▼";
       color: #bebeb0;
       font-size: 12px;
@@ -1017,9 +1018,11 @@ header p {
       right: 10px;
       vertical-align: middle;
       z-index: 1; }
-    .form_wrap .form_select label {
+    .form_wrap .ginput_container_select label {
+      font-weight:normal;
+      margin-bottom: 0;
       margin-left: 0; }
-    .form_wrap .form_select .select {
+    .form_wrap .ginput_container_select .gfield_select {
       background-color: transparent;
       border: 0;
       color: #fff;
@@ -1030,8 +1033,42 @@ header p {
       right: 0;
       bottom: 0;
       z-index: 2; }
-      .form_wrap .form_select .select option {
+      .form_wrap .ginput_container_select .gfield_select option {
         background: #B6B6B6; }
+
+.gform_wrapper label.gfield_label+div.ginput_container, .gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium, .gform_wrapper textarea.medium {
+  margin-left:0;
+  width:auto;
+  border-radius: 0;
+}
+
+.gform_wrapper input.medium {
+  width:100% !important;
+}
+
+.gform_footer {
+  max-width:400px;
+}
+
+.gform_button.button {
+  display:block !important;
+  width:auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: 1px solid #00a8e2;
+  background: #00a8e2;
+  color: #fff;
+  padding:15px 30px;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    transition: background 0.3s ease; }
+
+    .gform_button.button:hover {
+      background: #fff;
+      color: #00a8e2;
+      -webkit-transition: background 0.3s ease;
+      -moz-transition: background 0.3s ease;
+      transition: background 0.3s ease; }
 
 .copy_split {
   margin: 50px auto; }
@@ -1233,7 +1270,7 @@ header p {
   .panels section:nth-child(3n+0) h1 {
     color: #ffffff; }
 
-.btn {
+.btn, input[type=submit] {
   padding: 5px 10px;
   background: transparent;
   text-transform: uppercase;
@@ -1575,7 +1612,7 @@ header p {
     .general-form {
       float: left;
       width: 50%; } }
-  .general-form button {
+  .general-form button, .general-form .button {
     margin: 0 auto 20px; }
   .general-form .contact-form-header {
     text-align: center;
@@ -1838,7 +1875,6 @@ aside.login-card {
 
 .gallery-img-hidden {
   display: none; }
-
 .gallery-page img {
   width: 100%; }
 
@@ -1943,7 +1979,7 @@ aside.login-card {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
-.gallery:before {
+/*.gallery:before {
   display: none; }
   @media (min-width: 768px) {
     .gallery:before {
@@ -1956,7 +1992,7 @@ aside.login-card {
     .gallery:after {
       display: block;
       content: url(../images/icons/arrow-right.png);
-      right: calc(20px - 2.5em); } }
+      right: calc(20px - 2.5em); } }*/
 
 .gallery-filter {
   margin-bottom: 50px; }
