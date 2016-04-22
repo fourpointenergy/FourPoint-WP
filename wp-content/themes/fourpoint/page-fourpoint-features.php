@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for displaying Press Releases
+ * Template for displaying Fourpoint Features
  */
  global $theme;
  get_header(); ?>
@@ -11,9 +11,8 @@
    </header>
  <?php endwhile;
  $args = array(
-   'post_type' => 'press-release',
-  //  'orderby' => 'menu_order',
-  //  'order' => 'ASC',
+   'post_type' => 'fourpoint-feature',
+   'order' => 'menu_order',
    'post_status' => 'publish'
  );
  $press_release_qry = new WP_Query( $args );

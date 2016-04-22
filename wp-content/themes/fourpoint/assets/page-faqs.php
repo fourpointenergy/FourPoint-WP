@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for displaying Press Releases
+ * Template for displaying Faqs
  */
  global $theme;
  get_header(); ?>
@@ -11,9 +11,8 @@
    </header>
  <?php endwhile;
  $args = array(
-   'post_type' => 'press-release',
-  //  'orderby' => 'menu_order',
-  //  'order' => 'ASC',
+   'post_type' => 'faq',
+   'order' => 'menu_order',
    'post_status' => 'publish'
  );
  $press_release_qry = new WP_Query( $args );
@@ -23,15 +22,7 @@
      <?php while ( $press_release_qry->have_posts() ) : $press_release_qry->the_post(); ?>
        	<div class="side-content">
        		<aside><p><?php the_field('post_display_date') ?></p></aside>
-       		<article><p><?php the_title(); ?></p>
-            <?php if( !(get_field('dont_show_read_more_link')) ) : ?>
-              <?php if( get_field('external_link') ) { ?>
-            <a href="<?php the_field('external_link'); ?>" target="_blank">Read More</a>
-              <?php } else { ?>
-            <a href="<?php the_permalink(); ?>">Read More</a>
-              <?php } ?>
-            <?php endif; ?>
-          </article>
+       		<article><p><?php the_title(); ?></p><a href="<?php the_permalink(); ?>">Read More</a></article>
        	</div>
      <?php endwhile; ?>
    </div>

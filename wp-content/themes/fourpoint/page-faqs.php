@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for displaying Press Releases
+ * Template for displaying FAQs
  */
  global $theme;
  get_header(); ?>
@@ -11,18 +11,16 @@
    </header>
  <?php endwhile;
  $args = array(
-   'post_type' => 'press-release',
-  //  'orderby' => 'menu_order',
-  //  'order' => 'ASC',
+   'post_type' => 'faq',
+   'order' => 'menu_order',
    'post_status' => 'publish'
  );
- $press_release_qry = new WP_Query( $args );
+ $faq_qry = new WP_Query( $args );
  ?>
- <?php if ( $press_release_qry->have_posts() ) : ?>
+ <?php if ( $faq_qry->have_posts() ) : ?>
    <div class="copy_split">
-     <?php while ( $press_release_qry->have_posts() ) : $press_release_qry->the_post(); ?>
+     <?php while ( $faq_qry->have_posts() ) : $faq_qry->the_post(); ?>
        	<div class="side-content">
-       		<aside><p><?php the_field('post_display_date') ?></p></aside>
        		<article><p><?php the_title(); ?></p>
             <?php if( !(get_field('dont_show_read_more_link')) ) : ?>
               <?php if( get_field('external_link') ) { ?>

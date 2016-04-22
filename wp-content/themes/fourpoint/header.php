@@ -41,7 +41,8 @@ global $theme;
 					$secondary_navitems = wp_get_nav_menu_items('secondary-nav');
 					foreach($secondary_navitems as $navitem) {
 					?>
-					<a href="<?php $navitem->url ?>"<?php if($navitem->target != '') echo(' target="'.$navitem->target.'"') ?>><?php echo $navitem->title ?></a>
+				
+					<a href="<?php echo $navitem->url ?>"<?php if($navitem->target != '') echo(' target="'.$navitem->target.'"') ?>><?php echo $navitem->title ?></a>
 					<?php } ?>
 					<!-- <a href="/contact">Contact</a> -->
 					<!-- <a href="/business-opportunities">Leasing/Selling</a> -->

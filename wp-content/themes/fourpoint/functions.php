@@ -109,7 +109,7 @@ class Fourpoint {
 	}
 
 	function images_path() {
-		echo get_bloginfo('template_url') . '/assets/img';
+		echo get_bloginfo('template_url') . '/assets/images';
 	}
 
 	function register_nav_menus() {
