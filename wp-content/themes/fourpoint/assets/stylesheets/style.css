@@ -1234,15 +1234,15 @@ header, .text-block {
 .panel h1 {
   color: #2e2e2d; }
 
-.panel-gray {
+.panel.panel-gray {
   background-color: #2e2e2d; }
   .panel-gray h1, .panel-gray p {
     color: #ffffff; }
 
-.panel-white {
+.panel.panel-white {
   background-color: #ffffff; }
 
-.panel-blue {
+.panel.panel-blue {
   background-color: #00a8e2;
   color: #ffffff; }
   .panel-blue h1 {
@@ -1265,7 +1265,7 @@ header, .text-block {
   height: 400px;
   background-size: cover;
   background-position: center center; }
-.panels section:nth-child(3n+1) {
+/*.panels section:nth-child(3n+1) {
   background-color: #ffffff; }
 .panels section:nth-child(3n+2) {
   background-color: #00a8e2;
@@ -1276,7 +1276,7 @@ header, .text-block {
   background-color: #2e2e2d;
   color: #ffffff; }
   .panels section:nth-child(3n+0) h1 {
-    color: #ffffff; }
+    color: #ffffff; }*/
 
 .btn, input[type=submit] {
   padding: 5px 10px;
@@ -2033,7 +2033,7 @@ aside.login-card {
   background-position: center center;
 }
 
-.panels section:nth-child(3n+1) {
+/*.panels section:nth-child(3n+1) {
   background-color: #fff;
 }
 .panels section:nth-child(3n+2) {
@@ -2050,6 +2050,6 @@ aside.login-card {
 }
 .panels section:nth-child(3n+0) h1 {
   color:#fff;
-}
+}*/
 
 /*# sourceMappingURL=style.css.map */
