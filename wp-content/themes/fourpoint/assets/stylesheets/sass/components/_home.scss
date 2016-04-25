@@ -130,22 +130,22 @@
 			 height: auto;
 			 width: 100%;
 		}
-		&:nth-child(3n+1) {
-			background-color: $white;
-		}
-		&:nth-child(3n+2) {
-			background-color: $fourpoint_blue;
-			color: $white;
-			h1 {
-				color:$white;
-			}
-		}
-		&:nth-child(3n+0) {
-			background-color: $dark_gray;
-			color: $white;
-			h1 {
-				color:$white;
-			}
-		}
+		// &:nth-child(3n+1) {
+		// 	background-color: $white;
+		// }
+		// &:nth-child(3n+2) {
+		// 	background-color: $fourpoint_blue;
+		// 	color: $white;
+		// 	h1 {
+		// 		color:$white;
+		// 	}
+		// }
+		// &:nth-child(3n+0) {
+		// 	background-color: $dark_gray;
+		// 	color: $white;
+		// 	h1 {
+		// 		color:$white;
+		// 	}
+		// }
 	}
 }

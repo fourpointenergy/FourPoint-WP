@@ -28,15 +28,16 @@ get_header(); ?>
 <?php
 $counter = 1;
     if( have_rows('home_sections') ) while( have_rows('home_sections') ): the_row(); ?>
-	<section class="panel">
+	<section class="panel panel-<?php the_sub_field('section_panel_color') ?>">
     <?php if( (get_sub_field('section_image')) && ($counter > 1) ) {?>
       <img src="<?php the_sub_field('section_image') ?>" class="panel-bg">
     <?php } ?>
     <div class="text-block">
       <?php
       //determine button class based on being #2 or #3 in a series of 3
-      $btn_class = "";
-      if( ($counter % 3 == 0) || ($counter % 3 == 2) ) {
+      if(get_sub_field('section_panel_color') && get_sub_field('section_panel_color') == 'white') {
+        $btn_class = " btn-blue";
+      } else {
         $btn_class = " btn-white";
       }
       ?>
