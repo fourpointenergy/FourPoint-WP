@@ -149,3 +149,16 @@
 		// }
 	}
 }
+
+/* Styles to Fix Homepage */
+.panels section a.button {
+  display:inline-block;
+}
+.panels section .text-block {
+  background:transparent;
+}
+.panels section .panel-bg {
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+}

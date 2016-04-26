@@ -1208,15 +1208,15 @@ header p {
 .panel .text-block p {
   max-width: 700px; }
 
-.panel-gray {
+.panel.panel-gray {
   background-color: #2e2e2d; }
   .panel-gray h1, .panel-gray p {
     color: #ffffff; }
 
-.panel-white {
+.panel.panel-white {
   background-color: #ffffff; }
 
-.panel-blue {
+.panel.panel-blue {
   background-color: #00a8e2;
   color: #ffffff; }
   .panel-blue h1 {
@@ -1976,5 +1976,3 @@ aside.login-card {
   .gallery-filter p {
     text-align: center;
     font-weight: 700; }
-
-/*# sourceMappingURL=style.css.map */
