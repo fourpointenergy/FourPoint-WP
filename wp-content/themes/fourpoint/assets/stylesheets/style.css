@@ -955,7 +955,7 @@ header p {
       content: "";
       display: table;
       clear: both; }
-    .form_wrap div label, .form_wrap div input {
+    .form_wrap div label, .form_wrap div input, .form_wrap div .gform_wrapper .top_label .gfield_label {
       display: block;
       width: 90%;
       margin: 0 auto; }
@@ -990,7 +990,7 @@ header p {
         display: block; }
       .form_wrap div label {
         padding: 0.7em 0; } }
-  .form_wrap .form_select {
+  .form_wrap .form_select select {
     background: #ecece8;
     border: 1px solid #d5d5cc;
     color: #a7a794;
@@ -1002,12 +1002,7 @@ header p {
     font: normal 11px/normal 'Lucida Grande';
     cursor: pointer;
     margin: 0 auto; }
-    .form_wrap .form_select:hover {
-      background: #e0e0da; }
-    .form_wrap .form_select select {
-      -webkit-appearance: none;
-      width: 100%; }
-    .form_wrap .form_select:after {
+    .form_wrap .form_select select:after {
       content: "▼";
       color: #bebeb0;
       font-size: 12px;
@@ -1017,21 +1012,45 @@ header p {
       right: 10px;
       vertical-align: middle;
       z-index: 1; }
-    .form_wrap .form_select label {
-      margin-left: 0; }
-    .form_wrap .form_select .select {
-      background-color: transparent;
-      border: 0;
-      color: #fff;
-      padding: 25px 20px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 2; }
-      .form_wrap .form_select .select option {
-        background: #B6B6B6; }
+  .form_wrap .form_select label {
+    margin-left: 0; }
+  .form_wrap .form_select .select {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    padding: 25px 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; }
+    .form_wrap .form_select .select option {
+      background: #B6B6B6; }
+
+.gform_wrapper .gform_footer input.button {
+  display: block !important;
+  width: auto;
+  padding: 15px 30px; }
+
+.gform_wrapper .top_label .gfield_label {
+  margin: 0 auto !important;
+  font-weight: 400 !important;
+  display: block !important; }
+
+.form_wrap div input[type="text"], .form_wrap div textarea {
+  margin: 0 auto; }
+
+.gform_wrapper input[type="text"] {
+  padding-left: 6px !important; }
+
+.gform_wrapper .top_label select.medium {
+  margin: 0 auto !important;
+  width: 90% !important;
+  display: block; }
+
+.ginput_container_select {
+  position: relative; }
 
 .copy_split {
   margin: 50px auto; }
@@ -1101,14 +1120,6 @@ header p {
       .copy_split .side-content article, .copy_split .side-content aside {
         width: 100%;
         float: none; } }
-
-.page-id-514 .side-content article {
-  width: 90%;
-  float: none;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .page-id-514 .side-content article {
-      width: 50%; } }
 
 /* Home page slider sytles */
 .hero-slider {

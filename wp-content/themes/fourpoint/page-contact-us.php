@@ -19,10 +19,8 @@ get_header(); ?>
 
   <div class="container">
 	<div class="form_wrap">
-    <span class="general-form">
       <h2 class="contact-form-header">GENERAL INQUIRIES</h2>
       <?php the_content(); ?>
-    </span>
 	</div>
 
 	<div class="sidebar">

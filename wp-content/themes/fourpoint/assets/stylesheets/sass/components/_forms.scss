@@ -3,7 +3,7 @@
 	div {
 		@include clearfix;
 		margin: 15px auto;
-		label, input {
+		label, input, .gform_wrapper .top_label .gfield_label {
 			display: block;
 			width: 90%;
 			margin: 0 auto;
@@ -51,35 +51,35 @@
 	}
 
 	.form_select {
-		background: $form_fill;
-		border: 1px solid darken($form_fill, 10%);
-		color: darken($form_fill, 30%);;
-		border-radius: 2px;
-		padding: 0.7em;
-		max-width: 400px;
-		width: 90%;
-		position: relative;
-		font: normal 11px/normal 'Lucida Grande';
-		cursor: pointer;
-		margin: 0 auto;
-		&:hover {
-			background: darken($form_fill, 5%);
+		select {
+			background: $form_fill;
+			border: 1px solid darken($form_fill, 10%);
+			color: darken($form_fill, 30%);;
+			border-radius: 2px;
+			padding: 0.7em;
+			max-width: 400px;
+			width: 90%;
+			position: relative;
+			font: normal 11px/normal 'Lucida Grande';
+			cursor: pointer;
+			margin: 0 auto;
+			// -webkit-appearance: none;
+
+			&:after { 
+				content: "▼";
+				color: darken($form_fill, 20%);
+				font-size: 12px;
+				margin-top: -7px;
+				position: absolute;
+				top: 50%; 
+				right: 10px;
+				vertical-align: middle;
+				z-index: 1;
+			}
 		}
-		select { 
-			-webkit-appearance: none;
-			width: 100%;
-		}
-		&:after { 
-			content: "▼";
-			color: darken($form_fill, 20%);
-			font-size: 12px;
-			margin-top: -7px;
-			position: absolute;
-			top: 50%; 
-			right: 10px;
-			vertical-align: middle;
-			z-index: 1;
-		}
+		// &:hover {
+		// 	background: darken($form_fill, 5%);
+		// }
 
 		label {
 			margin-left: 0;
@@ -97,4 +97,33 @@
 	    option { background: $light_gray; }
 	  	}
 	}
+}
+
+.gform_wrapper .gform_footer input.button {
+	display: block !important;
+	width: auto;
+	padding: 15px 30px;
+}
+
+.gform_wrapper .top_label .gfield_label {
+	margin: 0 auto !important;
+	font-weight: 400 !important;
+	display: block !important;
+}
+
+.form_wrap div input[type="text"], .form_wrap div textarea {
+	margin: 0 auto;
+}
+
+.gform_wrapper input[type="text"] {
+	padding-left: 6px !important;
+}
+
+.gform_wrapper .top_label select.medium {
+	margin: 0 auto !important;
+	width: 90% !important;
+	display: block;
+}
+.ginput_container_select {
+	position: relative;
 }
