@@ -33,6 +33,7 @@
 			left: 0;
 			background-size: cover;
 			background-position: center center;
+			background-repeat: no-repeat;
 			&:after {
 				content: '';
 				width: 100%;
@@ -101,7 +102,7 @@
 	  //  		border-left: 40px solid transparent;
 			p {
 				color: white;
-				margin: 0 auto;
+				// margin: 0 auto;
 				@include transform(translateY(50px));
 				opacity: 0;
 				@include transition(all .5s ease .4s);

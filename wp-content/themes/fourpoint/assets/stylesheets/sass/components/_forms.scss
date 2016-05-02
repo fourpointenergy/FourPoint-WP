@@ -4,9 +4,9 @@
 		@include clearfix;
 		margin: 15px auto;
 		label, input, .gform_wrapper .top_label .gfield_label {
-			display: block;
-			width: 90%;
-			margin: 0 auto;
+			// display: block;
+			width: 97%;
+			// margin: 0 auto;
 		}
 		input, textarea {
 		  padding: 0.7em;
@@ -40,17 +40,20 @@
 				float: none;
 				width: 90%;
 				margin: 0 auto;
-				max-width: 450px;
+				// max-width: 450px;
 				text-align: left;
 				display: block;
 			}
 			label {
 				padding: 0.7em 0;
+				width: 97%;
 			}
 		}
 	}
 
 	.form_select {
+		width: 99%;
+		margin-left: auto !important;
 		select {
 			background: $form_fill;
 			border: 1px solid darken($form_fill, 10%);
@@ -62,7 +65,8 @@
 			position: relative;
 			font: normal 11px/normal 'Lucida Grande';
 			cursor: pointer;
-			margin: 0 auto;
+			margin: 0 auto !important;
+			display: block;
 			// -webkit-appearance: none;
 
 			&:after { 
@@ -126,4 +130,10 @@
 }
 .ginput_container_select {
 	position: relative;
+}
+
+.gform_wrapper .gform_body {
+	.form_select select, .form_select {
+		width: 99% !important;
+	}
 }

@@ -65,7 +65,7 @@ nav {
 			@include clearfix;
 			#main_nav {
 				position: relative;
-				top: 60px;
+				top: 53px;
 				width: 100%;
 				right: 0%;
 				-webkit-transform-style: preserve-3d; 
@@ -119,6 +119,7 @@ nav {
 				    	li {
 				    		display: inline;
 				    		a {
+				    			vertical-align: top;
 				    			color: $white;
 				    			display: inline;
 				    			&:after {
