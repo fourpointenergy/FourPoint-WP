@@ -27,7 +27,9 @@ $counter = 1;
     if( have_rows('home_sections') ) while( have_rows('home_sections') ): the_row(); ?>
 	<section class="panel panel-<?php the_sub_field('section_panel_color') ?>">
     <?php if( (get_sub_field('section_image')) && ($counter > 1) ) {?>
-      <div class="panel-bg" style="background-image:url('<?php the_sub_field('section_image') ?>')"></div>
+      <div class="panel-bg" style="background-image:url('<?php the_sub_field('section_image') ?>')">
+        <img src="<?php the_sub_field('section_image') ?>">
+      </div>
     <?php } ?>
     <div class="text-block">
       <?php

@@ -128,9 +128,10 @@ img {
     -moz-transition: background 0.3s ease;
     transition: background 0.3s ease; }
 
-.btn-blue {
+.btn-blue, .button-primary, input[type=submit].button-primary {
+  border-radius: 2px;
   border: 1px solid #00a8e2; }
-  .btn-blue:hover {
+  .button-primary:hover, input[type=submit].button-primary:hover, .btn-blue:hover {
     background: #ffffff;
     color: #00a8e2;
     -webkit-transition: background 0.3s ease;
@@ -964,16 +965,16 @@ header, .text-block {
       content: "";
       display: table;
       clear: both; }
-    .form_wrap .gfield_label, .form_wrap div input {
+    .form_wrap .gfield_label, .form_wrap div input[type="text"], .form_wrap div input[type="password"], .form_wrap div input[type="email"] {
       display: block;
       width: 90%;
       margin: 0 auto; }
-    .form_wrap div input, .form_wrap div textarea {
+    .form_wrap div input[type="text"], .form_wrap div input[type="password"], .form_wrap div input[type="email"], .form_wrap div textarea {
       padding: 0.7em;
       border: none;
       border-radius: 2px;
       display: block; }
-    .form_wrap div input[type="text"], .form_wrap div input[type="email"], .form_wrap div textarea, .form_wrap div select {
+    .form_wrap div input[type="text"], .form_wrap div input[type="password"], .form_wrap div input[type="email"], .form_wrap div textarea, .form_wrap div select {
       margin: 0 auto 1em;
       border: 1px solid #d5d5cc;
       outline: none;
@@ -984,7 +985,7 @@ header, .text-block {
       padding: 0.7em 0;
       max-width: 400px;
       text-align: left; }
-    .form_wrap div input, .form_wrap div textarea {
+    .form_wrap div input[type="text"], .form_wrap div input[type="email"], .form_wrap div input[type="password"], .form_wrap div textarea {
       width: 90%;
       max-width: 400px; }
     .form_wrap div textarea {
@@ -1213,7 +1214,7 @@ header, .text-block {
       .hero-slider-copy h1 {
         font-size: 6em; } }
 
-.button {
+.button, .button-primary, input[type=submit].button-primary {
   display: inline-block;
   background: #00a8e2;
   padding: 15px 30px;
@@ -1228,7 +1229,7 @@ header, .text-block {
   -webkit-transition: background 0.3s ease;
   -moz-transition: background 0.3s ease;
   transition: background 0.3s ease; }
-  .button:hover {
+  .button:hover, .button-primary:hover, input[type=submit].button-primary:hover {
     background: #0082af; }
 
 .panel h1 {
@@ -1262,9 +1263,14 @@ header, .text-block {
 .panels section .text-block {
   background: transparent; }
 .panels section .panel-bg {
-  height: 400px;
+  /*height: 400px;*/
+  height: auto;
   background-size: cover;
   background-position: center center; }
+.panels section.panel img {
+  width:100%;
+  height: auto;
+}
 /*.panels section:nth-child(3n+1) {
   background-color: #ffffff; }
 .panels section:nth-child(3n+2) {
@@ -1309,9 +1315,9 @@ header, .text-block {
     -moz-transition: background 0.3s ease;
     transition: background 0.3s ease; }
 
-.btn-blue {
+.btn-blue, input[type=submit].button-primary, .button-primary {
   border: 1px solid #00a8e2; }
-  .btn-blue:hover {
+  .btn-blue:hover, input[type=submit].button-primary:hover, .button-primary:hover {
     background: #ffffff;
     color: #00a8e2;
     -webkit-transition: background 0.3s ease;
@@ -1843,7 +1849,7 @@ aside.login-card {
     margin-left: -15px;
     margin-right: -15px; } }
 
-#login-modal {
+.login-modal {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1852,23 +1858,23 @@ aside.login-card {
   z-index: 99999;
   background: rgba(0, 0, 0, 0.75);
   display: none; }
-  #login-modal svg {
+  .login-modal svg {
     width: 35px;
     height: 35px;
     fill: #00a8e2;
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
     transition: 0.25s; }
-    #login-modal svg:hover {
+    .login-modal svg:hover {
       fill: #ffc20e;
       -webkit-transition: 0.25s;
       -moz-transition: 0.25s;
       transition: 0.25s; }
-  #login-modal a {
+  .login-modal a {
     color: #00a8e2; }
-    #login-modal a:hover, #login-modal a:active {
+    .login-modal a:hover, .login-modal a:active {
       color: #ffc20e; }
-  #login-modal .login-card {
+  .login-modal .login-card {
     width: 96%;
     float: none;
     position: relative;
@@ -1878,9 +1884,9 @@ aside.login-card {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%); }
-  #login-modal .general-form {
+  .login-modal .general-form {
     width: 100%; }
-  #login-modal .close-modal {
+  .login-modal .close-modal {
     position: relative;
     float: right;
     z-index: 5;
@@ -2028,7 +2034,7 @@ aside.login-card {
   background:transparent;
 }
 .panels section .panel-bg {
-  height: 400px;
+  /*height: 400px;*/
   background-size: cover;
   background-position: center center;
 }
@@ -2053,3 +2059,38 @@ aside.login-card {
 }*/
 
 /*# sourceMappingURL=style.css.map */
+
+/* SEARCH FORM STYLES */
+.screen-reader-text {
+  display:none;
+}
+
+/* Login Modal Styles */
+.login-modal.open {
+  display:block;
+}
+
+/* Login Form */
+#loginform label {
+  text-align:left;
+  font-weight:bold;
+  min-width: 100px;
+  padding: 0.7em 0;
+  max-width: 400px;
+  text-align: left;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.login-modal .login-error {
+  color:#ff0000;
+}
+
+/* NOTES:
+Add input[type=password] to text input styling
+Add .button-primary to .btn
+Add .button-primary to .btn-blue
+#login-modal becomes .login-modal
+Add .login-error to .login-modal section
+*/

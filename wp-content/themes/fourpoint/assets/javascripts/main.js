@@ -40,6 +40,7 @@ $(document).ready(function() {
 
 	// change slider images depending on screen sizes
 	var windowWidth = $(window).width();
+	console.log("windowWidth:"+windowWidth);
 	var changeSliderImages = function(windowWidth) {
 		var $slides = $('.the-slide');
 
@@ -48,10 +49,12 @@ $(document).ready(function() {
 				$(el).css({
 					'background-image': 'url(' + $(el).data('img-lg') + ')'
 				});
+				console.log("using large image");
 			} else {
 				$(el).css({
 					'background-image': 'url(' + $(el).data('img-sm') + ')'
 				});
+				console.log("using small image");
 			}
 		});
 	};
@@ -142,6 +145,22 @@ $(document).ready(function() {
       }
     });
   });
+
+	//click handler for login modal close button
+	$(".login-modal .close-modal").click(close_login_modal);
+
+	function open_login_modal(evt) {
+		if(evt) evt.preventDefault();
+		modal_class = $(this).attr("rel");
+		$(".login-modal."+modal_class).addClass("open");
+	}
+
+	function close_login_modal(evt) {
+		if(evt) evt.preventDefault();
+		$(".login-modal").removeClass("open");
+	}
+
+	$(".open-login").click(open_login_modal);
 
   $(window).on('resize', function() {
     if($(this).width() >= 1024) {

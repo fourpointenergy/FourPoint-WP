@@ -31,8 +31,11 @@ global $theme;
 			<div class="nav_wrap">
 				<div class="utility">
 					<div class="search_wrap">
-						<form class="search-container" action="">
-						  <input id="search-box" type="text" class="search-box" name="q" />
+						<!--
+						<?php get_search_form(); ?>
+					-->
+						<form role="search" method="get" id="searchform" class="searchform search-container" action="/">
+						  <input id="search-box" type="text" class="search-box" name="s" />
 						  <label for="search-box"><i class="fa fa-search search-icon"></i></label>
 						  <input type="submit" id="search-submit" />
 						</form>
@@ -41,7 +44,7 @@ global $theme;
 					$secondary_navitems = wp_get_nav_menu_items('secondary-nav');
 					foreach($secondary_navitems as $navitem) {
 					?>
-				
+
 					<a href="<?php echo $navitem->url ?>"<?php if($navitem->target != '') echo(' target="'.$navitem->target.'"') ?>><?php echo $navitem->title ?></a>
 					<?php } ?>
 					<!-- <a href="/contact">Contact</a> -->
@@ -54,6 +57,9 @@ global $theme;
 							<?php echo get_option('header_tooltip_text') ?>
 						</p>
 					</a>
+					<!--
+					<?php echo wp_logout_url( site_url() ); ?>
+				-->
 					<a class="btn" href="/login">Login</a>
 				</div>
 				<div id="mobile_menu" class="mobile_nav_icon">MENU&nbsp;&nbsp;<i class="fa fa-bars fa-2"></i></div>
@@ -65,60 +71,6 @@ global $theme;
 					);
 					wp_nav_menu($args);
 					?>
-				<!-- <div class="main_nav_wrap">
-					<ul id="main_nav">
-				    	<li class="more"><a href="#">about</a>
-				    		<ul class="submenu">
-				    			<li><a href="/our-history">Our History</a></li>
-				    			<li><a href="/general-content-page">Who We Are</a></li>
-				    			<li><a href="/areas-of-operation">Areas of Operation</a></li>
-				    			<li><a href="#">Business Opportunities</a></li>
-				    			<li><a href="/management-team">Management Team</a></li>
-				    		</ul>
-				    	</li>
-				    	<li class="more"><a href="#">Business & Community</a>
-				    		<ul class="submenu">
-				    			<li><a href="#">Business Strategy</a></li>
-				    			<li><a href="#">Community Promise</a></li>
-				    			<li><a href="#">Health, Safety &amp; Environment</a></li>
-				    			<li><a href="/industry-affiliations">Industry Affiliations</a></li>
-				    		</ul>
-				    	</li>
-				    	<li class="more wide"><a href="#">Interest Owners</a>
-				    		<ul class="submenu">
-				    			<li><a href="#">Owner Login</a></li>
-				    			<li><a href="#">Owner Info</a></li>
-				    			<li><a href="#">Check Stubs</a></li>
-				    			<li><a href="#">JIM Statements</a></li>
-				    			<li><a href="#">Change of Ownership</a></li>
-				    			<li><a href="#">FAQ</a></li>
-				    			<li><a href="#">Contact Info</a></li>
-				    		</ul>
-				    	</li>
-				    	<li><a href="#" id="investors-link">Investors</a></li>
-				    	<li class="more"><a href="#">News</a>
-				    		<ul class="submenu">
-				    			<li><a href="#">Features</a></li>
-				    			<li><a href="/press-releases">Press Releases</a></li>
-				    			<li><a href="/frequently-asked-questions">Presentations &amp; Fact Sheet</a></li>
-				    			<li><a href="#">The Natural Gas Story</a></li>
-				    			<li><a href="#">Events &amp; Media Gallery</a></li>
-				    		</ul>
-				    	</li>
-				    	<li><a href="/join-our-team">Careers</a></li>
-						<li class="mobile_utility"><a href="/contact">Contact</a></li>
-						<li class="mobile_utility"><a href="#">Leasing/Selling</a></li>
-						<li class="mobile_utility">
-					    	<div class="search_wrap">
-								<form class="search-container" action="">
-								  <input id="search-box" type="text" class="search-box" name="q" />
-								  <label for="search-box"><i class="fa fa-search search-icon"></i></label>
-								  <input type="submit" id="search-submit" />
-								</form>
-							</div>
-						</li>
-					</ul>
-				</div> -->
 			</div>
 		</section>
 	</nav>
