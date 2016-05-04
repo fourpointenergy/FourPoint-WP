@@ -59,13 +59,23 @@
 
 .general-content {
 	ul {
-		margin: 30px 0 20px;
+		margin: 25px 0 20px;
 		padding-left: 15px;
 		display: table;
 		font-family: 'Source Sans Pro', sans-serif;
 		li {
-			list-style-type: disc;
-			list-style-position: inside;
+			padding-left: 25px;
+			text-indent: -15px;
+			position: relative;
+			list-style: none;
+			line-height: 1.5;
+			margin-bottom: 13px;
+			&:before {
+				content: '\2014';
+				color: $fourpoint_blue;
+				margin-left: -10px;
+				margin-right: 12px;
+			}
 		}
 	}
 	ol {
@@ -98,8 +108,12 @@
 
 .opp-contact {
 	float: left;
-	width: 49%;
-	margin: 40px 0;
+	width: 100%;
+	margin: 36px 0 50px;
+	min-height: 215px;
+	@media screen and (min-width: 700px) {
+		width: 49%;
+	}
 	&:nth-child(even) {
 		float: right;
 	}

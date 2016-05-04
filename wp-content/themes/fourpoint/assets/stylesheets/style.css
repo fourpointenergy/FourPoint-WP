@@ -243,7 +243,7 @@ nav {
         nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children .sub-menu {
           position: absolute;
           top: 35px;
-          line-height: 50px;
+          line-height: 55px;
           max-height: 0px;
           overflow: hidden;
           width: 100%;
@@ -1550,13 +1550,22 @@ header h1 {
     text-align: center; }
 
 .general-content ul {
-  margin: 30px 0 20px;
+  margin: 25px 0 20px;
   padding-left: 15px;
   display: table;
   font-family: 'Source Sans Pro', sans-serif; }
   .general-content ul li {
-    list-style-type: disc;
-    list-style-position: inside; }
+    padding-left: 25px;
+    text-indent: -15px;
+    position: relative;
+    list-style: none;
+    line-height: 1.5;
+    margin-bottom: 13px; }
+    .general-content ul li:before {
+      content: '\2014';
+      color: #00a8e2;
+      margin-left: -10px;
+      margin-right: 12px; }
 .general-content ol {
   padding-left: 30px;
   margin: 20px 0;
@@ -1577,8 +1586,12 @@ header h1 {
 
 .opp-contact {
   float: left;
-  width: 49%;
-  margin: 40px 0; }
+  width: 100%;
+  margin: 36px 0 50px;
+  min-height: 215px; }
+  @media screen and (min-width: 700px) {
+    .opp-contact {
+      width: 49%; } }
   .opp-contact:nth-child(even) {
     float: right; }
 
