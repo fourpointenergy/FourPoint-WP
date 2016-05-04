@@ -8,6 +8,9 @@
 			width: 97%;
 			// margin: 0 auto;
 		}
+		select {
+			border-radius: 2px !important;
+		}
 		input, textarea {
 		  padding: 0.7em;
 		  border: none;
@@ -123,7 +126,7 @@
 	padding-left: 6px !important;
 }
 
-.gform_wrapper .top_label select.medium {
+.gform_wrapper .top_label select.medium, .gform_wrapper .top_label input.medium  {
 	margin: 0 auto !important;
 	width: 90% !important;
 	display: block;

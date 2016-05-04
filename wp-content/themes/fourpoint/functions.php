@@ -10,7 +10,7 @@ class Fourpoint {
 	 * @since 1.0
 	 */
 	private $theme_name = "Fourpoint";
-	private $scripts_version = '0.01';
+	private $scripts_version = '0.02';
 
 	function __construct() {
 		add_action('init', array($this, 'register_assets'));
@@ -69,6 +69,8 @@ class Fourpoint {
 
 	function front_end_login_fail( $username, $password_empty = 'false', $username_empty = 'false' ) {
 	   $referrer = $_SERVER['HTTP_REFERER'];  // where did the post submission come from?
+		 $login_type = $_REQUEST['login_type'];
+
 	   // if there's a valid referrer, and it's not the default log-in screen
 	   if ( !empty($referrer) && !strstr($referrer,'wp-login') && !strstr($referrer,'wp-admin') ) {
 
@@ -76,7 +78,7 @@ class Fourpoint {
 			if($pos === false) {
 			 	// add the failed
 			 	// wp_redirect( $referrer . '?login=failed&pwblank='.$password_empty.'&ublank='.$username_empty );  // let's append some information (login=failed) to the URL for the theme to use
-			 	wp_redirect( $referrer . '?login=failed');  // let's append some information (login=failed) to the URL for the theme to use
+			 	wp_redirect( $referrer . '?login=failed&login_type='.$login_type);  // let's append some information (login=failed) to the URL for the theme to use
 			}
 			else {
 				// already has the failed don't appened it again
@@ -358,6 +360,7 @@ class Fourpoint {
 			'has_archive' => false,
 			'hierarchical' => false,
 			'menu_position' => 3,
+			'exclude_from_search' => true,
 			'supports' => array('title','editor')
 		);
 		register_post_type('gallery-set', $args);
@@ -398,6 +401,41 @@ class Fourpoint {
 		$result = add_role(
 		    'investor',
 		    __( 'Investor' ),
+		    array(
+		    	'administrator' => false,
+		        'read'         => true,  // true allows this capability
+		        'edit_posts'   => false,
+		        'delete_posts' => false, // Use false to explicitly deny
+		        'delete_others_posts' => false,
+		        'delete_others_pages' => false,
+		        'edit_others_posts' => false,
+		        'edit_others_pages' => false,
+		        'manage_categories' => false,
+		        'moderate_comments' => false,
+		        'publish_posts' => true,
+		        'publish_pages' => false,
+		        'upload_files' => true,
+		        'update_core' => false,
+		        'update_plugins' => false,
+		        'update_themes' => false,
+		        'install_plugins' => false,
+		        'install_themes' => false,
+		        'delete_themes' => false,
+		        'delete_plugins' => false,
+		        'edit_plugins' => false,
+		        'edit_themes' => false,
+		        'edit_files' => false,
+		        'edit_users' => false,
+		        'create_users' => false,
+		        'delete_users' => false,
+		        'activate_plugins' => false,
+		        'delete_pages' => false,
+		    )
+		);
+
+		$result = add_role(
+		    'interest-owner',
+		    __( 'Interest Owner' ),
 		    array(
 		    	'administrator' => false,
 		        'read'         => true,  // true allows this capability
@@ -688,3 +726,5 @@ function my_mce_buttons_2($buttons) {
 function is_login_page() {
 	return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php'));
 }
+
+show_admin_bar(false);

@@ -38,10 +38,10 @@
 	position: absolute;
 	top: 48%;
 	left: 50%;
-	width: 90%;
+	width: 94%;
 	text-align: center;
 	z-index: 1001;
-	max-width: 700px;
+	max-width: 800px;
 	@include transform(translate(-50%, -50%));
 	@include tablet-portrait-and-up {
 		top: 56%;
@@ -64,7 +64,7 @@
 		font-size: 2.5em;
 		line-height: 0.85;
 		@include tablet-landscape-and-up {
-			font-size: 5em;
+			font-size: 4.75em;
 		}
 	}
 }
@@ -79,6 +79,8 @@
 		color: $dark_gray;
 	}
 	.text-block {
+		width: 94%;
+		margin: 0 auto;
 		p {
 			max-width: 700px;
 		}
@@ -107,7 +109,6 @@
 }
 
 .home-img-full {
-	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -126,7 +127,7 @@
 		.text-block {
 			background:transparent;
 		}
-		.panel-bg {
+		img {
 			 height: auto;
 			 width: 100%;
 		}
@@ -154,11 +155,7 @@
 .panels section a.button {
   display:inline-block;
 }
-// .panels section .text-block {
-//   background:transparent;
-// }
 // .panels section .panel-bg {
-//   height: 400px;
 //   background-size: cover;
 //   background-position: center center;
 // }

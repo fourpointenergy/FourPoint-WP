@@ -9,7 +9,7 @@ get_header(); ?>
   	<header class="clearfix">
   		<div class="team_title">
   			<span>
-  				<h1>George Solich</h1>
+  				<h1><?php the_title(); ?></h1>
   				<h3><?php the_field('profile_job_title') ?></h3>
   			</span>
   		</div>

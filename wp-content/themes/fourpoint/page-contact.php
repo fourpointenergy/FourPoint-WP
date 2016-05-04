@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * Template for displaying all pages
  */
@@ -13,14 +13,18 @@ get_header(); ?>
   <div class="emergency-contact-num">
   	<div class="container">
   		<h2>In case of an emergency call</h2>
-  		<a href="#">303-303-3030</a>
+  		<!-- <h2><?php the_field('top_bar_left_content'); ?></h2> -->
+  		<a href="tel:000-000-0000">000.000.0000</a>
+  		<!-- <?php the_field('top_bar_right_content'); ?> -->
   	</div>
   </div>
 
   <div class="container">
 	<div class="form_wrap">
+    <span class="general-form">
       <h2 class="contact-form-header">GENERAL INQUIRIES</h2>
       <?php the_content(); ?>
+    </span>
 	</div>
 
 	<div class="sidebar">
@@ -28,11 +32,11 @@ get_header(); ?>
 		<div class="copy_split">
 			<div class="side-content">
 				<aside><p>Owner Relations</p></aside>
-				<article><a href="#">303-303-3030</a></article>
+				<article><a href="tel:303-785-1581">303.785.1581</a></article>
 			</div>
 			<div class="side-content">
 				<aside><p>Business Development</p></aside>
-				<article><a href="#">303-303-3030</a></article>
+				<article><a href="tel:000-000-0000">000.000.0000</a></article>
 			</div>
 		</div>
 		<aside class="card">
@@ -40,7 +44,7 @@ get_header(); ?>
 			<div class="card-bottom">
 				<div class="inner">
 					<h3>Careers</h3>
-					<p>Check out our careers page, it's awesome.</p>
+					<p>Integer non vulputate risus duis mattis.</p>
 					<button type="button" class="button btn-blue">See more</button>
 				</div>
 			</div>

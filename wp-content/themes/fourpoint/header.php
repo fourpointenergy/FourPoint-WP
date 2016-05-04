@@ -31,8 +31,11 @@ global $theme;
 			<div class="nav_wrap">
 				<div class="utility">
 					<div class="search_wrap">
-						<form class="search-container" action="">
-						  <input id="search-box" type="text" class="search-box" name="q" />
+						<!--
+						<?php get_search_form(); ?>
+					-->
+						<form role="search" method="get" id="searchform" class="searchform search-container" action="/">
+						  <input id="search-box" type="text" class="search-box" name="s" />
 						  <label for="search-box"><i class="fa fa-search search-icon"></i></label>
 						  <input type="submit" id="search-submit" />
 						</form>
@@ -53,6 +56,9 @@ global $theme;
 							<?php echo get_option('header_tooltip_text') ?>
 						</p>
 					</a>
+					<!--
+					<?php echo wp_logout_url( site_url() ); ?>
+				-->
 					<a class="btn" href="/login">Login</a>
 				</div>
 				<div id="mobile_menu" class="mobile_nav_icon">MENU&nbsp;&nbsp;<i class="fa fa-bars fa-2"></i></div>

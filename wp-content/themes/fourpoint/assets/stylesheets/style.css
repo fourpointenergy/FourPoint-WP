@@ -242,7 +242,7 @@ nav {
           color: #ffc20e; }
         nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children .sub-menu {
           position: absolute;
-          top: 30px;
+          top: 35px;
           line-height: 50px;
           max-height: 0px;
           overflow: hidden;
@@ -960,6 +960,8 @@ header h1 {
       clear: both; }
     .form_wrap div label, .form_wrap div input, .form_wrap div .gform_wrapper .top_label .gfield_label {
       width: 97%; }
+    .form_wrap div select {
+      border-radius: 2px !important; }
     .form_wrap div input, .form_wrap div textarea {
       padding: 0.7em;
       border: none;
@@ -1049,7 +1051,7 @@ header h1 {
 .gform_wrapper input[type="text"] {
   padding-left: 6px !important; }
 
-.gform_wrapper .top_label select.medium {
+.gform_wrapper .top_label select.medium, .gform_wrapper .top_label input.medium {
   margin: 0 auto !important;
   width: 90% !important;
   display: block; }
@@ -1165,10 +1167,10 @@ header h1 {
   position: absolute;
   top: 48%;
   left: 50%;
-  width: 90%;
+  width: 94%;
   text-align: center;
   z-index: 1001;
-  max-width: 700px;
+  max-width: 800px;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -1191,7 +1193,7 @@ header h1 {
     line-height: 0.85; }
     @media (min-width: 1024px) {
       .hero-slider-copy h1 {
-        font-size: 5em; } }
+        font-size: 4.75em; } }
 
 .button {
   display: inline-block;
@@ -1213,8 +1215,11 @@ header h1 {
 
 .panel h1 {
   color: #2e2e2d; }
-.panel .text-block p {
-  max-width: 700px; }
+.panel .text-block {
+  width: 94%;
+  margin: 0 auto; }
+  .panel .text-block p {
+    max-width: 700px; }
 
 .panel-gray {
   background-color: #2e2e2d; }
@@ -1231,7 +1236,6 @@ header h1 {
     color: #ffffff; }
 
 .home-img-full {
-  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -1244,7 +1248,7 @@ header h1 {
   margin-top: 12px; }
 .panels section .text-block {
   background: transparent; }
-.panels section .panel-bg {
+.panels section img {
   height: auto;
   width: 100%; }
 
@@ -1598,6 +1602,7 @@ header h1 {
     margin: 0 auto 20px; }
   .general-form .contact-form-header {
     margin: 20px 0;
+    text-align: center;
     text-transform: uppercase; }
 
 .emergency-contact-num {
