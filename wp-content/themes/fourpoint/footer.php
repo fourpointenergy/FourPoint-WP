@@ -19,8 +19,9 @@ get_currentuserinfo();
        $navitems = wp_get_nav_menu_items('footer-nav');
        if(count($navitems > 0)) { ?>
          <ul>
-        <?php foreach($navitems as $navitem) { ?>
-          <li><a href="<?php $navitem->url ?>"<?php if($navitem->target != '') echo(' target="'.$navitem->target.'"') ?>><?php echo $navitem->title ?></a></li>
+        <?php foreach($navitems as $navitem) {
+           ?>
+          <li><a href="<?php echo $navitem->url ?>"<?php if($navitem->target != '') echo(' target="'.$navitem->target.'"') ?>><?php echo $navitem->title ?></a></li>
         <?php } ?>
         </ul>
       <?php } ?>

@@ -5,7 +5,8 @@
 $args = array(
   'post_type' => 'management-team',
   'order' => 'menu_order',
-  'post_status' => 'publish'
+  'post_status' => 'publish',
+  'posts_per_page' => -1
 );
 $management_team_qry = new WP_Query( $args );
 ?>
