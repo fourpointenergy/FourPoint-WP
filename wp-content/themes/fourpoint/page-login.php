@@ -122,7 +122,7 @@ get_header(); ?>
            </p>
            <!-- <p><a href="/wp-login.php?action=lostpassword">Forgot Password?</a></p> -->
            <p class="login-submit">
-             <input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In">
+             <input type="submit" name="wp-submit" id="wp-submit" class="button-primary button btn-blue" value="Log In">
              <input type="hidden" name="redirect_to" value="<?php echo site_url('/interest-owners') ?>">
              <input type="hidden" name="login_type" value="interest_owners">
            </p>
