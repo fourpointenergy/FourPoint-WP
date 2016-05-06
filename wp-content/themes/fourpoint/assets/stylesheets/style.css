@@ -84,7 +84,8 @@ body, html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  opacity: 0; }
 
 .showing {
   opacity: 1;

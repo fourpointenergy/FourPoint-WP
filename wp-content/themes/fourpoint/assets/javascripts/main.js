@@ -2,13 +2,19 @@
 $(document).ready(function() {
 
   // Fade in images on load
-  var slideImg = $('.the-slide');
-  slideImg.imagesLoaded( function() {
-    slideImg.each(function() {
-      $(this).fadeIn(300);
-    });
-    $('body').addClass('showing');
-  });
+  var $body = $('body');
+  if($body.hasClass('home')) {
+    var slideImg = $('.the-slide');
+    slideImg.imagesLoaded( function() {
+      slideImg.each(function() {
+        $(this).fadeIn(200);
+      });
+      $body.addClass('showing');
+    }); 
+  } else {
+    $body.addClass('showing');
+  }
+
 
   // Home page slider init
   $('.hero-slider').slick({
