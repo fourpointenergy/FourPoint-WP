@@ -17,8 +17,8 @@
 		  border-radius: 2px;
 		  display: block;
 		}
-		input[type="text"], input[type="email"], textarea, select {
-		  margin: 0 auto 1em;
+		input[type="text"], input[type="email"], textarea, select, #user_pass {
+		  margin: 10px auto 1em;
 		  border: 1px solid darken($form_fill, 10%);
 		  outline: none;
 		  background: $form_fill;
@@ -27,9 +27,11 @@
 		
 		label {
 			min-width: 100px;
-			padding: 0.7em 0;
+			padding: 0.5em 0;
 			max-width: 400px;
 			text-align: left;
+			display: inline-block;
+    		width: 90%;
 		}
 		input, textarea {
 			width: 90%;
