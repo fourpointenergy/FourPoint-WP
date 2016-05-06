@@ -85,6 +85,22 @@ $(document).ready(function() {
 
   });
 
+  //click handler for login modal close button
+  $(".login-modal .close-modal").click(close_login_modal);
+
+  function open_login_modal(evt) {
+    if(evt) evt.preventDefault();
+    modal_class = $(this).attr("rel");
+    $(".login-modal."+modal_class).addClass("open");
+  }
+
+  function close_login_modal(evt) {
+    if(evt) evt.preventDefault();
+    $(".login-modal").removeClass("open");
+  }
+
+  $(".open-login").click(open_login_modal);
+
   // Trigger Investors login modal
   // var loginModal = document.getElementById('login-modal');
   // document.getElementsByClassName('investors-link')[0].addEventListener('click', function() {
