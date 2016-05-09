@@ -20,7 +20,27 @@ global $theme;
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+		
 	<?php wp_head(); ?>
+
+	<style type="text/css">
+		.slider-placeholder { 
+			height: 60vh;
+			background-color: #808080;
+			position: relative;
+			top: 0;
+			z-index: 20;
+			width: 100%;
+			height: 68vh;
+		 }
+		 .slider-placeholder svg {
+		 	position: absolute;
+		 	top: 50%;
+		 	left: 50%;
+		 	margin-top: -20px;
+		 }
+	</style>
+
 </head>
 <body <?php body_class();?>>
 	<nav>

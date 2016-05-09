@@ -46,6 +46,136 @@ ul li {
     -o-transform: rotateX(0deg);
     transform: rotateX(0deg);
     opacity: 1; } }
+/* Home page slider sytles */
+.hero-slider {
+  width: 100%;
+  overflow: hidden;
+  background-color: gray;
+  height: 375px;
+  visibility: hidden; }
+  @media (min-width: 768px) {
+    .hero-slider {
+      height: 60vh;
+      position: absolute !important;
+      top: 0;
+      width: 100%;
+      visibility: hidden; } }
+
+.hero-slider-item {
+  position: relative; }
+
+.the-slide-mobile {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 375px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .the-slide-mobile {
+      height: 100%; } }
+
+.the-slide {
+  height: 100%;
+  width: 100%;
+  display: none !important; }
+  @media (min-width: 768px) {
+    .the-slide {
+      display: block !important; } }
+
+.hero-slider-copy {
+  color: #ffffff;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: 94%;
+  text-align: center;
+  z-index: 1001;
+  max-width: 800px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  @media (min-width: 768px) {
+    .hero-slider-copy {
+      top: 56%; } }
+  .hero-slider-copy p {
+    font-size: 17px;
+    font-weight: bold; }
+    @media (max-width: 768px) {
+      .hero-slider-copy p {
+        width: 75%;
+        font-size: 15px;
+        line-height: 1.3em; } }
+  .hero-slider-copy h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    line-height: 0.85; }
+    @media (min-width: 1024px) {
+      .hero-slider-copy h1 {
+        font-size: 4.75em; } }
+
+.button {
+  display: inline-block;
+  background: #00a8e2;
+  padding: 15px 30px;
+  border-radius: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
+  .button:hover {
+    background: #0082af; }
+
+.panel h1 {
+  color: #2e2e2d; }
+.panel .text-block {
+  width: 94%;
+  margin: 0 auto; }
+  .panel .text-block p {
+    max-width: 700px; }
+
+.panel-gray {
+  background-color: #2e2e2d; }
+  .panel-gray h1, .panel-gray p {
+    color: #ffffff; }
+
+.panel-white {
+  background-color: #ffffff; }
+
+.panel-blue {
+  background-color: #00a8e2;
+  color: #ffffff; }
+  .panel-blue h1 {
+    color: #ffffff; }
+
+.home-img-full {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.experience-img {
+  background-image: url(../images/map_perspective-4-13.jpg); }
+
+.panels section a.button {
+  display: inline-block;
+  margin-top: 12px; }
+.panels section .text-block {
+  background: transparent; }
+.panels section img {
+  height: auto;
+  width: 100%; }
+
+/* Styles to Fix Homepage */
+.panels section a.button {
+  display: inline-block; }
+
 @font-face {
   font-family: 'social_icons';
   src: url("/wp-content/themes/fourpoint/assets/icon_font/icomoon.eot");
@@ -84,11 +214,11 @@ body, html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  overflow-x: hidden;
-  opacity: 0; }
+  overflow-x: hidden; }
 
 .showing {
-  opacity: 1;
+  visibility: visible !important;
+  height: auto !important;
   -webkit-transition: 0.35s ease;
   -moz-transition: 0.35s ease;
   transition: 0.35s ease; }
@@ -1133,131 +1263,6 @@ header h1 {
       .copy_split .side-content article, .copy_split .side-content aside {
         width: 100%;
         float: none; } }
-
-/* Home page slider sytles */
-.hero-slider {
-  width: 100%;
-  overflow: hidden;
-  background-color: gray;
-  height: 375px; }
-  @media (min-width: 768px) {
-    .hero-slider {
-      height: auto; } }
-
-.hero-slider-item {
-  position: relative; }
-
-.the-slide-mobile {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  height: 375px;
-  width: 100%; }
-  @media (min-width: 768px) {
-    .the-slide-mobile {
-      height: 100%; } }
-
-.the-slide {
-  height: 100%;
-  width: 100%;
-  display: none !important; }
-  @media (min-width: 768px) {
-    .the-slide {
-      display: block !important; } }
-
-.hero-slider-copy {
-  color: #ffffff;
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  width: 94%;
-  text-align: center;
-  z-index: 1001;
-  max-width: 800px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-  @media (min-width: 768px) {
-    .hero-slider-copy {
-      top: 56%; } }
-  .hero-slider-copy p {
-    font-size: 17px;
-    font-weight: bold; }
-    @media (max-width: 768px) {
-      .hero-slider-copy p {
-        width: 75%;
-        font-size: 15px;
-        line-height: 1.3em; } }
-  .hero-slider-copy h1 {
-    color: #ffffff;
-    font-size: 2.5em;
-    line-height: 0.85; }
-    @media (min-width: 1024px) {
-      .hero-slider-copy h1 {
-        font-size: 4.75em; } }
-
-.button {
-  display: inline-block;
-  background: #00a8e2;
-  padding: 15px 30px;
-  border-radius: 2px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0 auto;
-  display: block;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  -moz-transition: background 0.3s ease;
-  transition: background 0.3s ease; }
-  .button:hover {
-    background: #0082af; }
-
-.panel h1 {
-  color: #2e2e2d; }
-.panel .text-block {
-  width: 94%;
-  margin: 0 auto; }
-  .panel .text-block p {
-    max-width: 700px; }
-
-.panel-gray {
-  background-color: #2e2e2d; }
-  .panel-gray h1, .panel-gray p {
-    color: #ffffff; }
-
-.panel-white {
-  background-color: #ffffff; }
-
-.panel-blue {
-  background-color: #00a8e2;
-  color: #ffffff; }
-  .panel-blue h1 {
-    color: #ffffff; }
-
-.home-img-full {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-
-.experience-img {
-  background-image: url(../images/map_perspective-4-13.jpg); }
-
-.panels section a.button {
-  display: inline-block;
-  margin-top: 12px; }
-.panels section .text-block {
-  background: transparent; }
-.panels section img {
-  height: auto;
-  width: 100%; }
-
-/* Styles to Fix Homepage */
-.panels section a.button {
-  display: inline-block; }
 
 .btn {
   padding: 5px 10px;

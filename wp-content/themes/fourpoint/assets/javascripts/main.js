@@ -1,26 +1,51 @@
 
 $(document).ready(function() {
 
-  // Fade in images on load
+  // hide slider
+  var $slider = $('.hero-slider');
+  var $slidesMobile = $('.the-slide-mobile');
+  var $slideDesktop = $('.the-slide');
   var $body = $('body');
-  if($body.hasClass('home')) {
-    var slideImg = $('.the-slide');
-    slideImg.imagesLoaded( function() {
-      slideImg.each(function() {
-        $(this).fadeIn(200);
-      });
-      $body.addClass('showing');
-    }); 
-  } else {
-    $body.addClass('showing');
-  }
-
+  var windowWidth = $(window).width();
 
   // Home page slider init
   $('.hero-slider').slick({
     dots: true,
     speed: 200
   });
+
+  // change slider images depending on screen sizes
+  var changeSliderImages = function(windowWidth) {
+
+    $slidesMobile.each(function(index, el) {
+      if(windowWidth <= 800) {
+        $(el).css({
+          'background-image': 'url(' + $(el).data('img-sm') + ')'
+        });
+      }
+    });
+
+    $slideDesktop.each(function(index, el) {
+      if(windowWidth >= 801) {
+        $(el).attr('src', $(el).data('img-lg'));
+      }
+    });
+
+    // Fade in images on load
+    if($body.hasClass('home')) {
+      $slideDesktop.imagesLoaded( function() {
+        $slideDesktop.each(function() {
+          $(this).show();
+        });
+        $slider.addClass('showing');
+        $('.slider-placeholder').css('opacity', '0');
+      }); 
+    }
+  };
+
+  changeSliderImages(windowWidth);
+
+
 
   //init fancybox
   $(".fancybox").fancybox({
@@ -39,28 +64,7 @@ $(document).ready(function() {
       }
     });
 
-  // change slider images depending on screen sizes
-  var windowWidth = $(window).width();
-  var changeSliderImages = function(windowWidth) {
-    var $slidesMobile = $('.the-slide-mobile');
-    var $slideDesktop = $('.the-slide');
 
-    $slidesMobile.each(function(index, el) {
-      if(windowWidth <= 800) {
-        $(el).css({
-          'background-image': 'url(' + $(el).data('img-sm') + ')'
-        });
-      }
-    });
-
-    $slideDesktop.each(function(index, el) {
-      if(windowWidth >= 801) {
-        $(el).attr('src', $(el).data('img-lg'));
-      }
-    })
-  };
-
-  changeSliderImages(windowWidth);
 
   $(window).on('resize', function(windowWidth) {
     windowWidth = $(window).width();

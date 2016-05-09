@@ -1,11 +1,17 @@
 /* Home page slider sytles */
 .hero-slider {
+	// opacity: 0;
 	width: 100%;
 	overflow: hidden;
 	background-color: gray;
 	height: 375px;
+	visibility: hidden;
 	@include tablet-portrait-and-up {
-		height: auto;
+		height: 60vh;
+		position: absolute !important;
+		top: 0;
+		width: 100%;
+		visibility: hidden;
 	}
 }
 

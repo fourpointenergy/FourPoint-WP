@@ -53,11 +53,12 @@ body, html {
 
 body {
   overflow-x: hidden;
-  opacity: 0;
+  // opacity: 0;
 }
 
 .showing {
-  opacity: 1;
+  visibility: visible !important;
+  height: auto !important;
   @include transition(0.35s ease);
 }
 
