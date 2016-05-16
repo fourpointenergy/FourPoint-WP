@@ -1,43 +1,11 @@
 
 $(document).ready(function() {
 
-  // Fade in images on load
-  var $body = $('body');
-  if($body.hasClass('home')) {
-    var slideImg = $('.the-slide');
-    slideImg.imagesLoaded( function() {
-      slideImg.each(function() {
-        $(this).fadeIn(200);
-      });
-      $body.addClass('showing');
-    }); 
-  } else {
-    $body.addClass('showing');
-  }
-
-
   // Home page slider init
   $('.hero-slider').slick({
     dots: true,
     speed: 200
   });
-
-  //init fancybox
-  $(".fancybox").fancybox({
-      padding: 0,
-      prevEffect: 'none',
-      nextEffect: 'none',
-      helpers: {
-        title: {
-          type: 'outside'
-        },
-        media: {},
-        thumbs: {
-          width: 80,
-          height: 50
-        }
-      }
-    });
 
   // change slider images depending on screen sizes
   var windowWidth = $(window).width();
@@ -57,10 +25,41 @@ $(document).ready(function() {
       if(windowWidth >= 801) {
         $(el).attr('src', $(el).data('img-lg'));
       }
-    })
+    });
+
+    setTimeout(function() {
+      $('#page-loader').fadeOut(300).addClass('gone');
+    }, 300);
+    
   };
 
   changeSliderImages(windowWidth);
+
+  // failsafe
+  if($('#page-loader').hasClass('gone')) {
+    setTimeout(function() {
+      $('#page-loader').remove();
+    }, 700);
+  }
+
+  //init fancybox
+  $(".fancybox").fancybox({
+      padding: 0,
+      prevEffect: 'none',
+      nextEffect: 'none',
+      helpers: {
+        title: {
+          type: 'outside'
+        },
+        media: {},
+        thumbs: {
+          width: 80,
+          height: 50
+        }
+      }
+    });
+
+
 
   $(window).on('resize', function(windowWidth) {
     windowWidth = $(window).width();

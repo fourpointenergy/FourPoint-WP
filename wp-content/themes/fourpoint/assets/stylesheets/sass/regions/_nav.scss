@@ -335,7 +335,11 @@ nav {
 	nav {
 		background: $dark_gray;
 		@include tablet-landscape-and-up {
-			background: transparent;
+			background: #2e2e2d;
+			background: -moz-linear-gradient(to bottom, rgba(56, 56, 56, 0.75) -2%, rgba(0, 0, 0, 0.01) 96%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(to bottom, rgba(56, 56, 56, 0.75) -2%, rgba(0, 0, 0, 0.01) 96%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(56, 56, 56, 0.75) -2%, rgba(0, 0, 0, 0.01) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 			position: absolute;
 			height: 110px;
 		    top: 0;
