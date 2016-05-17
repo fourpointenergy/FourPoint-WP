@@ -1221,7 +1221,6 @@ header h1 {
         font-size: 4.75em; } }
 
 .button {
-  display: inline-block;
   background: #00a8e2;
   padding: 15px 30px;
   border-radius: 2px;
@@ -1229,7 +1228,7 @@ header h1 {
   font-weight: bold;
   color: #ffffff;
   margin: 0 auto;
-  display: block;
+  display: inline-block;
   border: none;
   cursor: pointer;
   -webkit-transition: background 0.3s ease;
@@ -1269,7 +1268,6 @@ header h1 {
   background-image: url(../images/map_perspective-4-13.jpg); }
 
 .panels section a.button {
-  display: inline-block;
   margin-top: 12px; }
 .panels section .text-block {
   background: transparent; }
@@ -1278,9 +1276,6 @@ header h1 {
   width: 100%; }
 
 /* Styles to Fix Homepage */
-.panels section a.button {
-  display: inline-block; }
-
 .btn {
   padding: 5px 10px;
   background: transparent;
@@ -1657,14 +1652,14 @@ header h1 {
     @media (min-width: 768px) {
       .emergency-contact-num h2 {
         float: left; } }
-  .emergency-contact-num a {
+  .emergency-contact-num .right-content {
     font-size: 20px;
     line-height: 1.3;
     display: block;
     text-align: center;
     margin-top: 15px; }
     @media (min-width: 768px) {
-      .emergency-contact-num a {
+      .emergency-contact-num .right-content {
         float: right;
         font-size: 24px;
         margin: 0; } }

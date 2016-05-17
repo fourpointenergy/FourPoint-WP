@@ -35,7 +35,7 @@ get_header(); ?>
         <div class="hero-slider-copy">
 					<h1><?php the_sub_field('slide_title') ?></h1>
 					<p><?php the_sub_field('slide_text') ?></p>
-					<a href="<?php the_sub_field('button_link') ?>" class="button btn-blue" style="display:inline-block"><?php the_sub_field('button_text') ?></a>
+					<a href="<?php the_sub_field('button_link') ?>" class="button btn-blue"><?php the_sub_field('button_text') ?></a>
 				</div>
 			</div>
 		</div>

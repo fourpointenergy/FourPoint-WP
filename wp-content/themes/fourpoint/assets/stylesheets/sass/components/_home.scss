@@ -70,7 +70,7 @@
 }
 
 .button {
-	display: inline-block;
+	// display: inline-block;
 	@include first_btn;
 }
 
@@ -121,7 +121,7 @@
 .panels {
 	section {
 		a.button {
-			display:inline-block;
+			// display:inline-block;
 			margin-top: 12px;
 		}
 		.text-block {
@@ -152,9 +152,9 @@
 }
 
 /* Styles to Fix Homepage */
-.panels section a.button {
-  display:inline-block;
-}
+// a.button {
+//   display:inline-block;
+// }
 // .panels section .panel-bg {
 //   background-size: cover;
 //   background-position: center center;
