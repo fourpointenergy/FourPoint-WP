@@ -855,7 +855,7 @@ header h1 {
           background-image: -webkit-linear-gradient(transparent 0, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.8) 100%);
           background-image: linear-gradient(to   , rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.8) 100%); }
         .grid ul li a:hover span {
-          top: -30%; }
+          top: 0; }
         .grid ul li a:hover div {
           bottom: 35%; }
           .grid ul li a:hover div span {
