@@ -9,6 +9,7 @@ h1, h2, h3, h6 {
 
 h1 {
   font-size: 30px;
+  line-height: 1em;
   text-transform: uppercase;
   @include tablet-portrait-and-up {
    font-size: 36px; 

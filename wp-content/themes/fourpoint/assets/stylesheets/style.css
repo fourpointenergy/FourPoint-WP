@@ -479,6 +479,8 @@ footer {
       float: left;
       text-align: left;
       padding-top: 40px; }
+      footer section .legal ul {
+        margin-left: 0; }
     footer section .footer_icon {
       width: 16%;
       float: left;
@@ -491,12 +493,14 @@ footer {
       float: left;
       padding-top: 40px; }
       footer section .social ul {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        margin-left: 0; }
         @media (min-width: 1024px) {
           footer section .social ul {
             float: right;
             margin-top: -10px;
-            margin-bottom: 0; } }
+            margin-bottom: 0;
+            margin-left: 15px; } }
         footer section .social ul li {
           height: 34px;
           width: 34px;
@@ -1078,7 +1082,7 @@ header h1 {
 
 .gform_wrapper .top_label select.medium, .gform_wrapper .top_label input.medium {
   margin: 0 auto !important;
-  width: 90% !important;
+  width: 99% !important;
   display: block; }
 
 .ginput_container_select {
@@ -1214,8 +1218,7 @@ header h1 {
         line-height: 1.3em; } }
   .hero-slider-copy h1 {
     color: #ffffff;
-    font-size: 2.5em;
-    line-height: 0.85; }
+    font-size: 2.5em; }
     @media (min-width: 1024px) {
       .hero-slider-copy h1 {
         font-size: 4.75em; } }
@@ -1737,14 +1740,20 @@ header h1 {
       .map-block .map-address, .map-block .google-map {
         width: 50%;
         float: left; } }
-  .map-block .google-map iframe {
-    width: 100%;
-    height: 100%; }
   .map-block:nth-child(even) .map-address {
     background-color: #00a8e2; }
     @media (min-width: 768px) {
       .map-block:nth-child(even) .map-address {
         float: right !important; } }
+
+.scrolloff {
+  pointer-events: none; }
+
+.google-map {
+  position: relative; }
+  .google-map iframe {
+    width: 100%;
+    height: 100%; }
 
 .map-address {
   color: #ffffff;
@@ -1773,6 +1782,7 @@ h1, h2, h3, h6 {
 
 h1 {
   font-size: 30px;
+  line-height: 1em;
   text-transform: uppercase; }
   @media (min-width: 768px) {
     h1 {

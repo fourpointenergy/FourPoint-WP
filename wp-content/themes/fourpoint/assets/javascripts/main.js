@@ -106,6 +106,13 @@ $(document).ready(function() {
 
   $(".open-login").click(open_login_modal);
 
+  // disable scrolling of google map embed on contact page, then re-enable on click
+  $('.google-map iframe').addClass('scrolloff');
+
+  $('.google-map').on('mousedown', function() {
+    $(this).children('iframe').removeClass('scrolloff');
+  });
+
   // Trigger Investors login modal
   // var loginModal = document.getElementById('login-modal');
   // document.getElementsByClassName('investors-link')[0].addEventListener('click', function() {

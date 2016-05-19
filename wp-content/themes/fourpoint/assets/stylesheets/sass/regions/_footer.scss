@@ -16,6 +16,9 @@ footer {
 			float: left;
 			text-align: left;
 			padding-top: 40px;
+			ul {
+				margin-left: 0;
+			}
 		}
 		.footer_icon {
 			width: 16%;
@@ -32,10 +35,12 @@ footer {
 			padding-top: 40px;
 			ul {
 				margin-bottom: 20px;
+				margin-left: 0;
 				@include tablet-landscape-and-up {
 					float: right;
 					margin-top: -10px;
 					margin-bottom: 0;
+					margin-left: 15px;
 				}
 				li {
 					height: 34px;
