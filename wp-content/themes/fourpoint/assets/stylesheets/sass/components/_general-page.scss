@@ -119,3 +119,41 @@
 		float: right;
 	}
 }
+
+// interest owners/contact info page.
+.page-id-200 {
+	.opp-contact {
+		min-height: auto;
+		margin-top: 0;
+		margin-bottom: 20px;
+		p {
+			margin: 0;
+		}
+	}
+}
+
+// interest owners logged in page
+.page-id-86 {
+	.opp-contact {
+		margin-bottom: 0;
+	}
+}
+
+.opp-contact {
+	iframe {
+		margin: 15px auto 0;
+		display: block;
+		@include tablet-portrait-and-up {
+			float: right;
+		}
+	}
+	.card {
+		width: 90%;
+		.button {
+			color: $white;
+			&:hover {
+				color: $fourpoint_blue;
+			}
+		}
+	}
+}
