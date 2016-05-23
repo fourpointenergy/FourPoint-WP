@@ -1615,7 +1615,7 @@ header h1 {
   width: 100%;
   margin: 36px 0 50px;
   min-height: 215px; }
-  @media screen and (min-width: 700px) {
+  @media (min-width: 768px) {
     .opp-contact {
       width: 49%; } }
   .opp-contact:nth-child(even) {
@@ -1631,6 +1631,22 @@ header h1 {
 .page-id-86 .opp-contact {
   margin-bottom: 0; }
 
+.opp-contact:nth-child(even) {
+  position: relative; }
+  @media (min-width: 768px) {
+    .opp-contact:nth-child(even):after {
+      position: absolute;
+      content: ' ';
+      left: 0;
+      height: 60%;
+      width: 1px;
+      background-color: #B6B6B6;
+      top: 46%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); } }
 .opp-contact iframe {
   margin: 15px auto 0;
   display: block; }
@@ -1639,6 +1655,9 @@ header h1 {
       float: right; } }
 .opp-contact .card {
   width: 90%; }
+  @media (min-width: 768px) {
+    .opp-contact .card {
+      margin: 150px auto 0; } }
   .opp-contact .card .button {
     color: #ffffff; }
     .opp-contact .card .button:hover {

@@ -21,7 +21,6 @@ get_header();
       </div>
       <div class="opp-contact">
         <aside class="card">
-          <img src="http://23.253.56.162/wp-content/uploads/2016/03/FP_HP_slider_3-864x540.jpg">
           <div class="card-bottom">
             <div class="inner">
               <h3>PDS Login</h3>

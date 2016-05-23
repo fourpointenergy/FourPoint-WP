@@ -7,8 +7,11 @@ $(document).ready(function() {
     speed: 200
   });
 
+  var win = $(window);
+
   // change slider images depending on screen sizes
-  var windowWidth = $(window).width();
+  var windowWidth = win.width();
+
   var changeSliderImages = function(windowWidth) {
     var $slidesMobile = $('.the-slide-mobile');
     var $slideDesktop = $('.the-slide');
@@ -61,30 +64,32 @@ $(document).ready(function() {
 
 
 
-  $(window).on('resize', function(windowWidth) {
+  win.on('resize', function(windowWidth) {
     windowWidth = $(window).width();
     changeSliderImages(windowWidth);
   });
 
   // HOVER ANIMATION TRICKS
 
-  var win = $(window);
-
   var allMods = $("#flipper li");
 
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("already-visible");
-    }
-  });
+  // allMods.each(function(i, el) {
+  //   var el = $(el);
+  //   if (el.visible(true)) {
+  //     el.addClass("already-visible");
+  //   }
+  // });
 
   win.scroll(function(event) {
 
     allMods.each(function(i, el) {
       var el = $(el);
-      if (el.visible(true)) {
+      if(Modernizr.touch) {
         el.addClass("come-in");
+      } else {
+        if (el.visible(true)) {
+          el.addClass("come-in");
+        }
       }
     });
 
