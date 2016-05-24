@@ -1670,6 +1670,10 @@ a.button {
   .page-id-200 .opp-contact p {
     margin: 0; }
 
+.page-id-187 .opp-contact {
+  min-height: auto;
+  margin-bottom: 15px; }
+
 .page-id-86 .opp-contact {
   margin-bottom: 0; }
   .page-id-86 .opp-contact:nth-child(even) {
