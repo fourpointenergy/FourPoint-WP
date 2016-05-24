@@ -574,34 +574,23 @@ header p {
 header a {
   color: #00a8e2; }
 header h1 {
-  max-width: 96%;
+  max-width: 94%;
   margin: 0 auto; }
 
 .alt_leader {
   background: #eceae7;
-  text-align: center; }
-  @media (min-width: 1024px) {
-    .alt_leader {
-      background: #eceae7 url(../images/map-perspective-4-13.jpg) no-repeat right center;
-      background-size: 650px 443px; } }
-  .alt_leader h1 {
-    text-align: center; }
-    @media (min-width: 1024px) {
-      .alt_leader h1 {
-        text-align: left; } }
-  .alt_leader section {
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    width: 96%; }
-    @media (min-width: 1024px) {
-      .alt_leader section p {
-        margin: 20px 0;
-        max-width: 400px; } }
-    @media screen and (min-width: 1200px) {
-      .alt_leader section p {
-        max-width: 500px; } }
+  text-align: left; }
+  .alt_leader .container {
+    margin: 0 auto; }
+  .alt_leader h1, .alt_leader p {
+    max-width: 100%;
+    width: auto; }
+  .alt_leader img {
+    width: auto;
+    height: 100%; }
+    @media (min-width: 768px) {
+      .alt_leader img {
+        float: right; } }
 
 .affiliation_logos {
   position: relative;
@@ -689,9 +678,14 @@ header h1 {
         color: #ffffff;
         margin: 0 auto;
         width: 100%;
-        background: -webkit-linear-gradient(white 50%, rgba(255, 255, 255, 0.1)) no-repeat 100%;
+        border-top: 1px solid transparent;
+        background: -webkit-gradient(white 50%, rgba(255, 255, 255, 0.1)) no-repeat 100%;
+        background: -moz-linear-gradient(white 50%, rgba(255, 255, 255, 0.1)) no-repeat 100%;
+        background: linear-gradient(white 50%, rgba(255, 255, 255, 0.1)) no-repeat 100%;
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
         z-index: 4;
         opacity: 0;
         -webkit-transition: all 0.5s ease 0.4s;
@@ -1674,40 +1668,6 @@ a.button {
   min-height: auto;
   margin-bottom: 15px; }
 
-.page-id-86 .opp-contact {
-  margin-bottom: 0; }
-  .page-id-86 .opp-contact:nth-child(even) {
-    position: relative; }
-    @media (min-width: 768px) {
-      .page-id-86 .opp-contact:nth-child(even):after {
-        position: absolute;
-        content: ' ';
-        left: 0;
-        height: 60%;
-        width: 1px;
-        background-color: #B6B6B6;
-        top: 46%;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%); } }
-  .page-id-86 .opp-contact iframe {
-    margin: 15px auto 0;
-    display: block; }
-    @media (min-width: 768px) {
-      .page-id-86 .opp-contact iframe {
-        float: right; } }
-  .page-id-86 .opp-contact .card {
-    width: 90%; }
-    @media (min-width: 768px) {
-      .page-id-86 .opp-contact .card {
-        margin: 150px auto 0; } }
-    .page-id-86 .opp-contact .card .button {
-      color: #ffffff; }
-      .page-id-86 .opp-contact .card .button:hover {
-        color: #00a8e2; }
-
 #form-error-msg {
   color: red;
   display: none;
@@ -2041,6 +2001,23 @@ aside.login-card {
 
 .login-modal .login-error {
   color: #ff0000; }
+
+.io-logins {
+  margin-top: 60px; }
+  @media (min-width: 768px) {
+    .io-logins {
+      margin-top: 20px; } }
+  @media (min-width: 768px) {
+    .io-logins aside.login-card {
+      width: 50%; } }
+  .io-logins .button {
+    color: #ffffff; }
+    .io-logins .button:hover {
+      color: #00a8e2; }
+
+.energylink-login {
+  margin: 0 auto;
+  display: block; }
 
 /* NOTES:
 Add input[type=password] to text input styling

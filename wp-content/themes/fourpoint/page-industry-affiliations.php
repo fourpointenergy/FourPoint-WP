@@ -13,7 +13,7 @@ get_header(); ?>
   <section class="affiliation_logos">
     <?php while ( have_rows('affiliate_logos') ) : the_row(); ?>
       <?php if(get_sub_field('affiliate_logo')) { ?>
-        <a href="<?php the_sub_field('affiliate_logo') ?>" class="logo" target="_blank"><img src="<?php the_sub_field('affiliate_logo') ?>" alt="<?php the_sub_field('affiliate_name') ?>"></a>
+        <a href="<?php the_sub_field('affiliate_link') ?>" class="logo" target="_blank"><img src="<?php the_sub_field('affiliate_logo') ?>" alt="<?php the_sub_field('affiliate_name') ?>"></a>
       <?php } else { ?>
         <img src="<?php the_sub_field('affiliate_logo') ?>" alt="<?php the_sub_field('affiliate_name') ?>">
       <?php } ?>

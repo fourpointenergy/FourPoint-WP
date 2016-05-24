@@ -25,7 +25,7 @@ get_currentuserinfo();
         </ul>
       <?php } ?>
 		 </div>
-		 <a href="#" class="footer_icon">
+		 <a href="/" class="footer_icon">
 			 <img src="<?php $theme->images_path() ?>/logo_icon.svg" />
 			 <!-- <p>&copy; FourPoint Energy</p> -->
 		 </a>

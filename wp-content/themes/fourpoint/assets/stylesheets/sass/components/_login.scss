@@ -124,6 +124,30 @@ aside.login-card {
   color:#ff0000;
 }
 
+// interest owners login card styles
+.io-logins {
+  margin-top: 60px;
+  @include tablet-portrait-and-up {
+    margin-top: 20px;
+  }
+  aside.login-card {
+    @include tablet-portrait-and-up {
+      width: 50%;
+    }
+  }
+  .button {
+    color: $white;
+    &:hover {
+      color: $fourpoint_blue;
+    }
+  }
+}
+
+.energylink-login {
+  margin: 0 auto;
+  display: block;
+}
+
 /* NOTES:
 Add input[type=password] to text input styling
 Add .button-primary to .btn
