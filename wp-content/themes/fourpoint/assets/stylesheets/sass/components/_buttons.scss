@@ -1,3 +1,10 @@
+.button {
+	display: inline-block;
+	@include first_btn;
+}
+a.button {
+  display:inline-block;
+}
 .btn {
   padding: 5px 10px;
   background: transparent;

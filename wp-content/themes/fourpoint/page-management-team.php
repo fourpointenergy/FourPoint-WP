@@ -12,4 +12,11 @@ get_header(); ?>
 <?php endwhile; ?>
 <?php // loop through the management team ?>
 <?php get_template_part('management-team-grid'); ?>
+<?php if(get_field('content_below_listing',$post_id)) : ?>
+  <div class="container general-content">
+   <div class="wrapper">
+     <?php the_field('content_below_listing',$post_id); ?>
+   </div>
+ </div>
+<?php endif; ?>
 <?php get_footer(); ?>

@@ -12,10 +12,10 @@ get_header(); ?>
 
   <div class="emergency-contact-num">
   	<div class="container">
-  		<h2>In case of an emergency call</h2>
-  		<!-- <h2><?php the_field('top_bar_left_content'); ?></h2> -->
-  		<a href="tel:000-000-0000">000.000.0000</a>
-  		<!-- <?php the_field('top_bar_right_content'); ?> -->
+  		<h2 class="left-content"><?php the_field('top_bar_left_content'); ?></h2>
+  		<!-- <h2></h2> -->
+  		<a href="tel:<?php the_field('top_bar_right_content'); ?>"><?php the_field('top_bar_right_content'); ?></a>
+      <!-- <span class="right-content"><?php the_field('top_bar_right_content'); ?></span> -->
   	</div>
   </div>
 
@@ -29,23 +29,28 @@ get_header(); ?>
 
 	<div class="sidebar">
 		<h2>Quick Contacts</h2>
+    <?php if( have_rows('quick_contacts') ): ?>
 		<div class="copy_split">
+      <?php while ( have_rows('quick_contacts') ) : the_row(); ?>
 			<div class="side-content">
-				<aside><p>Owner Relations</p></aside>
-				<article><a href="tel:303-785-1581">303.785.1581</a></article>
+				<aside><p><?php the_sub_field('contact_name'); ?></p></aside>
+				<article><a href="tel:<?php echo(str_replace(".","-",get_sub_field('contact_phone'))) ?>"><?php the_sub_field('contact_phone') ?></a></article>
 			</div>
-			<div class="side-content">
+      <?php endwhile; ?>
+			<!-- <div class="side-content">
 				<aside><p>Business Development</p></aside>
 				<article><a href="tel:000-000-0000">000.000.0000</a></article>
-			</div>
+			</div> -->
 		</div>
+    <?php endif ?>
 		<aside class="card">
 			<img src="<?php the_field('careers_image') ?>" />
 			<div class="card-bottom">
 				<div class="inner">
 					<h3>Careers</h3>
-					<p>Integer non vulputate risus duis mattis.</p>
-					<button type="button" class="button btn-blue">See more</button>
+					<p><?php the_field('careers_box_text') ?></p>
+					<!-- <button type="button" class="button btn-blue">See more</button> -->
+					<a href="<?php the_field('careers_box_button_url') ?>" class="button btn-blue" style="display:inline-block"><?php the_field('careers_box_button_text') ?></a>
 				</div>
 			</div>
 		</aside>
@@ -68,5 +73,11 @@ get_header(); ?>
   <?php endwhile; ?>
 </section>
 <?php endwhile;// end of the loop. ?>
-
+<?php if(get_field('content_below_listing',$post_id)) : ?>
+  <div class="container general-content">
+   <div class="wrapper">
+     <?php the_field('content_below_listing',$post_id); ?>
+   </div>
+ </div>
+<?php endif; ?>
 <?php get_footer(); ?>

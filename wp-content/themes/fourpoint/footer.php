@@ -5,7 +5,6 @@ get_currentuserinfo();
 /**
  * Template for displaying the footer
  */?>
-
  <footer>
 	 <section>
 		 <div class="legal">

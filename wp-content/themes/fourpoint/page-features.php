@@ -5,6 +5,7 @@
  global $theme;
  get_header(); ?>
  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+   <?php $post_id = $post->ID; ?>
    <header>
    	<h1><?php the_title(); ?></h1>
    	<p><?php the_field('page_description'); ?></p>
@@ -35,4 +36,11 @@
      <?php endwhile; ?>
    </div>
  <?php endif; ?>
+ <?php if(get_field('content_below_listing',$post_id)) : ?>
+   <div class="container general-content">
+   	<div class="wrapper">
+      <?php the_field('content_below_listing',$post_id); ?>
+    </div>
+  </div>
+<?php endif; ?>
  <?php get_footer(); ?>

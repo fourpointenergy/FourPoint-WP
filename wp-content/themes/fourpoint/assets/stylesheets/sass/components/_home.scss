@@ -13,7 +13,7 @@
 	position: relative;
 }
 
-.the-slide-mobile {	
+.the-slide-mobile {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -67,11 +67,6 @@
 			font-size: 4.75em;
 		}
 	}
-}
-
-.button {
-	display: inline-block;
-	@include first_btn;
 }
 
 .panel {

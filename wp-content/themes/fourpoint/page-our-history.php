@@ -84,5 +84,11 @@ endif;
 </ul>
 -->
 <?php endwhile;// end of the loop. ?>
-
+<?php if(get_field('content_below_listing',$post_id)) : ?>
+  <div class="container general-content">
+   <div class="wrapper">
+     <?php the_field('content_below_listing',$post_id); ?>
+   </div>
+ </div>
+<?php endif; ?>
 <?php get_footer(); ?>
