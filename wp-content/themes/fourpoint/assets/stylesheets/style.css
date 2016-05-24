@@ -118,6 +118,27 @@ img {
 .map-embed {
   float: left; }
 
+.button {
+  display: inline-block;
+  background: #00a8e2;
+  padding: 15px 30px;
+  border-radius: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 auto;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
+  .button:hover {
+    background: #0082af; }
+
+a.button {
+  display: inline-block; }
+
 .btn {
   padding: 5px 10px;
   background: transparent;
@@ -1281,6 +1302,27 @@ header h1 {
   width: 100%; }
 
 /* Styles to Fix Homepage */
+.button {
+  display: inline-block;
+  background: #00a8e2;
+  padding: 15px 30px;
+  border-radius: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 auto;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
+  .button:hover {
+    background: #0082af; }
+
+a.button {
+  display: inline-block; }
+
 .btn {
   padding: 5px 10px;
   background: transparent;
@@ -1630,38 +1672,37 @@ header h1 {
 
 .page-id-86 .opp-contact {
   margin-bottom: 0; }
-
-.opp-contact:nth-child(even) {
-  position: relative; }
-  @media (min-width: 768px) {
-    .opp-contact:nth-child(even):after {
-      position: absolute;
-      content: ' ';
-      left: 0;
-      height: 60%;
-      width: 1px;
-      background-color: #B6B6B6;
-      top: 46%;
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      transform: translateY(-50%); } }
-.opp-contact iframe {
-  margin: 15px auto 0;
-  display: block; }
-  @media (min-width: 768px) {
-    .opp-contact iframe {
-      float: right; } }
-.opp-contact .card {
-  width: 90%; }
-  @media (min-width: 768px) {
-    .opp-contact .card {
-      margin: 150px auto 0; } }
-  .opp-contact .card .button {
-    color: #ffffff; }
-    .opp-contact .card .button:hover {
-      color: #00a8e2; }
+  .page-id-86 .opp-contact:nth-child(even) {
+    position: relative; }
+    @media (min-width: 768px) {
+      .page-id-86 .opp-contact:nth-child(even):after {
+        position: absolute;
+        content: ' ';
+        left: 0;
+        height: 60%;
+        width: 1px;
+        background-color: #B6B6B6;
+        top: 46%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); } }
+  .page-id-86 .opp-contact iframe {
+    margin: 15px auto 0;
+    display: block; }
+    @media (min-width: 768px) {
+      .page-id-86 .opp-contact iframe {
+        float: right; } }
+  .page-id-86 .opp-contact .card {
+    width: 90%; }
+    @media (min-width: 768px) {
+      .page-id-86 .opp-contact .card {
+        margin: 150px auto 0; } }
+    .page-id-86 .opp-contact .card .button {
+      color: #ffffff; }
+      .page-id-86 .opp-contact .card .button:hover {
+        color: #00a8e2; }
 
 #form-error-msg {
   color: red;
