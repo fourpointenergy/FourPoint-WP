@@ -5,6 +5,11 @@
  */
 global $theme;
 get_header(); ?>
+<style>
+.hero-slider a.button {
+  display:inline-block;
+}
+</style>
 <div id="page-loader">
   <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#00a8e2">
       <g fill="none" fill-rule="evenodd">
@@ -31,7 +36,7 @@ get_header(); ?>
 			<div class="the-slide-mobile" data-img-sm="<?php $theme->echo_attached_image_url(null, get_sub_field('slide_photo_mobile'), null, 'Mobile Slider Photo') ?>">
 
         <img class="the-slide" src="" data-img-lg="<?php $theme->echo_attached_image_url(null, get_sub_field('slide_photo_id'), null, 'Slider Photo') ?>">
-       
+
         <div class="hero-slider-copy">
 					<h1><?php the_sub_field('slide_title') ?></h1>
 					<p><?php the_sub_field('slide_text') ?></p>
