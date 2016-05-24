@@ -62,11 +62,15 @@
 	h1 {
 		color: $white;
 		font-size: 2.5em;
-		line-height: 0.85;
 		@include tablet-landscape-and-up {
 			font-size: 4.75em;
 		}
 	}
+}
+
+.button {
+	// display: inline-block;
+	@include first_btn;
 }
 
 .panel {
@@ -116,7 +120,7 @@
 .panels {
 	section {
 		a.button {
-			display:inline-block;
+			// display:inline-block;
 			margin-top: 12px;
 		}
 		.text-block {
@@ -147,9 +151,9 @@
 }
 
 /* Styles to Fix Homepage */
-.panels section a.button {
-  display:inline-block;
-}
+// a.button {
+//   display:inline-block;
+// }
 // .panels section .panel-bg {
 //   background-size: cover;
 //   background-position: center center;

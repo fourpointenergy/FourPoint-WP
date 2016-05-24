@@ -101,7 +101,7 @@
 	font-weight: bold;
 	color: $white;
 	margin: 0 auto;
-	display: block;
+	display: inline-block;
 	border: none;
 	cursor: pointer;
 	@include transition(background .3s ease);

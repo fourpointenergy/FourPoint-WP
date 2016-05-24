@@ -479,6 +479,8 @@ footer {
       float: left;
       text-align: left;
       padding-top: 40px; }
+      footer section .legal ul {
+        margin-left: 0; }
     footer section .footer_icon {
       width: 16%;
       float: left;
@@ -491,12 +493,14 @@ footer {
       float: left;
       padding-top: 40px; }
       footer section .social ul {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        margin-left: 0; }
         @media (min-width: 1024px) {
           footer section .social ul {
             float: right;
             margin-top: -10px;
-            margin-bottom: 0; } }
+            margin-bottom: 0;
+            margin-left: 15px; } }
         footer section .social ul li {
           height: 34px;
           width: 34px;
@@ -546,6 +550,8 @@ header, .text-block {
 
 header p {
   max-width: 660px; }
+header a {
+  color: #00a8e2; }
 header h1 {
   max-width: 96%;
   margin: 0 auto; }
@@ -855,7 +861,7 @@ header h1 {
           background-image: -webkit-linear-gradient(transparent 0, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.8) 100%);
           background-image: linear-gradient(to   , rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.8) 100%); }
         .grid ul li a:hover span {
-          top: -30%; }
+          top: 0; }
         .grid ul li a:hover div {
           bottom: 35%; }
           .grid ul li a:hover div span {
@@ -1078,7 +1084,7 @@ header h1 {
 
 .gform_wrapper .top_label select.medium, .gform_wrapper .top_label input.medium {
   margin: 0 auto !important;
-  width: 90% !important;
+  width: 99% !important;
   display: block; }
 
 .ginput_container_select {
@@ -1214,14 +1220,12 @@ header h1 {
         line-height: 1.3em; } }
   .hero-slider-copy h1 {
     color: #ffffff;
-    font-size: 2.5em;
-    line-height: 0.85; }
+    font-size: 2.5em; }
     @media (min-width: 1024px) {
       .hero-slider-copy h1 {
         font-size: 4.75em; } }
 
 .button {
-  display: inline-block;
   background: #00a8e2;
   padding: 15px 30px;
   border-radius: 2px;
@@ -1229,7 +1233,7 @@ header h1 {
   font-weight: bold;
   color: #ffffff;
   margin: 0 auto;
-  display: block;
+  display: inline-block;
   border: none;
   cursor: pointer;
   -webkit-transition: background 0.3s ease;
@@ -1269,7 +1273,6 @@ header h1 {
   background-image: url(../images/map_perspective-4-13.jpg); }
 
 .panels section a.button {
-  display: inline-block;
   margin-top: 12px; }
 .panels section .text-block {
   background: transparent; }
@@ -1278,9 +1281,6 @@ header h1 {
   width: 100%; }
 
 /* Styles to Fix Homepage */
-.panels section a.button {
-  display: inline-block; }
-
 .btn {
   padding: 5px 10px;
   background: transparent;
@@ -1615,11 +1615,53 @@ header h1 {
   width: 100%;
   margin: 36px 0 50px;
   min-height: 215px; }
-  @media screen and (min-width: 700px) {
+  @media (min-width: 768px) {
     .opp-contact {
       width: 49%; } }
   .opp-contact:nth-child(even) {
     float: right; }
+
+.page-id-200 .opp-contact {
+  min-height: auto;
+  margin-top: 0;
+  margin-bottom: 20px; }
+  .page-id-200 .opp-contact p {
+    margin: 0; }
+
+.page-id-86 .opp-contact {
+  margin-bottom: 0; }
+
+.opp-contact:nth-child(even) {
+  position: relative; }
+  @media (min-width: 768px) {
+    .opp-contact:nth-child(even):after {
+      position: absolute;
+      content: ' ';
+      left: 0;
+      height: 60%;
+      width: 1px;
+      background-color: #B6B6B6;
+      top: 46%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); } }
+.opp-contact iframe {
+  margin: 15px auto 0;
+  display: block; }
+  @media (min-width: 768px) {
+    .opp-contact iframe {
+      float: right; } }
+.opp-contact .card {
+  width: 90%; }
+  @media (min-width: 768px) {
+    .opp-contact .card {
+      margin: 150px auto 0; } }
+  .opp-contact .card .button {
+    color: #ffffff; }
+    .opp-contact .card .button:hover {
+      color: #00a8e2; }
 
 #form-error-msg {
   color: red;
@@ -1657,14 +1699,14 @@ header h1 {
     @media (min-width: 768px) {
       .emergency-contact-num h2 {
         float: left; } }
-  .emergency-contact-num a {
+  .emergency-contact-num .right-content {
     font-size: 20px;
     line-height: 1.3;
     display: block;
     text-align: center;
     margin-top: 15px; }
     @media (min-width: 768px) {
-      .emergency-contact-num a {
+      .emergency-contact-num .right-content {
         float: right;
         font-size: 24px;
         margin: 0; } }
@@ -1742,14 +1784,20 @@ header h1 {
       .map-block .map-address, .map-block .google-map {
         width: 50%;
         float: left; } }
-  .map-block .google-map iframe {
-    width: 100%;
-    height: 100%; }
   .map-block:nth-child(even) .map-address {
     background-color: #00a8e2; }
     @media (min-width: 768px) {
       .map-block:nth-child(even) .map-address {
         float: right !important; } }
+
+.scrolloff {
+  pointer-events: none; }
+
+.google-map {
+  position: relative; }
+  .google-map iframe {
+    width: 100%;
+    height: 100%; }
 
 .map-address {
   color: #ffffff;
@@ -1778,6 +1826,7 @@ h1, h2, h3, h6 {
 
 h1 {
   font-size: 30px;
+  line-height: 1em;
   text-transform: uppercase; }
   @media (min-width: 768px) {
     h1 {

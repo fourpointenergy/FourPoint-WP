@@ -59,7 +59,11 @@ global $theme;
 					<!--
 					<?php echo wp_logout_url( site_url() ); ?>
 				-->
+<<<<<<< HEAD
 					<a class="btn" href="#">Staff Login</a>
+=======
+					<a class="btn" href="/login">Staff Login</a>
+>>>>>>> 2ba4d4d0a9a71f855264300c2c7d01bcaebb03ca
 				</div>
 				<div id="mobile_menu" class="mobile_nav_icon">MENU&nbsp;&nbsp;<i class="fa fa-bars fa-2"></i></div>
 				<?php

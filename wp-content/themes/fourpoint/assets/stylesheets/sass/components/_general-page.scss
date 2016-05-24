@@ -112,10 +112,66 @@
 	width: 100%;
 	margin: 36px 0 50px;
 	min-height: 215px;
-	@media screen and (min-width: 700px) {
+	@include tablet-portrait-and-up {
 		width: 49%;
 	}
 	&:nth-child(even) {
 		float: right;
+	}
+}
+
+// interest owners/contact info page.
+.page-id-200 {
+	.opp-contact {
+		min-height: auto;
+		margin-top: 0;
+		margin-bottom: 20px;
+		p {
+			margin: 0;
+		}
+	}
+}
+
+// interest owners logged in page
+.page-id-86 {
+	.opp-contact {
+		margin-bottom: 0;
+	}
+}
+
+.opp-contact {
+	&:nth-child(even) {
+		position: relative;
+		&:after {
+			@include tablet-portrait-and-up {
+				position: absolute;
+				content: ' ';
+				left: 0;
+				height: 60%;
+				width: 1px;
+				background-color: $light_gray;
+				top: 46%;
+				@include transform(translateY(-50%));
+			}
+		}
+	}
+	iframe {
+		margin: 15px auto 0;
+		display: block;
+		@include tablet-portrait-and-up {
+			float: right;
+		}
+	}
+	.card {
+		width: 90%;
+		@include tablet-portrait-and-up {
+			margin: 150px auto 0;
+		}
+		.button {
+			color: $white;
+			&:hover {
+				color: $fourpoint_blue;
+			}
+		}
 	}
 }
