@@ -133,6 +133,10 @@ $(document).ready(function() {
   //   loginModal.style.display = 'none';
   // });
 
+  $('#js-mobile-search-icon').on('click', function() {
+    $('.secondary_search_wrap').slideToggle(250);
+  });
+
 
   
   //nav js

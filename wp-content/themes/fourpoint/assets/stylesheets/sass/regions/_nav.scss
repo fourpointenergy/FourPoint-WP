@@ -87,7 +87,7 @@ nav {
 				margin: 0;
 				li {
 					display: inline-block;
-					margin: 0 16px;
+					margin: 0 12px;
 					a {
 						text-transform: uppercase;
 						font-weight: bold;
@@ -212,17 +212,22 @@ nav {
 		}
 		.utility {
 			position: absolute;
-			right: 26%;
-			top: 30px;
-			height: 32px;
-			margin-top: -16px;
+			left: 29%;
+			top: 0;
+			margin-top: 14px;
+			z-index: 2;
+			@media (max-width: 767px) and (min-width: 480px) {
+				right: 29%;
+				left: auto;
+			}
 			@include tablet-portrait-and-up {
 				right: 120px;
+				left: auto;
 			}
 			@include tablet-landscape-and-up {
 				top: 0;
 				right: 0;
-				z-index: 2;
+				left: auto;
 			}
 			.search_wrap, a {
 				display: inline-block;
@@ -291,7 +296,7 @@ nav {
   left: -30px;
   color: white;
   cursor: pointer;
-  z-index: -1;
+  // z-index: -1;
 }
 
 // FULL NAV BAR EXPAND STYLES
@@ -370,4 +375,53 @@ nav {
 		    z-index: 99;
 		}
 	}	
+}
+
+// fix spacing on interest owners sub nav
+#main_nav #menu-item-120 .sub-menu .menu-item {
+	margin: 0 0.95%;
+}
+
+#main_nav #menu-item-899 {
+	@include tablet-landscape-and-up {
+		display: none;
+	}
+}
+
+.mobile-search-icon {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    @include tablet-landscape-and-up {
+    	display: none;
+    }
+    .search-icon {
+    	left: 0;
+    	z-index: 9;
+    	font-size: 1.5em;
+    	padding: 10px;
+    }
+}
+
+.secondary_search_wrap {
+	background-color: #3D3D3C;
+	width: 100%;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+.secondary-search-box {
+	width: 300px !important;
+	background: $trans_white;
+}
+
+.staff-login-btn {
+	width: 60px;
+	line-height: 1;
+	@media screen and (min-width: 400px) {
+		width: inherit;
+		line-height: inherit;
+	}
 }
