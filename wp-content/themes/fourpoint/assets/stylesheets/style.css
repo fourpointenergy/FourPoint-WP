@@ -182,7 +182,7 @@ a.button {
 nav {
   background-image: url("../images/nav_bg_mobile_sm2.jpg");
   width: 100%;
-  padding: 20px 0 10px;
+  padding: 0;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -193,6 +193,7 @@ nav {
   transition: padding 0.25s ease; }
   @media screen and (min-width: 1025px) {
     nav {
+      padding: 20px 0 10px;
       background-size: cover;
       background-image: url("../images/nav_bg_160.jpg"); } }
   nav section {
@@ -200,10 +201,16 @@ nav {
     margin-left: auto;
     margin-right: auto; }
   nav .logo {
-    width: 154px;
-    height: 79px;
+    width: 80px;
+    height: auto;
     margin: 0 15px;
-    float: left; }
+    float: left;
+    padding: 10px 0; }
+    @media (min-width: 1024px) {
+      nav .logo {
+        width: 154px;
+        height: 79px;
+        padding: 0; } }
     nav .logo img {
       width: 100%;
       height: auto;
@@ -217,8 +224,10 @@ nav {
     width: 100%;
     position: relative;
     height: auto;
-    overflow: visible;
-    min-height: 80px; }
+    overflow: visible; }
+    @media (min-width: 1024px) {
+      nav .nav_wrap {
+        min-height: 80px; } }
     nav .nav_wrap .mobile_nav_icon {
       display: none;
       font-weight: bold;
@@ -227,14 +236,16 @@ nav {
       position: relative; }
       nav .nav_wrap .mobile_nav_icon i {
         font-size: 18px;
-        padding-left: 10px; }
+        padding-left: 10px;
+        vertical-align: middle; }
       @media (max-width: 1024px) {
         nav .nav_wrap .mobile_nav_icon {
           display: inline-block;
           color: #ffffff;
-          position: absolute;
-          right: 20px;
-          top: 55px; } }
+          float: right;
+          line-height: 60px;
+          vertical-align: middle;
+          margin: 0 15px; } }
     nav .nav_wrap .main_nav_wrap {
       display: block;
       position: relative;
@@ -263,6 +274,8 @@ nav {
           @media (max-width: 1024px) {
             nav .nav_wrap .main_nav_wrap #main_nav .mobile_utility {
               display: block; } }
+        nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children:last-child {
+          padding-bottom: 10px; }
         nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children a:after {
           margin-left: 10px;
           content: '\25BE';
@@ -338,9 +351,18 @@ nav {
       cursor: pointer; }
     nav .nav_wrap .utility {
       position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 2; }
+      right: 26%;
+      top: 30px;
+      height: 32px;
+      margin-top: -16px; }
+      @media (min-width: 768px) {
+        nav .nav_wrap .utility {
+          right: 120px; } }
+      @media (min-width: 1024px) {
+        nav .nav_wrap .utility {
+          top: 0;
+          right: 0;
+          z-index: 2; } }
       nav .nav_wrap .utility .search_wrap, nav .nav_wrap .utility a {
         display: inline-block;
         margin: 0 20px;
@@ -368,7 +390,7 @@ nav {
   transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
   width: 40px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 2px;
   border: none;
   cursor: pointer;
   background: transparent; }
@@ -407,11 +429,9 @@ nav {
   cursor: pointer;
   z-index: -1; }
 
-.expand_down {
-  padding: 20px 0 0; }
-  @media (min-width: 768px) {
-    .expand_down {
-      padding: 20px 0 60px; } }
+@media (min-width: 1024px) {
+  .expand_down {
+    padding: 20px 0 60px; } }
 
 .lease-sell {
   position: relative;

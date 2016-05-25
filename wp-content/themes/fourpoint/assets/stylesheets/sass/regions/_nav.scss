@@ -1,13 +1,14 @@
 nav {
 	background-image: url('../images/nav_bg_mobile_sm2.jpg');
 	width: 100%;
-	padding: 20px 0 10px;
+	padding: 0;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-color: $dark_gray;
 	position: static;
 	@media screen and (min-width: 1025px) {
+		padding: 20px 0 10px;
 		background-size: cover;
 		background-image: url('../images/nav_bg_160.jpg');
 	}
@@ -17,10 +18,16 @@ nav {
 		@include outer-container;
 	}
 	.logo {
-		width: 154px;
-		height: 79px;
+		width: 80px;
+		height: auto;
 		margin: 0 15px;
 		float: left;
+		padding: 10px 0;
+		@include tablet-landscape-and-up {
+			width: 154px;
+			height: 79px;
+			padding: 0;
+		}
 		img {
 			width: 100%;
 			height: auto;
@@ -39,7 +46,9 @@ nav {
 		position: relative;
 		height: auto;
 		overflow: visible;
-		min-height: 80px;
+		@include tablet-landscape-and-up {
+			min-height: 80px;
+		}
 		.mobile_nav_icon {
 			display: none;
 			font-weight: bold;
@@ -49,13 +58,18 @@ nav {
 			i {
 				font-size: 18px;
 				padding-left: 10px;
+				vertical-align: middle;
 			}
 			@include media(tablet_large) {
 				display: inline-block;
 				color: $white;
-				position: absolute;
-				right: 20px;
-				top: 55px;
+				float: right;
+				line-height: 60px;
+				vertical-align: middle;
+				margin: 0 15px;
+				// position: absolute;
+				// right: 20px;
+				// top: 55px;
 			}
 		}
 		.main_nav_wrap {
@@ -87,6 +101,9 @@ nav {
 					}
 				}
 				li.menu-item-has-children {
+					&:last-child {
+						padding-bottom: 10px;
+					}
 					a:after {
 						margin-left: 10px;
 						content: '\25BE';
@@ -195,9 +212,18 @@ nav {
 		}
 		.utility {
 			position: absolute;
-			top: 0;
-			right: 0;
-			z-index: 2;
+			right: 26%;
+			top: 30px;
+			height: 32px;
+			margin-top: -16px;
+			@include tablet-portrait-and-up {
+				right: 120px;
+			}
+			@include tablet-landscape-and-up {
+				top: 0;
+				right: 0;
+				z-index: 2;
+			}
 			.search_wrap, a {
 				display: inline-block;
 				margin: 0 20px;
@@ -230,13 +256,10 @@ nav {
   @include transition (width $tl, border-radius $tl, background $tl, box-shadow $tl);
   width: 40px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 2px;
   border: none;
   cursor: pointer;
   background: transparent;
-  // position: absolute;
-  // right: 34px;
-  // bottom: 17px;
   & + label .search-icon {    color: $light_gray    }
   &:hover {
     color: white;
@@ -273,8 +296,8 @@ nav {
 
 // FULL NAV BAR EXPAND STYLES
 .expand_down {
-	padding: 20px 0 0;
-	@include tablet-portrait-and-up {
+	// padding: 20px 0 0;
+	@include tablet-landscape-and-up {
 		padding: 20px 0 60px;
 	}
 }
