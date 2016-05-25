@@ -23,6 +23,7 @@
             position: absolute;
             @include tablet-portrait-and-up {
                 padding-left: 3%;
+                // width: 77%;
             }
             &:after {
                 content: '';
@@ -37,6 +38,11 @@
                     display: block;
                     background-color: #eceae7;
                 }
+            }
+
+            h1 {
+                margin-bottom: 10px;
+                max-width: 100%;
             }
             span {
                 display: block;

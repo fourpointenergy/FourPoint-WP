@@ -113,7 +113,8 @@ html {
 img {
   margin: 0 auto;
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 .map-embed {
   float: left; }
@@ -832,12 +833,15 @@ header h1 {
         .grid ul li a div {
           position: absolute;
           bottom: 4%;
-          margin-bottom: -40px;
+          margin-bottom: 0;
           width: 100%;
           padding: 0 15px 10px;
           -webkit-transition: all 0.4s ease;
           -moz-transition: all 0.4s ease;
           transition: all 0.4s ease; }
+          @media (min-width: 1024px) {
+            .grid ul li a div {
+              margin-bottom: -40px; } }
           .grid ul li a div h4, .grid ul li a div p {
             padding: 0;
             margin: 0;
@@ -862,7 +866,7 @@ header h1 {
             -moz-transition: color 0.3 ease;
             transition: color 0.3 ease;
             background: none;
-            opacity: 0;
+            opacity: 1;
             display: block;
             margin-top: 5px;
             -webkit-transition: opacity 0.3s ease 0.3s;
@@ -884,6 +888,9 @@ header h1 {
               color: #ffc20e; }
               .grid ul li a div span:hover:before {
                 background-color: #ffc20e; }
+            @media (min-width: 1024px) {
+              .grid ul li a div span {
+                opacity: 0; } }
         .grid ul li a span {
           position: absolute;
           width: 100%;
@@ -946,6 +953,9 @@ header h1 {
         .team_profile header .team_title:after {
           display: block;
           background-color: #eceae7; } }
+    .team_profile header .team_title h1 {
+      margin-bottom: 10px;
+      max-width: 100%; }
     .team_profile header .team_title span {
       display: block;
       text-align: left;
@@ -1590,7 +1600,8 @@ a.button {
   max-width: 1100px;
   margin: 60px auto;
   padding: 0px 10px;
-  display: table; }
+  display: flex;
+  display: -ms-flexbox; }
 
 @media (min-width: 1024px) {
   .wrapper {
