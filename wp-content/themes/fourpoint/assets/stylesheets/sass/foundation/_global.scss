@@ -89,5 +89,9 @@ img {
 }
 
 .map-embed {
-  float: left;
+  @media screen and (max-width: 767px) {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
 }

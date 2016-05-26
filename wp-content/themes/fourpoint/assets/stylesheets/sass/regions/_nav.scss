@@ -221,7 +221,7 @@ nav {
 				left: auto;
 			}
 			@include tablet-portrait-and-up {
-				right: 120px;
+				right: 130px;
 				left: auto;
 			}
 			@include tablet-landscape-and-up {
@@ -379,10 +379,12 @@ nav {
 
 // fix spacing on interest owners sub nav
 #main_nav #menu-item-120 .sub-menu .menu-item {
-	margin: 0 0.95%;
+	@include tablet-landscape-and-up {
+		margin: 0 0.95%;
+	}
 }
 
-#main_nav #menu-item-899 {
+#main_nav #menu-item-899, #main_nav #menu-item-901 {
 	@include tablet-landscape-and-up {
 		display: none;
 	}
@@ -404,16 +406,35 @@ nav {
     }
 }
 
+#secondary-searchform {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 300px;
+	position: relative;
+}
+
 .secondary_search_wrap {
 	background-color: #3D3D3C;
 	width: 100%;
     text-align: center;
     padding: 10px;
     display: none;
+
+    label {
+    	top: 50%;
+    	position: absolute;
+    	right: 0;
+    	left: auto;
+    	margin-top: -12px;
+    }
+    .search-icon {
+    	pointer-events: none;
+    }
 }
 
 .secondary-search-box {
-	width: 300px !important;
+	max-width: 300px;
+	width: 90%;
 	background: $trans_white;
 }
 

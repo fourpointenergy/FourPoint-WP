@@ -66,7 +66,7 @@ global $theme;
 				-->
 					<a class="btn staff-login-btn" href="#">Staff Login</a>
 				</div>
-				<div id="mobile_menu" class="mobile_nav_icon">MENU&nbsp;&nbsp;<i class="fa fa-bars fa-2"></i></div>
+				<div id="mobile_menu" class="mobile_nav_icon">MENU&nbsp;<i class="fa fa-bars fa-2"></i></div>
 				<div class="mobile-search-icon" id="js-mobile-search-icon"><i class="fa fa-search search-icon"></i></div>
 				<?php
 					$args = array(

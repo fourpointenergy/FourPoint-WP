@@ -116,8 +116,11 @@ img {
   max-width: 100%;
   height: auto; }
 
-.map-embed {
-  float: left; }
+@media screen and (max-width: 767px) {
+  .map-embed {
+    width: 90%;
+    margin: 0 auto;
+    display: block; } }
 
 .button {
   display: inline-block;
@@ -362,7 +365,7 @@ nav {
           left: auto; } }
       @media (min-width: 768px) {
         nav .nav_wrap .utility {
-          right: 120px;
+          right: 130px;
           left: auto; } }
       @media (min-width: 1024px) {
         nav .nav_wrap .utility {
@@ -505,11 +508,12 @@ nav {
       left: 0;
       z-index: 99; } }
 
-#main_nav #menu-item-120 .sub-menu .menu-item {
-  margin: 0 0.95%; }
+@media (min-width: 1024px) {
+  #main_nav #menu-item-120 .sub-menu .menu-item {
+    margin: 0 0.95%; } }
 
 @media (min-width: 1024px) {
-  #main_nav #menu-item-899 {
+  #main_nav #menu-item-899, #main_nav #menu-item-901 {
     display: none; } }
 
 .mobile-search-icon {
@@ -526,15 +530,30 @@ nav {
     font-size: 1.5em;
     padding: 10px; }
 
+#secondary-searchform {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 300px;
+  position: relative; }
+
 .secondary_search_wrap {
   background-color: #3D3D3C;
   width: 100%;
   text-align: center;
   padding: 10px;
   display: none; }
+  .secondary_search_wrap label {
+    top: 50%;
+    position: absolute;
+    right: 0;
+    left: auto;
+    margin-top: -12px; }
+  .secondary_search_wrap .search-icon {
+    pointer-events: none; }
 
 .secondary-search-box {
-  width: 300px !important;
+  max-width: 300px;
+  width: 90%;
   background: rgba(255, 255, 255, 0.2); }
 
 .staff-login-btn {
@@ -670,18 +689,27 @@ header h1 {
     border-width: 1px 0 0 1px;
     float: left;
     width: 33.33333333333333334%;
-    padding: 13px; }
+    padding: 13px;
+    height: 250px;
+    position: relative; }
     @media (min-width: 768px) {
       .affiliation_logos .logo {
         padding: 0; } }
     .affiliation_logos .logo img {
       width: 100%;
-      max-width: 100%;
-      margin: 40px auto;
       max-width: 160px;
-      height: auto; }
-    .affiliation_logos .logo:last-child {
-      width: 100%; }
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      @media screen and (max-width: 767px) {
+        .affiliation_logos .logo img {
+          padding: 0 12px; } }
 
 .content_stack {
   width: 100%;
@@ -1644,8 +1672,7 @@ a.button {
   max-width: 1100px;
   margin: 60px auto;
   padding: 0px 10px;
-  display: flex;
-  display: -ms-flexbox; }
+  display: table; }
 
 @media (min-width: 1024px) {
   .wrapper {
