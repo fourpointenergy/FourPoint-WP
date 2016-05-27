@@ -104,7 +104,7 @@ nav {
 					&:last-child {
 						padding-bottom: 10px;
 					}
-					a:after {
+					> a:after {
 						margin-left: 10px;
 						content: '\25BE';
 						color: white;

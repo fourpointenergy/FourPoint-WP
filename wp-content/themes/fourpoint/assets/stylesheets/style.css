@@ -280,7 +280,7 @@ nav {
               display: block; } }
         nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children:last-child {
           padding-bottom: 10px; }
-        nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children a:after {
+        nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children > a:after {
           margin-left: 10px;
           content: '\25BE';
           color: white;
@@ -772,13 +772,9 @@ header h1 {
         margin: 0 auto;
         width: 100%;
         border-top: 1px solid transparent;
-        background: -webkit-gradient(white 50%, rgba(255, 255, 255, 0.1)) no-repeat 100%;
-        background: -moz-linear-gradient(white 50%, rgba(255, 255, 255, 0.1)) no-repeat 100%;
-        background: linear-gradient(white 50%, rgba(255, 255, 255, 0.1)) no-repeat 100%;
+        background: -webkit-linear-gradient(white 50%, rgba(255, 255, 255, 0.1)) no-repeat 100%;
         -webkit-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
         z-index: 4;
         opacity: 0;
         -webkit-transition: all 0.5s ease 0.4s;
@@ -1076,7 +1072,7 @@ header h1 {
   width: 90%;
   max-width: 740px;
   margin: 20px auto 50px; }
-  .team_profile article h3, .team_profile article p {
+  .team_profile article h3 {
     padding: 0 40px;
     position: relative; }
   .team_profile article h3 p {
@@ -1672,7 +1668,7 @@ a.button {
   max-width: 1100px;
   margin: 60px auto;
   padding: 0px 10px;
-  display: table; }
+  overflow: auto; }
 
 @media (min-width: 1024px) {
   .wrapper {
@@ -1715,9 +1711,11 @@ a.button {
 
 .general-content ul {
   margin: 25px 0 20px;
-  padding-left: 15px;
   display: table;
   font-family: 'Source Sans Pro', sans-serif; }
+  @media (min-width: 768px) {
+    .general-content ul {
+      padding-left: 15px; } }
   .general-content ul li {
     padding-left: 25px;
     text-indent: -15px;
@@ -1760,14 +1758,14 @@ a.button {
     float: right; }
 
 .page-id-200 .opp-contact {
-  min-height: auto;
+  min-height: 0;
   margin-top: 0;
   margin-bottom: 20px; }
   .page-id-200 .opp-contact p {
     margin: 0; }
 
 .page-id-187 .opp-contact {
-  min-height: auto;
+  min-height: 0;
   margin-bottom: 15px; }
 
 #form-error-msg {
