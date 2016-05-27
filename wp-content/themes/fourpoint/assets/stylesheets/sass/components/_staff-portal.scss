@@ -16,6 +16,47 @@
     }
 }
 
+.search-left {
+    width: 50%;
+    float: left;
+    margin-right: 10%;
+    margin-left: 3%;
+}
+
+.quick-links {
+    float: left;
+    width: 33%;
+    margin-right: 3%;
+    max-width: 280px;
+    padding: 20px;
+    border: 1px solid $light_gray;
+    a {
+        color: $medium_gray;
+        &:hover {
+            color: $yellow;
+        }
+    }
+    h3 {
+        text-align: center;
+        border-bottom: 1px solid $light_gray;
+        padding-bottom: 20px;
+    }
+    ul {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        li {
+            margin: 10px 0;
+        }
+    }
+}
+
+.blue-caps-headline {
+    color: $fourpoint_blue;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .holiday-schedule {
     background-color: $fourpoint_blue;
     padding: 60px 0;
@@ -38,6 +79,10 @@
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
+
+    h3 {
+        color: $white;
+    }
 }
 
 .holiday {
@@ -90,7 +135,65 @@
     a {
         color: $medium_gray;
         &:hover {
-            color: $white;
+            color: $yellow;
         }
     }
+}
+
+.box {
+    .container {
+        border: 1px solid;
+        // border-radius:
+        // box-shadow: 
+        margin: 20px auto;
+        position: relative;
+        padding: 40px 60px;
+    }
+}
+
+.box-blue {
+    background-color: $fourpoint_blue;
+    padding-top: 40px;
+    margin-top: 20px;
+    .container {
+        background-color: $white;
+    }
+}
+
+.box-left {
+    width: 37%;
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
+    padding-right: 3%;
+}
+.box-right {
+    width: 55%;
+    float: right;
+    padding-left: 5%;
+    border-left: 1px solid $medium_gray;
+    li {
+        margin-bottom: 45px;
+        text-transform: capitalize;
+    }
+    span {
+        width: 50%;
+        margin-right: 5%;
+        display: inline-block;
+    }
+    a {
+        color: $fourpoint_blue;
+        width: 30%;
+        margin-left: 15%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.to-top {
+    color: $fourpoint_blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    display: block;
 }

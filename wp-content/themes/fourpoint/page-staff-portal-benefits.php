@@ -47,7 +47,7 @@ global $theme;
   <section class="hero-main">
     <div class="container">
       <div class="search-left">
-        <h1>Fourpoint energy employee resource center</h1>
+        <h1>Employee Benefits</h1>
         <p>Search for a document or resource</p>
         <form>SEARCH BOX GOES HERE</form>
       </div>
@@ -65,63 +65,66 @@ global $theme;
     </div>
   </section>
 
-  <!-- Holiday schedule -->
-  <section class="holiday-schedule">
-    <div class="holiday-wrapper">
-      <h3 class="blue-caps-headline">Fourpoint Holiday Schedule</h3>
-      <a href="#">View Holiday Schedule</a>
-      
-      <div class="holiday-container">
-        <div class="holiday">
-          <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
-          <h4>Labor Day</h4>
-          <div class="date">
-            <p><span>Monday</span>September 5, 2016</p>
-          </div>
-        </div>
-
-        <div class="holiday">
-          <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
-          <h4>Labor Day</h4>
-          <div class="date">
-            <p><span>Monday</span>September 5, 2016</p>
-          </div>
-        </div>
-
-        <div class="holiday">
-          <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
-          <h4>Labor Day</h4>
-          <div class="date">
-            <p><span>Monday</span>September 5, 2016</p>
-          </div>
-        </div>
-
-        <div class="holiday">
-          <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
-          <h4>Labor Day</h4>
-          <div class="date">
-            <p><span>Monday</span>September 5, 2016</p>
-          </div>
-        </div>
-
-        <div class="holiday">
-          <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
-          <h4>Labor Day</h4>
-          <div class="date">
-            <p><span>Monday</span>September 5, 2016</p>
-          </div>
-        </div>
-
-        <div class="holiday">
-          <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
-          <h4>Labor Day</h4>
-          <div class="date">
-            <p><span>Monday</span>September 5, 2016</p>
-          </div>
-        </div>
-
+  <!-- boxed sections -->
+  <section class="box">
+    <div class="container">
+      <div class="box-left">
+        <h2>Open Enrollment</h2>
+        <p>Seitan everyday carry stumptown, schlitz beard selvage biodiesel. YOLO gochujang distillery four dollar toast pinterest. XOXO kitsch post-ironic, franzen craft beer pug iPhone four dollar toast paleo try-hard godard typewriter fingerstache. Banh mi distillery locavore, neutra thundercats asymmetrical ennui lumbersexual cronut. Tilde typewriter trust fund vinyl, hammock pinterest tousled flannel hashtag church-key messenger bag cred vegan readymade bespoke. Kogi hella waistcoat chicharrones</p>
+      </div>
+      <div class="box-right">
+        <ul>
+          <li><span>Employee Benefits Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee BenefitsEmployee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment Open Enrollment</a></li>
+          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+        </ul>
       </div>
     </div>
+    <a href="#top" class="to-top">Back to top</a>
+  </section>
+
+  <section class="box box-blue">
+    <div class="container">
+      <div class="box-left">
+        <h2>Open Enrollment</h2>
+        <p>Seitan everyday carry stumptown, schlitz beard selvage biodiesel. YOLO gochujang distillery four dollar toast pinterest. XOXO kitsch post-ironic, franzen craft beer pug iPhone four dollar toast paleo try-hard godard typewriter fingerstache. Banh mi distillery locavore, neutra thundercats asymmetrical ennui lumbersexual cronut. Tilde typewriter trust fund vinyl, hammock pinterest tousled flannel hashtag church-key messenger bag cred vegan readymade bespoke. Kogi hella waistcoat chicharrones</p>
+      </div>
+      <div class="box-right">
+        <ul>
+          <li><span>Employee Benefits Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee BenefitsEmployee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment Open Enrollment</a></li>
+          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+        </ul>
+      </div>
+    </div>
+    <a href="#top" class="to-top">Back to top</a>
+  </section>
+
+
+  <section class="box">
+    <div class="container">
+      <div class="box-left">
+        <h2>Open Enrollment</h2>
+        <p>Seitan everyday carry stumptown, schlitz beard selvage biodiesel. YOLO gochujang distillery four dollar toast pinterest. XOXO kitsch post-ironic, franzen craft beer pug iPhone four dollar toast paleo try-hard godard typewriter fingerstache. Banh mi distillery locavore, neutra thundercats asymmetrical ennui lumbersexual cronut. Tilde typewriter trust fund vinyl, hammock pinterest tousled flannel hashtag church-key messenger bag cred vegan readymade bespoke. Kogi hella waistcoat chicharrones</p>
+      </div>
+      <div class="box-right">
+        <ul>
+          <li><span>Employee Benefits Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+          <li><span>Employee BenefitsEmployee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment Open Enrollment</a></li>
+          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+        </ul>
+      </div>
+    </div>
+    <a href="#top" class="to-top">Back to top</a>
   </section>
 
   <?php
