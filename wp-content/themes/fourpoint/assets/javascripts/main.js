@@ -10,6 +10,36 @@ $(document).ready(function() {
     autoplaySpeed: 3000
   });
 
+  // Holiday Slider init
+  $('.holiday-container').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
   var win = $(window);
 
   // change slider images depending on screen sizes

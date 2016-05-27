@@ -183,6 +183,12 @@ a.button {
     -moz-transition: background 0.3s ease;
     transition: background 0.3s ease; }
 
+.btn-wide {
+  width: 95%;
+  padding: 24px;
+  text-transform: uppercase;
+  font-size: 16px; }
+
 nav {
   background-image: url("../images/nav_bg_mobile_sm2.jpg");
   width: 100%;
@@ -1459,6 +1465,12 @@ a.button {
     -moz-transition: background 0.3s ease;
     transition: background 0.3s ease; }
 
+.btn-wide {
+  width: 95%;
+  padding: 24px;
+  text-transform: uppercase;
+  font-size: 16px; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -2261,5 +2273,78 @@ Add .login-error to .login-modal section
   .gallery-filter p {
     text-align: center;
     font-weight: 700; }
+
+.sp-nav {
+  background-color: #2e2e2d;
+  background-image: none; }
+
+.sp-subnav {
+  background-color: #B6B6B6; }
+  .sp-subnav .container {
+    padding: 40px 0;
+    margin: 0 auto; }
+  .sp-subnav li {
+    float: left;
+    width: 33%;
+    text-align: center; }
+
+.holiday-schedule {
+  background-color: #00a8e2;
+  padding: 60px 0; }
+  @media (min-width: 1024px) {
+    .holiday-schedule .slick-prev, .holiday-schedule .slick-next {
+      -webkit-transform: translate(0, -50%) scale(0.5);
+      -ms-transform: translate(0, -50%) scale(0.5);
+      transform: translate(0, -50%) scale(0.5); } }
+  .holiday-schedule .slick-prev {
+    left: -8%; }
+  .holiday-schedule .slick-next {
+    right: -8%; }
+
+.holiday-wrapper {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto; }
+
+.holiday {
+  background: white;
+  padding: 10px 0 20px;
+  margin: 0 8px; }
+  .holiday h4 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #00a8e2;
+    text-align: center; }
+
+.sp-cal-icon {
+  margin: 5px auto 10px; }
+
+.date {
+  background-color: #B6B6B6; }
+  .date p {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px; }
+  .date span {
+    font-weight: bold;
+    display: block; }
+
+.sp-footer {
+  background-color: #B6B6B6; }
+
+.link-container {
+  width: 22%;
+  display: inline-block;
+  margin-left: 3%;
+  border-left: 1px solid #868586; }
+  .link-container h4 {
+    text-transform: uppercase;
+    margin: 0 0 1.5em 1.5em; }
+  .link-container li {
+    margin-bottom: 10px; }
+  .link-container a {
+    color: #868586; }
+    .link-container a:hover {
+      color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

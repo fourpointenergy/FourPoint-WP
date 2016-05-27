@@ -1,0 +1,96 @@
+.sp-nav {
+    background-color: $dark_gray;
+    background-image: none;
+}
+
+.sp-subnav {
+    background-color: $light_gray;
+    .container {
+        padding: 40px 0;
+        margin: 0 auto;
+    }
+    li {
+        float: left;
+        width: 33%;
+        text-align: center;
+    }
+}
+
+.holiday-schedule {
+    background-color: $fourpoint_blue;
+    padding: 60px 0;
+    .slick-prev, .slick-next {
+        @include tablet-landscape-and-up {
+            -webkit-transform: translate(0, -50%) scale(0.50);
+            -ms-transform: translate(0, -50%) scale(0.50);
+            transform: translate(0, -50%) scale(0.50);
+        }
+    }
+    .slick-prev {
+        left: -8%;
+    }
+    .slick-next {
+        right: -8%;
+    }
+}
+
+.holiday-wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.holiday {
+    background: white;
+    padding: 10px 0 20px;
+    // box-shadow: 
+    margin: 0 8px;
+
+    h4 {
+        font-size: 20px;
+        font-weight: 300;
+        color: $fourpoint_blue;
+        text-align: center;
+    }
+}
+
+.sp-cal-icon {
+    margin: 5px auto 10px;
+}
+
+.date {
+    background-color: $light_gray;
+    p {
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+    span {
+        font-weight: bold;
+        display: block;
+    }
+}
+
+.sp-footer {
+    background-color: $light_gray;
+}
+
+.link-container {
+    width: 22%;
+    display: inline-block;
+    margin-left: 3%;
+    border-left: 1px solid $medium_gray;
+    h4 {
+        text-transform: uppercase;
+        margin: 0 0 1.5em 1.5em;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    a {
+        color: $medium_gray;
+        &:hover {
+            color: $white;
+        }
+    }
+}
