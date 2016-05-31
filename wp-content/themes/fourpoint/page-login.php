@@ -10,42 +10,42 @@ get_header(); ?>
   	<p><?php the_field('page_description'); ?></p>
   </header>
   <div class="container">
-	<div class="row">
-		<aside class="card login-card">
-			<img src="<?php $theme->images_path() ?>/tree-test2.jpg" />
-			<div class="card-bottom">
-				<div class="inner">
-          <h2>Investors</h2>
-          <?php the_field('investors_login_content'); ?>
+  	<div class="row">
+  		<aside class="card login-card">
+  			<img src="<?php $theme->images_path() ?>/tree-test2.jpg" />
+  			<div class="card-bottom">
+  				<div class="inner">
+            <h2>Investors</h2>
+            <?php the_field('investors_login_content'); ?>
 
-					<button type="button" class="button btn-blue open-login" rel="investors-login">Login</button>
-				</div>
-			</div>
-		</aside>
+  					<button type="button" class="button btn-blue open-login" rel="investors-login">Login</button>
+  				</div>
+  			</div>
+  		</aside>
 
-		<aside class="card login-card">
-			<img src="<?php $theme->images_path() ?>/tree-test2.jpg" />
-			<div class="card-bottom">
-				<div class="inner">
-          <h2>Interest Owners</h2>
-          <?php the_field('interest_owners_login_content'); ?>
-					<button type="button" class="button btn-blue open-login" rel="interest-owners-login">Login</button>
-				</div>
-			</div>
-		</aside>
+  		<aside class="card login-card">
+  			<img src="<?php $theme->images_path() ?>/tree-test2.jpg" />
+  			<div class="card-bottom">
+  				<div class="inner">
+            <h2>Interest Owners</h2>
+            <?php the_field('interest_owners_login_content'); ?>
+  					<button type="button" class="button btn-blue open-login" rel="interest-owners-login">Login</button>
+  				</div>
+  			</div>
+  		</aside>
 
-		<aside class="card login-card">
-			<img src="<?php $theme->images_path() ?>/tree-test2.jpg" />
-			<div class="card-bottom">
-				<div class="inner">
-          <h2>FourPoint Staff</h2>
-          <?php the_field('staff_login_content'); ?>
-					<button type="button" class="button btn-blue">Login</button>
-				</div>
-			</div>
-		</aside>
-	</div>
-</div>
+  		<aside class="card login-card">
+  			<img src="<?php $theme->images_path() ?>/tree-test2.jpg" />
+  			<div class="card-bottom">
+  				<div class="inner">
+            <h2>FourPoint Staff</h2>
+            <?php the_field('staff_login_content'); ?>
+  					<button type="button" class="button btn-blue">Login</button>
+  				</div>
+  			</div>
+  		</aside>
+  	</div>
+  </div>
 <!-- Investors Login Modal -->
 <?php
   $failed_investors_login = false;

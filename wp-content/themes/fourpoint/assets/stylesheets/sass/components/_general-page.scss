@@ -3,7 +3,8 @@
 	max-width: 1100px;
 	margin: 60px auto;
 	padding: 0px 10px;
-	display: table;
+	// display: table;
+	overflow: auto;
 }
 
 .wrapper {
@@ -61,9 +62,11 @@
 .general-content {
 	ul {
 		margin: 25px 0 20px;
-		padding-left: 15px;
 		display: table;
 		font-family: 'Source Sans Pro', sans-serif;
+		@include tablet-portrait-and-up {
+			padding-left: 15px;
+		}
 		li {
 			padding-left: 25px;
 			text-indent: -15px;
@@ -123,7 +126,7 @@
 // interest owners/contact info page.
 .page-id-200 {
 	.opp-contact {
-		min-height: auto;
+		min-height: 0;
 		margin-top: 0;
 		margin-bottom: 20px;
 		p {
@@ -132,43 +135,9 @@
 	}
 }
 
-// interest owners logged in page
-.page-id-86 {
+.page-id-187 {
 	.opp-contact {
-		margin-bottom: 0;
-		&:nth-child(even) {
-			position: relative;
-			&:after {
-				@include tablet-portrait-and-up {
-					position: absolute;
-					content: ' ';
-					left: 0;
-					height: 60%;
-					width: 1px;
-					background-color: $light_gray;
-					top: 46%;
-					@include transform(translateY(-50%));
-				}
-			}
-		}
-		iframe {
-			margin: 15px auto 0;
-			display: block;
-			@include tablet-portrait-and-up {
-				float: right;
-			}
-		}
-		.card {
-			width: 90%;
-			@include tablet-portrait-and-up {
-				margin: 150px auto 0;
-			}
-			.button {
-				color: $white;
-				&:hover {
-					color: $fourpoint_blue;
-				}
-			}
-		}
+		min-height: 0;
+		margin-bottom: 15px;
 	}
 }

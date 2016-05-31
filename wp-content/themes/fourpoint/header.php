@@ -23,6 +23,14 @@ global $theme;
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class();?>>
+	<div class="secondary_search_wrap">
+		<form role="search" method="get" id="secondary-searchform" class="searchform search-container" action="/">
+		  <input id="secondary-search-box" type="text" class="secondary-search-box search-box" name="s" />
+		  <label for="search-box"><i class="fa fa-search search-icon"></i></label>
+		  <input type="submit" id="search-submit" />
+		</form>
+	</div>
+
 	<nav>
 		<section>
 			<a class="logo" href="/">
@@ -31,9 +39,6 @@ global $theme;
 			<div class="nav_wrap">
 				<div class="utility">
 					<div class="search_wrap">
-						<!--
-						<?php get_search_form(); ?>
-					-->
 						<form role="search" method="get" id="searchform" class="searchform search-container" action="/">
 						  <input id="search-box" type="text" class="search-box" name="s" />
 						  <label for="search-box"><i class="fa fa-search search-icon"></i></label>
@@ -59,9 +64,10 @@ global $theme;
 					<!--
 					<?php echo wp_logout_url( site_url() ); ?>
 				-->
-					<a class="btn" href="#">Staff Login</a>
+					<a class="btn staff-login-btn" href="#">Staff Login</a>
 				</div>
-				<div id="mobile_menu" class="mobile_nav_icon">MENU&nbsp;&nbsp;<i class="fa fa-bars fa-2"></i></div>
+				<div id="mobile_menu" class="mobile_nav_icon">MENU&nbsp;<i class="fa fa-bars fa-2"></i></div>
+				<div class="mobile-search-icon" id="js-mobile-search-icon"><i class="fa fa-search search-icon"></i></div>
 				<?php
 					$args = array(
 						'theme_location' => 'main-menu',

@@ -9,21 +9,28 @@
 		float: left;
 		width: 33.33333333333333334%;
 		padding: 13px;
+		height: 250px;
+		position: relative;
 		@include tablet-portrait-and-up {
 			padding: 0;
 		}
 		img {
 			width: 100%;
-			max-width: 100%;
-			margin: 40px auto;
 			max-width: 160px;
 			height: auto;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    @include transform (translate(-50%, -50%));
+		    @media screen and (max-width: 767px) {
+		    	padding: 0 12px;
+		    }
 		}
 		@include media($tablet) {
 			width: 100%;
 		}
-		&:last-child {
-			width: 100%;
-		}
+		// &:last-child {
+		// 	width: 100%;
+		// }
 	}
 }

@@ -1,13 +1,14 @@
 nav {
 	background-image: url('../images/nav_bg_mobile_sm2.jpg');
 	width: 100%;
-	padding: 20px 0 10px;
+	padding: 0;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-color: $dark_gray;
 	position: static;
 	@media screen and (min-width: 1025px) {
+		padding: 20px 0 10px;
 		background-size: cover;
 		background-image: url('../images/nav_bg_160.jpg');
 	}
@@ -17,10 +18,16 @@ nav {
 		@include outer-container;
 	}
 	.logo {
-		width: 154px;
-		height: 79px;
+		width: 80px;
+		height: auto;
 		margin: 0 15px;
 		float: left;
+		padding: 10px 0;
+		@include tablet-landscape-and-up {
+			width: 154px;
+			height: 79px;
+			padding: 0;
+		}
 		img {
 			width: 100%;
 			height: auto;
@@ -39,7 +46,9 @@ nav {
 		position: relative;
 		height: auto;
 		overflow: visible;
-		min-height: 80px;
+		@include tablet-landscape-and-up {
+			min-height: 80px;
+		}
 		.mobile_nav_icon {
 			display: none;
 			font-weight: bold;
@@ -49,13 +58,18 @@ nav {
 			i {
 				font-size: 18px;
 				padding-left: 10px;
+				vertical-align: middle;
 			}
 			@include media(tablet_large) {
 				display: inline-block;
 				color: $white;
-				position: absolute;
-				right: 20px;
-				top: 55px;
+				float: right;
+				line-height: 60px;
+				vertical-align: middle;
+				margin: 0 15px;
+				// position: absolute;
+				// right: 20px;
+				// top: 55px;
 			}
 		}
 		.main_nav_wrap {
@@ -73,7 +87,7 @@ nav {
 				margin: 0;
 				li {
 					display: inline-block;
-					margin: 0 16px;
+					margin: 0 12px;
 					a {
 						text-transform: uppercase;
 						font-weight: bold;
@@ -87,7 +101,10 @@ nav {
 					}
 				}
 				li.menu-item-has-children {
-					a:after {
+					&:last-child {
+						padding-bottom: 10px;
+					}
+					> a:after {
 						margin-left: 10px;
 						content: '\25BE';
 						color: white;
@@ -195,9 +212,23 @@ nav {
 		}
 		.utility {
 			position: absolute;
+			left: 29%;
 			top: 0;
-			right: 0;
+			margin-top: 14px;
 			z-index: 2;
+			@media (max-width: 767px) and (min-width: 480px) {
+				right: 29%;
+				left: auto;
+			}
+			@include tablet-portrait-and-up {
+				right: 130px;
+				left: auto;
+			}
+			@include tablet-landscape-and-up {
+				top: 0;
+				right: 0;
+				left: auto;
+			}
 			.search_wrap, a {
 				display: inline-block;
 				margin: 0 20px;
@@ -230,13 +261,10 @@ nav {
   @include transition (width $tl, border-radius $tl, background $tl, box-shadow $tl);
   width: 40px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 2px;
   border: none;
   cursor: pointer;
   background: transparent;
-  // position: absolute;
-  // right: 34px;
-  // bottom: 17px;
   & + label .search-icon {    color: $light_gray    }
   &:hover {
     color: white;
@@ -268,13 +296,13 @@ nav {
   left: -30px;
   color: white;
   cursor: pointer;
-  z-index: -1;
+  // z-index: -1;
 }
 
 // FULL NAV BAR EXPAND STYLES
 .expand_down {
-	padding: 20px 0 0;
-	@include tablet-portrait-and-up {
+	// padding: 20px 0 0;
+	@include tablet-landscape-and-up {
 		padding: 20px 0 60px;
 	}
 }
@@ -347,4 +375,74 @@ nav {
 		    z-index: 99;
 		}
 	}	
+}
+
+// fix spacing on interest owners sub nav
+#main_nav #menu-item-120 .sub-menu .menu-item {
+	@include tablet-landscape-and-up {
+		margin: 0 0.95%;
+	}
+}
+
+#main_nav #menu-item-899, #main_nav #menu-item-901 {
+	@include tablet-landscape-and-up {
+		display: none;
+	}
+}
+
+.mobile-search-icon {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    @include tablet-landscape-and-up {
+    	display: none;
+    }
+    .search-icon {
+    	left: 0;
+    	z-index: 9;
+    	font-size: 1.5em;
+    	padding: 10px;
+    }
+}
+
+#secondary-searchform {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 300px;
+	position: relative;
+}
+
+.secondary_search_wrap {
+	background-color: #3D3D3C;
+	width: 100%;
+    text-align: center;
+    padding: 10px;
+    display: none;
+
+    label {
+    	top: 50%;
+    	position: absolute;
+    	right: 0;
+    	left: auto;
+    	margin-top: -12px;
+    }
+    .search-icon {
+    	pointer-events: none;
+    }
+}
+
+.secondary-search-box {
+	max-width: 300px;
+	width: 90%;
+	background: $trans_white;
+}
+
+.staff-login-btn {
+	width: 60px;
+	line-height: 1;
+	@media screen and (min-width: 400px) {
+		width: inherit;
+		line-height: inherit;
+	}
 }

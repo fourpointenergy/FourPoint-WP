@@ -14,7 +14,7 @@ get_header(); ?>
   	<div class="container">
   		<h2 class="left-content"><?php the_field('top_bar_left_content'); ?></h2>
   		<!-- <h2></h2> -->
-  		<a href="tel:<?php the_field('top_bar_right_content'); ?>"><?php the_field('top_bar_right_content'); ?></a>
+  		<a href="tel:<?php the_field('top_bar_right_content'); ?>" class="right-content"><?php the_field('top_bar_right_content'); ?></a>
       <!-- <span class="right-content"><?php the_field('top_bar_right_content'); ?></span> -->
   	</div>
   </div>

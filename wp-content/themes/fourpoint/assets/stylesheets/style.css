@@ -113,10 +113,14 @@ html {
 img {
   margin: 0 auto;
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
-.map-embed {
-  float: left; }
+@media screen and (max-width: 767px) {
+  .map-embed {
+    width: 90%;
+    margin: 0 auto;
+    display: block; } }
 
 .button {
   display: inline-block;
@@ -182,7 +186,7 @@ a.button {
 nav {
   background-image: url("../images/nav_bg_mobile_sm2.jpg");
   width: 100%;
-  padding: 20px 0 10px;
+  padding: 0;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -193,6 +197,7 @@ nav {
   transition: padding 0.25s ease; }
   @media screen and (min-width: 1025px) {
     nav {
+      padding: 20px 0 10px;
       background-size: cover;
       background-image: url("../images/nav_bg_160.jpg"); } }
   nav section {
@@ -200,10 +205,16 @@ nav {
     margin-left: auto;
     margin-right: auto; }
   nav .logo {
-    width: 154px;
-    height: 79px;
+    width: 80px;
+    height: auto;
     margin: 0 15px;
-    float: left; }
+    float: left;
+    padding: 10px 0; }
+    @media (min-width: 1024px) {
+      nav .logo {
+        width: 154px;
+        height: 79px;
+        padding: 0; } }
     nav .logo img {
       width: 100%;
       height: auto;
@@ -217,8 +228,10 @@ nav {
     width: 100%;
     position: relative;
     height: auto;
-    overflow: visible;
-    min-height: 80px; }
+    overflow: visible; }
+    @media (min-width: 1024px) {
+      nav .nav_wrap {
+        min-height: 80px; } }
     nav .nav_wrap .mobile_nav_icon {
       display: none;
       font-weight: bold;
@@ -227,14 +240,16 @@ nav {
       position: relative; }
       nav .nav_wrap .mobile_nav_icon i {
         font-size: 18px;
-        padding-left: 10px; }
+        padding-left: 10px;
+        vertical-align: middle; }
       @media (max-width: 1024px) {
         nav .nav_wrap .mobile_nav_icon {
           display: inline-block;
           color: #ffffff;
-          position: absolute;
-          right: 20px;
-          top: 55px; } }
+          float: right;
+          line-height: 60px;
+          vertical-align: middle;
+          margin: 0 15px; } }
     nav .nav_wrap .main_nav_wrap {
       display: block;
       position: relative;
@@ -253,7 +268,7 @@ nav {
         margin: 0; }
         nav .nav_wrap .main_nav_wrap #main_nav li {
           display: inline-block;
-          margin: 0 16px; }
+          margin: 0 12px; }
           nav .nav_wrap .main_nav_wrap #main_nav li a {
             text-transform: uppercase;
             font-weight: bold;
@@ -263,7 +278,9 @@ nav {
           @media (max-width: 1024px) {
             nav .nav_wrap .main_nav_wrap #main_nav .mobile_utility {
               display: block; } }
-        nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children a:after {
+        nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children:last-child {
+          padding-bottom: 10px; }
+        nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children > a:after {
           margin-left: 10px;
           content: '\25BE';
           color: white;
@@ -338,9 +355,23 @@ nav {
       cursor: pointer; }
     nav .nav_wrap .utility {
       position: absolute;
+      left: 29%;
       top: 0;
-      right: 0;
+      margin-top: 14px;
       z-index: 2; }
+      @media (max-width: 767px) and (min-width: 480px) {
+        nav .nav_wrap .utility {
+          right: 29%;
+          left: auto; } }
+      @media (min-width: 768px) {
+        nav .nav_wrap .utility {
+          right: 130px;
+          left: auto; } }
+      @media (min-width: 1024px) {
+        nav .nav_wrap .utility {
+          top: 0;
+          right: 0;
+          left: auto; } }
       nav .nav_wrap .utility .search_wrap, nav .nav_wrap .utility a {
         display: inline-block;
         margin: 0 20px;
@@ -368,7 +399,7 @@ nav {
   transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
   width: 40px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 2px;
   border: none;
   cursor: pointer;
   background: transparent; }
@@ -404,14 +435,11 @@ nav {
   position: relative;
   left: -30px;
   color: white;
-  cursor: pointer;
-  z-index: -1; }
+  cursor: pointer; }
 
-.expand_down {
-  padding: 20px 0 0; }
-  @media (min-width: 768px) {
-    .expand_down {
-      padding: 20px 0 60px; } }
+@media (min-width: 1024px) {
+  .expand_down {
+    padding: 20px 0 60px; } }
 
 .lease-sell {
   position: relative;
@@ -479,6 +507,62 @@ nav {
       top: 0;
       left: 0;
       z-index: 99; } }
+
+@media (min-width: 1024px) {
+  #main_nav #menu-item-120 .sub-menu .menu-item {
+    margin: 0 0.95%; } }
+
+@media (min-width: 1024px) {
+  #main_nav #menu-item-899, #main_nav #menu-item-901 {
+    display: none; } }
+
+.mobile-search-icon {
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px; }
+  @media (min-width: 1024px) {
+    .mobile-search-icon {
+      display: none; } }
+  .mobile-search-icon .search-icon {
+    left: 0;
+    z-index: 9;
+    font-size: 1.5em;
+    padding: 10px; }
+
+#secondary-searchform {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 300px;
+  position: relative; }
+
+.secondary_search_wrap {
+  background-color: #3D3D3C;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  display: none; }
+  .secondary_search_wrap label {
+    top: 50%;
+    position: absolute;
+    right: 0;
+    left: auto;
+    margin-top: -12px; }
+  .secondary_search_wrap .search-icon {
+    pointer-events: none; }
+
+.secondary-search-box {
+  max-width: 300px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.2); }
+
+.staff-login-btn {
+  width: 60px;
+  line-height: 1; }
+  @media screen and (min-width: 400px) {
+    .staff-login-btn {
+      width: inherit;
+      line-height: inherit; } }
 
 footer {
   background: #2e2e2d;
@@ -574,34 +658,23 @@ header p {
 header a {
   color: #00a8e2; }
 header h1 {
-  max-width: 96%;
+  max-width: 94%;
   margin: 0 auto; }
 
 .alt_leader {
   background: #eceae7;
-  text-align: center; }
-  @media (min-width: 1024px) {
-    .alt_leader {
-      background: #eceae7 url(../images/map-perspective-4-13.jpg) no-repeat right center;
-      background-size: 650px 443px; } }
-  .alt_leader h1 {
-    text-align: center; }
-    @media (min-width: 1024px) {
-      .alt_leader h1 {
-        text-align: left; } }
-  .alt_leader section {
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    width: 96%; }
-    @media (min-width: 1024px) {
-      .alt_leader section p {
-        margin: 20px 0;
-        max-width: 400px; } }
-    @media screen and (min-width: 1200px) {
-      .alt_leader section p {
-        max-width: 500px; } }
+  text-align: left; }
+  .alt_leader .container {
+    margin: 0 auto; }
+  .alt_leader h1, .alt_leader p {
+    max-width: 100%;
+    width: auto; }
+  .alt_leader img {
+    width: auto;
+    height: 100%; }
+    @media (min-width: 768px) {
+      .alt_leader img {
+        float: right; } }
 
 .affiliation_logos {
   position: relative;
@@ -616,18 +689,27 @@ header h1 {
     border-width: 1px 0 0 1px;
     float: left;
     width: 33.33333333333333334%;
-    padding: 13px; }
+    padding: 13px;
+    height: 250px;
+    position: relative; }
     @media (min-width: 768px) {
       .affiliation_logos .logo {
         padding: 0; } }
     .affiliation_logos .logo img {
       width: 100%;
-      max-width: 100%;
-      margin: 40px auto;
       max-width: 160px;
-      height: auto; }
-    .affiliation_logos .logo:last-child {
-      width: 100%; }
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      @media screen and (max-width: 767px) {
+        .affiliation_logos .logo img {
+          padding: 0 12px; } }
 
 .content_stack {
   width: 100%;
@@ -689,6 +771,7 @@ header h1 {
         color: #ffffff;
         margin: 0 auto;
         width: 100%;
+        border-top: 1px solid transparent;
         background: -webkit-linear-gradient(white 50%, rgba(255, 255, 255, 0.1)) no-repeat 100%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -818,12 +901,15 @@ header h1 {
         .grid ul li a div {
           position: absolute;
           bottom: 4%;
-          margin-bottom: -40px;
+          margin-bottom: 0;
           width: 100%;
           padding: 0 15px 10px;
           -webkit-transition: all 0.4s ease;
           -moz-transition: all 0.4s ease;
           transition: all 0.4s ease; }
+          @media (min-width: 1024px) {
+            .grid ul li a div {
+              margin-bottom: -40px; } }
           .grid ul li a div h4, .grid ul li a div p {
             padding: 0;
             margin: 0;
@@ -848,7 +934,7 @@ header h1 {
             -moz-transition: color 0.3 ease;
             transition: color 0.3 ease;
             background: none;
-            opacity: 0;
+            opacity: 1;
             display: block;
             margin-top: 5px;
             -webkit-transition: opacity 0.3s ease 0.3s;
@@ -870,6 +956,9 @@ header h1 {
               color: #ffc20e; }
               .grid ul li a div span:hover:before {
                 background-color: #ffc20e; }
+            @media (min-width: 1024px) {
+              .grid ul li a div span {
+                opacity: 0; } }
         .grid ul li a span {
           position: absolute;
           width: 100%;
@@ -932,6 +1021,9 @@ header h1 {
         .team_profile header .team_title:after {
           display: block;
           background-color: #eceae7; } }
+    .team_profile header .team_title h1 {
+      margin-bottom: 10px;
+      max-width: 100%; }
     .team_profile header .team_title span {
       display: block;
       text-align: left;
@@ -980,7 +1072,7 @@ header h1 {
   width: 90%;
   max-width: 740px;
   margin: 20px auto 50px; }
-  .team_profile article h3, .team_profile article p {
+  .team_profile article h3 {
     padding: 0 40px;
     position: relative; }
   .team_profile article h3 p {
@@ -1576,7 +1668,7 @@ a.button {
   max-width: 1100px;
   margin: 60px auto;
   padding: 0px 10px;
-  display: table; }
+  overflow: auto; }
 
 @media (min-width: 1024px) {
   .wrapper {
@@ -1619,9 +1711,11 @@ a.button {
 
 .general-content ul {
   margin: 25px 0 20px;
-  padding-left: 15px;
   display: table;
   font-family: 'Source Sans Pro', sans-serif; }
+  @media (min-width: 768px) {
+    .general-content ul {
+      padding-left: 15px; } }
   .general-content ul li {
     padding-left: 25px;
     text-indent: -15px;
@@ -1664,45 +1758,15 @@ a.button {
     float: right; }
 
 .page-id-200 .opp-contact {
-  min-height: auto;
+  min-height: 0;
   margin-top: 0;
   margin-bottom: 20px; }
   .page-id-200 .opp-contact p {
     margin: 0; }
 
-.page-id-86 .opp-contact {
-  margin-bottom: 0; }
-  .page-id-86 .opp-contact:nth-child(even) {
-    position: relative; }
-    @media (min-width: 768px) {
-      .page-id-86 .opp-contact:nth-child(even):after {
-        position: absolute;
-        content: ' ';
-        left: 0;
-        height: 60%;
-        width: 1px;
-        background-color: #B6B6B6;
-        top: 46%;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%); } }
-  .page-id-86 .opp-contact iframe {
-    margin: 15px auto 0;
-    display: block; }
-    @media (min-width: 768px) {
-      .page-id-86 .opp-contact iframe {
-        float: right; } }
-  .page-id-86 .opp-contact .card {
-    width: 90%; }
-    @media (min-width: 768px) {
-      .page-id-86 .opp-contact .card {
-        margin: 150px auto 0; } }
-    .page-id-86 .opp-contact .card .button {
-      color: #ffffff; }
-      .page-id-86 .opp-contact .card .button:hover {
-        color: #00a8e2; }
+.page-id-187 .opp-contact {
+  min-height: 0;
+  margin-bottom: 15px; }
 
 #form-error-msg {
   color: red;
@@ -2037,6 +2101,23 @@ aside.login-card {
 
 .login-modal .login-error {
   color: #ff0000; }
+
+.io-logins {
+  margin-top: 60px; }
+  @media (min-width: 768px) {
+    .io-logins {
+      margin-top: 20px; } }
+  @media (min-width: 768px) {
+    .io-logins aside.login-card {
+      width: 50%; } }
+  .io-logins .button {
+    color: #ffffff; }
+    .io-logins .button:hover {
+      color: #00a8e2; }
+
+.energylink-login {
+  margin: 0 auto;
+  display: block; }
 
 /* NOTES:
 Add input[type=password] to text input styling
