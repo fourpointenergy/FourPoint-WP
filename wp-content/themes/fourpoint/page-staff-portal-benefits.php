@@ -51,7 +51,7 @@ global $theme;
         <p>Search for a document or resource</p>
         <form>SEARCH BOX GOES HERE</form>
       </div>
-      <div class="quick-links">
+      <div class="quick-links shadow-border">
         <h3 class="blue-caps-headline">Quick Links</h3>
         <ul>
           <li><a href="#">Fidelity Time</a></li>

@@ -2276,31 +2276,55 @@ Add .login-error to .login-modal section
 
 .sp-nav {
   background-color: #2e2e2d;
-  background-image: none; }
+  background-image: none;
+  display: inline-block; }
 
-.sp-subnav {
-  background-color: #B6B6B6; }
-  .sp-subnav .container {
-    padding: 40px 0;
-    margin: 0 auto; }
-  .sp-subnav li {
-    float: left;
-    width: 33%;
-    text-align: center; }
+.sp-subnav .container {
+  padding: 40px 0;
+  margin: 0 auto; }
+.sp-subnav li {
+  float: left;
+  width: 100%;
+  margin-bottom: 5%;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .sp-subnav li {
+      width: 33%; } }
+
+.hero-main .container {
+  margin-top: 0; }
+  @media (min-width: 768px) {
+    .hero-main .container {
+      margin-top: 60px; } }
+
+.shadow-border {
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px 2px rgba(182, 182, 182, 0.5); }
 
 .search-left {
-  width: 50%;
-  float: left;
-  margin-right: 10%;
-  margin-left: 3%; }
+  margin-bottom: 60px; }
+  @media (min-width: 768px) {
+    .search-left {
+      float: left;
+      width: 50%;
+      margin-right: 10%;
+      margin-left: 3%;
+      margin-bottom: 0; } }
+  .search-left h1 {
+    margin-bottom: 20px; }
+  .search-left h3 {
+    color: #000000;
+    margin-bottom: 10px; }
 
 .quick-links {
   float: left;
-  width: 33%;
+  width: 100%;
   margin-right: 3%;
-  max-width: 280px;
-  padding: 20px;
-  border: 1px solid #B6B6B6; }
+  max-width: 350px;
+  padding: 20px; }
+  @media (min-width: 768px) {
+    .quick-links {
+      width: 36%; } }
   .quick-links a {
     color: #868586; }
     .quick-links a:hover {
@@ -2323,16 +2347,29 @@ Add .login-error to .login-modal section
 
 .holiday-schedule {
   background-color: #00a8e2;
-  padding: 60px 0; }
+  padding: 60px 0;
+  margin-bottom: 40px; }
   @media (min-width: 1024px) {
     .holiday-schedule .slick-prev, .holiday-schedule .slick-next {
       -webkit-transform: translate(0, -50%) scale(0.5);
       -ms-transform: translate(0, -50%) scale(0.5);
       transform: translate(0, -50%) scale(0.5); } }
   .holiday-schedule .slick-prev {
-    left: -8%; }
+    left: -30%; }
+    @media screen and (min-width: 650px) {
+      .holiday-schedule .slick-prev {
+        left: -18%; } }
+    @media (min-width: 768px) {
+      .holiday-schedule .slick-prev {
+        left: -8%; } }
   .holiday-schedule .slick-next {
-    right: -8%; }
+    right: -30%; }
+    @media screen and (min-width: 650px) {
+      .holiday-schedule .slick-next {
+        right: -18%; } }
+    @media (min-width: 768px) {
+      .holiday-schedule .slick-next {
+        right: -8%; } }
 
 .holiday-wrapper {
   width: 90%;
@@ -2340,6 +2377,15 @@ Add .login-error to .login-modal section
   margin: 0 auto; }
   .holiday-wrapper h3 {
     color: #ffffff; }
+
+.holiday-container {
+  width: 75%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .holiday-container {
+      width: 100%; } }
+  .holiday-container .slick-list {
+    padding: 5px 0; }
 
 .holiday {
   background: white;
@@ -2366,15 +2412,28 @@ Add .login-error to .login-modal section
 
 .sp-footer {
   background-color: #B6B6B6; }
+  @media screen and (max-width: 1024px) {
+    .sp-footer .container {
+      margin: 20px auto; } }
 
 .link-container {
-  width: 22%;
-  display: inline-block;
-  margin-left: 3%;
-  border-left: 1px solid #868586; }
+  width: 100%;
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .link-container {
+      display: inline-block;
+      margin-left: 3%;
+      border-left: 1px solid #868586;
+      width: 44%;
+      margin-bottom: 60px; } }
+  @media (min-width: 1024px) {
+    .link-container {
+      width: 22%;
+      margin-bottom: 0; } }
   .link-container h4 {
     text-transform: uppercase;
-    margin: 0 0 1.5em 1.5em; }
+    margin: 0 0 1.5em 1.5em;
+    font-size: 14px; }
   .link-container li {
     margin-bottom: 10px; }
   .link-container a {

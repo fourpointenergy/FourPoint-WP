@@ -48,10 +48,10 @@ global $theme;
     <div class="container">
       <div class="search-left">
         <h1>Fourpoint energy employee resource center</h1>
-        <p>Search for a document or resource</p>
+        <h3>Search for a document or resource</h3>
         <form>SEARCH BOX GOES HERE</form>
       </div>
-      <div class="quick-links">
+      <div class="quick-links shadow-border">
         <h3 class="blue-caps-headline">Quick Links</h3>
         <ul>
           <li><a href="#">Fidelity Time</a></li>
@@ -72,7 +72,7 @@ global $theme;
       <a href="#">View Holiday Schedule</a>
       
       <div class="holiday-container">
-        <div class="holiday">
+        <div class="holiday shadow-border">
           <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
           <h4>Labor Day</h4>
           <div class="date">
@@ -80,7 +80,7 @@ global $theme;
           </div>
         </div>
 
-        <div class="holiday">
+        <div class="holiday shadow-border">
           <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
           <h4>Labor Day</h4>
           <div class="date">
@@ -88,7 +88,7 @@ global $theme;
           </div>
         </div>
 
-        <div class="holiday">
+        <div class="holiday shadow-border">
           <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
           <h4>Labor Day</h4>
           <div class="date">
@@ -96,7 +96,7 @@ global $theme;
           </div>
         </div>
 
-        <div class="holiday">
+        <div class="holiday shadow-border">
           <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
           <h4>Labor Day</h4>
           <div class="date">
@@ -104,7 +104,7 @@ global $theme;
           </div>
         </div>
 
-        <div class="holiday">
+        <div class="holiday shadow-border">
           <img src="/wp-content/themes/fourpoint/assets/images/icons/icon-qmark.svg" class="sp-cal-icon" />
           <h4>Labor Day</h4>
           <div class="date">
