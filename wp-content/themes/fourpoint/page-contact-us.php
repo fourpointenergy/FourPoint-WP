@@ -22,7 +22,7 @@ get_header(); ?>
   <div class="container">
 	<div class="form_wrap">
     <span class="general-form">
-      <h2 class="contact-form-header">GENERAL INQUIRIES</h2>
+      <h2 class="contact-form-header">Who would you like to reach?</h2>
       <?php the_content(); ?>
     </span>
 	</div>
