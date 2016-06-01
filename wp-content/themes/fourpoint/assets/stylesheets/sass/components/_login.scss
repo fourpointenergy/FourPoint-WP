@@ -143,9 +143,14 @@ aside.login-card {
   }
 }
 
-.energylink-login {
+.energylink-iframe {
   margin: 0 auto;
   display: block;
+  width: 100%;
+  max-width: 350px;
+  @include tablet-portrait-and-up {
+    margin: 50px auto 0;
+  }
 }
 
 /* NOTES:
