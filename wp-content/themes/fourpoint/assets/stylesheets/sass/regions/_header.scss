@@ -39,8 +39,6 @@ header {
 		width: auto;
 	}
 	img {
-		width: auto;
-		height: 100%;
 		@include tablet-portrait-and-up {
 			float: right;
 		}

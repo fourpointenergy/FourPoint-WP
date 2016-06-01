@@ -4,8 +4,8 @@
 	background: $fourpoint_blue;
 	@include clearfix;
 	.logo {
-		border: solid #a0bdc7;
-		border-width: 1px 0 0 1px;
+		border-bottom: 1px solid #a0bdc7;
+		border-right: 1px solid #a0bdc7;
 		float: left;
 		width: 33.33333333333333334%;
 		padding: 13px;
