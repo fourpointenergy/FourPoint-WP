@@ -29,8 +29,8 @@
 		@include media($tablet) {
 			width: 100%;
 		}
-		// &:last-child {
-		// 	width: 100%;
-		// }
+		&:last-child, &:nth-last-child(2) {
+			width: 50%;
+		}
 	}
 }

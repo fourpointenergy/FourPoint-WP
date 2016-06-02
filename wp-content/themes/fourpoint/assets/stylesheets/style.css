@@ -711,6 +711,8 @@ header h1 {
       @media screen and (max-width: 767px) {
         .affiliation_logos .logo img {
           padding: 0 12px; } }
+    .affiliation_logos .logo:last-child, .affiliation_logos .logo:nth-last-child(2) {
+      width: 50%; }
 
 .content_stack {
   width: 100%;
