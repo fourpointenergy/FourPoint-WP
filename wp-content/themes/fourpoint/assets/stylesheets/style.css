@@ -2316,7 +2316,7 @@ Add .login-error to .login-modal section
       margin-bottom: 0;
       max-width: 100%; } }
   .search-left h1 {
-    margin-bottom: 20px; }
+    margin: 30px 0 20px; }
   .search-left h3 {
     color: #000000;
     margin-bottom: 10px; }
@@ -2332,6 +2332,7 @@ Add .login-error to .login-modal section
       float: right;
       margin: 0 3% 0 0; } }
   .quick-links a {
+    font-size: 1.25em;
     color: #868586; }
     .quick-links a:hover {
       color: #ffc20e; }
@@ -2343,7 +2344,7 @@ Add .login-error to .login-modal section
     margin-top: 15px;
     margin-bottom: 10px; }
     .quick-links ul li {
-      margin: 10px 0; }
+      margin: 15px 0; }
 
 .blue-caps-headline {
   color: #00a8e2;
@@ -2496,5 +2497,30 @@ Add .login-error to .login-modal section
   font-weight: bold;
   text-align: center;
   display: block; }
+
+.anchor-links {
+  margin: 60px auto;
+  width: 90%;
+  display: table; }
+  .anchor-links ul {
+    margin-left: 0; }
+  .anchor-links li {
+    margin: 20px 0;
+    float: left;
+    width: 50%;
+    text-align: center; }
+  .anchor-links a {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    padding: 15px;
+    -webkit-transition: 0.25s ease;
+    -moz-transition: 0.25s ease;
+    transition: 0.25s ease; }
+    .anchor-links a:hover {
+      color: #00a8e2;
+      -webkit-transition: 0.25s ease;
+      -moz-transition: 0.25s ease;
+      transition: 0.25s ease; }
 
 /*# sourceMappingURL=style.css.map */

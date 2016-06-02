@@ -48,7 +48,7 @@ global $theme;
     <div class="container">
       <div class="search-left">
         <h1>Employee Benefits</h1>
-        <p>Search for a document or resource</p>
+        <h3>Search for a document or resource</h3>
         <form>SEARCH BOX GOES HERE</form>
       </div>
       <div class="quick-links shadow-border">
@@ -64,6 +64,15 @@ global $theme;
       </div>
     </div>
   </section>
+
+  <div class="anchor-links">
+    <ul>
+      <li><a href="#open-enrollment">Open Enrollment</a></li>
+      <li><a href="#insurance">Insurance</a></li>
+      <li><a href="#incident-assistance">Incident Assistance</a></li>
+      <li><a href="#vanguard-401k">Vanguard 401k</a></li>
+    </ul>
+  </div>
 
   <!-- boxed sections -->
   <section class="box">
