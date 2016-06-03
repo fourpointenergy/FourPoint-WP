@@ -300,3 +300,83 @@
         }
     }
 }
+
+.it-doc-container {
+    .container {
+        margin: 10px auto 60px;
+        border-bottom: 1px solid $medium_gray;
+    }
+}
+
+.it-contact {
+    text-align: center;
+    border-bottom: 1px solid $medium_gray;
+    max-width: 1100px;
+    width: 90%;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    p {
+        max-width: 700px;
+        width: 70%;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .btn-wide {
+        max-width: 320px;
+        text-align: center;
+        display: block;
+        margin: 40px auto;
+    }
+    .help-phone {
+        font-size: 20px;
+        margin: 0 auto;
+        a {
+            @include third_btn;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+}
+
+.address {
+    width: 45%;
+    float: left;
+    padding: 0 10px 10px 0;
+    margin: 15px 5% 30px 0;
+    @include tablet-portrait-and-up {
+        width: 28%;
+    }
+    p { 
+        width: 75%;
+        margin: 0 20% 5px 0;
+        float: left;
+    }
+    a {
+        color: $fourpoint_blue;
+        display: block;
+        margin-bottom: 5px;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.employees {
+    background-color: $light_gray;
+    h3 {
+        color: $black;
+        text-align: center;
+        margin: 20px 0;
+    }
+    ul {
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
+
+.office-sort {
+    margin: 40px 0;
+}

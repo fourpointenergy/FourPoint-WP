@@ -65,6 +65,13 @@ global $theme;
     </div>
   </section>
 
+  <div class="it-contact">
+    <p>Lorem ipsum Aliqua ut laboris sit voluptate tempor deserunt. Lorem ipsum Aliqua ut laboris sit voluptate tempor deserunt.</p>
+    <a href="#" class="btn-blue btn-wide button">IT Ticketing System</a>
+    <p class="help-phone">Help Line: <a href="tel:3033033030">303.300.3030</a></p>
+  </div>
+
+
   <div class="it-doc-container">
     <div class="container">
       <div class="copy_split">

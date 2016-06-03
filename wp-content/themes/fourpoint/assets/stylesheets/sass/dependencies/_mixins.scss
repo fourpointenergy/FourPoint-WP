@@ -73,7 +73,7 @@
 	font-weight: 700;
 	line-height: 22px;
 	display: block;
-	@include transition(color .3 ease);
+	@include transition(0.2s ease);
 	&:before {
 		content: '';
 		position: absolute;
@@ -81,7 +81,7 @@
 		height: 20px;
 		left: 0;
 		top: 0px;
-		@include transition(all .3 ease);
+		@include transition(0.2s ease);
 		background: $fourpoint_blue url(../images/icons/btn_arrows.svg) no-repeat center center;
 		border-radius: 50%;
 	}

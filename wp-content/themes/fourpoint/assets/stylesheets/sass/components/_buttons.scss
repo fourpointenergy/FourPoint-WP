@@ -26,6 +26,7 @@ a.button {
     background: $fourpoint_blue;
     border-color: $white;
     color: $white;
+    border-radius: 2px;
     @include transition(background 0.3s ease);
   }
 }
@@ -44,4 +45,17 @@ a.button {
   padding: 24px 12px;
   text-transform: uppercase;
   font-size: 16px;
+}
+
+.active {
+  background-color: $fourpoint_blue;
+  color: $white;
+  border-radius: 2px;
+  // border: 2px solid $fourpoint_blue;
+  &:hover {
+    background: $white;
+    border-color: $fourpoint_blue;
+    color: $fourpoint_blue;
+    @include transition(background 0.3s ease);
+  }
 }

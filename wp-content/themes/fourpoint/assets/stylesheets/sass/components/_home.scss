@@ -68,11 +68,6 @@
 	}
 }
 
-.button {
-	// display: inline-block;
-	@include first_btn;
-}
-
 .panel {
 	h1 {
 		color: $dark_gray;

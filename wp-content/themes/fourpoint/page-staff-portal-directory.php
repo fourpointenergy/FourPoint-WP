@@ -47,7 +47,7 @@ global $theme;
   <section class="hero-main">
     <div class="container">
       <div class="search-left">
-        <h1>Fourpoint energy IT help center</h1>
+        <h1>Fourpoint energy company directory</h1>
         <h3>Search for a document or resource</h3>
         <form>SEARCH BOX GOES HERE</form>
       </div>
@@ -65,54 +65,69 @@ global $theme;
     </div>
   </section>
 
-  <div class="it-doc-container">
+  <div class="address-container">
     <div class="container">
-      <div class="copy_split">
-        
-        <div class="side-content">
-          <aside><p>February 24, 2016</p></aside>
-          <article>
-            <p>FourPoint to Acquire Chesapeake Energy’s Remaining Western Anadarko Assets</p>
-            <a href="http://23.253.56.162/wp-content/uploads/2016/05/Chesapeake-Energy-Aquisition-Press-Release_FINAL.pdf" target="_blank">Read More</a>
-          </article>
-        </div>
+      <p>Lorem ipsum Aliqua ut laboris sit voluptate tempor deserunt. Lorem ipsum Aliqua ut laboris sit voluptate tempor deserunt.</p>
+      <div class="address">
+        <p>100 St. Paul Street, Ste. 400 Denver, CO 80206</p>
+        <a href="tel:3033033030">303.300.3030</a>
+        <a href="#">Denver Organizational Chart</a>
+      </div>
 
-        <div class="side-content">
-          <aside><p>February 24, 2016</p></aside>
-          <article>
-            <p>FourPoint to Acquire Chesapeake Energy’s Remaining Western Anadarko Assets</p>
-            <a href="http://23.253.56.162/wp-content/uploads/2016/05/Chesapeake-Energy-Aquisition-Press-Release_FINAL.pdf" target="_blank">Read More</a>
-          </article>
-        </div>
+      <div class="address">
+        <p>100 St. Paul Street, Ste. 400 Denver, CO 80206</p>
+        <a href="tel:3033033030">303.300.3030</a>
+        <a href="#">Denver Organizational Chart</a>
+      </div>
 
-        <div class="side-content">
-          <aside><p>February 24, 2016</p></aside>
-          <article>
-            <p>FourPoint to Acquire Chesapeake Energy’s Remaining Western Anadarko Assets</p>
-            <a href="http://23.253.56.162/wp-content/uploads/2016/05/Chesapeake-Energy-Aquisition-Press-Release_FINAL.pdf" target="_blank">Read More</a>
-          </article>
-        </div>
+      <div class="address">
+        <p>100 St. Paul Street, Ste. 400 Denver, CO 80206</p>
+        <a href="tel:3033033030">303.300.3030</a>
+        <a href="#">Denver Organizational Chart</a>
+      </div>
 
-        <div class="side-content">
-          <aside><p>February 24, 2016</p></aside>
-          <article>
-            <p>FourPoint to Acquire Chesapeake Energy’s Remaining Western Anadarko Assets</p>
-            <a href="http://23.253.56.162/wp-content/uploads/2016/05/Chesapeake-Energy-Aquisition-Press-Release_FINAL.pdf" target="_blank">Read More</a>
-          </article>
-        </div>
-            
+      <div class="address">
+        <p>100 St. Paul Street, Ste. 400 Denver, CO 80206</p>
+        <a href="tel:3033033030">303.300.3030</a>
+        <a href="#">Denver Organizational Chart</a>
+      </div>
+
+      <div class="address">
+        <p>100 St. Paul Street, Ste. 400 Denver, CO 80206</p>
+        <a href="tel:3033033030">303.300.3030</a>
+        <a href="#">Denver Organizational Chart</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="employees">
+    <div class="container">
+      <div class="office-sort">
+        <h3>Choose Office:</h3>
+        <ul>
+          <li><a href="#" class="button btn-white active" data-office="all">All</a></li>
+          <li><a href="#" class="button btn-white" data-office="borger">Borger</a></li>
+          <li><a href="#" class="button btn-white" data-office="denver">Denver</a></li>
+          <li><a href="#" class="button btn-white" data-office="elk-city">Elk City</a></li>
+          <li><a href="#" class="button btn-white" data-office="shamrock">Shamrock</a></li>
+          <li><a href="#" class="button btn-white" data-office="woodward">Woodward</a></li>
+        </ul>
+      </div>
+      <div class="name-sort">
+        <h3>Filter by Last Name:</h3>
+        <ul>
+          <li><a href="#" class="button btn-white active" data-office="all">All</a></li>
+          <li><a href="#" class="button btn-white" data-office="a-f">A-F</a></li>
+          <li><a href="#" class="button btn-white" data-office="g-m">G-M</a></li>
+          <li><a href="#" class="button btn-white" data-office="n-s">N-S</a></li>
+          <li><a href="#" class="button btn-white" data-office="t-z">T-Z</a></li>
+        </ul>
       </div>
     </div>
   </div>
 
 
-  <?php
-  // global $theme;
-  // global $current_user;
-  // get_currentuserinfo();
-  /**
-   * Template for displaying the footer
-   */?>
+
    <footer class="sp-footer">
     <div class="container">
       <div class="link-container">
@@ -164,7 +179,7 @@ global $theme;
       </div>
     </div>
    </footer>
-   <?php wp_footer(); ?>
+
   </body>
 </html>
 
