@@ -167,6 +167,10 @@
 //   @include transform (translateX(-150px));
 //   @include animation-duration (0.6s);
 // }
+
+#flipper {
+	overflow: hidden;
+}
 .content_stack .already-visible {
 	-webkit-transform: rotateX(0deg);
 	transform: rotateX(0deg);

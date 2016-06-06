@@ -142,3 +142,13 @@
 		width: 99% !important;
 	}
 }
+
+.gform_wrapper textarea.medium {
+	@include tablet-portrait-and-up {
+		height: 25.85em !important;
+	}
+}
+
+#gform_confirmation_message_1 {
+	text-align: center;
+}

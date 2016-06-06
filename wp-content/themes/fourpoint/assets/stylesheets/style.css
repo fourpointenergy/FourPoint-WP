@@ -118,8 +118,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .map-embed {
-    width: 90%;
-    margin: 0 auto;
+    height: 87vh;
     display: block; } }
 
 .button {
@@ -268,7 +267,7 @@ nav {
         margin: 0; }
         nav .nav_wrap .main_nav_wrap #main_nav li {
           display: inline-block;
-          margin: 0 12px; }
+          margin: 0 15px; }
           nav .nav_wrap .main_nav_wrap #main_nav li a {
             text-transform: uppercase;
             font-weight: bold;
@@ -371,7 +370,8 @@ nav {
         nav .nav_wrap .utility {
           top: 0;
           right: 0;
-          left: auto; } }
+          left: auto;
+          margin-top: 0; } }
       nav .nav_wrap .utility .search_wrap, nav .nav_wrap .utility a {
         display: inline-block;
         margin: 0 20px;
@@ -426,6 +426,9 @@ nav {
       color: #ffffff; }
   .search-box:not(:focus) {
     text-indent: -5000px; }
+
+input:-webkit-autofill, input:-webkit-autofill:focus, input:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0px 1000px #B6B6B6 inset !important; }
 
 #search-submit {
   position: absolute;
@@ -513,7 +516,7 @@ nav {
     margin: 0 0.95%; } }
 
 @media (min-width: 1024px) {
-  #main_nav #menu-item-899, #main_nav #menu-item-901 {
+  #main_nav #menu-item-1006, #main_nav #menu-item-1007 {
     display: none; } }
 
 .mobile-search-icon {
@@ -665,16 +668,14 @@ header h1 {
   background: #eceae7;
   text-align: left; }
   .alt_leader .container {
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: justify; }
   .alt_leader h1, .alt_leader p {
     max-width: 100%;
     width: auto; }
-  .alt_leader img {
-    width: auto;
-    height: 100%; }
-    @media (min-width: 768px) {
-      .alt_leader img {
-        float: right; } }
+  @media (min-width: 768px) {
+    .alt_leader img {
+      float: right; } }
 
 .affiliation_logos {
   position: relative;
@@ -685,8 +686,8 @@ header h1 {
     display: table;
     clear: both; }
   .affiliation_logos .logo {
-    border: solid #a0bdc7;
-    border-width: 1px 0 0 1px;
+    border-bottom: 1px solid #a0bdc7;
+    border-right: 1px solid #a0bdc7;
     float: left;
     width: 33.33333333333333334%;
     padding: 13px;
@@ -710,6 +711,8 @@ header h1 {
       @media screen and (max-width: 767px) {
         .affiliation_logos .logo img {
           padding: 0 12px; } }
+    .affiliation_logos .logo:last-child, .affiliation_logos .logo:nth-last-child(2) {
+      width: 50%; }
 
 .content_stack {
   width: 100%;
@@ -845,6 +848,9 @@ header h1 {
     opacity: 1; }
   .content_stack .come-in aside h3 {
     opacity: 1; }
+
+#flipper {
+  overflow: hidden; }
 
 .content_stack .already-visible {
   -webkit-transform: rotateX(0deg);
@@ -1205,6 +1211,13 @@ header h1 {
 
 .gform_wrapper .gform_body .form_select select, .gform_wrapper .gform_body .form_select {
   width: 99% !important; }
+
+@media (min-width: 768px) {
+  .gform_wrapper textarea.medium {
+    height: 25.85em !important; } }
+
+#gform_confirmation_message_1 {
+  text-align: center; }
 
 .copy_split {
   margin: 50px auto; }
@@ -1787,7 +1800,7 @@ a.button {
   .general-form button {
     margin: 0 auto 20px; }
   .general-form .contact-form-header {
-    margin: 20px 0;
+    margin: 20px 0 30px;
     text-align: center;
     text-transform: uppercase; }
 
@@ -2115,9 +2128,14 @@ aside.login-card {
     .io-logins .button:hover {
       color: #00a8e2; }
 
-.energylink-login {
+.energylink-iframe {
   margin: 0 auto;
-  display: block; }
+  display: block;
+  width: 100%;
+  max-width: 350px; }
+  @media (min-width: 768px) {
+    .energylink-iframe {
+      margin: 50px auto 0; } }
 
 /* NOTES:
 Add input[type=password] to text input styling

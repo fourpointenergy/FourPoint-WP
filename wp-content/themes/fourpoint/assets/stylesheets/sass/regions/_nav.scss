@@ -87,7 +87,7 @@ nav {
 				margin: 0;
 				li {
 					display: inline-block;
-					margin: 0 12px;
+					margin: 0 15px;
 					a {
 						text-transform: uppercase;
 						font-weight: bold;
@@ -228,6 +228,7 @@ nav {
 				top: 0;
 				right: 0;
 				left: auto;
+				margin-top: 0;
 			}
 			.search_wrap, a {
 				display: inline-block;
@@ -284,6 +285,10 @@ nav {
     & + label .search-icon {    color: $white;    }
   }
   &:not(:focus) {    text-indent:-5000px;    } // for more-graceful falling back (:not browsers likely support indent)
+}
+
+input:-webkit-autofill, input:-webkit-autofill:focus, input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0px 1000px $light_gray inset !important;
 }
 
 #search-submit {
@@ -384,7 +389,7 @@ nav {
 	}
 }
 
-#main_nav #menu-item-899, #main_nav #menu-item-901 {
+#main_nav #menu-item-1006, #main_nav #menu-item-1007 {
 	@include tablet-landscape-and-up {
 		display: none;
 	}
