@@ -303,35 +303,35 @@ class Fourpoint {
 		register_post_type('fourpoint-feature', $args);
 
 		//Company Updates
-		$labels = array(
-			'name' => 'Company Update',
-			'singular_name' => 'Company Update',
-			'add_new' => 'Add New Company Update',
-			'add_new_item' => 'Add Company Update',
-			'edit_item' => 'Edit Company Update',
-			'new_item' => 'New Company Update',
-			'all_items' => 'All Company Updates',
-			'view_item' => 'View Company Updates',
-			'search_items' => 'Search Company Updates',
-			'not_found' =>  'No company updates found',
-			'not_found_in_trash' => 'No company updates found in Trash',
-			'menu_name' => 'Company Updates'
-		);
-		$args = array(
-			'labels' => $labels,
-			'public' => true,
-			'publicly_queryable' => true,
-			'show_ui' => true,
-			'show_in_menu' => true,
-			'query_var' => true,
-			'rewrite' => array( 'slug' => 'company updates'),
-			'capability_type' => 'post',
-			'has_archive' => false,
-			'hierarchical' => false,
-			'menu_position' => 3,
-			'supports' => array('title','editor')
-		);
-		register_post_type('company-update', $args);
+		// $labels = array(
+		// 	'name' => 'Company Update',
+		// 	'singular_name' => 'Company Update',
+		// 	'add_new' => 'Add New Company Update',
+		// 	'add_new_item' => 'Add Company Update',
+		// 	'edit_item' => 'Edit Company Update',
+		// 	'new_item' => 'New Company Update',
+		// 	'all_items' => 'All Company Updates',
+		// 	'view_item' => 'View Company Updates',
+		// 	'search_items' => 'Search Company Updates',
+		// 	'not_found' =>  'No company updates found',
+		// 	'not_found_in_trash' => 'No company updates found in Trash',
+		// 	'menu_name' => 'Company Updates'
+		// );
+		// $args = array(
+		// 	'labels' => $labels,
+		// 	'public' => true,
+		// 	'publicly_queryable' => true,
+		// 	'show_ui' => true,
+		// 	'show_in_menu' => true,
+		// 	'query_var' => true,
+		// 	'rewrite' => array( 'slug' => 'company updates'),
+		// 	'capability_type' => 'post',
+		// 	'has_archive' => false,
+		// 	'hierarchical' => false,
+		// 	'menu_position' => 3,
+		// 	'supports' => array('title','editor')
+		// );
+		// register_post_type('company-update', $args);
 
 		//Gallery Sets
 		$labels = array(
