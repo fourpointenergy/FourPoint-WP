@@ -100,7 +100,7 @@ global $theme;
     </div>
   </div>
 
-  <div class="employees">
+  <div class="employees-wrapper">
     <div class="container">
       <div class="office-sort">
         <h3>Choose Office:</h3>
@@ -123,6 +123,83 @@ global $theme;
           <li><a href="#" class="button btn-white" data-office="t-z">T-Z</a></li>
         </ul>
       </div>
+      
+
+      <ul>
+        <li class="employee-bio-container">
+          <div class="employee-bio">
+            
+            <div class="front">
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <h2>Dwight Schrute</h2>
+              <h3>Assistant to the Assistant</h3>
+              <p class="office">Shammrock</p>
+              <ul class="contact-info">
+                <li>Email: <span>d.schrute@fourpointenergy.com</span></li>
+                <li>Outside Dial: <span>303.303.3030</span></li>
+                <li>Ext: <span>99</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+              </ul>
+              <p href="#">More</p>      
+            </div>
+            
+            <div class="back">
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <div class="inner">
+                <p><span>Shammrock</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+              </div>
+              <p href="#">Less</p> 
+            </div>
+          
+          </div>
+        </li>
+        <li class="employee-bio-container">
+          <div class="employee-bio">
+            
+            <div class="front">
+            <p>FRONT</p>
+              <!-- <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">         -->
+            </div>
+            
+            <div class="back">
+              <p>BACK</p>
+            </div>
+          
+          </div>
+        </li>
+        <li class="employee-bio-container">
+          <div class="employee-bio">
+            
+            <div class="front">
+            <p>FRONT</p>
+              <!-- <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">         -->
+            </div>
+            
+            <div class="back">
+              <p>BACK</p>
+            </div>
+          
+          </div>
+        </li>
+        <li class="employee-bio-container">
+          <div class="employee-bio">
+            
+            <div class="front">
+            <p>FRONT</p>
+              <!-- <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">         -->
+            </div>
+            
+            <div class="back">
+              <p>BACK</p>
+            </div>
+          
+          </div>
+        </li> 
+
+      </ul>
+
+
     </div>
   </div>
 
@@ -179,6 +256,8 @@ global $theme;
       </div>
     </div>
    </footer>
+
+   <script type="text/javascript" src="/wp-content/themes/fourpoint/assets/javascripts/staff-portal.js"></script>
 
   </body>
 </html>

@@ -361,8 +361,13 @@
     }
 }
 
-.employees {
+.employees-wrapper {
     background-color: $light_gray;
+    .container {
+        @media screen and (min-width: 500px) {
+            padding: 0;
+        }
+    }
     h3 {
         color: $black;
         text-align: center;
@@ -370,13 +375,117 @@
     }
     ul {
         text-align: center;
+        margin-left: 0;
     }
     li {
         display: inline-block;
+    }
+}
+.office-sort, .name-sort {
+    li {
         margin: 0 5px;
     }
 }
 
 .office-sort {
     margin: 40px 0;
+}
+
+// employee cards
+.employee-bio-container {
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    width: 100%;
+    height: 450px;
+    padding: 0 1.5%;
+    margin: 3% 0 0;
+    @media screen and (min-width: 500px) {
+        width: 49%;
+    }
+    @include tablet-portrait-and-up {
+        width: 33%;
+    }
+    @include tablet-landscape-and-up {
+        width: 30%;
+    }
+}
+
+.flip {
+    @include transform(rotateY(180deg)); 
+}
+
+.employee-bio {
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    @include transition(0.4s ease);
+    h3 {
+        font-size: 17px;
+    }
+    .front, .back {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 6px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: $white;
+
+        img {
+            border-radius: 50%;
+            width: 45%;
+            border: 6px solid white;
+            margin: 20px auto 15px;
+            max-width: 140px;
+        }
+
+        &:after {
+            content: ' ';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            height: 115px;
+            background-color: #DADADA;
+            z-index: -1;
+        }
+    }
+    .front {
+        z-index: 2;
+        padding: 6px;
+        @include transform(rotateY(0));
+        h3 {
+            margin: 0;
+        }
+    }
+    .back {
+        @include transform(rotateY(180deg));
+        .inner {
+            background: $medium_gray;
+            position: relative;
+            top: -46px;
+            z-index: -1;
+
+            p {
+                padding: 20px;
+                text-align: left;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+                padding: 40px 0 15px;
+            }
+        }
+    }
+    .office {
+        padding: 10px 0;
+        background-color: #DADADA;
+    }
 }

@@ -166,8 +166,6 @@ $(document).ready(function() {
   $('#js-mobile-search-icon').on('click', function() {
     $('.secondary_search_wrap').slideToggle(250);
   });
-
-
   
   //nav js
   var menu = $('#main_nav');
