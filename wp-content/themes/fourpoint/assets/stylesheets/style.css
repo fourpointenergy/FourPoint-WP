@@ -313,7 +313,8 @@ nav {
             nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children .sub-menu li a {
               vertical-align: top;
               color: #ffffff;
-              display: inline; }
+              display: inline;
+              padding: 12px 0; }
               nav .nav_wrap .main_nav_wrap #main_nav li.menu-item-has-children .sub-menu li a:after {
                 content: ''; }
           @media (max-width: 1024px) {
