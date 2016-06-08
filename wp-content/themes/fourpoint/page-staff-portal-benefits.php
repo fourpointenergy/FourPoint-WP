@@ -31,7 +31,22 @@ global $theme;
         <img src="<?php $theme->images_path() ?>/FourPoint_Logo.svg" alt="FourPoint Energy Logo">
       </a>
       <div class="nav_wrap">
-        
+        <div id="mobile_menu" class="mobile_nav_icon"><i class="fa fa-bars fa-2"></i></div>
+        <div class="main_nav_wrap">
+          <ul id="main_nav">
+            <li class="nav-buttons"><a href="#" class="btn-blue btn-wide button"><span class="sp-icon">%</span>Benefits</a></li>
+            <li class="nav-buttons"><a href="#" class="btn-blue btn-wide button"><span class="sp-icon">%</span>Documents &amp; Forms</a></li>
+            <li class="nav-buttons"><a href="#" class="btn-blue btn-wide button"><span class="sp-icon">%</span>Brand Center</a></li>
+            <li class="sp-navlink"><a href="#"><span class="sp-icon">%</span>Alerts</a>
+            </li>
+            <li class="sp-navlink"><a href="#"><span class="sp-icon">%</span>Mail</a>
+            </li>
+            <li class="sp-navlink"><a href="#"><span class="sp-icon">%</span>My Profile</a>
+            </li>
+            <li class="sp-navlink"><a href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </nav>

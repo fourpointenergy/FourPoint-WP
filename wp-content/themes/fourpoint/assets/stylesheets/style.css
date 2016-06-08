@@ -2208,21 +2208,61 @@ Add .login-error to .login-modal section
   background-color: #2e2e2d;
   background-image: none;
   display: inline-block; }
+  .sp-nav nav .nav_wrap .mobile_nav_icon, .sp-nav .nav-buttons {
+    display: block; }
+    @media (min-width: 768px) {
+      .sp-nav nav .nav_wrap .mobile_nav_icon, .sp-nav .nav-buttons {
+        display: none !important; } }
+  @media (min-width: 1024px) {
+    .sp-nav .nav_wrap .main_nav_wrap #main_nav {
+      top: 0; } }
+  .sp-nav .nav_wrap .main_nav_wrap #main_nav li a {
+    text-align: left;
+    padding: 12px 24px; }
+  .sp-nav li {
+    text-align: left;
+    font-size: 16px; }
 
-.sp-subnav .container {
-  padding: 40px 0;
-  margin: 0 auto;
-  text-align: center; }
-.sp-subnav li {
-  max-width: 350px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5%; }
+@media screen and (max-width: 1023px) {
+  #main_nav li:nth-of-type(4) {
+    margin-top: 20px !important; } }
+
+nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
+  margin: 0 20px; }
+  nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink a {
+    margin: 0 auto;
+    border-top: 1px solid;
+    text-indent: 12px;
+    padding: 15px 0;
+    width: 95%; }
+    @media (min-width: 1024px) {
+      nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink a {
+        width: auto;
+        border-top: none;
+        padding: 0;
+        text-indent: 0; } }
+  nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink:first-child {
+    margin-top: 25px; }
+
+.sp-subnav {
+  display: none; }
   @media (min-width: 768px) {
-    .sp-subnav li {
-      width: 33%;
-      display: inline-block; } }
+    .sp-subnav {
+      display: block; } }
+  .sp-subnav .container {
+    padding: 40px 0;
+    margin: 0 auto;
+    text-align: center; }
+  .sp-subnav li {
+    max-width: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%; }
+    @media (min-width: 768px) {
+      .sp-subnav li {
+        width: 33%;
+        display: inline-block; } }
 
 .hero-main .container {
   margin-top: 0; }
