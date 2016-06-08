@@ -5,11 +5,7 @@
  */
 global $theme;
 get_header(); ?>
-<style>
-.hero-slider a.button {
-  display:inline-block;
-}
-</style>
+
 <div id="page-loader">
   <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#00a8e2">
       <g fill="none" fill-rule="evenodd">
@@ -39,7 +35,7 @@ get_header(); ?>
 
         <div class="hero-slider-copy">
 					<h1><?php the_sub_field('slide_title') ?></h1>
-					<p><?php the_sub_field('slide_text') ?></p>
+					<?php the_sub_field('slide_text') ?>
 					<a href="<?php the_sub_field('button_link') ?>" class="button btn-blue"><?php the_sub_field('button_text') ?></a>
 				</div>
 			</div>
