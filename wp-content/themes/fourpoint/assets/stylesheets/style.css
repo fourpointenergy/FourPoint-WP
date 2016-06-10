@@ -2215,7 +2215,13 @@ Add .login-error to .login-modal section
         display: none !important; } }
   @media (min-width: 1024px) {
     .sp-nav .nav_wrap .main_nav_wrap #main_nav {
-      top: 0; } }
+      top: 50%;
+      position: absolute;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); } }
   .sp-nav .nav_wrap .main_nav_wrap #main_nav li a {
     text-align: left;
     padding: 12px 24px; }
@@ -2473,17 +2479,24 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
   width: 90%;
   display: table; }
   .anchor-links ul {
-    margin-left: 0; }
+    margin-left: 0;
+    border-top: 1px solid #DADADA; }
   .anchor-links li {
-    margin: 20px 0;
     float: left;
-    width: 50%;
-    text-align: center; }
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #DADADA; }
+    @media (min-width: 768px) {
+      .anchor-links li {
+        width: 50%;
+        text-align: center; } }
   .anchor-links a {
     color: #000000;
     text-transform: uppercase;
     font-size: 1.25em;
     padding: 15px;
+    width: 100%;
+    display: block;
     -webkit-transition: 0.25s ease;
     -moz-transition: 0.25s ease;
     transition: 0.25s ease; }

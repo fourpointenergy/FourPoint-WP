@@ -12,7 +12,9 @@
     .nav_wrap .main_nav_wrap {
         #main_nav {
             @include tablet-landscape-and-up {
-                top: 0;
+                top: 50%;
+                position: absolute;
+                @include transform(translateY(-50%));
             }
             li a {
                text-align: left;
@@ -336,18 +338,26 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
     display: table;
     ul {
         margin-left: 0;
+        border-top: 1px solid #DADADA;
     }
     li {
-        margin: 20px 0;
+        // padding: 20px 0;
         float: left;
-        width: 50%;
-        text-align: center;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #DADADA;
+        @include tablet-portrait-and-up {
+            width: 50%;
+            text-align: center;   
+        }
     }
     a {
         color: $black;
         text-transform: uppercase;
         font-size: 1.25em;
         padding: 15px;
+        width: 100%;
+        display: block;
         @include transition(0.25s ease);
         &:hover {
             color: $fourpoint_blue;
