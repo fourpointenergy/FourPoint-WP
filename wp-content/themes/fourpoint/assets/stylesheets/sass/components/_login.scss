@@ -126,14 +126,17 @@ aside.login-card {
 
 // interest owners login card styles
 .io-logins {
-  margin-top: 60px;
-  @include tablet-portrait-and-up {
-    margin-top: 20px;
-  }
+  // margin-top: 60px;
+  // @include tablet-portrait-and-up {
+  //   margin-top: 20px;
+  // }
   aside.login-card {
     @include tablet-portrait-and-up {
       width: 50%;
     }
+  }
+  .inner h2 {
+    margin-bottom: 15px;
   }
   .button {
     color: $white;
@@ -148,8 +151,15 @@ aside.login-card {
   display: block;
   width: 100%;
   max-width: 350px;
+}
+
+aside.energylink-login-wrap {
+  margin-top: 50px;
   @include tablet-portrait-and-up {
-    margin: 50px auto 0;
+    margin-top: 0;
+  }
+  p:last-child {
+    border: 1px solid $form_fill;
   }
 }
 

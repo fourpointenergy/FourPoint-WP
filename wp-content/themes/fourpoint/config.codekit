@@ -32,7 +32,7 @@
 	"\/assets\/coffeescripts\/jiffyworks.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/coffeescripts\/jiffyworks.coffee",
 		"minifyOutput": 1,
@@ -43,17 +43,17 @@
 		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/coffeescripts\/site.coffee": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"fileType": 32,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/coffeescripts\/site.coffee",
-		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/assets\/javascripts\/site.js",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/assets\/coffeescripts\/site.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/coffeescripts\/style.css": {
 		"fileType": 16,
@@ -792,13 +792,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/map-perspective-4-13.jpg": {
+	"\/assets\/images\/map-perspective-6-7.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 342776,
-		"inputAbbreviatedPath": "\/assets\/images\/map-perspective-4-13.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/map-perspective-4-13.jpg",
+		"initialSize": 348267,
+		"inputAbbreviatedPath": "\/assets\/images\/map-perspective-6-7.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/map-perspective-6-7.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4716,15 +4716,15 @@
 	"\/public\/coffee\/jiffyworks.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/coffee\/jiffyworks.coffee",
 		"minifyOutput": 1,
 		"outputAbbreviatedPath": "\/public\/coffee\/jiffyworks.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/public\/coffee\/site.coffee": {
 		"createSourceMap": 0,
@@ -4732,12 +4732,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/coffee\/site.coffee",
-		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/assets\/javascripts\/site.js",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/public\/coffee\/site.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/public\/sass\/_colors.scss": {
 		"createSourceMap": 0,
@@ -5213,22 +5213,6 @@
 	],
 "lastSavedByUser": "Peter Larson",
 "manualImportLinks": {
-	"\/assets\/coffeescripts\/site.coffee": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/coffeescripts\/jiffyworks.coffee",
-			"position": 0,
-			"type": 0
-			}
-		],
-	"\/public\/coffee\/site.coffee": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/public\/coffee\/jiffyworks.coffee",
-			"position": 0,
-			"type": 0
-			}
-		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",

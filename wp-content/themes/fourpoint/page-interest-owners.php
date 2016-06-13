@@ -12,7 +12,6 @@ get_header(); ?>
 
   <div class="container general-content">
   	<div class="wrapper">
-      <?php the_content(); ?>
       <div class="row io-logins">
         <aside class="card login-card">
           <img src="<?php the_field('pds_energy_login_box_image') ?>">
@@ -24,8 +23,7 @@ get_header(); ?>
             </div>
           </div>
         </aside>
-
-        <aside class="card login-card">
+        <aside class="card login-card energylink-login-wrap">
           <img src="<?php the_field('energylink_login_box_image') ?>">
           <div class="card-bottom">
             <div class="inner">
