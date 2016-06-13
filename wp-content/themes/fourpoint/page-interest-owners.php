@@ -14,24 +14,18 @@ get_header(); ?>
   	<div class="wrapper">
       <div class="row io-logins">
         <aside class="card login-card">
+          <?php the_content(); ?>
           <img src="<?php the_field('pds_energy_login_box_image') ?>">
           <div class="card-bottom">
             <div class="inner">
               <h2>PDS Energy Login</h2>
-              <p><?php the_field('pds_energy_login_box_content') ?></p>
               <a href="https://secure.pds-austin.com/fourpoint/login.asp" class="button btn-blue" target="_blank">Login</a>
             </div>
           </div>
         </aside>
+
         <aside class="card login-card energylink-login-wrap">
-          <img src="<?php the_field('energylink_login_box_image') ?>">
-          <div class="card-bottom">
-            <div class="inner">
-              <h2>EnergyLink Login</h2>
-              <p><?php the_field('energylink_login_box_content') ?></p>
-              <a href="/energylink-login" class="button btn-blue">Login</a>
-            </div>
-          </div>
+          <?php the_field('energylink_login_box_content') ?>
         </aside>
       </div>
     </div>
