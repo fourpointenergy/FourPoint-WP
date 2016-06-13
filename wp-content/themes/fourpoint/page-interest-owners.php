@@ -12,20 +12,19 @@ get_header(); ?>
 
   <div class="container general-content">
   	<div class="wrapper">
-      <?php the_content(); ?>
       <div class="row io-logins">
         <aside class="card login-card">
+          <?php the_content(); ?>
           <img src="/wp-content/themes/fourpoint/assets/images/tree-test2.jpg">
           <div class="card-bottom">
             <div class="inner">
               <h2>PDS Energy Login</h2>
-              <p>Nam rhoncus sodales justo eu vehicula. Ut ultricies, nunc sit amet porttitor volutpat,</p>
               <a href="https://secure.pds-austin.com/fourpoint/login.asp" class="button btn-blue" target="_blank">Login</a>
             </div>
           </div>
         </aside>
 
-        <aside class="card login-card">
+        <aside class="card login-card energylink-login-wrap">
           <?php the_field('energylink_login_box_content') ?>
         </aside>
       </div>

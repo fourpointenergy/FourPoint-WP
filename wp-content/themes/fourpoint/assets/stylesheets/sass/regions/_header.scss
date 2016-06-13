@@ -33,7 +33,6 @@ header {
 
 	.container {
 		margin: 0 auto;
-		text-align: justify;
 	}
 	h1, p {
 		max-width: 100%;
@@ -42,6 +41,7 @@ header {
 	img {
 		@include tablet-portrait-and-up {
 			float: right;
+			margin-left: 2%;
 		}
 	}
 }
