@@ -447,6 +447,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, input:-webkit-autofill:hov
 .staff-login-btn {
 	width: 60px;
 	line-height: 1;
+	display: none !important;
 	@media screen and (min-width: 400px) {
 		width: inherit;
 		line-height: inherit;

@@ -170,6 +170,8 @@
 
 #flipper {
 	overflow: hidden;
+	max-width: 1400px;
+	margin: 0 auto;
 }
 .content_stack .already-visible {
 	-webkit-transform: rotateX(0deg);

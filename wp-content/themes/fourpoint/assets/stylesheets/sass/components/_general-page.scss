@@ -7,6 +7,14 @@
 	overflow: auto;
 }
 
+// .page-id-78 {
+// 	.general-content {
+// 		.aligncenter {
+// 			margin-top: 0;
+// 		}
+// 	}
+// }
+
 .wrapper {
 	@include tablet-landscape-and-up {
 		max-width: 800px;
@@ -88,7 +96,7 @@
 		font-family: 'Source Sans Pro', sans-serif;
 	}
 	img {
-		margin: 20px auto;
+		// margin: 20px auto;
 		// height: auto !important;
 	}
 	.aligncenter {
@@ -107,6 +115,9 @@
 			float: left;
 		    padding: 0 36px 36px 0;
 		}
+	}
+	.arve-wrapper {
+		margin: 50px auto 0;
 	}
 }
 
