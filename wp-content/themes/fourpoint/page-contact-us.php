@@ -39,7 +39,7 @@ get_header(); ?>
       <?php endwhile; ?>
 			<div class="side-content">
 				<aside><p>Division Orders</p></aside>
-				<article><a href="mailto:divisionorders@fourpointenergy.com">divisionorders@fourpointenergy.com</a></article>
+				<article><a href="mailto:divisionorders@fourpointenergy.com">Email</a></article>
 			</div>
 		</div>
     <?php endif ?>

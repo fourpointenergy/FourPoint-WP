@@ -13,7 +13,6 @@ global $theme;
 	if(!isset($pageDescription)) {
 		$pageDescription = 'FourPoint Energy is a private exploration and production company founded by the leadership team of Cordillera Energy Partners following the sale to Apache Corporation in 2012.'; }
 	?>
-	<meta name="description" content="<?php echo $pageDescription; ?>">
 	<meta name="author" content="KarshHagan.com">
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
 	<script>

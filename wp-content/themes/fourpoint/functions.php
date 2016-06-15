@@ -160,7 +160,7 @@ class Fourpoint {
 			wp_enqueue_style($this->theme_name . '-styles', get_bloginfo('stylesheet_directory') . '/assets/stylesheets/style.css', false, $this->scripts_version, 'all');
 			wp_enqueue_style('lib-styles', get_bloginfo('stylesheet_directory') . '/assets/stylesheets/libs.css', false, $this->scripts_version, 'all');
 			wp_enqueue_style('fancybox', get_bloginfo('stylesheet_directory') . '/assets/fancybox/source/jquery.fancybox.css', false, $this->scripts_version, 'all');
-			// wp_enqueue_style('fonts', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', false, '1.0', 'all');
+			wp_enqueue_style('fonts', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', false, '1.0', 'all');
 			// SCRIPTS
 			wp_deregister_script('jquery');
 			wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js", false, null, true);
