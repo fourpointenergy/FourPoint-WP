@@ -7,13 +7,17 @@
 	overflow: auto;
 }
 
-// .page-id-78 {
-// 	.general-content {
-// 		.aligncenter {
-// 			margin-top: 0;
-// 		}
-// 	}
-// }
+h5 {
+	font-weight: normal;
+}
+
+.page-id-78 {
+	.general-content {
+		.aligncenter {
+			margin-top: 0;
+		}
+	}
+}
 
 .wrapper {
 	@include tablet-landscape-and-up {

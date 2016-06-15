@@ -154,10 +154,6 @@ aside.login-card {
 }
 
 aside.energylink-login-wrap {
-  margin-top: 50px;
-  @include tablet-portrait-and-up {
-    margin-top: 0;
-  }
   p:last-child {
     border: 1px solid $form_fill;
   }
