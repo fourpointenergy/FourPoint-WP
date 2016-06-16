@@ -89,6 +89,7 @@ img {
 }
 
 .map-embed {
+  float: left;
   @media screen and (max-width: 767px) {
     height: 87vh;
     display: block;

@@ -37,6 +37,10 @@ get_header(); ?>
 				<article><a href="tel:<?php echo(str_replace(".","-",get_sub_field('contact_phone'))) ?>"><?php the_sub_field('contact_phone') ?></a></article>
 			</div>
       <?php endwhile; ?>
+            <div class="side-content">
+                <aside><p>Business Development</p></aside>
+                <article><a href="mailto:businessdevelopment@fourpointenergy.com">Email</a></article>
+            </div>
 			<div class="side-content">
 				<aside><p>Division Orders</p></aside>
 				<article><a href="mailto:divisionorders@fourpointenergy.com">Email</a></article>
