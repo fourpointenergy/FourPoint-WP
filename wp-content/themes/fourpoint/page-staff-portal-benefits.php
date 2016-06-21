@@ -80,7 +80,7 @@ global $theme;
     </div>
   </section>
 
-  <div class="anchor-links">
+  <div class="anchor-links container">
     <ul>
       <li><a href="#open-enrollment">Open Enrollment</a></li>
       <li><a href="#insurance">Insurance</a></li>
@@ -91,39 +91,59 @@ global $theme;
 
   <!-- boxed sections -->
   <section class="box">
-    <div class="container">
+    <div class="container shadow-border">
       <div class="box-left">
         <h2>Open Enrollment</h2>
         <p>Seitan everyday carry stumptown, schlitz beard selvage biodiesel. YOLO gochujang distillery four dollar toast pinterest. XOXO kitsch post-ironic, franzen craft beer pug iPhone four dollar toast paleo try-hard godard typewriter fingerstache. Banh mi distillery locavore, neutra thundercats asymmetrical ennui lumbersexual cronut. Tilde typewriter trust fund vinyl, hammock pinterest tousled flannel hashtag church-key messenger bag cred vegan readymade bespoke. Kogi hella waistcoat chicharrones</p>
       </div>
       <div class="box-right">
-        <ul>
-          <li><span>Employee Benefits Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee BenefitsEmployee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment Open Enrollment</a></li>
-          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
         </ul>
+
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
+        </ul>
+
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
+        </ul>
+          
       </div>
     </div>
     <a href="#top" class="to-top">Back to top</a>
   </section>
 
   <section class="box box-blue">
-    <div class="container">
+    <div class="container shadow-border">
       <div class="box-left">
         <h2>Open Enrollment</h2>
         <p>Seitan everyday carry stumptown, schlitz beard selvage biodiesel. YOLO gochujang distillery four dollar toast pinterest. XOXO kitsch post-ironic, franzen craft beer pug iPhone four dollar toast paleo try-hard godard typewriter fingerstache. Banh mi distillery locavore, neutra thundercats asymmetrical ennui lumbersexual cronut. Tilde typewriter trust fund vinyl, hammock pinterest tousled flannel hashtag church-key messenger bag cred vegan readymade bespoke. Kogi hella waistcoat chicharrones</p>
       </div>
       <div class="box-right">
-        <ul>
-          <li><span>Employee Benefits Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee BenefitsEmployee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment Open Enrollment</a></li>
-          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
+        </ul>
+
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
+        </ul>
+
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
         </ul>
       </div>
     </div>
@@ -132,19 +152,57 @@ global $theme;
 
 
   <section class="box">
-    <div class="container">
+    <div class="container shadow-border">
       <div class="box-left">
         <h2>Open Enrollment</h2>
         <p>Seitan everyday carry stumptown, schlitz beard selvage biodiesel. YOLO gochujang distillery four dollar toast pinterest. XOXO kitsch post-ironic, franzen craft beer pug iPhone four dollar toast paleo try-hard godard typewriter fingerstache. Banh mi distillery locavore, neutra thundercats asymmetrical ennui lumbersexual cronut. Tilde typewriter trust fund vinyl, hammock pinterest tousled flannel hashtag church-key messenger bag cred vegan readymade bespoke. Kogi hella waistcoat chicharrones</p>
       </div>
       <div class="box-right">
-        <ul>
-          <li><span>Employee Benefits Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
-          <li><span>Employee BenefitsEmployee Benefits Employee Benefits Employee Benefits</span><a href="#">Open Enrollment Open Enrollment</a></li>
-          <li><span>Employee Benefits</span><a href="#">Open Enrollment</a></li>
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
+        </ul>
+
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
+        </ul>
+
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
+        </ul>
+      </div>
+    </div>
+    <a href="#top" class="to-top">Back to top</a>
+  </section>
+
+  <section class="box box-gray">
+    <div class="container shadow-border">
+      <div class="box-left">
+        <h2>Open Enrollment</h2>
+        <p>Seitan everyday carry stumptown, schlitz beard selvage biodiesel. YOLO gochujang distillery four dollar toast pinterest. XOXO kitsch post-ironic, franzen craft beer pug iPhone four dollar toast paleo try-hard godard typewriter fingerstache. Banh mi distillery locavore, neutra thundercats asymmetrical ennui lumbersexual cronut. Tilde typewriter trust fund vinyl, hammock pinterest tousled flannel hashtag church-key messenger bag cred vegan readymade bespoke. Kogi hella waistcoat chicharrones</p>
+      </div>
+      <div class="box-right">
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
+        </ul>
+
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
+        </ul>
+
+        <h4 class="collapse-item-click">Employee Benefits<span>+</span></h4>
+        <ul class="collapsible-content">
+          <li><a href="#">Open Enrollment 1</a></li>
+          <li><a href="#">Open Enrollment 2</a></li>
         </ul>
       </div>
     </div>
