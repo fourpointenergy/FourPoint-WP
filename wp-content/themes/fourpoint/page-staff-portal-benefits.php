@@ -37,7 +37,7 @@ global $theme;
             <li class="nav-buttons"><a href="#" class="btn-blue btn-wide button"><span class="sp-icon">%</span>Benefits</a></li>
             <li class="nav-buttons"><a href="#" class="btn-blue btn-wide button"><span class="sp-icon">%</span>Documents &amp; Forms</a></li>
             <li class="nav-buttons"><a href="#" class="btn-blue btn-wide button"><span class="sp-icon">%</span>Brand Center</a></li>
-            <li class="sp-navlink"><a href="#"><span class="sp-icon">%</span>Alerts</a>
+            <li class="sp-navlink" id="alert-toggle"><a href="#"><span class="sp-icon">%</span>Alerts</a>
             </li>
             <li class="sp-navlink"><a href="#"><span class="sp-icon">%</span>Mail</a>
             </li>
@@ -208,6 +208,24 @@ global $theme;
     </div>
     <a href="#top" class="to-top">Back to top</a>
   </section>
+
+  <div class="alert-modal">
+    <div class="container alert-list-panel">
+      <h1>My Alerts<span class="close-alert">XX</span></h1>
+      <ul>
+        <li>
+          <div>
+            <p>June 20, 2016 | <a href="#">Link to something(if necessary)</a></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">View it.</a>
+            <div>remove</div>
+          </div>
+        </li>
+        <li>Alert 2</li>
+      </ul>
+    </div>
+  </div>
 
   <?php
   // global $theme;
