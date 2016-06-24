@@ -102,6 +102,10 @@ global $theme;
 
   <div class="employees-wrapper">
     <div class="container">
+
+
+    <!-- Data attrs. on buttons -->
+
       <div class="office-sort" data-active-office="all">
         <h3>Choose Office:</h3>
         <ul>
@@ -126,33 +130,42 @@ global $theme;
       
 
       <ul>
+
+
+        <!-- start of one employee card -->
+
+
         <li class="employee-bio-container" data-name="n-s" data-office="shamrock">
           <div class="employee-bio">
-            <div class="front">
+            <div class="front shadow-border">
               <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
               <h2>n-s shamrock</h2>
               <h3>Assistant to the Assistant</h3>
               <p class="office">Shammrock</p>
               <ul class="contact-info">
-                <li>Email: <span>d.schrute@fourpointenergy.com</span></li>
+                <li class="email-addr">Email: <span>d.schrute@fourpointenergy.com</span></li>
                 <li>Outside Dial: <span>303.303.3030</span></li>
                 <li>Ext: <span>99</span></li>
                 <li>Mobile: <span>303.303.3030</span></li>
                 <li>Mobile: <span>303.303.3030</span></li>
               </ul>
-              <p href="#">More</p>      
+              <a href="#" class="more-flip">More</a>      
             </div>
             
-            <div class="back">
+            <div class="back shadow-border">
               <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
               <div class="inner">
-                <p><span>Shammrock</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <p><span>Shammrock</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo veniam, quis nostrud exercitation</p>
               </div>
-              <p href="#">Less</p> 
+              <a href="#" class="more-flip">Less</a> 
             </div>
           
           </div>
         </li>
+
+
+        <!-- end of one employee card -->
+
 
         <li class="employee-bio-container" data-name="n-s" data-office="denver">
           <div class="employee-bio">

@@ -72,10 +72,8 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 5%;
         @include tablet-portrait-and-up {
             width: 33%;
-            // float: left;
             display: inline-block;
         }
     }
@@ -236,7 +234,7 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
 }
 
 .sp-footer {
-    background-color: $light_gray;
+    background-color: $sp-light-gray;
     .container {
         @media screen and (max-width: 1024px) {
             margin: 20px auto;
@@ -485,7 +483,7 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
 }
 
 .employees-wrapper {
-    background-color: $light_gray;
+    background-color: $sp_gray;
     .container {
         @media screen and (min-width: 500px) {
             padding: 0;
@@ -505,13 +503,37 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
     }
 }
 .office-sort, .name-sort {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
     li {
-        margin: 0 5px;
+        margin: 1.5%;
+        width: 30%;
+        float: left;
+        @include tablet-portrait-and-up {
+            margin: 0 5px;
+            float: none;
+            width: auto;
+        }
+    }
+    a.button {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        @include tablet-portrait-and-up {
+            padding: 15px 30px;
+        }
     }
 }
 
 .office-sort {
-    margin: 40px 0;
+    @include tablet-portrait-and-up {
+        margin: 40px 0 10px;
+    }
+}
+
+.name-sort {
+    margin-bottom: 20px;
 }
 
 // employee cards
@@ -519,17 +541,27 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
     perspective: 1000px;
     -webkit-perspective: 1000px;
     width: 100%;
-    height: 450px;
+    height: 500px;
     padding: 0 1.5%;
-    margin: 3% 0 0;
-    @media screen and (min-width: 500px) {
+    margin: 3% 0 6%;
+    @media screen and (min-width: 560px) {
         width: 49%;
+        padding: 0 0.5%;
+    }
+    @media screen and (min-width: 710px) {
+        padding: 0 1.5%;
     }
     @include tablet-portrait-and-up {
-        width: 33%;
+        width: 45%;
+        margin: 3% 0 1%;
     }
     @include tablet-landscape-and-up {
-        width: 30%;
+        width: 33%;
+    }
+    .email-addr {
+        span {
+            display: block;
+        }
     }
 }
 
@@ -537,8 +569,36 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
     @include transform(rotateY(180deg)); 
 }
 
+.more-flip {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    @include transform(translateX(-50%));
+    color: $fourpoint_blue;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 30px;
+    font-weight: 700;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: 0px;
+        -webkit-transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        transition: 0.2s ease;
+        background: #00a8e2 url(../images/icons/btn_arrows.svg) no-repeat center center;
+        border-radius: 50%;
+    }
+    &:hover:before {
+        background-color: $yellow;
+    }
+}
+
 .employee-bio {
-    cursor: pointer;
     position: relative;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -575,7 +635,7 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
             left: 6px;
             right: 6px;
             height: 115px;
-            background-color: #DADADA;
+            background-color: $sp-light-gray;
             z-index: -1;
         }
     }
@@ -590,26 +650,29 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
     .back {
         @include transform(rotateY(180deg));
         .inner {
-            background: $medium_gray;
-            position: relative;
-            top: -46px;
+            background: $dark_gray;
+            margin-top: -46px;
             z-index: -1;
 
             p {
-                padding: 20px;
+                padding: 20px 10px 20px 15px;
                 text-align: left;
+                color: $white;
             }
 
             span {
                 display: block;
                 text-align: center;
-                padding: 40px 0 15px;
+                padding: 20px 0 15px;
             }
+        }
+        .more-flip {
+            margin: 0;
         }
     }
     .office {
         padding: 10px 0;
-        background-color: #DADADA;
+        background-color: $sp-light-gray;
     }
 }
 
@@ -662,6 +725,29 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
     background: $fourpoint_blue;
     border-color: $white;
     color: $white;
+}
+
+.contact-info {
+    padding: 0 20px;
+    overflow: hidden;
+    @media screen and (min-width: 560px) {
+        padding: 0;
+    }
+    @media screen and (min-width: 710px) {
+        padding: 0 20px;
+    }
+
+    li {
+        display: block;
+        text-align: left;
+        color: $medium_gray;
+        margin-bottom: 6px;
+    }
+    span {
+        color: $black;
+        width: 66%;
+        float: right;
+    }
 }
 
 

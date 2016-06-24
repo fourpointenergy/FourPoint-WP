@@ -2,10 +2,16 @@ $(document).ready(function() {
 
 
   // staff portal bio cards = flip on click
-  var $employeeCard = $('.employee-bio');
-  $employeeCard.on('click', function() {
-    $(this).toggleClass('flip');
-  });
+  // var $employeeCard = $('.employee-bio');
+  // $employeeCard.on('click', function() {
+  //   $(this).toggleClass('flip');
+  // });
+
+  var $flipTrigger = $('.more-flip');
+  $flipTrigger.on('click', function(e) {
+    e.preventDefault();
+    $(this).closest('.employee-bio').toggleClass('flip');
+  }); 
 
   var employeeSort = new EmployeeSort();
 

@@ -126,18 +126,18 @@ $(document).ready(function() {
     linkWidth(windowWidth);
   });
 
-  document.getElementById('alert-toggle').addEventListener('click', function() {
-    $('body').css('overflow-Y', 'hidden');
-    $('.alert-modal').fadeToggle(200);
-    $('.alert-list-panel').addClass('scale-in');
-  });
+  // document.getElementById('alert-toggle').addEventListener('click', function() {
+  //   $('body').css('overflow-Y', 'hidden');
+  //   $('.alert-modal').fadeToggle(200);
+  //   $('.alert-list-panel').addClass('scale-in');
+  // });
 
-  $('.close-alert').on('click', function() {
-    $('.alert-modal').fadeToggle('fast', function() {
-      $('.alert-list-panel').removeClass('scale-in');
-      $('body').css('overflow-Y', 'scroll');
-    });
-  });
+  // $('.close-alert').on('click', function() {
+  //   $('.alert-modal').fadeToggle('fast', function() {
+  //     $('.alert-list-panel').removeClass('scale-in');
+  //     $('body').css('overflow-Y', 'scroll');
+  //   });
+  // });
 
 
 
