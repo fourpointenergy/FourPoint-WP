@@ -102,36 +102,35 @@ global $theme;
 
   <div class="employees-wrapper">
     <div class="container">
-      <div class="office-sort">
+      <div class="office-sort" data-active-office="all">
         <h3>Choose Office:</h3>
         <ul>
-          <li><a href="#" class="button btn-white active" data-office="all">All</a></li>
-          <li><a href="#" class="button btn-white" data-office="borger">Borger</a></li>
-          <li><a href="#" class="button btn-white" data-office="denver">Denver</a></li>
-          <li><a href="#" class="button btn-white" data-office="elk-city">Elk City</a></li>
-          <li><a href="#" class="button btn-white" data-office="shamrock">Shamrock</a></li>
-          <li><a href="#" class="button btn-white" data-office="woodward">Woodward</a></li>
+          <li><a href="#" class="button btn-white active office-btn" data-office-selected="all">All</a></li>
+          <li><a href="#" class="button btn-white office-btn" data-office-selected="borger">Borger</a></li>
+          <li><a href="#" class="button btn-white office-btn" data-office-selected="denver">Denver</a></li>
+          <li><a href="#" class="button btn-white office-btn" data-office-selected="elk-city">Elk City</a></li>
+          <li><a href="#" class="button btn-white office-btn" data-office-selected="shamrock">Shamrock</a></li>
+          <li><a href="#" class="button btn-white office-btn" data-office-selected="woodward">Woodward</a></li>
         </ul>
       </div>
-      <div class="name-sort">
+      <div class="name-sort" data-active-name="all">
         <h3>Filter by Last Name:</h3>
         <ul>
-          <li><a href="#" class="button btn-white active" data-office="all">All</a></li>
-          <li><a href="#" class="button btn-white" data-office="a-f">A-F</a></li>
-          <li><a href="#" class="button btn-white" data-office="g-m">G-M</a></li>
-          <li><a href="#" class="button btn-white" data-office="n-s">N-S</a></li>
-          <li><a href="#" class="button btn-white" data-office="t-z">T-Z</a></li>
+          <li><a href="#" class="button btn-white active name-btn" data-name-selected="all">All</a></li>
+          <li><a href="#" class="button btn-white name-btn" data-name-selected="a-f">A-F</a></li>
+          <li><a href="#" class="button btn-white name-btn" data-name-selected="g-m">G-M</a></li>
+          <li><a href="#" class="button btn-white name-btn" data-name-selected="n-s">N-S</a></li>
+          <li><a href="#" class="button btn-white name-btn" data-name-selected="t-z">T-Z</a></li>
         </ul>
       </div>
       
 
       <ul>
-        <li class="employee-bio-container">
+        <li class="employee-bio-container" data-name="n-s" data-office="shamrock">
           <div class="employee-bio">
-            
             <div class="front">
               <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
-              <h2>Dwight Schrute</h2>
+              <h2>n-s shamrock</h2>
               <h3>Assistant to the Assistant</h3>
               <p class="office">Shammrock</p>
               <ul class="contact-info">
@@ -154,48 +153,210 @@ global $theme;
           
           </div>
         </li>
-        <li class="employee-bio-container">
+
+        <li class="employee-bio-container" data-name="n-s" data-office="denver">
           <div class="employee-bio">
-            
             <div class="front">
-            <p>FRONT</p>
-              <!-- <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">         -->
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <h2>n-s denver</h2>
+              <h3>Assistant to the Assistant</h3>
+              <p class="office">Shammrock</p>
+              <ul class="contact-info">
+                <li>Email: <span>d.schrute@fourpointenergy.com</span></li>
+                <li>Outside Dial: <span>303.303.3030</span></li>
+                <li>Ext: <span>99</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+              </ul>
+              <p href="#">More</p>      
             </div>
             
             <div class="back">
-              <p>BACK</p>
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <div class="inner">
+                <p><span>Shammrock</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+              </div>
+              <p href="#">Less</p> 
             </div>
           
           </div>
         </li>
-        <li class="employee-bio-container">
+
+
+        <li class="employee-bio-container" data-name="n-s" data-office="denver">
           <div class="employee-bio">
-            
             <div class="front">
-            <p>FRONT</p>
-              <!-- <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">         -->
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <h2>n-s denver</h2>
+              <h3>Assistant to the Assistant</h3>
+              <p class="office">Shammrock</p>
+              <ul class="contact-info">
+                <li>Email: <span>d.schrute@fourpointenergy.com</span></li>
+                <li>Outside Dial: <span>303.303.3030</span></li>
+                <li>Ext: <span>99</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+              </ul>
+              <p href="#">More</p>      
             </div>
             
             <div class="back">
-              <p>BACK</p>
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <div class="inner">
+                <p><span>Shammrock</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+              </div>
+              <p href="#">Less</p> 
             </div>
           
           </div>
         </li>
-        <li class="employee-bio-container">
+
+
+        <li class="employee-bio-container" data-name="a-f" data-office="elk-city">
           <div class="employee-bio">
-            
             <div class="front">
-            <p>FRONT</p>
-              <!-- <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">         -->
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <h2>a-f elk city</h2>
+              <h3>Assistant to the Assistant</h3>
+              <p class="office">Shammrock</p>
+              <ul class="contact-info">
+                <li>Email: <span>d.schrute@fourpointenergy.com</span></li>
+                <li>Outside Dial: <span>303.303.3030</span></li>
+                <li>Ext: <span>99</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+              </ul>
+              <p href="#">More</p>      
             </div>
             
             <div class="back">
-              <p>BACK</p>
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <div class="inner">
+                <p><span>Shammrock</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+              </div>
+              <p href="#">Less</p> 
             </div>
           
           </div>
-        </li> 
+        </li>
+
+
+        <li class="employee-bio-container" data-name="t-z" data-office="shamrock">
+          <div class="employee-bio">
+            <div class="front">
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <h2>t-z shamrock</h2>
+              <h3>Assistant to the Assistant</h3>
+              <p class="office">Shammrock</p>
+              <ul class="contact-info">
+                <li>Email: <span>d.schrute@fourpointenergy.com</span></li>
+                <li>Outside Dial: <span>303.303.3030</span></li>
+                <li>Ext: <span>99</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+              </ul>
+              <p href="#">More</p>      
+            </div>
+            
+            <div class="back">
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <div class="inner">
+                <p><span>Shammrock</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+              </div>
+              <p href="#">Less</p> 
+            </div>
+          
+          </div>
+        </li>
+
+
+        <li class="employee-bio-container" data-name="n-s" data-office="woodward">
+          <div class="employee-bio">
+            <div class="front">
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <h2>n-s woodward</h2>
+              <h3>Assistant to the Assistant</h3>
+              <p class="office">Shammrock</p>
+              <ul class="contact-info">
+                <li>Email: <span>d.schrute@fourpointenergy.com</span></li>
+                <li>Outside Dial: <span>303.303.3030</span></li>
+                <li>Ext: <span>99</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+              </ul>
+              <p href="#">More</p>      
+            </div>
+            
+            <div class="back">
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <div class="inner">
+                <p><span>Shammrock</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+              </div>
+              <p href="#">Less</p> 
+            </div>
+          
+          </div>
+        </li>
+
+
+        <li class="employee-bio-container" data-name="g-m" data-office="denver">
+          <div class="employee-bio">
+            <div class="front">
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <h2>g-m denver</h2>
+              <h3>Assistant to the Assistant</h3>
+              <p class="office">Shammrock</p>
+              <ul class="contact-info">
+                <li>Email: <span>d.schrute@fourpointenergy.com</span></li>
+                <li>Outside Dial: <span>303.303.3030</span></li>
+                <li>Ext: <span>99</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+              </ul>
+              <p href="#">More</p>      
+            </div>
+            
+            <div class="back">
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <div class="inner">
+                <p><span>Shammrock</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+              </div>
+              <p href="#">Less</p> 
+            </div>
+          
+          </div>
+        </li>
+
+        <li class="employee-bio-container" data-name="a-f" data-office="borger">
+          <div class="employee-bio">
+            <div class="front">
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <h2>a-f borger</h2>
+              <h3>Assistant to the Assistant</h3>
+              <p class="office">Shammrock</p>
+              <ul class="contact-info">
+                <li>Email: <span>d.schrute@fourpointenergy.com</span></li>
+                <li>Outside Dial: <span>303.303.3030</span></li>
+                <li>Ext: <span>99</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+                <li>Mobile: <span>303.303.3030</span></li>
+              </ul>
+              <p href="#">More</p>      
+            </div>
+            
+            <div class="back">
+              <img src="/wp-content/themes/fourpoint/assets/images/frenchy.jpg">
+              <div class="inner">
+                <p><span>Shammrock</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+              </div>
+              <p href="#">Less</p> 
+            </div>
+          
+          </div>
+        </li>
+
+
+        
 
       </ul>
 

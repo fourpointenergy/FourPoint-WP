@@ -639,3 +639,29 @@ nav .nav_wrap .main_nav_wrap #main_nav .sp-navlink {
     transform: translateY(-50%) scale(1);
     transition: 0.2s ease-in-out;
 }
+
+.card-hidden {
+    // display: none !important;
+    opacity: 0;
+    transform: scale(0);
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    @include transition(0.30s ease-in-out);
+}
+
+.card-visible {
+    // display: inline-block !important;
+    opacity: 1;
+    transform: scale(1);
+    @include transition(0.40s ease-in-out);
+}
+
+.office-btn.active:hover, .name-btn.active:hover {
+    background: $fourpoint_blue;
+    border-color: $white;
+    color: $white;
+}
+
+
