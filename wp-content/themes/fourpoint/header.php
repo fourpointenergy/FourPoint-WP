@@ -70,7 +70,7 @@ global $theme;
 					<!--
 					<?php echo wp_logout_url( site_url() ); ?>
 				-->
-					<a class="btn staff-login-btn" target="_blank" href="http://staff.fourpointenergy.com">Staff Login</a>
+					<a class="btn staff-login-btn" target="_blank" href="#">Staff Login</a>
 				</div>
 				<div id="mobile_menu" class="mobile_nav_icon">MENU&nbsp;<i class="fa fa-bars fa-2"></i></div>
 				<div class="mobile-search-icon" id="js-mobile-search-icon"><i class="fa fa-search search-icon"></i></div>
