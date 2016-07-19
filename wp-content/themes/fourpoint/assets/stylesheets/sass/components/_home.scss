@@ -114,7 +114,7 @@
 }
 
 .experience-img {
-	background-image: url(../images/map_perspective-4-13.jpg);
+	background-image: url('../../images/map_perspective-4-13.jpg');
 }
 
 .panels {
@@ -130,31 +130,5 @@
 			 height: auto;
 			 width: 100%;
 		}
-		// &:nth-child(3n+1) {
-		// 	background-color: $white;
-		// }
-		// &:nth-child(3n+2) {
-		// 	background-color: $fourpoint_blue;
-		// 	color: $white;
-		// 	h1 {
-		// 		color:$white;
-		// 	}
-		// }
-		// &:nth-child(3n+0) {
-		// 	background-color: $dark_gray;
-		// 	color: $white;
-		// 	h1 {
-		// 		color:$white;
-		// 	}
-		// }
 	}
 }
-
-/* Styles to Fix Homepage */
-// a.button {
-//   display:inline-block;
-// }
-// .panels section .panel-bg {
-//   background-size: cover;
-//   background-position: center center;
-// }

@@ -20,3 +20,4 @@ sitemap.xml.gz
 config.codekit
 assets/images
 assets/stylesheets/style.css.map
+node_modules
