@@ -212,35 +212,35 @@ class Fourpoint {
 		register_post_type('management-team', $args);
 
 		//FAQs
-		$labels = array(
-			'name' => 'FAQ',
-			'singular_name' => 'FAQ',
-			'add_new' => 'Add New FAQ',
-			'add_new_item' => 'Add FAQ',
-			'edit_item' => 'Edit FAQ',
-			'new_item' => 'New FAQ',
-			'all_items' => 'All FAQs',
-			'view_item' => 'View FAQs',
-			'search_items' => 'Search FAQs',
-			'not_found' =>  'No faqs found',
-			'not_found_in_trash' => 'No faqs found in Trash',
-			'menu_name' => 'FAQs'
-		);
-		$args = array(
-			'labels' => $labels,
-			'public' => true,
-			'publicly_queryable' => true,
-			'show_ui' => true,
-			'show_in_menu' => true,
-			'query_var' => true,
-			'rewrite' => array( 'slug' => 'faqs'),
-			'capability_type' => 'post',
-			'has_archive' => false,
-			'hierarchical' => false,
-			'menu_position' => 3,
-			'supports' => array('title','editor')
-		);
-		register_post_type('faq', $args);
+		// $labels = array(
+		// 	'name' => 'FAQ',
+		// 	'singular_name' => 'FAQ',
+		// 	'add_new' => 'Add New FAQ',
+		// 	'add_new_item' => 'Add FAQ',
+		// 	'edit_item' => 'Edit FAQ',
+		// 	'new_item' => 'New FAQ',
+		// 	'all_items' => 'All FAQs',
+		// 	'view_item' => 'View FAQs',
+		// 	'search_items' => 'Search FAQs',
+		// 	'not_found' =>  'No faqs found',
+		// 	'not_found_in_trash' => 'No faqs found in Trash',
+		// 	'menu_name' => 'FAQs'
+		// );
+		// $args = array(
+		// 	'labels' => $labels,
+		// 	'public' => true,
+		// 	'publicly_queryable' => true,
+		// 	'show_ui' => true,
+		// 	'show_in_menu' => true,
+		// 	'query_var' => true,
+		// 	'rewrite' => array( 'slug' => 'faqs'),
+		// 	'capability_type' => 'post',
+		// 	'has_archive' => false,
+		// 	'hierarchical' => false,
+		// 	'menu_position' => 3,
+		// 	'supports' => array('title','editor')
+		// );
+		// register_post_type('faq', $args);
 
 		//Press Releases
 		$labels = array(
