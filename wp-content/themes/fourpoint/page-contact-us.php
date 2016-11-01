@@ -34,16 +34,16 @@ get_header(); ?>
       <?php while ( have_rows('quick_contacts') ) : the_row(); ?>
 			<div class="side-content">
 				<aside><p><?php the_sub_field('contact_name'); ?></p></aside>
-				<article><a href="tel:<?php echo(str_replace(".","-",get_sub_field('contact_phone'))) ?>"><?php the_sub_field('contact_phone') ?></a></article>
+				<article><a href="tel:<?php echo(str_replace(".","-",get_sub_field('contact_phone'))) ?>" class="ga-link-track"><?php the_sub_field('contact_phone') ?></a></article>
 			</div>
       <?php endwhile; ?>
             <div class="side-content">
                 <aside><p>Business Development</p></aside>
-                <article><a href="mailto:businessdevelopment@fourpointenergy.com">Email</a></article>
+                <article><a href="mailto:businessdevelopment@fourpointenergy.com" class="ga-link-track">Email</a></article>
             </div>
 			<div class="side-content">
 				<aside><p>Division Orders</p></aside>
-				<article><a href="mailto:divisionorders@fourpointenergy.com">Email</a></article>
+				<article><a href="mailto:divisionorders@fourpointenergy.com" class="ga-link-track">Email</a></article>
 			</div>
 		</div>
     <?php endif ?>
@@ -54,7 +54,7 @@ get_header(); ?>
 					<h3>Careers</h3>
 					<p><?php the_field('careers_box_text') ?></p>
 					<!-- <button type="button" class="button btn-blue">See more</button> -->
-					<a href="<?php the_field('careers_box_button_url') ?>" class="button btn-blue" style="display:inline-block"><?php the_field('careers_box_button_text') ?></a>
+					<a href="<?php the_field('careers_box_button_url') ?>" class="button btn-blue ga-link-track" style="display:inline-block"><?php the_field('careers_box_button_text') ?></a>
 				</div>
 			</div>
 		</aside>

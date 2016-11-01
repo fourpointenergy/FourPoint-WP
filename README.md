@@ -2,9 +2,6 @@
 This is the corporate web site for Fourpoint Energy. The site is built on wordpress and built by Karsh-Hagan
 *Created:* 3-8-2016
 
-###Wordpress Credentials:###
-*Username:* admin@fourpointenergy.com
-*Password:* FourPoint#100100
 
 ##Gulp Setup - compile SCSS + JS as you go.##
 1. Install Gulp: npm install -g gulp

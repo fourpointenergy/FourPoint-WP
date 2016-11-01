@@ -205,4 +205,15 @@ $(document).ready(function() {
     $(".nav .more").removeClass("active-nav-item");
   });
 
+  // GOOGLE ANALYTICS CLICK TRACKING
+  $('.ga-link-track').on('click', function(event) {
+    console.log(event.target.href)
+    // ga('send', 'event', {
+    //   eventCategory: 'Outbound Link',
+    //   eventAction: 'click',
+    //   eventLabel: event.target.href,
+    //   transport: 'beacon'
+    // });
+  });
+
 });
