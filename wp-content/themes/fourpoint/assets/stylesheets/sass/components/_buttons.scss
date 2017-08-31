@@ -34,7 +34,7 @@ a.button {
   border: 1px solid $fourpoint_blue;
   &:hover {
     background: $white;
-    color: $fourpoint_blue;
+    color: $fourpoint_blue !important;
     @include transition(background 0.3s ease);
   }
 }
