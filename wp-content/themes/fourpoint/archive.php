@@ -5,7 +5,7 @@
  */
 global $theme;
 global $current_user;
-get_currentuserinfo();
+wp_get_current_user();
 get_header();
 ?>
 <header class="container">
@@ -24,14 +24,14 @@ get_header();
     'type'                     => 'post',
     'orderby'                  => 'name',
     'hide_empty'               => 1,
-); 
+);
     $post_categories = get_categories( $args );
     var_dump($post_categories);
 ?>
     <div class="category-select">
         <select name="region" data-script="PostCategorySelector">
             <option value="*">All Posts</option>
-            
+
         </select>
     </div>
 </div>
