@@ -1,13 +1,24 @@
-$dark_gray: #2e2e2d;
+$dark_gray: #2E2E2D;
+$border_gray: #444;
 $medium_gray: #868586;
 $light_gray: #B6B6B6;
-$black: #000000;
-$white: #ffffff;
+$lighter_gray: #F1F1F1;
+$black: #000;
+$white: #FFF;
+$yellow: #FFC20E;
+$fourpoint_blue: #00A8E2;
+$form_fill: #ECECE8;
+$teal: #00A2DC;
+$teal-bg: #157AA1;
+
+$box_gray_dark: #4A4A4A;
+$box_gray_light: #EFEFEF;
+$box_blue_dark: #45A1D6;
+$box_blue_light: #D2EBF7;
+
 $trans_white: rgba(255, 255, 255, 0.2);
 $trans_black: rgba(0, 0, 0, 0.5);
-$yellow: #ffc20e;
-$fourpoint_blue: #00a8e2;
-$form_fill: #ecece8;
+
 $tablet_large: new-breakpoint(max-width 1024px);
 $tablet: new-breakpoint(max-width 768px);
 $mobile: new-breakpoint(max-width 480px);

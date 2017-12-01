@@ -40,6 +40,7 @@ wp_get_current_user();
 		 </div>
 	 </section>
  </footer>
+ <div hidden><?php include_once get_template_directory().'/assets/images/symbol-defs.svg'; ?></div>
  <?php wp_footer(); ?>
 </body>
 </html>

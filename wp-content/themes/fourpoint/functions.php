@@ -54,6 +54,11 @@ class Fourpoint {
 				)
 			);
 		}
+
+		/**
+		 * Customizations and initializations for ACF.
+		 */
+		require get_template_directory() . '/inc/acf-setup.php';
 	}
 
 	function restrict_dashboard() {
@@ -709,6 +714,7 @@ class Fourpoint {
 	function custom_excerpt_length( $length ) {
 		return 20;
 	}
+
 }
 
 $theme = new Fourpoint();
@@ -726,5 +732,22 @@ function my_mce_buttons_2($buttons) {
 function is_login_page() {
 	return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php'));
 }
+// Get SVG link
+function svg( $name, $class='' ){
+	echo get_svg( $name, $class );
+}
+function get_svg( $name, $class='' ){
+	return '<svg class="icon '.$name.' '.$class.'"><use xlink:href="#'.$name.'" /></svg>';
+}
 
 show_admin_bar(false);
+
+if ( ! function_exists('_log')) {
+	function _log ( $log )  {
+		if ( is_array( $log ) || is_object( $log ) ) {
+			error_log( print_r( $log, true ) );
+		} else {
+			error_log( $log );
+		}
+	}
+}

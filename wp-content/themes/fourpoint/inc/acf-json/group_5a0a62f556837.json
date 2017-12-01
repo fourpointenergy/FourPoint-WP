@@ -1,0 +1,211 @@
+{
+    "key": "group_5a0a62f556837",
+    "title": "Page Elements",
+    "fields": [
+        {
+            "key": "field_5a0a6343075b5",
+            "label": "Page Elements",
+            "name": "page_elements",
+            "type": "flexible_content",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5a0a63a7bb07a": {
+                    "key": "5a0a63a7bb07a",
+                    "name": "accordion",
+                    "label": "Accordion",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a0a6a4e2b71a",
+                            "label": "Accordion",
+                            "name": "accordion_layout",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a0a69eb233ec"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "5a0a6357f2598": {
+                    "key": "5a0a6357f2598",
+                    "name": "cta_cards",
+                    "label": "CTA Cards",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a0a65ca8ee91",
+                            "label": "CTA Cards",
+                            "name": "cta_layout",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a0a644974365"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "5a0a639cbb078": {
+                    "key": "5a0a639cbb078",
+                    "name": "info_cards",
+                    "label": "Info Cards",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a0a6a652b71b",
+                            "label": "Info Cards",
+                            "name": "info_layout",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a0a68885f1d4"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "5a0a63b3bb07b": {
+                    "key": "5a0a63b3bb07b",
+                    "name": "list_cards",
+                    "label": "List Cards",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a0a6a7e2b71c",
+                            "label": "List Cards",
+                            "name": "list_layout",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a0a6937941d8"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "5a0a63a2bb079": {
+                    "key": "5a0a63a2bb079",
+                    "name": "number_cards",
+                    "label": "Number Cards",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a0a6a922b71d",
+                            "label": "Number Cards",
+                            "name": "number_layout",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a0a679deacd6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                }
+            },
+            "button_label": "Add element",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Selectable page blocks for content layout",
+    "modified": 1510632154
+}

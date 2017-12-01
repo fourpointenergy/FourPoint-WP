@@ -1,6 +1,58 @@
+// pre-footer style
+.pre-footer {
+	display: table;
+	margin: 0 auto 70px;
+}
+.pf-icon {
+	display: block;
+	max-width: 30px;
+	margin: 20px auto;
+}
+
+.text-arrow-link {
+	color: $fourpoint_blue;
+	display: inline-block;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	line-height: 1.833;
+	padding: 0;
+	padding-left: 30px;
+	position: relative;
+	text-transform: uppercase;
+	transition: all .3s ease;
+	&:before {
+	    background-image: url(https://fourpointenergy.com/wp-content/uploads/2016/04/btn_arrows.png);
+	    background-color: $fourpoint_blue;
+	    background-repeat: no-repeat;
+		border-radius: 50%;
+	    content: '';
+	    position: absolute;
+	    left: 0;
+	    height: 20px;
+	    top: 0;
+		transition: background .3s ease;
+	    width: 20px;
+	}
+	&:hover {
+		color: $yellow;
+	    &:before {
+			background-color: $yellow;
+	    }
+	}
+}
+
+
+// footer styles
 footer {
 	background: $dark_gray;
 	padding: 25px 0;
+	// fix footer to bottom
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	// end
 	section {
 		@include outer-container;
 		@include clearfix;
@@ -16,16 +68,13 @@ footer {
 			float: left;
 			text-align: left;
 			padding-top: 40px;
-			ul {
-				margin-left: 0;
-			}
 		}
 		.footer_icon {
 			width: 16%;
 			float: left;
 			text-align: center;
 			img {
-				width: 100px; 
+				width: 100px;
 				height: 100px;
 			}
 		}
@@ -35,12 +84,10 @@ footer {
 			padding-top: 40px;
 			ul {
 				margin-bottom: 20px;
-				margin-left: 0;
 				@include tablet-landscape-and-up {
 					float: right;
 					margin-top: -10px;
 					margin-bottom: 0;
-					margin-left: 15px;
 				}
 				li {
 					height: 34px;
