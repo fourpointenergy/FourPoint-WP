@@ -1,7 +1,7 @@
 <?php
 global $theme;
 global $current_user;
-get_currentuserinfo();
+wp_get_current_user();
 /**
  * Template for displaying the footer
  */?>
@@ -40,6 +40,7 @@ get_currentuserinfo();
 		 </div>
 	 </section>
  </footer>
+ <div hidden><?php include_once get_template_directory().'/assets/images/symbol-defs.svg'; ?></div>
  <?php wp_footer(); ?>
 </body>
 </html>

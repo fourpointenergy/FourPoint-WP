@@ -3,7 +3,7 @@
  * Template Name: Investor Protected
  */
 global $theme;
-get_currentuserinfo();
+wp_get_current_user();
 get_header();
 ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

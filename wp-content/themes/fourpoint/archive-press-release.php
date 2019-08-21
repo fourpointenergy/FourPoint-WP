@@ -5,7 +5,7 @@
  */
 global $theme;
 global $current_user;
-get_currentuserinfo();
+wp_get_current_user();
 get_header();
 $region="*";
 if($_REQUEST['region']) {

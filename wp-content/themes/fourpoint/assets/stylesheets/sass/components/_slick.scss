@@ -100,7 +100,7 @@
 
 .slick-list {
     .slick-loading & {
-        background: #fff slick-image-url("../../images/icons/ajax-loader.gif") center center no-repeat;
+        background: #fff slick-image-url('../images/icons/ajax-loader.gif') center center no-repeat;
     }
 }
 
@@ -123,7 +123,7 @@ $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.75 !default;
 @include tablet-landscape-and-up {
     $slick-prev-character: url('../../images/icons/icon-arrow-left.png');
-    $slick-next-character: url('../../images/icons/icon-arrow-right.png'); 
+    $slick-next-character: url('../../images/icons/icon-arrow-right.png');
 }
 
 @function slick-image-url($url) {
@@ -148,7 +148,7 @@ $slick-opacity-not-active: 0.75 !default;
 
 .slick-list {
     .slick-loading & {
-        background: #fff slick-image-url("../../images/ajax-loader.gif") center center no-repeat;
+        background: #fff slick-image-url('../images/ajax-loader.gif') center center no-repeat;
     }
 }
 
@@ -233,7 +233,7 @@ $slick-opacity-not-active: 0.75 !default;
     &:before {
         content: url('../../images/icons/icon-arrow-right-small.png');;
         @include tablet-landscape-and-up {
-            content: url('../../images/icons/icon-arrow-right.png');  
+            content: url('../../images/icons/icon-arrow-right.png');
         }
     }
 }

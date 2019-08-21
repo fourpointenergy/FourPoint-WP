@@ -1,0 +1,91 @@
+{
+    "key": "group_57348be33f153",
+    "title": "Additional Page Content",
+    "fields": [
+        {
+            "key": "field_57348c0a2068b",
+            "label": "Content Below Listing",
+            "name": "content_below_listing",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "57"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "92"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "94"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "65"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "74"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "84"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "96"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "577"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1510629906
+}

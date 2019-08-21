@@ -1,0 +1,151 @@
+{
+    "key": "group_5711116706b00",
+    "title": "Gallery Photos & Videos",
+    "fields": [
+        {
+            "key": "field_571111bee44b6",
+            "label": "Gallery Photos \/ Videos",
+            "name": "gallery_media",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": "",
+            "max": "",
+            "layout": "row",
+            "button_label": "Add Photo \/ Video",
+            "sub_fields": [
+                {
+                    "key": "field_571111e5e44b7",
+                    "label": "Title",
+                    "name": "image_title",
+                    "type": "text",
+                    "instructions": "Provide a title for the Image",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_57111226e44b8",
+                    "label": "Image",
+                    "name": "image_src",
+                    "type": "image",
+                    "instructions": "Select the full-size image to add. Recommended size is constrained by 800 x 600 (this could be square, vertical, portrait but it should not be larger in either direction)\r\n\r\nLeave blank for video instead of image.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_571112c6e44b9",
+                    "label": "Video Link",
+                    "name": "video_src",
+                    "type": "text",
+                    "instructions": "This can be a link to a Youtube of Vimeo video. Be sure to pull the url from your address bar, not embed source code.\r\n\r\nLeave blank if this image does not have a video link.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5711138fb00cb",
+            "label": "Gallery Thumbnail",
+            "name": "gallery_thumb",
+            "type": "image",
+            "instructions": "This image should be 310 x 310.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "gallery-set"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1510629916
+}
