@@ -6,7 +6,7 @@ get_header();
 ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 <header class="container">
-        <div class="site-logo"><a href="/"><img src="<?php $theme->images_path() ?>/logo@2x.png" width="197" height="185" alt="Colorado | The state of craft beer"></a></div>
+        <div class="site-logo"><a href="/"><img src="<?php $fp_theme->images_path() ?>/logo@2x.png" width="197" height="185" alt="Colorado | The state of craft beer"></a></div>
         <div class="page-title">
             <div class="page-title-inner">
                 <h1><?php echo the_title(); ?></h1>

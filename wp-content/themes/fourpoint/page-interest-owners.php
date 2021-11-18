@@ -2,10 +2,10 @@
 /**
  * Template for displaying all pages
  */
-global $theme;
+global $fp_theme;
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-  <header>
+  <header id="main-content">
   	<h1><?php the_title(); ?></h1>
   	<p><?php the_field('page_description'); ?></p>
   </header>
@@ -15,11 +15,11 @@ get_header(); ?>
       <div class="row io-logins">
         <aside class="card login-card">
           <?php the_content(); ?>
-          <img src="<?php the_field('pds_energy_login_box_image') ?>">
+          <img src="<?php the_field('pds_energy_login_box_image') ?>" alt="PDS Energy Login">
           <div class="card-bottom">
             <div class="inner">
               <h2>PDS Energy Login</h2>
-              <a href="https://secure.pds-austin.com/fourpoint/login.asp" class="button btn-blue" target="_blank">Login</a>
+              <a href="https://secure.pds-austin.com/fourpoint/login.asp" class="button btn-blue" target="_blank" onclick="dataLayer.push({event:'exit link',headline:'PDS Energy Login',label:'https://secure.pds-austin.com/fourpoint/login.asp'});">Login</a>
             </div>
           </div>
         </aside>

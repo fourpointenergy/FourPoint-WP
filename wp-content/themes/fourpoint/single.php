@@ -2,10 +2,10 @@
 /**
  * Template for displaying all pages
  */
-global $theme;
+global $fp_theme;
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-  <header>
+  <header id="main-content">
   	<h1><?php the_title(); ?></h1>
   	<?php if(get_field('page_description')) { ?><p><?php the_field('page_description'); ?></p><?php } ?>
   </header>

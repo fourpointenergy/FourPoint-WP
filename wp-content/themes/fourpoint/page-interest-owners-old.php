@@ -2,7 +2,7 @@
 /**
  * Template for displaying all pages
  */
-global $theme;
+global $fp_theme;
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
   <header>

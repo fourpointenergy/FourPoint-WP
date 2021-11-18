@@ -2,10 +2,10 @@
 /**
  * Template for displaying Company Updates
  */
- global $theme;
+ global $fp_theme;
  get_header(); ?>
  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-   <header>
+   <header id="main-content">
    	<h1><?php the_title(); ?></h1>
    	<p><?php the_field('page_description'); ?></p>
    </header>
@@ -22,7 +22,7 @@
      <?php while ( $press_release_qry->have_posts() ) : $press_release_qry->the_post(); ?>
        	<div class="side-content">
        		<aside><p><?php the_field('post_display_date') ?></p></aside>
-          <?php endif ?>
+
        		<article><p><?php the_title(); ?></p>
             <?php if( !(get_field('dont_show_read_more_link')) ) : ?>
               <?php if( get_field('external_link') ) { ?>

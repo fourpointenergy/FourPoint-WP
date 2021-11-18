@@ -2,13 +2,13 @@
 /**
  * Template Name: Interest Owner Protected
  */
-global $theme;
-get_currentuserinfo();
+global $fp_theme;
+wp_get_current_user();
 get_header();
 ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
   <?php if(array_key_exists('interest-owner',$current_user->allcaps) && $current_user->allcaps['interest-owner']) { ?>
-  <header>
+  <header id="main-content">
   	<h1><?php the_title(); ?></h1>
   	<p><?php the_field('page_description'); ?></p>
   </header>

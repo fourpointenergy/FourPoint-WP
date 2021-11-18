@@ -17,13 +17,13 @@
  * @subpackage Twenty_Ten
  * @since Twenty Ten 1.0
  */
-global $theme;
+global $fp_theme;
 global $current_user;
-get_currentuserinfo();
+wp_get_current_user();
 get_header();
 ?>
 <header class="container">
-    <div class="site-logo"><a href="/"><img src="<?php $theme->images_path() ?>/logo@2x.png" width="197" height="185" alt="Colorado | The state of craft beer"></a></div>
+    <div class="site-logo"><a href="/"><img src="<?php $fp_theme->images_path() ?>/logo@2x.png" width="197" height="185" alt="Colorado | The state of craft beer"></a></div>
     <div class="page-title">
         <div class="page-title-inner">
             <h1>BLOG</h1>
@@ -38,7 +38,7 @@ get_header();
     'type'                     => 'post',
     'orderby'                  => 'name',
     'hide_empty'               => 1,
-); 
+);
     $categories = get_categories( $args );
 ?>
     <div class="category-select">
@@ -53,10 +53,10 @@ get_header();
 <div class="content container">
     <div class="posts blocks">
     	<div class="gutter-sizer"></div>
-    	<?php 
+    	<?php
     		$loop_index = 0;
     		while (have_posts()): the_post();
-    		$block_size = $theme->get_random_block_size();
+    		$block_size = $fp_theme->get_random_block_size();
     		if($loop_index == 0) {
     			$block_size = 'large';
     		}
@@ -76,7 +76,7 @@ get_header();
 				<a href="<?php the_permalink()?>" class="more-details-link">Read More</a>
 			</div><!-- .entry-content -->
 		</div>
-		<?php 
+		<?php
 			$loop_index++;
 			endwhile;  ?>
     </div>

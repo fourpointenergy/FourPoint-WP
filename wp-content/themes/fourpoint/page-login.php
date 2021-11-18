@@ -2,17 +2,17 @@
 /**
  * Template for displaying the login page
  */
-global $theme;
+global $fp_theme;
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-  <header>
+  <header id="main-content">
   	<h1><?php the_title(); ?></h1>
   	<p><?php the_field('page_description'); ?></p>
   </header>
   <div class="container">
   	<div class="row">
   		<aside class="card login-card">
-  			<img src="<?php $theme->images_path() ?>/tree-test2.jpg" />
+  			<img src="<?php $fp_theme->images_path() ?>/tree-test2.jpg" />
   			<div class="card-bottom">
   				<div class="inner">
             <h2>Investors</h2>
@@ -24,7 +24,7 @@ get_header(); ?>
   		</aside>
 
   		<aside class="card login-card">
-  			<img src="<?php $theme->images_path() ?>/tree-test2.jpg" />
+  			<img src="<?php $fp_theme->images_path() ?>/tree-test2.jpg" />
   			<div class="card-bottom">
   				<div class="inner">
             <h2>Interest Owners</h2>
@@ -35,7 +35,7 @@ get_header(); ?>
   		</aside>
 
   		<aside class="card login-card">
-  			<img src="<?php $theme->images_path() ?>/tree-test2.jpg" />
+  			<img src="<?php $fp_theme->images_path() ?>/tree-test2.jpg" />
   			<div class="card-bottom">
   				<div class="inner">
             <h2>FourPoint Staff</h2>

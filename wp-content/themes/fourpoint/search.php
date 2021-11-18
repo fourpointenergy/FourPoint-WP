@@ -2,10 +2,10 @@
 /**
  * Template for displaying FAQs
  */
- global $theme;
+ global $fp_theme;
  get_header(); ?>
  <?php if ( have_posts() ) : ?>
-   <header>
+   <header id="main-content">
    	<h1>Search Results</h1>
    	<p>Results for: <?php the_search_query(); ?></p>
    </header>
@@ -31,9 +31,9 @@
 	 				 <p><?php the_title(); ?></p>
            <!-- <a href="<?php the_permalink(); ?>">Read More</a> -->
              <?php if( get_field('external_link') || get_field('dont_show_read_more_link') ) { ?>
-           <a href="<?php echo $base_post_type_link ?>">Read More</a>
+           <a href="<?php echo $base_post_type_link ?>" onclick="dataLayer.push({event:'exit link',headline:'search results',label:'<?php echo $base_post_type_link ?>'});">Read More</a>
              <?php } else { ?>
-           <a href="<?php the_permalink(); ?>">Read More</a>
+           <a href="<?php the_permalink(); ?>"  onclick="dataLayer.push({event:'text link',headline:'search results',label:'Read More'});">Read More</a>
              <?php } ?>
 	 			 </article>
 	 		 </div>
@@ -41,8 +41,9 @@
 	 </div>
  <?php else : ?>
    <header>
-	 <h1>Search Results</h1>
-	 <p>Sorry, no search results were found.</p>
+		 <h1>Search Results</h1>
+		 <p>Sorry, no search results were found.</p>
    </header>
+	 <div class="copy_split"></div>
 <?php endif; ?>
- <?php get_footer(); ?>
+<?php get_footer(); ?>

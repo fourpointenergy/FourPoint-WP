@@ -69,6 +69,21 @@ strong {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
+#page-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 123;
+  background-color: #ffffff; }
+  #page-loader svg {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    margin-top: -40px;
+    margin-left: -40px; }
+
 body, html {
   font-weight: 400;
   line-height: 1.7em;
@@ -426,6 +441,9 @@ nav {
       left: 0;
       z-index: 99; } }
 
+.home .panels { padding-bottom: 300px; }
+@media (min-width: 1024px) { .home .panels { padding-bottom: 150px; } }
+
 footer {
   background: #2e2e2d;
   padding: 25px 0; }
@@ -602,7 +620,7 @@ header, .text-block {
         left: 0;
         background: rgba(0, 0, 0, 0.3);
         z-index: 3; }
-      .content_stack li aside h3 {
+      .content_stack li aside h2 {
         position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
@@ -666,13 +684,13 @@ header, .text-block {
         -moz-transition: all 0.5s ease 0.4s;
         transition: all 0.5s ease 0.4s; }
     @media (max-width: 1024px) {
-      .content_stack li aside h3 {
+      .content_stack li aside h2 {
         font-size: 90px; } }
     @media (max-width: 768px) {
       .content_stack li aside, .content_stack li article {
         width: 100%;
         position: relative; }
-        .content_stack li aside h3, .content_stack li article h3 {
+        .content_stack li aside h2, .content_stack li article h3 {
           position: relative;
           -webkit-transform: none;
           -moz-transform: none;
@@ -708,7 +726,7 @@ header, .text-block {
     -o-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1; }
-  .content_stack .come-in aside h3 {
+  .content_stack .come-in aside h2 {
     opacity: 1; }
 
 .content_stack .already-visible {
@@ -772,14 +790,15 @@ header, .text-block {
           -webkit-transition: all 0.4s ease;
           -moz-transition: all 0.4s ease;
           transition: all 0.4s ease; }
-          .grid ul li a div h4, .grid ul li a div p {
+          .grid ul li a div p {
             padding: 0;
             margin: 0;
             font-family: 'Montserrat', sans-serif;
             color: #ffffff !important;
             letter-spacing: 0; }
-          .grid ul li a div h4 {
-            font-size: 1.7em; }
+          .grid ul li a div p.title {
+            font-size: 1.7em;
+						font-weight: bold; }
           .grid ul li a div span {
             font-size: 12px;
             text-transform: uppercase;
@@ -822,7 +841,7 @@ header, .text-block {
           position: absolute;
           width: 100%;
           padding: 10px 15px;
-          top: 70%;
+          top: 30%;
           height: 130%;
           -webkit-transition: all 0.3s ease;
           -moz-transition: all 0.3s ease;
@@ -871,7 +890,8 @@ header, .text-block {
       -moz-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
-      .team_profile header .team_title span h3 {
+      .team_profile header .team_title span h2 {
+				font-size: 22px; font-weight: 300;
         color: #838383; }
   @media (max-width: 768px) {
     .team_profile header img {
@@ -899,8 +919,9 @@ header, .text-block {
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
         transform: translateY(0); }
-        .team_profile header .team_title span h3 {
-          color: #838383; } }
+        .team_profile header .team_title span h2 {
+          font-size: 22px; font-weight: 300;
+					color: #838383; } }
 .team_profile article {
   width: 90%;
   max-width: 740px;
@@ -1444,6 +1465,10 @@ header, .text-block {
     max-width: 850px;
     margin: 0 auto; } }
 
+.container, .grid, .affiliation_logos, .copy_split, .maps { margin-bottom: 300px; }
+@media (min-width: 1024px) {
+	.container, .grid, .affiliation_logos, .copy_split, .maps { margin-bottom: 150px; }
+
 .half-left {
   width: 50%;
   float: left; }
@@ -1883,5 +1908,7 @@ aside.login-card {
   .gallery-filter p {
     text-align: center;
     font-weight: 700; }
-
+.animsition {
+  overflow-x: hidden;
+}
 /*# sourceMappingURL=style.css.map */

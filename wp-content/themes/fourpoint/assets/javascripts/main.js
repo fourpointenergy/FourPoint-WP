@@ -10,6 +10,19 @@ $(document).ready(function() {
     autoplaySpeed: 6000
   });
 
+	// GTM for Home page carousel
+	$('.hero-slider button').on('click', function(){ window.dataLayer.push(
+		{event:'button click',headline:'home page carousel',label:'change slide'}
+	); });
+
+	// GTM for main nav
+	$('.main_nav a').on('click', function(e){
+		var buttonText = $(e.target).text();
+		window.dataLayer.push(
+			{event:'text link',headline:'header nav',label:buttonText}
+		);
+	});
+
   var win = $(window);
 
   // change slider images depending on screen sizes
@@ -36,7 +49,7 @@ $(document).ready(function() {
     setTimeout(function() {
       $('#page-loader').fadeOut(300).addClass('gone');
     }, 300);
-    
+
   };
 
   changeSliderImages(windowWidth);
@@ -137,8 +150,6 @@ $(document).ready(function() {
     $('.secondary_search_wrap').slideToggle(250);
   });
 
-
-  
   //nav js
   var menu = $('#main_nav');
   var menuToggle = $('#mobile_menu');
@@ -206,6 +217,7 @@ $(document).ready(function() {
   });
 
   // GOOGLE ANALYTICS CLICK TRACKING
+  /*
   $('.ga-link-track').on('click', function(event) {
     ga('send', 'event', {
       eventCategory: 'Outbound Link',
@@ -214,5 +226,35 @@ $(document).ready(function() {
       transport: 'beacon'
     });
   });
+  */
+
+  // Page transitions: http://git.blivesta.com/animsition/
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 350,
+    outDuration: 350,
+    linkElement: '.animsition-link',
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    // overlayClass : 'animsition-overlay-slide',
+    // overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+
+
+  // Do a Reverse IP Lookup for use inside gtm
+  // $.get('https://extreme-ip-lookup.com/json',function(data) {
+  //   window.busLookup = JSON.parse(data);
+  // },'html');
 
 });

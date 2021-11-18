@@ -2,10 +2,10 @@
 /**
  * Template for displaying Industry Affiliations (with logos)
  */
-global $theme;
+global $fp_theme;
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-  <header>
+  <header id="main-content">
   	<h1><?php the_title(); ?></h1>
   	<p><?php the_field('page_description'); ?></p>
   </header>
@@ -13,7 +13,9 @@ get_header(); ?>
   <section class="affiliation_logos">
     <?php while ( have_rows('affiliate_logos') ) : the_row(); ?>
       <?php if(get_sub_field('affiliate_logo')) { ?>
-        <a href="<?php the_sub_field('affiliate_link') ?>" class="logo" target="_blank"><img src="<?php the_sub_field('affiliate_logo') ?>" alt="<?php the_sub_field('affiliate_name') ?>"></a>
+        <a href="<?php the_sub_field('affiliate_link') ?>" class="logo" target="_blank" onclick="dataLayer.push({event:'exit link',headline:'<?php the_title(); ?>',label:'<?php the_sub_field('affiliate_link') ?>'});">
+					<img src="<?php the_sub_field('affiliate_logo') ?>" alt="<?php the_sub_field('affiliate_name') ?>">
+				</a>
       <?php } else { ?>
         <img src="<?php the_sub_field('affiliate_logo') ?>" alt="<?php the_sub_field('affiliate_name') ?>">
       <?php } ?>

@@ -6,11 +6,11 @@
  * @subpackage Twenty_Ten
  * @since Twenty Ten 1.0
  */
-global $theme;
+global $fp_theme;
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-<header class="container">
-    <div class="site-logo"><a href="/"><img src="<?php $theme->images_path() ?>/logo@2x.png" width="197" height="185" alt="Colorado | The state of craft beer"></a></div>
+<header id="main-content" class="container">
+    <div class="site-logo"><a href="/"><img src="<?php $fp_theme->images_path() ?>/logo@2x.png" width="197" height="185" alt="Colorado | The state of craft beer"></a></div>
     <div class="page-title">
         <div class="page-title-inner">
             <h1><?php the_title(); ?></h1>
@@ -23,7 +23,7 @@ get_header(); ?>
 </div>
 <?php endwhile;// end of the loop. ?>
 </div>
-        <!-- <div class="site-logo"><div class="container"><img src="<?php $theme->images_path() ?>/logo@2x.png" width="197" height="185" alt="Colorado | The state of craft beer"></div></div> -->
+        <!-- <div class="site-logo"><div class="container"><img src="<?php $fp_theme->images_path() ?>/logo@2x.png" width="197" height="185" alt="Colorado | The state of craft beer"></div></div> -->
 <?php if ( in_array('brewer',$current_user->roles) ) {
         $brewery_name = get_user_meta($current_user->ID, 'brewery_name');
     ?>
