@@ -13,17 +13,6 @@ get_header(); ?>
   <div class="container general-content">
   	<div class="wrapper">
       <div class="row io-logins">
-        <aside class="card login-card">
-          <?php the_content(); ?>
-          <img src="<?php the_field('pds_energy_login_box_image') ?>" alt="PDS Energy Login">
-          <div class="card-bottom">
-            <div class="inner">
-              <h2>PDS Energy Login</h2>
-              <a href="https://secure.pds-austin.com/fourpoint/login.asp" class="button btn-blue" target="_blank" onclick="dataLayer.push({event:'exit link',headline:'PDS Energy Login',label:'https://secure.pds-austin.com/fourpoint/login.asp'});">Login</a>
-            </div>
-          </div>
-        </aside>
-
         <aside class="card login-card energylink-login-wrap">
           <?php the_field('energylink_login_box_content') ?>
         </aside>

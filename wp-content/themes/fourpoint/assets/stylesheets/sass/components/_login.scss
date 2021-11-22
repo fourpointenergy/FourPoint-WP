@@ -154,6 +154,8 @@ aside.login-card {
 }
 
 aside.energylink-login-wrap {
+  float: none;
+  margin: auto;
   p:last-child {
     border: 1px solid $form_fill;
   }
