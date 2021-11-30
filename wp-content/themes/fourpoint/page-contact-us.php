@@ -30,7 +30,7 @@ get_header(); ?>
       <div class="copy_split">
         <div class="side-content side-content-callout">
           <aside><p>Owner Information</p></aside>
-          <article><a href="mailto:ERundles@fourpointenergy.com" title="Owner Information" onclick="dataLayer.push({event:'email',headline:'Owner Information',label:'ERundles@fourpointenergy.com'});">Email</a></article>
+          <article><a href="mailto:ownerinquiry@fourpointenergy.com" title="Owner Information" onclick="dataLayer.push({event:'email',headline:'Owner Information',label:'ownerinquiry@fourpointenergy.com'});">Email</a></article>
         </div>
         <?php if( have_rows('quick_contacts') ): ?>
         <?php while ( have_rows('quick_contacts') ) : the_row(); ?>
@@ -46,7 +46,7 @@ get_header(); ?>
         </div>
         <div class="side-content side-content-callout">
           <aside><p>Division Orders</p></aside>
-          <article><a href="mailto:revenueinquiry@fourpointenergy.com" title="Division Orders" onclick="dataLayer.push({event:'email',headline:'Division Orders',label:'revenueinquiry@fourpointenergy.com'});">Email</a></article>
+          <article><a href="mailto:LandAdmin@FourPointEnergy.com" title="Division Orders" onclick="dataLayer.push({event:'email',headline:'Division Orders',label:'LandAdmin@FourPointEnergy.com'});">Email</a></article>
         </div>
 
       </div>
