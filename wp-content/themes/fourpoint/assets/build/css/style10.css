@@ -872,12 +872,10 @@ input:-webkit-autofill, input:-webkit-autofill:focus, input:-webkit-autofill:hov
 }
 
 .pre-footer {
-  display: table;
   margin: 0 auto 50px
 }
 
 .pre-footer .box { position: relative; }
-.pre-footer .text-arrow-link { position: absolute; bottom: 30px; left: 110px; }
 
 .pf-icon {
   display: block;
@@ -998,7 +996,9 @@ footer section .social ul li {
 }
 
 footer section .social ul li a {
-  color: #000
+  color: #000;
+  display: flex;
+  height: 34px;
 }
 
 footer section .social ul .no_icon {
@@ -1687,20 +1687,6 @@ header h1 {
   margin-right: auto
 }
 
-.form_wrap div {
-  margin: 15px auto
-}
-
-.form_wrap div:after {
-  content: "";
-  display: table;
-  clear: both
-}
-
-.form_wrap div label, .form_wrap div input, .form_wrap div .gform_wrapper .top_label .gfield_label {
-  width: 97%
-}
-
 .form_wrap div select {
   border-radius: 2px !important
 }
@@ -1721,17 +1707,9 @@ header h1 {
 }
 
 .form_wrap div label {
-  min-width: 100px;
   padding: 0.5em 0;
-  max-width: 400px;
   text-align: left;
   display: inline-block;
-  width: 90%
-}
-
-.form_wrap div input, .form_wrap div textarea {
-  width: 90%;
-  max-width: 400px
 }
 
 .form_wrap div textarea {
@@ -1739,23 +1717,16 @@ header h1 {
 }
 
 @media (max-width: 768px) {
-  .form_wrap div input, .form_wrap div label, .form_wrap div .form_select, .form_wrap div input[type="text"], .form_wrap div input[type="email"], .form_wrap div textarea {
-    float: none;
-    width: 90%;
-    margin: 0 auto;
-    text-align: left;
-    display: block
-  }
-
-  .form_wrap div label {
-    padding: 0.7em 0;
-    width: 97%
+  .gform_button {
+    height: 56px !important;
   }
 }
 
-.form_wrap .form_select {
-  width: 99%;
-  margin-left: auto !important
+@media (max-width: 768px) {
+  .form_wrap div input, .form_wrap div label, .form_wrap div .form_select, .form_wrap div input[type="text"], .form_wrap div input[type="email"], .form_wrap div textarea {
+    float: none;
+    display: block
+  }
 }
 
 .form_wrap .form_select select {
@@ -1807,24 +1778,29 @@ header h1 {
 
 .gform_wrapper .gform_footer input.button {
   display: block !important;
-  width: auto;
+  width: 100%;
   padding: 15px 30px;
-
-}
-
-body .gform_wrapper .gform_footer input.button,
-body .gform_wrapper .gform_footer input[type="submit"] {
-  margin: 10px auto;
+  margin: 0 !important;
 }
 
 .gform_wrapper .top_label .gfield_label {
-  margin: 0 auto !important;
-  font-weight: 400 !important;
   display: block !important
 }
 
 .form_wrap div input[type="text"], .form_wrap div textarea {
   margin: 0 auto
+}
+
+.gform_wrapper {
+  margin: auto;
+  max-width: 440px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .gform_wrapper {
+    padding: 0;
+  }
 }
 
 .gform_wrapper input[type="text"] {
@@ -1833,16 +1809,17 @@ body .gform_wrapper .gform_footer input[type="submit"] {
 
 .gform_wrapper .top_label select.medium, .gform_wrapper .top_label input.medium {
   margin: 0 auto !important;
-  width: 99% !important;
-  display: block
+  display: block;
+  width: 100% !important;
+  font-family: inherit;
 }
 
 .ginput_container_select {
   position: relative
 }
 
-.gform_wrapper .gform_body .form_select select, .gform_wrapper .gform_body .form_select {
-  width: 99% !important
+.gform_wrapper textarea.medium {
+  font-family: inherit;
 }
 
 @media (min-width: 768px) {
@@ -2649,10 +2626,6 @@ h5 {
   padding: 1.5em
 }
 
-.page-id-197 .ownership {
-  justify-content: start
-}
-
 .page_elements ul {
   display: block
 }
@@ -2679,7 +2652,13 @@ h5 {
   .three-width-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: space-between
+  }
+}
+
+@media (min-width: 280px) {
+  .three-width-box .box-inner {
+    margin: 0 0 2rem;
   }
 }
 
@@ -2689,13 +2668,21 @@ h5 {
 
 @media (min-width: 620px) {
   .three-width-box>.box {
-    width: 50%
+    width: 48%
   }
 }
 
 @media (min-width: 1000px) {
+  .three-width-box {
+    justify-content: center;
+  }
+
   .three-width-box>.box {
     width: 33.33333333%
+  }
+
+  .three-width-box .box-inner {
+    margin: 1rem;
   }
 }
 
@@ -2814,7 +2801,7 @@ h5 {
 }
 
 .cta-cards .icon-contact {
-  width: auto
+  width: 100%
 }
 
 .info-cards .box-inner {
@@ -2921,10 +2908,6 @@ h5 {
 
 .image-bg .box-top h3 {
   margin-bottom: 2px
-}
-
-.number-cards.three-width-box {
-  justify-content: normal
 }
 
 ul.list-reset {
